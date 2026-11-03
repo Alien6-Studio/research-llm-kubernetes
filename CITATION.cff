@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the exact protocol or data tag used."
+type: software
+title: "Alien6 Research: Kubernetes client capacity for LLM applications"
+authors:
+  - name: "Alien6 Studio"
+    website: "https://alien6.com"
+repository-code: "https://github.com/Alien6-Studio/research-llm-kubernetes"
+url: "https://github.com/Alien6-Studio/research-llm-kubernetes"
+date-released: 2026-11-12
+license: Apache-2.0
+keywords:
+  - reproducible research
+  - Kubernetes
+  - large language models

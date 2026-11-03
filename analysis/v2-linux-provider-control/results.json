@@ -1,0 +1,3199 @@
+{
+  "block": {
+    "complete": true,
+    "qualified": true,
+    "trials": 12,
+    "invalid": [],
+    "rule": "A technically invalid block is reported in full and excluded in full."
+  },
+  "included_for_inference": true,
+  "trials": [
+    {
+      "trial_id": "provider-control-08bc431e1548bc40",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 1,
+      "node_cpus": 4,
+      "quota": 40000,
+      "valid": true,
+      "issues": [],
+      "offered": 1784,
+      "emitted": 1784,
+      "worker_accepted": 0,
+      "provider_consumed": 252,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 252,
+      "useful_fraction": 0.1412556053811659,
+      "offered_per_second": 178.4,
+      "emitted_per_second": 178.4,
+      "useful_cohort_per_second": 25.2,
+      "useful_window_per_second": 25.5,
+      "status_counts": {
+        "429": 1532,
+        "200": 252
+      },
+      "failure_reasons": {
+        "provider_quota": 1532
+      },
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1784,
+        "p50": 0.0013983740935827882,
+        "p95": 0.2149259710735123,
+        "p99": 0.23803600771651645
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1784,
+        "p50": 0.0013983740935827882,
+        "p95": 0.2149259710735123,
+        "p99": 0.23803600771651645
+      },
+      "useful_latency_seconds": {
+        "n": 252,
+        "p50": 0.16067562968237326,
+        "p95": 0.24019959300767368,
+        "p99": 0.7503785906332041
+      },
+      "emission_lag_seconds": {
+        "n": 2346,
+        "p50": 0.0011454310980525406,
+        "p95": 0.0019326353486235348,
+        "p99": 0.002555479968293639
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 379,
+          "units": 39800,
+          "utilization": 0.995
+        },
+        {
+          "window": 380,
+          "units": 39400,
+          "utilization": 0.985
+        },
+        {
+          "window": 381,
+          "units": 39200,
+          "utilization": 0.98
+        },
+        {
+          "window": 382,
+          "units": 39200,
+          "utilization": 0.98
+        },
+        {
+          "window": 383,
+          "units": 39200,
+          "utilization": 0.98
+        },
+        {
+          "window": 384,
+          "units": 39400,
+          "utilization": 0.985
+        },
+        {
+          "window": 385,
+          "units": 40000,
+          "utilization": 1.0
+        },
+        {
+          "window": 386,
+          "units": 39800,
+          "utilization": 0.995
+        },
+        {
+          "window": 387,
+          "units": 39200,
+          "utilization": 0.98
+        },
+        {
+          "window": 388,
+          "units": 39200,
+          "utilization": 0.98
+        },
+        {
+          "window": 389,
+          "units": 39200,
+          "utilization": 0.98
+        },
+        {
+          "window": 390,
+          "units": 39600,
+          "utilization": 0.99
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 351,
+        "consumed": 351,
+        "denied": 1995
+      },
+      "provider_http_refusals": 1532,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 29,
+          "observed_seconds": 13.857096941000009,
+          "cpu_seconds": 1.3973680000000002,
+          "cgroup_cpu_seconds": 1.397368,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1118021960.183094,
+          "memory_peak_observed_bytes": 81125376,
+          "max_sample_gap_seconds": 0.503996901999983
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 29,
+          "observed_seconds": 13.857315940999968,
+          "cpu_seconds": 0.6279329999999987,
+          "cgroup_cpu_seconds": 0.627816,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 388903592.82810587,
+          "memory_peak_observed_bytes": 28377088,
+          "max_sample_gap_seconds": 0.5039477859999693
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 29,
+          "observed_seconds": 13.857660700999986,
+          "cpu_seconds": 0.07438900000000004,
+          "cgroup_cpu_seconds": 0.074388,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 495864634.19582415,
+          "memory_peak_observed_bytes": 36188160,
+          "max_sample_gap_seconds": 0.5024348729999701
+        }
+      ],
+      "whole_trace_useful": 351,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.001532736999991,
+        "vm_cpu_nonidle_fraction": 0.10358408822371012,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.609443,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.005982022792022789,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 5705954.949307761,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "provider-control-0c750ee988d27cc4",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 0,
+      "node_cpus": 4,
+      "quota": 20000,
+      "valid": true,
+      "issues": [],
+      "offered": 1788,
+      "emitted": 1788,
+      "worker_accepted": 0,
+      "provider_consumed": 129,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 129,
+      "useful_fraction": 0.07214765100671142,
+      "offered_per_second": 178.8,
+      "emitted_per_second": 178.8,
+      "useful_cohort_per_second": 12.9,
+      "useful_window_per_second": 12.9,
+      "status_counts": {
+        "429": 1659,
+        "200": 129
+      },
+      "failure_reasons": {
+        "provider_quota": 1659
+      },
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1788,
+        "p50": 0.0014177291917008006,
+        "p95": 0.14421877679086492,
+        "p99": 0.23360408501224583
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1788,
+        "p50": 0.0014177291917008006,
+        "p95": 0.14421877679086492,
+        "p99": 0.23360408501224583
+      },
+      "useful_latency_seconds": {
+        "n": 129,
+        "p50": 0.158410853358248,
+        "p95": 0.23959774844973936,
+        "p99": 0.7276306888617228
+      },
+      "emission_lag_seconds": {
+        "n": 2355,
+        "p50": 0.001153386750104346,
+        "p95": 0.002043113603974689,
+        "p99": 0.0026653108996583796
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 475,
+          "units": 19200,
+          "utilization": 0.96
+        },
+        {
+          "window": 476,
+          "units": 19400,
+          "utilization": 0.97
+        },
+        {
+          "window": 477,
+          "units": 19200,
+          "utilization": 0.96
+        },
+        {
+          "window": 478,
+          "units": 19200,
+          "utilization": 0.96
+        },
+        {
+          "window": 479,
+          "units": 19800,
+          "utilization": 0.99
+        },
+        {
+          "window": 480,
+          "units": 19200,
+          "utilization": 0.96
+        },
+        {
+          "window": 481,
+          "units": 19800,
+          "utilization": 0.99
+        },
+        {
+          "window": 482,
+          "units": 19800,
+          "utilization": 0.99
+        },
+        {
+          "window": 483,
+          "units": 19400,
+          "utilization": 0.97
+        },
+        {
+          "window": 484,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 485,
+          "units": 19200,
+          "utilization": 0.96
+        },
+        {
+          "window": 486,
+          "units": 19800,
+          "utilization": 0.99
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 178,
+        "consumed": 178,
+        "denied": 2177
+      },
+      "provider_http_refusals": 1659,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 28,
+          "observed_seconds": 13.244880057000046,
+          "cpu_seconds": 1.4469040000000035,
+          "cgroup_cpu_seconds": 1.446842,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1067581432.8193778,
+          "memory_peak_observed_bytes": 80953344,
+          "max_sample_gap_seconds": 0.5026242259999663
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 28,
+          "observed_seconds": 13.244956161000005,
+          "cpu_seconds": 0.6478199999999994,
+          "cgroup_cpu_seconds": 0.647819,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 372557164.2588817,
+          "memory_peak_observed_bytes": 28340224,
+          "max_sample_gap_seconds": 0.5024964830000158
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 28,
+          "observed_seconds": 13.245256546000007,
+          "cpu_seconds": 0.08026599999999817,
+          "cgroup_cpu_seconds": 0.080321,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 473438016.91266686,
+          "memory_peak_observed_bytes": 36196352,
+          "max_sample_gap_seconds": 0.5010719329999915
+        }
+      ],
+      "whole_trace_useful": 178,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.001528256000029,
+        "vm_cpu_nonidle_fraction": 0.10672716512132574,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.786331,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.01221904494382023,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 10750430.415679362,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "provider-control-214d0eb41aa51dc1",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 2,
+      "node_cpus": 4,
+      "quota": 40000,
+      "valid": true,
+      "issues": [],
+      "offered": 1707,
+      "emitted": 1707,
+      "worker_accepted": 0,
+      "provider_consumed": 263,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 263,
+      "useful_fraction": 0.1540714704159344,
+      "offered_per_second": 170.7,
+      "emitted_per_second": 170.7,
+      "useful_cohort_per_second": 26.3,
+      "useful_window_per_second": 26.4,
+      "status_counts": {
+        "429": 1444,
+        "200": 263
+      },
+      "failure_reasons": {
+        "provider_quota": 1444
+      },
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1707,
+        "p50": 0.001480141926037959,
+        "p95": 0.21186199236234415,
+        "p99": 0.23708332853055936
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1707,
+        "p50": 0.001480141926037959,
+        "p95": 0.21186199236234415,
+        "p99": 0.23708332853055936
+      },
+      "useful_latency_seconds": {
+        "n": 263,
+        "p50": 0.1581177707906818,
+        "p95": 0.2395746864444277,
+        "p99": 0.8313096790657823
+      },
+      "emission_lag_seconds": {
+        "n": 2225,
+        "p50": 0.0011822036551052406,
+        "p95": 0.0021344248173704727,
+        "p99": 0.0027877580980657513
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 443,
+          "units": 39400,
+          "utilization": 0.985
+        },
+        {
+          "window": 444,
+          "units": 39800,
+          "utilization": 0.995
+        },
+        {
+          "window": 445,
+          "units": 39200,
+          "utilization": 0.98
+        },
+        {
+          "window": 446,
+          "units": 39400,
+          "utilization": 0.985
+        },
+        {
+          "window": 447,
+          "units": 39400,
+          "utilization": 0.985
+        },
+        {
+          "window": 448,
+          "units": 40000,
+          "utilization": 1.0
+        },
+        {
+          "window": 449,
+          "units": 40000,
+          "utilization": 1.0
+        },
+        {
+          "window": 450,
+          "units": 39800,
+          "utilization": 0.995
+        },
+        {
+          "window": 451,
+          "units": 39600,
+          "utilization": 0.99
+        },
+        {
+          "window": 452,
+          "units": 39200,
+          "utilization": 0.98
+        },
+        {
+          "window": 453,
+          "units": 40000,
+          "utilization": 1.0
+        },
+        {
+          "window": 454,
+          "units": 39600,
+          "utilization": 0.99
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 362,
+        "consumed": 362,
+        "denied": 1863
+      },
+      "provider_http_refusals": 1444,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 29,
+          "observed_seconds": 13.905393263999997,
+          "cpu_seconds": 1.3943360000000027,
+          "cgroup_cpu_seconds": 1.394422,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1119428469.8457742,
+          "memory_peak_observed_bytes": 80879616,
+          "max_sample_gap_seconds": 0.5021215539999844
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 29,
+          "observed_seconds": 13.905366741999956,
+          "cpu_seconds": 0.6267839999999971,
+          "cgroup_cpu_seconds": 0.626717,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 390126096.62716806,
+          "memory_peak_observed_bytes": 28340224,
+          "max_sample_gap_seconds": 0.5022660209999685
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 29,
+          "observed_seconds": 13.905423308000024,
+          "cpu_seconds": 0.0811889999999984,
+          "cgroup_cpu_seconds": 0.080997,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 496109879.7439067,
+          "memory_peak_observed_bytes": 35942400,
+          "max_sample_gap_seconds": 0.5015561299999831
+        }
+      ],
+      "whole_trace_useful": 362,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.001546111000039,
+        "vm_cpu_nonidle_fraction": 0.10338716029933048,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.604895,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.0058074834254143596,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 5540509.519936047,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "provider-control-63f9b3f5d8b8f085",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 0,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 1788,
+      "emitted": 1788,
+      "worker_accepted": 0,
+      "provider_consumed": 1788,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 1788,
+      "useful_fraction": 1.0,
+      "offered_per_second": 178.8,
+      "emitted_per_second": 178.8,
+      "useful_cohort_per_second": 178.8,
+      "useful_window_per_second": 179.6,
+      "status_counts": {
+        "200": 1788
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1788,
+        "p50": 0.20345500771571778,
+        "p95": 0.23889702311299743,
+        "p99": 0.7563466784681623
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1788,
+        "p50": 0.20345500771571778,
+        "p95": 0.23889702311299743,
+        "p99": 0.7563466784681623
+      },
+      "useful_latency_seconds": {
+        "n": 1788,
+        "p50": 0.20345500771571778,
+        "p95": 0.23889702311299743,
+        "p99": 0.7563466784681623
+      },
+      "emission_lag_seconds": {
+        "n": 2355,
+        "p50": 0.0011543524360604351,
+        "p95": 0.001841048736821449,
+        "p99": 0.002503761177990782
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 346,
+          "units": 306800,
+          "utilization": 0.0003068
+        },
+        {
+          "window": 347,
+          "units": 273200,
+          "utilization": 0.0002732
+        },
+        {
+          "window": 348,
+          "units": 295600,
+          "utilization": 0.0002956
+        },
+        {
+          "window": 349,
+          "units": 315400,
+          "utilization": 0.0003154
+        },
+        {
+          "window": 350,
+          "units": 309200,
+          "utilization": 0.0003092
+        },
+        {
+          "window": 351,
+          "units": 264800,
+          "utilization": 0.0002648
+        },
+        {
+          "window": 352,
+          "units": 301600,
+          "utilization": 0.0003016
+        },
+        {
+          "window": 353,
+          "units": 278600,
+          "utilization": 0.0002786
+        },
+        {
+          "window": 354,
+          "units": 277400,
+          "utilization": 0.0002774
+        },
+        {
+          "window": 355,
+          "units": 282000,
+          "utilization": 0.000282
+        },
+        {
+          "window": 356,
+          "units": 259200,
+          "utilization": 0.0002592
+        },
+        {
+          "window": 357,
+          "units": 324200,
+          "utilization": 0.0003242
+        },
+        {
+          "window": 358,
+          "units": 189000,
+          "utilization": 0.000189
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 2355,
+        "consumed": 2355
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 29,
+          "observed_seconds": 13.86201691499997,
+          "cpu_seconds": 1.4907319999999942,
+          "cgroup_cpu_seconds": 1.490734,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1119208843.2969847,
+          "memory_peak_observed_bytes": 81068032,
+          "max_sample_gap_seconds": 0.5109304229999907
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 29,
+          "observed_seconds": 13.861964625999974,
+          "cpu_seconds": 0.7296469999999999,
+          "cgroup_cpu_seconds": 0.729669,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 391506088.182089,
+          "memory_peak_observed_bytes": 28516352,
+          "max_sample_gap_seconds": 0.5088568230000305
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 29,
+          "observed_seconds": 13.862316516000021,
+          "cpu_seconds": 0.08161499999999933,
+          "cgroup_cpu_seconds": 0.081615,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 497205949.3714296,
+          "memory_peak_observed_bytes": 36200448,
+          "max_sample_gap_seconds": 0.5052951160000134
+        }
+      ],
+      "whole_trace_useful": 2355,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.001533989999984,
+        "vm_cpu_nonidle_fraction": 0.11089187056037886,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.891244,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.0009774921443736703,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 852620.3315713389,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "provider-control-66fa09f1a11c350b",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 2,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 1707,
+      "emitted": 1707,
+      "worker_accepted": 0,
+      "provider_consumed": 1707,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 1707,
+      "useful_fraction": 1.0,
+      "offered_per_second": 170.7,
+      "emitted_per_second": 170.7,
+      "useful_cohort_per_second": 170.7,
+      "useful_window_per_second": 170.2,
+      "status_counts": {
+        "200": 1707
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1707,
+        "p50": 0.20320721803494735,
+        "p95": 0.23979974886356104,
+        "p99": 0.8117796930037571
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1707,
+        "p50": 0.20320721803494735,
+        "p95": 0.23979974886356104,
+        "p99": 0.8117796930037571
+      },
+      "useful_latency_seconds": {
+        "n": 1707,
+        "p50": 0.20320721803494735,
+        "p95": 0.23979974886356104,
+        "p99": 0.8117796930037571
+      },
+      "emission_lag_seconds": {
+        "n": 2225,
+        "p50": 0.0011790729938638833,
+        "p95": 0.0019523984167335584,
+        "p99": 0.002657434637285405
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 362,
+          "units": 259800,
+          "utilization": 0.0002598
+        },
+        {
+          "window": 363,
+          "units": 266600,
+          "utilization": 0.0002666
+        },
+        {
+          "window": 364,
+          "units": 296400,
+          "utilization": 0.0002964
+        },
+        {
+          "window": 365,
+          "units": 271000,
+          "utilization": 0.000271
+        },
+        {
+          "window": 366,
+          "units": 268600,
+          "utilization": 0.0002686
+        },
+        {
+          "window": 367,
+          "units": 255600,
+          "utilization": 0.0002556
+        },
+        {
+          "window": 368,
+          "units": 286200,
+          "utilization": 0.0002862
+        },
+        {
+          "window": 369,
+          "units": 264800,
+          "utilization": 0.0002648
+        },
+        {
+          "window": 370,
+          "units": 280000,
+          "utilization": 0.00028
+        },
+        {
+          "window": 371,
+          "units": 249800,
+          "utilization": 0.0002498
+        },
+        {
+          "window": 372,
+          "units": 268800,
+          "utilization": 0.0002688
+        },
+        {
+          "window": 373,
+          "units": 303400,
+          "utilization": 0.0003034
+        },
+        {
+          "window": 374,
+          "units": 278000,
+          "utilization": 0.000278
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 2225,
+        "consumed": 2225
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 29,
+          "observed_seconds": 13.903653216999999,
+          "cpu_seconds": 1.436985000000007,
+          "cgroup_cpu_seconds": 1.436984,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1123774626.8793015,
+          "memory_peak_observed_bytes": 81178624,
+          "max_sample_gap_seconds": 0.5038908880000008
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 29,
+          "observed_seconds": 13.90389272899995,
+          "cpu_seconds": 0.7028529999999975,
+          "cgroup_cpu_seconds": 0.702963,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 390857517.6352488,
+          "memory_peak_observed_bytes": 28483584,
+          "max_sample_gap_seconds": 0.5032212780000123
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 29,
+          "observed_seconds": 13.904586054999982,
+          "cpu_seconds": 0.08393300000000181,
+          "cgroup_cpu_seconds": 0.083934,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 496319809.8868443,
+          "memory_peak_observed_bytes": 36196352,
+          "max_sample_gap_seconds": 0.5019637589999775
+        }
+      ],
+      "whole_trace_useful": 2225,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.001489410000033,
+        "vm_cpu_nonidle_fraction": 0.1090980701063411,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.779821,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.000999447640449441,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 903798.6311916381,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "provider-control-8f1d926963f3b380",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 0,
+      "node_cpus": 4,
+      "quota": 40000,
+      "valid": true,
+      "issues": [],
+      "offered": 1788,
+      "emitted": 1788,
+      "worker_accepted": 0,
+      "provider_consumed": 257,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 257,
+      "useful_fraction": 0.14373601789709173,
+      "offered_per_second": 178.8,
+      "emitted_per_second": 178.8,
+      "useful_cohort_per_second": 25.7,
+      "useful_window_per_second": 25.7,
+      "status_counts": {
+        "429": 1531,
+        "200": 257
+      },
+      "failure_reasons": {
+        "provider_quota": 1531
+      },
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1788,
+        "p50": 0.0014367365451448677,
+        "p95": 0.21058750172358032,
+        "p99": 0.23792403269584383
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1788,
+        "p50": 0.0014367365451448677,
+        "p95": 0.21058750172358032,
+        "p99": 0.23792403269584383
+      },
+      "useful_latency_seconds": {
+        "n": 257,
+        "p50": 0.15753636363302803,
+        "p95": 0.23996945044973472,
+        "p99": 0.814201912986789
+      },
+      "emission_lag_seconds": {
+        "n": 2355,
+        "p50": 0.001143009747124779,
+        "p95": 0.001905405914271796,
+        "p99": 0.00258267109541066
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 298,
+          "units": 40000,
+          "utilization": 1.0
+        },
+        {
+          "window": 299,
+          "units": 39400,
+          "utilization": 0.985
+        },
+        {
+          "window": 300,
+          "units": 39200,
+          "utilization": 0.98
+        },
+        {
+          "window": 301,
+          "units": 39600,
+          "utilization": 0.99
+        },
+        {
+          "window": 302,
+          "units": 40000,
+          "utilization": 1.0
+        },
+        {
+          "window": 303,
+          "units": 39400,
+          "utilization": 0.985
+        },
+        {
+          "window": 304,
+          "units": 39800,
+          "utilization": 0.995
+        },
+        {
+          "window": 305,
+          "units": 39800,
+          "utilization": 0.995
+        },
+        {
+          "window": 306,
+          "units": 39600,
+          "utilization": 0.99
+        },
+        {
+          "window": 307,
+          "units": 39200,
+          "utilization": 0.98
+        },
+        {
+          "window": 308,
+          "units": 39600,
+          "utilization": 0.99
+        },
+        {
+          "window": 309,
+          "units": 40000,
+          "utilization": 1.0
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 355,
+        "consumed": 355,
+        "denied": 2000
+      },
+      "provider_http_refusals": 1531,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 28,
+          "observed_seconds": 13.245088408000015,
+          "cpu_seconds": 1.407424000000006,
+          "cgroup_cpu_seconds": 1.407423,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1066811721.3711168,
+          "memory_peak_observed_bytes": 80883712,
+          "max_sample_gap_seconds": 0.5023436249999804
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 28,
+          "observed_seconds": 13.245123992000003,
+          "cpu_seconds": 0.6325689999999984,
+          "cgroup_cpu_seconds": 0.632569,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 373522133.63921523,
+          "memory_peak_observed_bytes": 28397568,
+          "max_sample_gap_seconds": 0.5020026299999927
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 28,
+          "observed_seconds": 13.24561477200001,
+          "cpu_seconds": 0.07362799999999936,
+          "cgroup_cpu_seconds": 0.073781,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 474393395.22425485,
+          "memory_peak_observed_bytes": 36249600,
+          "max_sample_gap_seconds": 0.5019364290000112
+        }
+      ],
+      "whole_trace_useful": 355,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.00152460299995,
+        "vm_cpu_nonidle_fraction": 0.10730458751722782,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.738424,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.005953861971830996,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 5393597.887984752,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "provider-control-a7d7264c65dec5b1",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 0,
+      "node_cpus": 4,
+      "quota": 80000,
+      "valid": true,
+      "issues": [],
+      "offered": 1788,
+      "emitted": 1788,
+      "worker_accepted": 0,
+      "provider_consumed": 503,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 503,
+      "useful_fraction": 0.28131991051454136,
+      "offered_per_second": 178.8,
+      "emitted_per_second": 178.8,
+      "useful_cohort_per_second": 50.3,
+      "useful_window_per_second": 50.2,
+      "status_counts": {
+        "429": 1285,
+        "200": 503
+      },
+      "failure_reasons": {
+        "provider_quota": 1285
+      },
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1788,
+        "p50": 0.0015748119849376963,
+        "p95": 0.22728627067562002,
+        "p99": 0.2400376159864095
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1788,
+        "p50": 0.0015748119849376963,
+        "p95": 0.22728627067562002,
+        "p99": 0.2400376159864095
+      },
+      "useful_latency_seconds": {
+        "n": 503,
+        "p50": 0.16215089458694365,
+        "p95": 0.23792260984771474,
+        "p99": 0.7358599708699671
+      },
+      "emission_lag_seconds": {
+        "n": 2355,
+        "p50": 0.0011372026133358304,
+        "p95": 0.0018566332356044768,
+        "p99": 0.002427250092637223
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 314,
+          "units": 80000,
+          "utilization": 1.0
+        },
+        {
+          "window": 315,
+          "units": 79800,
+          "utilization": 0.9975
+        },
+        {
+          "window": 316,
+          "units": 79200,
+          "utilization": 0.99
+        },
+        {
+          "window": 317,
+          "units": 80000,
+          "utilization": 1.0
+        },
+        {
+          "window": 318,
+          "units": 79400,
+          "utilization": 0.9925
+        },
+        {
+          "window": 319,
+          "units": 80000,
+          "utilization": 1.0
+        },
+        {
+          "window": 320,
+          "units": 79800,
+          "utilization": 0.9975
+        },
+        {
+          "window": 321,
+          "units": 79200,
+          "utilization": 0.99
+        },
+        {
+          "window": 322,
+          "units": 79400,
+          "utilization": 0.9925
+        },
+        {
+          "window": 323,
+          "units": 79600,
+          "utilization": 0.995
+        },
+        {
+          "window": 324,
+          "units": 79600,
+          "utilization": 0.995
+        },
+        {
+          "window": 325,
+          "units": 79400,
+          "utilization": 0.9925
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 702,
+        "consumed": 702,
+        "denied": 1653
+      },
+      "provider_http_refusals": 1285,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 29,
+          "observed_seconds": 13.526546648000021,
+          "cpu_seconds": 1.4245959999999975,
+          "cgroup_cpu_seconds": 1.424597,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1088512996.157831,
+          "memory_peak_observed_bytes": 80732160,
+          "max_sample_gap_seconds": 0.5024775899999554
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 29,
+          "observed_seconds": 13.526715012000011,
+          "cpu_seconds": 0.6575489999999995,
+          "cgroup_cpu_seconds": 0.657507,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 380769800.3864866,
+          "memory_peak_observed_bytes": 28405760,
+          "max_sample_gap_seconds": 0.5022930890000339
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 29,
+          "observed_seconds": 13.527099361000012,
+          "cpu_seconds": 0.07488299999999981,
+          "cgroup_cpu_seconds": 0.074884,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 482968668.188869,
+          "memory_peak_observed_bytes": 35962880,
+          "max_sample_gap_seconds": 0.5015574489999608
+        }
+      ],
+      "whole_trace_useful": 702,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.00140371599997,
+        "vm_cpu_nonidle_fraction": 0.1108704214257582,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.670928,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.003072689458689454,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 2780984.9924974167,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "provider-control-c383d3dffc73aa08",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 2,
+      "node_cpus": 4,
+      "quota": 80000,
+      "valid": true,
+      "issues": [],
+      "offered": 1707,
+      "emitted": 1707,
+      "worker_accepted": 0,
+      "provider_consumed": 493,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 493,
+      "useful_fraction": 0.2888107791446983,
+      "offered_per_second": 170.7,
+      "emitted_per_second": 170.7,
+      "useful_cohort_per_second": 49.3,
+      "useful_window_per_second": 48.9,
+      "status_counts": {
+        "429": 1214,
+        "200": 493
+      },
+      "failure_reasons": {
+        "provider_quota": 1214
+      },
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1707,
+        "p50": 0.0016244775360405583,
+        "p95": 0.22976094219518473,
+        "p99": 0.2410773623361706
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1707,
+        "p50": 0.0016244775360405583,
+        "p95": 0.22976094219518473,
+        "p99": 0.2410773623361706
+      },
+      "useful_latency_seconds": {
+        "n": 493,
+        "p50": 0.20509656169571144,
+        "p95": 0.2401942913298285,
+        "p99": 0.8131733187794339
+      },
+      "emission_lag_seconds": {
+        "n": 2225,
+        "p50": 0.0012086932437114228,
+        "p95": 0.0020870867176085994,
+        "p99": 0.0027602776585808897
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 459,
+          "units": 79600,
+          "utilization": 0.995
+        },
+        {
+          "window": 460,
+          "units": 79800,
+          "utilization": 0.9975
+        },
+        {
+          "window": 461,
+          "units": 79800,
+          "utilization": 0.9975
+        },
+        {
+          "window": 462,
+          "units": 79200,
+          "utilization": 0.99
+        },
+        {
+          "window": 463,
+          "units": 80000,
+          "utilization": 1.0
+        },
+        {
+          "window": 464,
+          "units": 80000,
+          "utilization": 1.0
+        },
+        {
+          "window": 465,
+          "units": 79400,
+          "utilization": 0.9925
+        },
+        {
+          "window": 466,
+          "units": 79800,
+          "utilization": 0.9975
+        },
+        {
+          "window": 467,
+          "units": 79800,
+          "utilization": 0.9975
+        },
+        {
+          "window": 468,
+          "units": 80000,
+          "utilization": 1.0
+        },
+        {
+          "window": 469,
+          "units": 79200,
+          "utilization": 0.99
+        },
+        {
+          "window": 470,
+          "units": 79200,
+          "utilization": 0.99
+        },
+        {
+          "window": 471,
+          "units": 80000,
+          "utilization": 1.0
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 693,
+        "consumed": 693,
+        "denied": 1532
+      },
+      "provider_http_refusals": 1214,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 29,
+          "observed_seconds": 13.90451032499999,
+          "cpu_seconds": 1.4548740000000038,
+          "cgroup_cpu_seconds": 1.454874,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1120587676.1640787,
+          "memory_peak_observed_bytes": 80994304,
+          "max_sample_gap_seconds": 0.5028225910000401
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 29,
+          "observed_seconds": 13.904573141000014,
+          "cpu_seconds": 0.669629999999998,
+          "cgroup_cpu_seconds": 0.669629,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 389616772.77829367,
+          "memory_peak_observed_bytes": 28422144,
+          "max_sample_gap_seconds": 0.5026343870000005
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 29,
+          "observed_seconds": 13.905039565000038,
+          "cpu_seconds": 0.08767399999999981,
+          "cgroup_cpu_seconds": 0.087674,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 496339757.80645204,
+          "memory_peak_observed_bytes": 35938304,
+          "max_sample_gap_seconds": 0.501087670000004
+        }
+      ],
+      "whole_trace_useful": 693,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.001476869999976,
+        "vm_cpu_nonidle_fraction": 0.10880726698262244,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.796576,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.0031921760461760484,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 2895446.1857847394,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "provider-control-cab7bde306e2da39",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 2,
+      "node_cpus": 4,
+      "quota": 20000,
+      "valid": true,
+      "issues": [],
+      "offered": 1707,
+      "emitted": 1707,
+      "worker_accepted": 0,
+      "provider_consumed": 134,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 134,
+      "useful_fraction": 0.07850029291154072,
+      "offered_per_second": 170.7,
+      "emitted_per_second": 170.7,
+      "useful_cohort_per_second": 13.4,
+      "useful_window_per_second": 13.6,
+      "status_counts": {
+        "429": 1573,
+        "200": 134
+      },
+      "failure_reasons": {
+        "provider_quota": 1573
+      },
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1707,
+        "p50": 0.0013829481058564852,
+        "p95": 0.1472239276135383,
+        "p99": 0.23329666377878766
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1707,
+        "p50": 0.0013829481058564852,
+        "p95": 0.1472239276135383,
+        "p99": 0.23329666377878766
+      },
+      "useful_latency_seconds": {
+        "n": 134,
+        "p50": 0.15380419949093493,
+        "p95": 0.24170449564030605,
+        "p99": 0.8312358333443512
+      },
+      "emission_lag_seconds": {
+        "n": 2225,
+        "p50": 0.001161661526396074,
+        "p95": 0.0019690911472594053,
+        "p99": 0.00260615974036682
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 411,
+          "units": 19200,
+          "utilization": 0.96
+        },
+        {
+          "window": 412,
+          "units": 19600,
+          "utilization": 0.98
+        },
+        {
+          "window": 413,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 414,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 415,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 416,
+          "units": 19400,
+          "utilization": 0.97
+        },
+        {
+          "window": 417,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 418,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 419,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 420,
+          "units": 19200,
+          "utilization": 0.96
+        },
+        {
+          "window": 421,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 422,
+          "units": 19200,
+          "utilization": 0.96
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 184,
+        "consumed": 184,
+        "denied": 2041
+      },
+      "provider_http_refusals": 1573,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 29,
+          "observed_seconds": 13.90483674899997,
+          "cpu_seconds": 1.3525530000000003,
+          "cgroup_cpu_seconds": 1.352514,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1120332852.9849114,
+          "memory_peak_observed_bytes": 80932864,
+          "max_sample_gap_seconds": 0.5022480000000087
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 29,
+          "observed_seconds": 13.90496723700005,
+          "cpu_seconds": 0.6024309999999993,
+          "cgroup_cpu_seconds": 0.602432,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 390066488.63029593,
+          "memory_peak_observed_bytes": 28344320,
+          "max_sample_gap_seconds": 0.5018540340000186
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 29,
+          "observed_seconds": 13.90561942200003,
+          "cpu_seconds": 0.073322000000001,
+          "cgroup_cpu_seconds": 0.073117,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 496869522.60557723,
+          "memory_peak_observed_bytes": 35938304,
+          "max_sample_gap_seconds": 0.5012582869999846
+        }
+      ],
+      "whole_trace_useful": 184,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.001515787000017,
+        "vm_cpu_nonidle_fraction": 0.10045302343903884,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.494751,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.011023402173913047,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 10909069.914243395,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "provider-control-da57b0640b25e402",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 1,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 1784,
+      "emitted": 1784,
+      "worker_accepted": 0,
+      "provider_consumed": 1784,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 1784,
+      "useful_fraction": 1.0,
+      "offered_per_second": 178.4,
+      "emitted_per_second": 178.4,
+      "useful_cohort_per_second": 178.4,
+      "useful_window_per_second": 177.8,
+      "status_counts": {
+        "200": 1784
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1784,
+        "p50": 0.20193998542521285,
+        "p95": 0.24010241134254784,
+        "p99": 0.8064294874636744
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1784,
+        "p50": 0.20193998542521285,
+        "p95": 0.24010241134254784,
+        "p99": 0.8064294874636744
+      },
+      "useful_latency_seconds": {
+        "n": 1784,
+        "p50": 0.20193998542521285,
+        "p95": 0.24010241134254784,
+        "p99": 0.8064294874636744
+      },
+      "emission_lag_seconds": {
+        "n": 2346,
+        "p50": 0.0011364065426846537,
+        "p95": 0.0017943207284361051,
+        "p99": 0.0023829614247006248
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 330,
+          "units": 293400,
+          "utilization": 0.0002934
+        },
+        {
+          "window": 331,
+          "units": 314600,
+          "utilization": 0.0003146
+        },
+        {
+          "window": 332,
+          "units": 289200,
+          "utilization": 0.0002892
+        },
+        {
+          "window": 333,
+          "units": 247800,
+          "utilization": 0.0002478
+        },
+        {
+          "window": 334,
+          "units": 247400,
+          "utilization": 0.0002474
+        },
+        {
+          "window": 335,
+          "units": 310800,
+          "utilization": 0.0003108
+        },
+        {
+          "window": 336,
+          "units": 247400,
+          "utilization": 0.0002474
+        },
+        {
+          "window": 337,
+          "units": 266600,
+          "utilization": 0.0002666
+        },
+        {
+          "window": 338,
+          "units": 284800,
+          "utilization": 0.0002848
+        },
+        {
+          "window": 339,
+          "units": 303000,
+          "utilization": 0.000303
+        },
+        {
+          "window": 340,
+          "units": 299400,
+          "utilization": 0.0002994
+        },
+        {
+          "window": 341,
+          "units": 324200,
+          "utilization": 0.0003242
+        },
+        {
+          "window": 342,
+          "units": 150400,
+          "utilization": 0.0001504
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 2346,
+        "consumed": 2346
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 29,
+          "observed_seconds": 13.856904457999974,
+          "cpu_seconds": 1.4134810000000044,
+          "cgroup_cpu_seconds": 1.413481,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1116875718.2588701,
+          "memory_peak_observed_bytes": 81006592,
+          "max_sample_gap_seconds": 0.5028610599999865
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 29,
+          "observed_seconds": 13.857011401000022,
+          "cpu_seconds": 0.6818269999999984,
+          "cgroup_cpu_seconds": 0.681826,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 390322489.04721266,
+          "memory_peak_observed_bytes": 28508160,
+          "max_sample_gap_seconds": 0.5025832000000037
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 29,
+          "observed_seconds": 13.857278882999992,
+          "cpu_seconds": 0.07300499999999843,
+          "cgroup_cpu_seconds": 0.072808,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 494830971.50097996,
+          "memory_peak_observed_bytes": 35958784,
+          "max_sample_gap_seconds": 0.5021635260000039
+        }
+      ],
+      "whole_trace_useful": 2346,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.00159017599998,
+        "vm_cpu_nonidle_fraction": 0.10390378548895896,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.659584,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.0009242595907928394,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 853379.8716142637,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "provider-control-e3c7a9789a005bc2",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 1,
+      "node_cpus": 4,
+      "quota": 80000,
+      "valid": true,
+      "issues": [],
+      "offered": 1784,
+      "emitted": 1784,
+      "worker_accepted": 0,
+      "provider_consumed": 498,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 498,
+      "useful_fraction": 0.27914798206278024,
+      "offered_per_second": 178.4,
+      "emitted_per_second": 178.4,
+      "useful_cohort_per_second": 49.8,
+      "useful_window_per_second": 49.9,
+      "status_counts": {
+        "429": 1286,
+        "200": 498
+      },
+      "failure_reasons": {
+        "provider_quota": 1286
+      },
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1784,
+        "p50": 0.0015849580619828885,
+        "p95": 0.22730628464751135,
+        "p99": 0.24054029805921573
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1784,
+        "p50": 0.0015849580619828885,
+        "p95": 0.22730628464751135,
+        "p99": 0.24054029805921573
+      },
+      "useful_latency_seconds": {
+        "n": 498,
+        "p50": 0.20220533233123206,
+        "p95": 0.2398288323881843,
+        "p99": 0.8170608693441181
+      },
+      "emission_lag_seconds": {
+        "n": 2346,
+        "p50": 0.0011475811444370265,
+        "p95": 0.0019627842046361366,
+        "p99": 0.0025763526597870623
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 427,
+          "units": 80000,
+          "utilization": 1.0
+        },
+        {
+          "window": 428,
+          "units": 79800,
+          "utilization": 0.9975
+        },
+        {
+          "window": 429,
+          "units": 80000,
+          "utilization": 1.0
+        },
+        {
+          "window": 430,
+          "units": 79200,
+          "utilization": 0.99
+        },
+        {
+          "window": 431,
+          "units": 79400,
+          "utilization": 0.9925
+        },
+        {
+          "window": 432,
+          "units": 79400,
+          "utilization": 0.9925
+        },
+        {
+          "window": 433,
+          "units": 80000,
+          "utilization": 1.0
+        },
+        {
+          "window": 434,
+          "units": 80000,
+          "utilization": 1.0
+        },
+        {
+          "window": 435,
+          "units": 80000,
+          "utilization": 1.0
+        },
+        {
+          "window": 436,
+          "units": 79200,
+          "utilization": 0.99
+        },
+        {
+          "window": 437,
+          "units": 79200,
+          "utilization": 0.99
+        },
+        {
+          "window": 438,
+          "units": 79400,
+          "utilization": 0.9925
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 711,
+        "consumed": 711,
+        "denied": 1635
+      },
+      "provider_http_refusals": 1286,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 28,
+          "observed_seconds": 13.251309933000016,
+          "cpu_seconds": 1.413694999999997,
+          "cgroup_cpu_seconds": 1.413561,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1067158924.2695795,
+          "memory_peak_observed_bytes": 80904192,
+          "max_sample_gap_seconds": 0.5024424039999644
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 28,
+          "observed_seconds": 13.251593010000022,
+          "cpu_seconds": 0.6542910000000006,
+          "cgroup_cpu_seconds": 0.654291,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 372653840.65414613,
+          "memory_peak_observed_bytes": 28405760,
+          "max_sample_gap_seconds": 0.5020112619999963
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 28,
+          "observed_seconds": 13.252563685999974,
+          "cpu_seconds": 0.07295299999999827,
+          "cgroup_cpu_seconds": 0.072954,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 472792249.07000124,
+          "memory_peak_observed_bytes": 35938304,
+          "max_sample_gap_seconds": 0.5020539559999975
+        }
+      ],
+      "whole_trace_useful": 711,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.001468015,
+        "vm_cpu_nonidle_fraction": 0.10645415190869734,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.715706,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.0030111659634317806,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 2690021.1167281675,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "provider-control-e686facca0ed681d",
+      "block": "provider-control",
+      "replicas": 1,
+      "path": "direct-provider",
+      "profile": "unlimited",
+      "policy": "none",
+      "repetition": 1,
+      "node_cpus": 4,
+      "quota": 20000,
+      "valid": true,
+      "issues": [],
+      "offered": 1784,
+      "emitted": 1784,
+      "worker_accepted": 0,
+      "provider_consumed": 132,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 132,
+      "useful_fraction": 0.07399103139013453,
+      "offered_per_second": 178.4,
+      "emitted_per_second": 178.4,
+      "useful_cohort_per_second": 13.2,
+      "useful_window_per_second": 13.2,
+      "status_counts": {
+        "429": 1652,
+        "200": 132
+      },
+      "failure_reasons": {
+        "provider_quota": 1652
+      },
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 1784,
+        "p50": 0.0014295991144308573,
+        "p95": 0.1438122182281063,
+        "p99": 0.23119630932922064
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 1784,
+        "p50": 0.0014295991144308573,
+        "p95": 0.1438122182281063,
+        "p99": 0.23119630932922064
+      },
+      "useful_latency_seconds": {
+        "n": 132,
+        "p50": 0.1557205359331988,
+        "p95": 0.24106250117665695,
+        "p99": 0.8062459684637133
+      },
+      "emission_lag_seconds": {
+        "n": 2346,
+        "p50": 0.0011768859507697016,
+        "p95": 0.002078233054305656,
+        "p99": 0.0026564546346889983
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "admission": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "provider_http": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 395,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 396,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 397,
+          "units": 19200,
+          "utilization": 0.96
+        },
+        {
+          "window": 398,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 399,
+          "units": 19400,
+          "utilization": 0.97
+        },
+        {
+          "window": 400,
+          "units": 19200,
+          "utilization": 0.96
+        },
+        {
+          "window": 401,
+          "units": 19800,
+          "utilization": 0.99
+        },
+        {
+          "window": 402,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 403,
+          "units": 20000,
+          "utilization": 1.0
+        },
+        {
+          "window": 404,
+          "units": 19800,
+          "utilization": 0.99
+        },
+        {
+          "window": 405,
+          "units": 19400,
+          "utilization": 0.97
+        },
+        {
+          "window": 406,
+          "units": 19200,
+          "utilization": 0.96
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 182,
+        "consumed": 182,
+        "denied": 2164
+      },
+      "provider_http_refusals": 1652,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "d5a5de19-066a-419f-a510-230682a2e5d6",
+          "samples": 28,
+          "observed_seconds": 13.251460502000043,
+          "cpu_seconds": 1.4586929999999967,
+          "cgroup_cpu_seconds": 1.458692,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 1067394700.1922697,
+          "memory_peak_observed_bytes": 80793600,
+          "max_sample_gap_seconds": 0.5032206610000003
+        },
+        {
+          "role": "provider",
+          "uid": "33d35cc5-1063-475e-a004-edc592f20e04",
+          "samples": 28,
+          "observed_seconds": 13.251551170000027,
+          "cpu_seconds": 0.648339,
+          "cgroup_cpu_seconds": 0.64834,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 371886815.02277094,
+          "memory_peak_observed_bytes": 28368896,
+          "max_sample_gap_seconds": 0.5026947970000037
+        },
+        {
+          "role": "worker",
+          "uid": "9be094a0-0a96-4d69-a19f-ccb2512a4ce9",
+          "samples": 28,
+          "observed_seconds": 13.252037463000022,
+          "cpu_seconds": 0.07963399999999865,
+          "cgroup_cpu_seconds": 0.079304,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 472844302.95426947,
+          "memory_peak_observed_bytes": 35934208,
+          "max_sample_gap_seconds": 0.5020014899999978
+        }
+      ],
+      "whole_trace_useful": 182,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": true,
+        "observed_seconds": 13.001560568000002,
+        "vm_cpu_nonidle_fraction": 0.10905511811023627,
+        "vm_steal_fraction": 0.0,
+        "node_cpu_seconds": 3.820126,
+        "node_throttled_seconds": 0.0,
+        "scope": "VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause."
+      },
+      "native_resources": {
+        "available": false
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.012014648351648326,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 10506185.814117089,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    }
+  ],
+  "conditions": [
+    {
+      "condition": {
+        "block": "provider-control",
+        "path": "direct-provider",
+        "profile": "unlimited",
+        "policy": "none",
+        "replicas": 1,
+        "node_cpus": 4,
+        "quota": 20000
+      },
+      "useful_cohort_per_second": {
+        "values": [
+          12.9,
+          13.2,
+          13.4
+        ],
+        "n": 3,
+        "mean": 13.166666666666666,
+        "sd": 0.25166114784235827,
+        "descriptive_95pct_t_interval": [
+          12.541505718705578,
+          13.791827614627755
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      },
+      "useful_fraction": {
+        "values": [
+          0.07214765100671142,
+          0.07399103139013453,
+          0.07850029291154072
+        ],
+        "n": 3,
+        "mean": 0.07487965843612888,
+        "sd": 0.0032682194407510036,
+        "descriptive_95pct_t_interval": [
+          0.06676095127277842,
+          0.08299836559947935
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      }
+    },
+    {
+      "condition": {
+        "block": "provider-control",
+        "path": "direct-provider",
+        "profile": "unlimited",
+        "policy": "none",
+        "replicas": 1,
+        "node_cpus": 4,
+        "quota": 40000
+      },
+      "useful_cohort_per_second": {
+        "values": [
+          25.7,
+          25.2,
+          26.3
+        ],
+        "n": 3,
+        "mean": 25.733333333333334,
+        "sd": 0.5507570547286109,
+        "descriptive_95pct_t_interval": [
+          24.365176963617998,
+          27.10148970304867
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      },
+      "useful_fraction": {
+        "values": [
+          0.14373601789709173,
+          0.1412556053811659,
+          0.1540714704159344
+        ],
+        "n": 3,
+        "mean": 0.14635436456473067,
+        "sd": 0.006797308555693369,
+        "descriptive_95pct_t_interval": [
+          0.12946891404249458,
+          0.16323981508696675
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      }
+    },
+    {
+      "condition": {
+        "block": "provider-control",
+        "path": "direct-provider",
+        "profile": "unlimited",
+        "policy": "none",
+        "replicas": 1,
+        "node_cpus": 4,
+        "quota": 80000
+      },
+      "useful_cohort_per_second": {
+        "values": [
+          50.3,
+          49.8,
+          49.3
+        ],
+        "n": 3,
+        "mean": 49.8,
+        "sd": 0.5,
+        "descriptive_95pct_t_interval": [
+          48.55793114407812,
+          51.042068855921876
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      },
+      "useful_fraction": {
+        "values": [
+          0.28131991051454136,
+          0.27914798206278024,
+          0.2888107791446983
+        ],
+        "n": 3,
+        "mean": 0.28309289057400666,
+        "sd": 0.005069517292605608,
+        "descriptive_95pct_t_interval": [
+          0.270499511486601,
+          0.2956862696614123
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      }
+    },
+    {
+      "condition": {
+        "block": "provider-control",
+        "path": "direct-provider",
+        "profile": "unlimited",
+        "policy": "none",
+        "replicas": 1,
+        "node_cpus": 4,
+        "quota": 1000000000
+      },
+      "useful_cohort_per_second": {
+        "values": [
+          178.8,
+          178.4,
+          170.7
+        ],
+        "n": 3,
+        "mean": 175.96666666666667,
+        "sd": 4.5654499595695315,
+        "descriptive_95pct_t_interval": [
+          164.62546025056446,
+          187.30787308276888
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      },
+      "useful_fraction": {
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "descriptive_95pct_t_interval": [
+          1.0,
+          1.0
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      }
+    }
+  ],
+  "rule": "All raw trials remain described; no passing subset from an invalid block is used for causal interpretation."
+}

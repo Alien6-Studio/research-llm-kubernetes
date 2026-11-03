@@ -1,0 +1,39 @@
+{
+  "utc": "2026-11-12T18:22:36.266682+00:00",
+  "seed": 20261112,
+  "source_commit": "f36e6f654b5407bb2013b4eb5e0046eb5036eb47",
+  "service_sha256": "8ea2e320144bff55597ab1b6b01ccdbe3a063725d5dee9df7070f7483802914b",
+  "kubernetes": {
+    "clientVersion": {
+      "major": "1",
+      "minor": "34",
+      "gitVersion": "v1.34.1",
+      "gitCommit": "93248f9ae092f571eb870b7664c534bfc7d00f03",
+      "gitTreeState": "clean",
+      "buildDate": "2025-09-09T19:44:50Z",
+      "goVersion": "go1.24.6",
+      "compiler": "gc",
+      "platform": "darwin/arm64"
+    },
+    "kustomizeVersion": "v5.7.1",
+    "serverVersion": {
+      "major": "1",
+      "minor": "36",
+      "emulationMajor": "1",
+      "emulationMinor": "36",
+      "minCompatibilityMajor": "1",
+      "minCompatibilityMinor": "35",
+      "gitVersion": "v1.36.1",
+      "gitCommit": "756939600b9a7180fc2df6550a4585b638875e67",
+      "gitTreeState": "clean",
+      "buildDate": "2026-05-12T09:51:34Z",
+      "goVersion": "go1.26.2",
+      "compiler": "gc",
+      "platform": "linux/arm64"
+    }
+  },
+  "image": "alien6-research-capacity:study-v1",
+  "stage": "smoke",
+  "driver_sha256": "03a12c94bfeecacd782e6d518646e82457b9adda568b55dfb19121cd6966b720",
+  "image_id": "sha256:b8743c7f65382a1c2cce47a550bcc86894fee0b82a0a86cac67e305425f7b32f"
+}

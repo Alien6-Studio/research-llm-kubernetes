@@ -1,0 +1,23 @@
+{
+  "files": 290,
+  "trials": 261,
+  "model_predictions": 3752,
+  "blocks": {
+    "archives/v2-independent-calibration-4/manifest.json": 12,
+    "archives/v2-independent-calibration-8/manifest.json": 12,
+    "archives/v2-independent-cpu-sensitivity/manifest.json": 48,
+    "archives/v2-linux-calibration-4/manifest.json": 12,
+    "archives/v2-linux-primary/manifest.json": 72,
+    "archives/v2-linux-provider-control/manifest.json": 12,
+    "archives/v2-linux-quota-sensitivity/manifest.json": 12,
+    "archives/v2-local-calibration-4/manifest.json": 12,
+    "archives/v2-local-calibration-8/manifest.json": 12,
+    "archives/v2-local-model-qualification/manifest.json": 12,
+    "archives/v2-local-real-model/manifest.json": 45,
+    "archives/v2-model-control-interruption/manifest.json": 0,
+    "archives/v2-model-pilot/manifest.json": 0,
+    "archives/v2-remote-compressed-network/manifest.json": 0,
+    "archives/v2-remote-fixture-network/manifest.json": 0,
+    "archives/v2-remote-network/manifest.json": 0
+  }
+}

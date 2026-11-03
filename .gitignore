@@ -1,0 +1,10 @@
+.venv/
+data/
+__pycache__/
+*.pyc
+.kubeconfig*
+*.log
+.venv
+.DS_Store
+
+/runs/v2-*/

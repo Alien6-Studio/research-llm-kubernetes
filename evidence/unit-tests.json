@@ -1,0 +1,20 @@
+{
+  "utc": "2026-11-12T18:19:14.127083+00:00",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_admission_does_not_double_debit_the_provider (test_study.QuotaTests.test_admission_does_not_double_debit_the_provider) ... ok\ntest_concurrent_requests_cannot_overdraw_quota (test_study.QuotaTests.test_concurrent_requests_cannot_overdraw_quota) ... ok\ntest_http_responses_record_real_quota_rejections (test_study.QuotaTests.test_http_responses_record_real_quota_rejections) ... ok\ntest_request_limit_is_independent_of_token_limit (test_study.QuotaTests.test_request_limit_is_independent_of_token_limit) ... ok\ntest_token_reservations_share_a_global_window (test_study.QuotaTests.test_token_reservations_share_a_global_window) ... ok\ntest_load_is_identical_across_replica_and_policy_arms (test_study.TraceTests.test_load_is_identical_across_replica_and_policy_arms) ... ok\ntest_repetitions_use_distinct_seeded_traces (test_study.TraceTests.test_repetitions_use_distinct_seeded_traces) ... ok\ntest_scheduled_arrivals_are_ordered_and_within_interval (test_study.TraceTests.test_scheduled_arrivals_are_ordered_and_within_interval) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.530s\n\nOK\n",
+  "source_sha256": {
+    "service.py": "8ea2e320144bff55597ab1b6b01ccdbe3a063725d5dee9df7070f7483802914b",
+    "run.py": "c1b4688a93b4008491216992341b55f24e47bd50527a5b51cdc926d1cf813b4a",
+    "test_study.py": "54177f5a08229e2f8ac90ef965ea704078cd993c68c1fecce93d4bc589945c75"
+  }
+}

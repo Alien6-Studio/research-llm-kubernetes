@@ -1,0 +1,4061 @@
+{
+  "seed": 20261113,
+  "original_trace_seed": 20261112,
+  "blocks": {
+    "calibration-4": [
+      {
+        "block": "calibration-4",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-0-13-emulator-180.json.gz",
+          "sha256": "ee4ed6dabecc0a8cb906d608b47c8a13864e7ae1b8605f83d506e820372525da"
+        },
+        "trace_decoded_sha256": "eb0ea48676c1ef429245719ef7671e56c6e820e67f4a8506aca4f4a784799543",
+        "trial_id": "calibration-4-e4ad8b9927b39294"
+      },
+      {
+        "block": "calibration-4",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-0-13-emulator-360.json.gz",
+          "sha256": "d97cdf95e2bfdef2ab1f084b39a977a0d4101588fb508266f65d6ed7f0d8ab02"
+        },
+        "trace_decoded_sha256": "f4eeb55bbdb8b0cd6880060fed979fd591ecb39ebc25e49259e3c7ff12312637",
+        "trial_id": "calibration-4-f67910fffa81f27c"
+      },
+      {
+        "block": "calibration-4",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-2-13-emulator-180.json.gz",
+          "sha256": "8bf0676f5543a5b717b6fc00ed1d540806ae0ad9bdd718b89f4bd6f87f133dd6"
+        },
+        "trace_decoded_sha256": "5606711f94995f09bceaaefb4bde433c625c98c3ea02e1b735e395059d758f0a",
+        "trial_id": "calibration-4-729968689ec69c96"
+      },
+      {
+        "block": "calibration-4",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-1-13-emulator-180.json.gz",
+          "sha256": "75dd53cd083efdf65f148c057b7f6ddc4c345713e131b962276a2dc49a9669d0"
+        },
+        "trace_decoded_sha256": "ed71f3acf72afbf48be1f0508b0ad0dd2aba7d1719e66c813d63adbe8dc83efa",
+        "trial_id": "calibration-4-a9cd2d503e38273d"
+      },
+      {
+        "block": "calibration-4",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-1-13-emulator-360.json.gz",
+          "sha256": "2894dbe95345abddf18a14b17df470ab70e887eb11e0d0f3deb686ae383e4d25"
+        },
+        "trace_decoded_sha256": "80508b4423f4aad9f9c7a024c712bf6702a9cd13f6286478fa8bffad77aadc77",
+        "trial_id": "calibration-4-41283e3a00becba6"
+      },
+      {
+        "block": "calibration-4",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-1-13-emulator-180.json.gz",
+          "sha256": "75dd53cd083efdf65f148c057b7f6ddc4c345713e131b962276a2dc49a9669d0"
+        },
+        "trace_decoded_sha256": "ed71f3acf72afbf48be1f0508b0ad0dd2aba7d1719e66c813d63adbe8dc83efa",
+        "trial_id": "calibration-4-363b6b01634f7944"
+      },
+      {
+        "block": "calibration-4",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-0-13-emulator-360.json.gz",
+          "sha256": "d97cdf95e2bfdef2ab1f084b39a977a0d4101588fb508266f65d6ed7f0d8ab02"
+        },
+        "trace_decoded_sha256": "f4eeb55bbdb8b0cd6880060fed979fd591ecb39ebc25e49259e3c7ff12312637",
+        "trial_id": "calibration-4-750faa583fe2f6e9"
+      },
+      {
+        "block": "calibration-4",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-1-13-emulator-360.json.gz",
+          "sha256": "2894dbe95345abddf18a14b17df470ab70e887eb11e0d0f3deb686ae383e4d25"
+        },
+        "trace_decoded_sha256": "80508b4423f4aad9f9c7a024c712bf6702a9cd13f6286478fa8bffad77aadc77",
+        "trial_id": "calibration-4-53419f6f4297bf41"
+      },
+      {
+        "block": "calibration-4",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-2-13-emulator-360.json.gz",
+          "sha256": "4a856d77b05a915ce1604d8dd8fc74a845fed1693e1317d8901f12f6e9833b41"
+        },
+        "trace_decoded_sha256": "e302b47552e56a64d1707eecc6d26e83abb01006ae1e29ec157329a2c29c1277",
+        "trial_id": "calibration-4-8569a3156962059e"
+      },
+      {
+        "block": "calibration-4",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-2-13-emulator-360.json.gz",
+          "sha256": "4a856d77b05a915ce1604d8dd8fc74a845fed1693e1317d8901f12f6e9833b41"
+        },
+        "trace_decoded_sha256": "e302b47552e56a64d1707eecc6d26e83abb01006ae1e29ec157329a2c29c1277",
+        "trial_id": "calibration-4-188ec0be222d3284"
+      },
+      {
+        "block": "calibration-4",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-0-13-emulator-180.json.gz",
+          "sha256": "ee4ed6dabecc0a8cb906d608b47c8a13864e7ae1b8605f83d506e820372525da"
+        },
+        "trace_decoded_sha256": "eb0ea48676c1ef429245719ef7671e56c6e820e67f4a8506aca4f4a784799543",
+        "trial_id": "calibration-4-de9d570dfe57b09b"
+      },
+      {
+        "block": "calibration-4",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-2-13-emulator-180.json.gz",
+          "sha256": "8bf0676f5543a5b717b6fc00ed1d540806ae0ad9bdd718b89f4bd6f87f133dd6"
+        },
+        "trace_decoded_sha256": "5606711f94995f09bceaaefb4bde433c625c98c3ea02e1b735e395059d758f0a",
+        "trial_id": "calibration-4-742839bf3c4faa1e"
+      }
+    ],
+    "calibration-8": [
+      {
+        "block": "calibration-8",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-1-13-emulator-180.json.gz",
+          "sha256": "75dd53cd083efdf65f148c057b7f6ddc4c345713e131b962276a2dc49a9669d0"
+        },
+        "trace_decoded_sha256": "ed71f3acf72afbf48be1f0508b0ad0dd2aba7d1719e66c813d63adbe8dc83efa",
+        "trial_id": "calibration-8-06789d1393a91909"
+      },
+      {
+        "block": "calibration-8",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-0-13-emulator-360.json.gz",
+          "sha256": "d97cdf95e2bfdef2ab1f084b39a977a0d4101588fb508266f65d6ed7f0d8ab02"
+        },
+        "trace_decoded_sha256": "f4eeb55bbdb8b0cd6880060fed979fd591ecb39ebc25e49259e3c7ff12312637",
+        "trial_id": "calibration-8-5f617737321b40e3"
+      },
+      {
+        "block": "calibration-8",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-2-13-emulator-360.json.gz",
+          "sha256": "4a856d77b05a915ce1604d8dd8fc74a845fed1693e1317d8901f12f6e9833b41"
+        },
+        "trace_decoded_sha256": "e302b47552e56a64d1707eecc6d26e83abb01006ae1e29ec157329a2c29c1277",
+        "trial_id": "calibration-8-7a1acd6049f00e95"
+      },
+      {
+        "block": "calibration-8",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-2-13-emulator-360.json.gz",
+          "sha256": "4a856d77b05a915ce1604d8dd8fc74a845fed1693e1317d8901f12f6e9833b41"
+        },
+        "trace_decoded_sha256": "e302b47552e56a64d1707eecc6d26e83abb01006ae1e29ec157329a2c29c1277",
+        "trial_id": "calibration-8-6f1880115bec8ba3"
+      },
+      {
+        "block": "calibration-8",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-0-13-emulator-360.json.gz",
+          "sha256": "d97cdf95e2bfdef2ab1f084b39a977a0d4101588fb508266f65d6ed7f0d8ab02"
+        },
+        "trace_decoded_sha256": "f4eeb55bbdb8b0cd6880060fed979fd591ecb39ebc25e49259e3c7ff12312637",
+        "trial_id": "calibration-8-200ccfbeafeba005"
+      },
+      {
+        "block": "calibration-8",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-2-13-emulator-180.json.gz",
+          "sha256": "8bf0676f5543a5b717b6fc00ed1d540806ae0ad9bdd718b89f4bd6f87f133dd6"
+        },
+        "trace_decoded_sha256": "5606711f94995f09bceaaefb4bde433c625c98c3ea02e1b735e395059d758f0a",
+        "trial_id": "calibration-8-e6c6917f6593a307"
+      },
+      {
+        "block": "calibration-8",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-1-13-emulator-360.json.gz",
+          "sha256": "2894dbe95345abddf18a14b17df470ab70e887eb11e0d0f3deb686ae383e4d25"
+        },
+        "trace_decoded_sha256": "80508b4423f4aad9f9c7a024c712bf6702a9cd13f6286478fa8bffad77aadc77",
+        "trial_id": "calibration-8-d4d47a7290249dd1"
+      },
+      {
+        "block": "calibration-8",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-360-1-13-emulator-360.json.gz",
+          "sha256": "2894dbe95345abddf18a14b17df470ab70e887eb11e0d0f3deb686ae383e4d25"
+        },
+        "trace_decoded_sha256": "80508b4423f4aad9f9c7a024c712bf6702a9cd13f6286478fa8bffad77aadc77",
+        "trial_id": "calibration-8-49f6ef587a21048a"
+      },
+      {
+        "block": "calibration-8",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-1-13-emulator-180.json.gz",
+          "sha256": "75dd53cd083efdf65f148c057b7f6ddc4c345713e131b962276a2dc49a9669d0"
+        },
+        "trace_decoded_sha256": "ed71f3acf72afbf48be1f0508b0ad0dd2aba7d1719e66c813d63adbe8dc83efa",
+        "trial_id": "calibration-8-f657c2233a7926b6"
+      },
+      {
+        "block": "calibration-8",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-2-13-emulator-180.json.gz",
+          "sha256": "8bf0676f5543a5b717b6fc00ed1d540806ae0ad9bdd718b89f4bd6f87f133dd6"
+        },
+        "trace_decoded_sha256": "5606711f94995f09bceaaefb4bde433c625c98c3ea02e1b735e395059d758f0a",
+        "trial_id": "calibration-8-c2b90db34c3e3cbe"
+      },
+      {
+        "block": "calibration-8",
+        "replicas": 1,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-0-13-emulator-180.json.gz",
+          "sha256": "ee4ed6dabecc0a8cb906d608b47c8a13864e7ae1b8605f83d506e820372525da"
+        },
+        "trace_decoded_sha256": "eb0ea48676c1ef429245719ef7671e56c6e820e67f4a8506aca4f4a784799543",
+        "trial_id": "calibration-8-10238fd791405908"
+      },
+      {
+        "block": "calibration-8",
+        "replicas": 8,
+        "profile": "fastpath",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": true,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-fastpath-180-0-13-emulator-180.json.gz",
+          "sha256": "ee4ed6dabecc0a8cb906d608b47c8a13864e7ae1b8605f83d506e820372525da"
+        },
+        "trace_decoded_sha256": "eb0ea48676c1ef429245719ef7671e56c6e820e67f4a8506aca4f4a784799543",
+        "trial_id": "calibration-8-7debd800de8b2fdb"
+      }
+    ],
+    "primary": [
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-022e27b7a1d7c177"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-8ae11f15fe520ade"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-bfde71fe895e6699"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-6ff0475d02454d29"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-5e0bec093bdd1cea"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-203407431c0e2dd6"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-2-13-emulator-None.json.gz",
+          "sha256": "0b97b384afb7701ea3a26f8a1c149d6fcee214acd73f37a285d347a343a15763"
+        },
+        "trace_decoded_sha256": "224f900ba2b32d0ae689c40e27ad199ea5bdcaaa9208416d762670a084a31c0f",
+        "trial_id": "primary-27d5ddddd22d12fc"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-31ccf522bc04eab5"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-2-13-emulator-None.json.gz",
+          "sha256": "0b97b384afb7701ea3a26f8a1c149d6fcee214acd73f37a285d347a343a15763"
+        },
+        "trace_decoded_sha256": "224f900ba2b32d0ae689c40e27ad199ea5bdcaaa9208416d762670a084a31c0f",
+        "trial_id": "primary-9468f3b1e733e393"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-7b86df09ab637b2e"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-1-13-emulator-None.json.gz",
+          "sha256": "62a8d2b1993b76324f7f0fd8e2abcb5d6d8500bfbf97e9b92bcdd0b3449a5b78"
+        },
+        "trace_decoded_sha256": "5237dc12e1df622193a5747598edb447e0fb6503a8c48414d327f799ef9dec8c",
+        "trial_id": "primary-5e67d39b48d6c9be"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-017288bc3e4bee69"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-c3289a7326194e4b"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-deaf2ec18e697b03"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-0184a3a7478b6fc9"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-7b0bba57c5f35a15"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-2-13-emulator-None.json.gz",
+          "sha256": "0b97b384afb7701ea3a26f8a1c149d6fcee214acd73f37a285d347a343a15763"
+        },
+        "trace_decoded_sha256": "224f900ba2b32d0ae689c40e27ad199ea5bdcaaa9208416d762670a084a31c0f",
+        "trial_id": "primary-298e89d33cb8d5dc"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-1-13-emulator-None.json.gz",
+          "sha256": "62a8d2b1993b76324f7f0fd8e2abcb5d6d8500bfbf97e9b92bcdd0b3449a5b78"
+        },
+        "trace_decoded_sha256": "5237dc12e1df622193a5747598edb447e0fb6503a8c48414d327f799ef9dec8c",
+        "trial_id": "primary-dba3b0bd55f419d6"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-bb441457119e7a34"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-1-13-emulator-None.json.gz",
+          "sha256": "62a8d2b1993b76324f7f0fd8e2abcb5d6d8500bfbf97e9b92bcdd0b3449a5b78"
+        },
+        "trace_decoded_sha256": "5237dc12e1df622193a5747598edb447e0fb6503a8c48414d327f799ef9dec8c",
+        "trial_id": "primary-3a5fb4fd1855b262"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-1-13-emulator-None.json.gz",
+          "sha256": "62a8d2b1993b76324f7f0fd8e2abcb5d6d8500bfbf97e9b92bcdd0b3449a5b78"
+        },
+        "trace_decoded_sha256": "5237dc12e1df622193a5747598edb447e0fb6503a8c48414d327f799ef9dec8c",
+        "trial_id": "primary-f83bddb8b205ce70"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-08892cbd6bad43cd"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-6a45dc3f8675bf97"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-2-13-emulator-None.json.gz",
+          "sha256": "0b97b384afb7701ea3a26f8a1c149d6fcee214acd73f37a285d347a343a15763"
+        },
+        "trace_decoded_sha256": "224f900ba2b32d0ae689c40e27ad199ea5bdcaaa9208416d762670a084a31c0f",
+        "trial_id": "primary-ed7a6e60e59fd1d4"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-0-13-emulator-None.json.gz",
+          "sha256": "d9bc6278e639b61c39d5ace4242c8febc1e7fdacc345a7a7de232a322cab0f17"
+        },
+        "trace_decoded_sha256": "635c9555d591998fdf7597e643883c3e61c0a2e85470ac267985beec5a604b3d",
+        "trial_id": "primary-0670a8e7384a7a11"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-03a3fededd99890d"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-1-13-emulator-None.json.gz",
+          "sha256": "62a8d2b1993b76324f7f0fd8e2abcb5d6d8500bfbf97e9b92bcdd0b3449a5b78"
+        },
+        "trace_decoded_sha256": "5237dc12e1df622193a5747598edb447e0fb6503a8c48414d327f799ef9dec8c",
+        "trial_id": "primary-a8347a3d021c81c2"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-c06bd15893483953"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-e4dfda42d9f87d31"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-0-13-emulator-None.json.gz",
+          "sha256": "d9bc6278e639b61c39d5ace4242c8febc1e7fdacc345a7a7de232a322cab0f17"
+        },
+        "trace_decoded_sha256": "635c9555d591998fdf7597e643883c3e61c0a2e85470ac267985beec5a604b3d",
+        "trial_id": "primary-ca033eb5d9131887"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-c3283a3520a2c319"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-759b047f7286be08"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-240f1e80377de170"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-e0bf1ca637bcf88b"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-bbf8c4e010275480"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-545c844301a9805f"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-2-13-emulator-None.json.gz",
+          "sha256": "0b97b384afb7701ea3a26f8a1c149d6fcee214acd73f37a285d347a343a15763"
+        },
+        "trace_decoded_sha256": "224f900ba2b32d0ae689c40e27ad199ea5bdcaaa9208416d762670a084a31c0f",
+        "trial_id": "primary-e341d0f3679b9002"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-c2e23b80503e51b3"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-2-13-emulator-None.json.gz",
+          "sha256": "0b97b384afb7701ea3a26f8a1c149d6fcee214acd73f37a285d347a343a15763"
+        },
+        "trace_decoded_sha256": "224f900ba2b32d0ae689c40e27ad199ea5bdcaaa9208416d762670a084a31c0f",
+        "trial_id": "primary-ef4198beb5f2b291"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-d27ccb94aa4381e4"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-1-13-emulator-None.json.gz",
+          "sha256": "62a8d2b1993b76324f7f0fd8e2abcb5d6d8500bfbf97e9b92bcdd0b3449a5b78"
+        },
+        "trace_decoded_sha256": "5237dc12e1df622193a5747598edb447e0fb6503a8c48414d327f799ef9dec8c",
+        "trial_id": "primary-38fe9325789d8516"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-ef8e35461bb1f2f6"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-380092a47ee9f720"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-b9a16774bdf31dc5"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-c4a697a4c0da645e"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-71d0d8dd34a2e7fa"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-f7e03cf8e734817f"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-0-13-emulator-None.json.gz",
+          "sha256": "d9bc6278e639b61c39d5ace4242c8febc1e7fdacc345a7a7de232a322cab0f17"
+        },
+        "trace_decoded_sha256": "635c9555d591998fdf7597e643883c3e61c0a2e85470ac267985beec5a604b3d",
+        "trial_id": "primary-04ee7557909524e9"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-68983a33191a0790"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-1-13-emulator-None.json.gz",
+          "sha256": "62a8d2b1993b76324f7f0fd8e2abcb5d6d8500bfbf97e9b92bcdd0b3449a5b78"
+        },
+        "trace_decoded_sha256": "5237dc12e1df622193a5747598edb447e0fb6503a8c48414d327f799ef9dec8c",
+        "trial_id": "primary-890ec60ec3177488"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-0-13-emulator-None.json.gz",
+          "sha256": "d9bc6278e639b61c39d5ace4242c8febc1e7fdacc345a7a7de232a322cab0f17"
+        },
+        "trace_decoded_sha256": "635c9555d591998fdf7597e643883c3e61c0a2e85470ac267985beec5a604b3d",
+        "trial_id": "primary-9d25a67202e673c9"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-a8cd65769fffe9cb"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-e1dada64531b0336"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-1-13-emulator-None.json.gz",
+          "sha256": "62a8d2b1993b76324f7f0fd8e2abcb5d6d8500bfbf97e9b92bcdd0b3449a5b78"
+        },
+        "trace_decoded_sha256": "5237dc12e1df622193a5747598edb447e0fb6503a8c48414d327f799ef9dec8c",
+        "trial_id": "primary-a851cc637d754e8b"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-0-13-emulator-None.json.gz",
+          "sha256": "d9bc6278e639b61c39d5ace4242c8febc1e7fdacc345a7a7de232a322cab0f17"
+        },
+        "trace_decoded_sha256": "635c9555d591998fdf7597e643883c3e61c0a2e85470ac267985beec5a604b3d",
+        "trial_id": "primary-5f6775461ff408b9"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-0-13-emulator-None.json.gz",
+          "sha256": "d9bc6278e639b61c39d5ace4242c8febc1e7fdacc345a7a7de232a322cab0f17"
+        },
+        "trace_decoded_sha256": "635c9555d591998fdf7597e643883c3e61c0a2e85470ac267985beec5a604b3d",
+        "trial_id": "primary-30e1eedeb7c55332"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-f0e2ff493c91ef9e"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-8205ec0f76bb2324"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-6f5d44225b45d503"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-68380c2a4b48c5f3"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-3a0b86cbadeb3f54"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-2d3815095cca24e2"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-0-13-emulator-None.json.gz",
+          "sha256": "d9bc6278e639b61c39d5ace4242c8febc1e7fdacc345a7a7de232a322cab0f17"
+        },
+        "trace_decoded_sha256": "635c9555d591998fdf7597e643883c3e61c0a2e85470ac267985beec5a604b3d",
+        "trial_id": "primary-0e2f7d577a2f69e2"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-2-13-emulator-None.json.gz",
+          "sha256": "0b97b384afb7701ea3a26f8a1c149d6fcee214acd73f37a285d347a343a15763"
+        },
+        "trace_decoded_sha256": "224f900ba2b32d0ae689c40e27ad199ea5bdcaaa9208416d762670a084a31c0f",
+        "trial_id": "primary-f0b60cdee0ad42d6"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-fec9177f3929e511"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-9e1ef1fc95db6469"
+      },
+      {
+        "block": "primary",
+        "replicas": 4,
+        "profile": "bursty",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-2-13-emulator-None.json.gz",
+          "sha256": "0b97b384afb7701ea3a26f8a1c149d6fcee214acd73f37a285d347a343a15763"
+        },
+        "trace_decoded_sha256": "224f900ba2b32d0ae689c40e27ad199ea5bdcaaa9208416d762670a084a31c0f",
+        "trial_id": "primary-bebcacae675b487d"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "primary-05392ec06aa0ff33"
+      },
+      {
+        "block": "primary",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "primary-dce7e9e6a37db009"
+      },
+      {
+        "block": "primary",
+        "replicas": 2,
+        "profile": "bursty",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-bursty-0-13-emulator-None.json.gz",
+          "sha256": "d9bc6278e639b61c39d5ace4242c8febc1e7fdacc345a7a7de232a322cab0f17"
+        },
+        "trace_decoded_sha256": "635c9555d591998fdf7597e643883c3e61c0a2e85470ac267985beec5a604b3d",
+        "trial_id": "primary-a493665aff5c1613"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-e23dfabc628046d0"
+      },
+      {
+        "block": "primary",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "primary-93e37d28a3b68179"
+      }
+    ],
+    "cpu-sensitivity": [
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-7f02db6f57377f71"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-eba7027d662c0984"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-1f746d9b3c6d0ef2"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-6c6502d5ccd10e2f"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-c38901552e1f3a56"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-932253e1b2042976"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-80977f9e565a8f4a"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-18b87d27073aa114"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-eb339f251900f59b"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-4876b1e29ad84793"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-a1167d668b2fdf61"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-be604e81dded86dd"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-1753aba9109b00a2"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-10af817549c23111"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-b84c04f320e9009e"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-dd283e64aaaf51b4"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-4e51d79e00cfa24e"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-51b5c10decb0c9f9"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-8796000699bc5a45"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-c0a4854b385c12de"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-3513f610a1743dc0"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-9cbabb415da703d7"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-08f6ee3d4a9a93a1"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-e08e1de27aa961db"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-d7bcd1d73c8d06df"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-7d4e7a7b524e6b0f"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-6bac26f10ffaee27"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-940076894b53a5ac"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-f9af9d551f25ece3"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-ed050e16da523f71"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-726594f1c2806288"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-ea67e5f9492cd96d"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-899515a234c77f08"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-194cb0cb51d80fb1"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-8221d4a7661504bb"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-2bc2fc04b8fb7679"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-77e489844331a6f5"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-ce3dc789230f366a"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-d611e7d19fb019d9"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-1d44959f263f56c8"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-9e31e4ce28a9f8d5"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-705c3e929d788171"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-e164310fdb68674a"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "cpu-sensitivity-e04d6a7c88fa111c"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-6f81874be48de55e"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "cpu-sensitivity-9b881ae00259acc8"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-3322c2c1d463bfc7"
+      },
+      {
+        "block": "cpu-sensitivity",
+        "replicas": 8,
+        "profile": "unlimited",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 8,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "cpu-sensitivity-0a1a38b418106082"
+      }
+    ],
+    "quota-sensitivity": [
+      {
+        "block": "quota-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 20000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "quota-sensitivity-8191c818cfe9046d"
+      },
+      {
+        "block": "quota-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 80000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "quota-sensitivity-b89eafbae03e83a2"
+      },
+      {
+        "block": "quota-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 80000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "quota-sensitivity-c2b0f88463db4a2a"
+      },
+      {
+        "block": "quota-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 80000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "quota-sensitivity-1566dccaa8e8aa71"
+      },
+      {
+        "block": "quota-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 80000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "quota-sensitivity-7e161a45295cf11f"
+      },
+      {
+        "block": "quota-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 20000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "quota-sensitivity-a48fa7c0880afffc"
+      },
+      {
+        "block": "quota-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 20000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "quota-sensitivity-9deefab4152858d7"
+      },
+      {
+        "block": "quota-sensitivity",
+        "replicas": 1,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 80000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "quota-sensitivity-ca8336858e3f0aaa"
+      },
+      {
+        "block": "quota-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 20000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "quota-sensitivity-cdd32a70e9d16886"
+      },
+      {
+        "block": "quota-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 20000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "quota-sensitivity-57abbf07a33052a3"
+      },
+      {
+        "block": "quota-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 20000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "quota-sensitivity-a8d2b003f954f326"
+      },
+      {
+        "block": "quota-sensitivity",
+        "replicas": 8,
+        "profile": "quota",
+        "policy": "global",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 80000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": false,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "quota-sensitivity-54377de1d283b67e"
+      }
+    ],
+    "provider-control": [
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "provider-control-8f1d926963f3b380"
+      },
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 80000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "provider-control-a7d7264c65dec5b1"
+      },
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "provider-control-da57b0640b25e402"
+      },
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "provider-control-63f9b3f5d8b8f085"
+      },
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "provider-control-66fa09f1a11c350b"
+      },
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "provider-control-08bc431e1548bc40"
+      },
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 20000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "provider-control-e686facca0ed681d"
+      },
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 20000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "provider-control-cab7bde306e2da39"
+      },
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 80000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+          "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+        },
+        "trace_decoded_sha256": "4dcc8391f829501018503db6b9bc37d4c4af956ebe500d48b5e5646de17b1caa",
+        "trial_id": "provider-control-e3c7a9789a005bc2"
+      },
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 40000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "provider-control-214d0eb41aa51dc1"
+      },
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 80000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+          "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+        },
+        "trace_decoded_sha256": "dc785e2cc2504e29bbe5d11167506d5f90a4bcef5cc022988d2ae86ecac39aa3",
+        "trial_id": "provider-control-c383d3dffc73aa08"
+      },
+      {
+        "block": "provider-control",
+        "replicas": 1,
+        "profile": "unlimited",
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "warmup_seconds": 3,
+        "measurement_seconds": 10,
+        "deadline_seconds": 2,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 20000,
+          "requests_per_second": 1000
+        },
+        "fastpath": false,
+        "direct_provider": true,
+        "trace_reference": {
+          "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+          "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+        },
+        "trace_decoded_sha256": "622298e5682e295bbcca8d927ca879f2acc09b80fa455927a2e00d0843fc1aa2",
+        "trial_id": "provider-control-0c750ee988d27cc4"
+      }
+    ]
+  },
+  "definitions": {
+    "useful": "HTTP200, correct, client completion by planned arrival plus deadline",
+    "cohort": "planned arrivals in [warmup,warmup+measurement), including their bounded drain",
+    "window": "useful completions in [warmup,warmup+measurement), including warmup arrivals"
+  },
+  "gate": {
+    "emitted_fraction": 1,
+    "emission_lag_p95_seconds": 0.05,
+    "fastpath_useful_fraction": 0.99,
+    "exclude": "whole modified or technically invalid block"
+  }
+}

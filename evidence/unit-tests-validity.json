@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-12T18:39:31.450498+00:00",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_admission_does_not_double_debit_the_provider (test_study.QuotaTests.test_admission_does_not_double_debit_the_provider) ... ok\ntest_concurrent_requests_cannot_overdraw_quota (test_study.QuotaTests.test_concurrent_requests_cannot_overdraw_quota) ... ok\ntest_http_responses_record_real_quota_rejections (test_study.QuotaTests.test_http_responses_record_real_quota_rejections) ... ok\ntest_request_limit_is_independent_of_token_limit (test_study.QuotaTests.test_request_limit_is_independent_of_token_limit) ... ok\ntest_token_reservations_share_a_global_window (test_study.QuotaTests.test_token_reservations_share_a_global_window) ... ok\ntest_scale_waits_for_old_pods_and_matching_service_endpoints (test_study.StabilizationTests.test_scale_waits_for_old_pods_and_matching_service_endpoints) ... ok\ntest_load_is_identical_across_replica_and_policy_arms (test_study.TraceTests.test_load_is_identical_across_replica_and_policy_arms) ... ok\ntest_repetitions_use_distinct_seeded_traces (test_study.TraceTests.test_repetitions_use_distinct_seeded_traces) ... ok\ntest_scheduled_arrivals_are_ordered_and_within_interval (test_study.TraceTests.test_scheduled_arrivals_are_ordered_and_within_interval) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.529s\n\nOK\n",
+  "source_sha256": {
+    "service.py": "3a72fb7a31ae4af6704fac623139f0aaeab24e297ec68d30b2a6307dc0420355",
+    "run.py": "90f8b9e3f75b70ee439ba3d85099383ca96d0e3d2f37e77e802bc749e27b6a27",
+    "environment.py": "b2c161b40675d2912c4fbc0b9c0cfff7ed564e85ea5cb033447ed7545f01a2e6",
+    "test_study.py": "629f2f604f9628ce2851ce27148f4fcc1a2679a1dd8f8ea7dbdec6c76583b9fc"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "before-load-collection",
+  "error": "JSONDecodeError: Extra data while parsing kubectl version",
+  "cause": "stderr version warning had been merged with JSON stdout",
+  "correction": "capture stdout and stderr separately",
+  "outcomes_collected": 0,
+  "protocol_parameters_changed": false
+}

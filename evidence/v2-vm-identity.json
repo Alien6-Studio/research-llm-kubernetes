@@ -1,0 +1,22 @@
+{
+  "config": {
+    "image.architecture": "amd64",
+    "image.description": "ubuntu 24.04 LTS amd64 (release) (20261017)",
+    "image.label": "release",
+    "image.os": "ubuntu",
+    "image.release": "noble",
+    "image.serial": "20261017",
+    "image.type": "disk1.img",
+    "image.version": "24.04",
+    "limits.cpu": "8",
+    "limits.memory": "16GiB",
+    "volatile.base_image": "a80e9c9fd0d484dec024da3e9e264bbad4ce159b5312d6e149ef6ad532e18e43"
+  },
+  "root": {
+    "path": "/",
+    "size": "40GiB",
+    "type": "disk"
+  },
+  "virtualization": "LXD virtual machine",
+  "outer_host_cpu_count": 40
+}

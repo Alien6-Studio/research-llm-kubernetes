@@ -1,0 +1,146 @@
+{
+  "unlimited:0:5:emulator:None": {
+    "path": "protocol/traces-r3/trace-unlimited-0-5-emulator-None.json.gz",
+    "sha256": "65f98ea8f913363d6e76393308001f71af334a4802f7a87836d50183ffe4772f"
+  },
+  "unlimited:0:13:emulator:None": {
+    "path": "protocol/traces-r3/trace-unlimited-0-13-emulator-None.json.gz",
+    "sha256": "78b850d92cdf655353b729e524afd4e74938fa423dd69bb694708e9eb092f6cc"
+  },
+  "unlimited:0:33:emulator:None": {
+    "path": "protocol/traces-r3/trace-unlimited-0-33-emulator-None.json.gz",
+    "sha256": "49d1dc8c4e68037e7ba66ab591e956a2b37e0feef0192f2883ba5c81facb3f10"
+  },
+  "unlimited:1:5:emulator:None": {
+    "path": "protocol/traces-r3/trace-unlimited-1-5-emulator-None.json.gz",
+    "sha256": "ba60b461cfcc216f11d9b020354173bf74b39fe36e01b637737492e0f1bb2063"
+  },
+  "unlimited:1:13:emulator:None": {
+    "path": "protocol/traces-r3/trace-unlimited-1-13-emulator-None.json.gz",
+    "sha256": "eda67cdc743171588acf543b0d00be7c34e9df9f9fce538609d1f2be1013d095"
+  },
+  "unlimited:1:33:emulator:None": {
+    "path": "protocol/traces-r3/trace-unlimited-1-33-emulator-None.json.gz",
+    "sha256": "a94c2dcd4d875e9271162d5017121638835e4528c8bee474f51a6c9f8f2306d5"
+  },
+  "unlimited:2:5:emulator:None": {
+    "path": "protocol/traces-r3/trace-unlimited-2-5-emulator-None.json.gz",
+    "sha256": "d62ea58924eb487325cb7289891d68a3b428e3edf023990515bb3159e37901a8"
+  },
+  "unlimited:2:13:emulator:None": {
+    "path": "protocol/traces-r3/trace-unlimited-2-13-emulator-None.json.gz",
+    "sha256": "647517b3574d14292aa458d8ce8b12b0960a82b7538ac09242f944e5b269104f"
+  },
+  "unlimited:2:33:emulator:None": {
+    "path": "protocol/traces-r3/trace-unlimited-2-33-emulator-None.json.gz",
+    "sha256": "86ef85462353a8e14508dbba6db670eb41e031279af93b33163ddd6156706a73"
+  },
+  "quota:0:5:emulator:None": {
+    "path": "protocol/traces-r3/trace-quota-0-5-emulator-None.json.gz",
+    "sha256": "4be777723ca7d38fcf2e57d9d4cdf522ada129d9313237197672f0886c1f0763"
+  },
+  "quota:0:13:emulator:None": {
+    "path": "protocol/traces-r3/trace-quota-0-13-emulator-None.json.gz",
+    "sha256": "601c84d3dc2e1aa2196152b180a13600b347a1b5d0445cd4f49386f4afbb1114"
+  },
+  "quota:0:33:emulator:None": {
+    "path": "protocol/traces-r3/trace-quota-0-33-emulator-None.json.gz",
+    "sha256": "6097b5573e7654fa36d3e47c853d03eae6f777914b0a5be5c9e24c85e0fac882"
+  },
+  "quota:1:5:emulator:None": {
+    "path": "protocol/traces-r3/trace-quota-1-5-emulator-None.json.gz",
+    "sha256": "0fb74de1f982ba0770f1809cbb5c6907b08a77b4c096b86dc71ef21fca0e8999"
+  },
+  "quota:1:13:emulator:None": {
+    "path": "protocol/traces-r3/trace-quota-1-13-emulator-None.json.gz",
+    "sha256": "7e81561e2c574d24a69b00a1ca93afa1dec94793d4f07284146aee7f72bf992f"
+  },
+  "quota:1:33:emulator:None": {
+    "path": "protocol/traces-r3/trace-quota-1-33-emulator-None.json.gz",
+    "sha256": "8df0bf1c534d07f783baa4540be9341a1c14b2cd267524b4dbbc753a66dabfb3"
+  },
+  "quota:2:5:emulator:None": {
+    "path": "protocol/traces-r3/trace-quota-2-5-emulator-None.json.gz",
+    "sha256": "6c26a06060e2947c8028cf390184ed32c9185ec438bd5b57126b89e4bdbacac6"
+  },
+  "quota:2:13:emulator:None": {
+    "path": "protocol/traces-r3/trace-quota-2-13-emulator-None.json.gz",
+    "sha256": "bca4d9e27dec65ce2c92b06d9924fda7875dc9a577a64cb41fedb1718cfadfcb"
+  },
+  "quota:2:33:emulator:None": {
+    "path": "protocol/traces-r3/trace-quota-2-33-emulator-None.json.gz",
+    "sha256": "5dece9aee94609e3fc39ff06aa5bb2f4a5f7e591606dd80984b4dab0705721c8"
+  },
+  "bursty:0:5:emulator:None": {
+    "path": "protocol/traces-r3/trace-bursty-0-5-emulator-None.json.gz",
+    "sha256": "3c0ec2a5a32b55ae9f68faaab22103e71758bd256b1bc590f6fd4ea9ecfba79e"
+  },
+  "bursty:0:13:emulator:None": {
+    "path": "protocol/traces-r3/trace-bursty-0-13-emulator-None.json.gz",
+    "sha256": "d9bc6278e639b61c39d5ace4242c8febc1e7fdacc345a7a7de232a322cab0f17"
+  },
+  "bursty:0:33:emulator:None": {
+    "path": "protocol/traces-r3/trace-bursty-0-33-emulator-None.json.gz",
+    "sha256": "e3f163f4b169c167b15cd454b45d7fbc1e8fba02d27467ec1ac90c7e5f85ac40"
+  },
+  "bursty:1:5:emulator:None": {
+    "path": "protocol/traces-r3/trace-bursty-1-5-emulator-None.json.gz",
+    "sha256": "80c4e906db2bf145a5911c0e7f4132b4fe4137cf2c0ff271d562149fb27a6c34"
+  },
+  "bursty:1:13:emulator:None": {
+    "path": "protocol/traces-r3/trace-bursty-1-13-emulator-None.json.gz",
+    "sha256": "62a8d2b1993b76324f7f0fd8e2abcb5d6d8500bfbf97e9b92bcdd0b3449a5b78"
+  },
+  "bursty:1:33:emulator:None": {
+    "path": "protocol/traces-r3/trace-bursty-1-33-emulator-None.json.gz",
+    "sha256": "00ec8f7c409b61107295173d3c2a13f58f2bf8d8af2031d1fe89196cec8f3e7c"
+  },
+  "bursty:2:5:emulator:None": {
+    "path": "protocol/traces-r3/trace-bursty-2-5-emulator-None.json.gz",
+    "sha256": "f77eb1b000eafb613f665912a30426eb1ef07945dc9fd14c529c800d6b4125a8"
+  },
+  "bursty:2:13:emulator:None": {
+    "path": "protocol/traces-r3/trace-bursty-2-13-emulator-None.json.gz",
+    "sha256": "0b97b384afb7701ea3a26f8a1c149d6fcee214acd73f37a285d347a343a15763"
+  },
+  "bursty:2:33:emulator:None": {
+    "path": "protocol/traces-r3/trace-bursty-2-33-emulator-None.json.gz",
+    "sha256": "f5c25a8ae982b5fb6483f160e6b03b5ec3fe912024fcbce000391bae1f04db46"
+  },
+  "fastpath-180:0:13:emulator:180": {
+    "path": "protocol/traces-r3/trace-fastpath-180-0-13-emulator-180.json.gz",
+    "sha256": "ee4ed6dabecc0a8cb906d608b47c8a13864e7ae1b8605f83d506e820372525da"
+  },
+  "fastpath-180:1:13:emulator:180": {
+    "path": "protocol/traces-r3/trace-fastpath-180-1-13-emulator-180.json.gz",
+    "sha256": "75dd53cd083efdf65f148c057b7f6ddc4c345713e131b962276a2dc49a9669d0"
+  },
+  "fastpath-180:2:13:emulator:180": {
+    "path": "protocol/traces-r3/trace-fastpath-180-2-13-emulator-180.json.gz",
+    "sha256": "8bf0676f5543a5b717b6fc00ed1d540806ae0ad9bdd718b89f4bd6f87f133dd6"
+  },
+  "fastpath-360:0:13:emulator:360": {
+    "path": "protocol/traces-r3/trace-fastpath-360-0-13-emulator-360.json.gz",
+    "sha256": "d97cdf95e2bfdef2ab1f084b39a977a0d4101588fb508266f65d6ed7f0d8ab02"
+  },
+  "fastpath-360:1:13:emulator:360": {
+    "path": "protocol/traces-r3/trace-fastpath-360-1-13-emulator-360.json.gz",
+    "sha256": "2894dbe95345abddf18a14b17df470ab70e887eb11e0d0f3deb686ae383e4d25"
+  },
+  "fastpath-360:2:13:emulator:360": {
+    "path": "protocol/traces-r3/trace-fastpath-360-2-13-emulator-360.json.gz",
+    "sha256": "4a856d77b05a915ce1604d8dd8fc74a845fed1693e1317d8901f12f6e9833b41"
+  },
+  "unlimited:0:25:ollama:None": {
+    "path": "protocol/traces-r3/trace-unlimited-0-25-ollama-None.json.gz",
+    "sha256": "e4b08084c106896865c7292864585826e4f19c4edf17e294056d37c22f13ca90"
+  },
+  "unlimited:1:25:ollama:None": {
+    "path": "protocol/traces-r3/trace-unlimited-1-25-ollama-None.json.gz",
+    "sha256": "ef2db65c3922cdc5e72d2effd6bf64e1155c394d5898855ef65735eac4328f25"
+  },
+  "unlimited:2:25:ollama:None": {
+    "path": "protocol/traces-r3/trace-unlimited-2-25-ollama-None.json.gz",
+    "sha256": "c2ebc94e82f6b5c3f11aa58787a1b6732e3861597f199e0233767757c274ff5c"
+  }
+}

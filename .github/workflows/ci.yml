@@ -1,0 +1,61 @@
+name: Research CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: research-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  checks:
+    name: Research checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Run research controls
+        run: python -m unittest discover -p 'test_*.py' -v
+      - name: Recompute complete qualification blocks
+        run: python scripts/analyze_calibration.py --check
+      - name: Recompute independently hosted essential contrasts
+        run: python scripts/analyze_focused.py --check
+      - name: Verify published evidence identity
+        run: python scripts/verify_evidence.py
+      - name: Replay V2 workloads and measured records
+        run: python -m v2.verify > /tmp/capacity-verification.json
+      - name: Check published numerical tables and CSV
+        run: python -m v2.report --check
+      - name: Check canonical results and article evidence
+        run: python -m v2.publication --check
+      - name: Rebuild standalone scientific figures from the archived outcomes
+        run: |
+          python -m pip install -r requirements-analysis.txt
+          MPLCONFIGDIR=/tmp/alien6-mpl python -m v2.report --figures --output /tmp/alien6-figures
+          test -s /tmp/alien6-figures/replicas-and-admission.svg
+          test -s /tmp/alien6-figures/quota-counterfactual.svg
+          test -s /tmp/alien6-figures/cpu-counterfactual.svg
+          test -s /tmp/alien6-figures/deadline-and-quota-consumption.svg
+      - name: Build the pinned service image
+        run: docker build -t research-capacity:ci .
+      - name: Build the V2 service and model measurement images
+        run: |
+          docker build -f v2/Dockerfile --build-arg SOURCE_COMMIT="$GITHUB_SHA" -t research-capacity:v2-ci .
+          docker build -f v2/Model.Dockerfile --build-arg SOURCE_COMMIT="$GITHUB_SHA" -t research-capacity:model-ci .
+      - name: Retain scientific replay evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: scientific-replay-${{ github.sha }}
+          path: |
+            /tmp/capacity-verification.json
+            /tmp/alien6-figures/
+          if-no-files-found: warn
+          retention-days: 90

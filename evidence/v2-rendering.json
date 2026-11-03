@@ -1,0 +1,7 @@
+{
+  "matplotlib": "3.10.7",
+  "numpy": "2.5.4",
+  "python": "3.12.9",
+  "script_sha256": "2888cd1847ad3e2db25080c7043aa2743d8e344a67c29c5e859240be724906b5",
+  "scope": "Standalone figure rendering only; these libraries are absent from measured service images."
+}

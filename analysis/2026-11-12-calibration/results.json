@@ -1,0 +1,2803 @@
+{
+  "scope": "Separately identified complete calibration blocks; no pooled causal effect, throughput-capacity or real-LLM inference claim.",
+  "threshold_ms": 50,
+  "cohorts": [
+    {
+      "id": "local-v2",
+      "source_commit": "74e4bcabba967c2cfd4f4f166aee80288a6f115b",
+      "service_sha256": "3a72fb7a31ae4af6704fac623139f0aaeab24e297ec68d30b2a6307dc0420355",
+      "environment": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "release": "27.0.0",
+        "docker_capacity": {
+          "command": [
+            "docker",
+            "info",
+            "--format",
+            "{\"cpus\":{{.NCPU}},\"memory_bytes\":{{.MemTotal}},\"architecture\":\"{{.Architecture}}\",\"version\":\"{{.ServerVersion}}\"}"
+          ],
+          "returncode": 0,
+          "stdout": "{\"cpus\":16,\"memory_bytes\":50427629568,\"architecture\":\"aarch64\",\"version\":\"29.1.5\"}\n",
+          "stderr": ""
+        },
+        "node_limits": {
+          "command": [
+            "docker",
+            "inspect",
+            "a6-research-control-plane",
+            "--format",
+            "{\"nano_cpus\":{{.HostConfig.NanoCpus}},\"memory_bytes\":{{.HostConfig.Memory}},\"memory_swap_bytes\":{{.HostConfig.MemorySwap}}}"
+          ],
+          "returncode": 0,
+          "stdout": "{\"nano_cpus\":4000000000,\"memory_bytes\":8589934592,\"memory_swap_bytes\":8589934592}\n",
+          "stderr": ""
+        },
+        "hw.model": {
+          "command": [
+            "sysctl",
+            "-n",
+            "hw.model"
+          ],
+          "returncode": 0,
+          "stdout": "Mac16,5\n",
+          "stderr": ""
+        },
+        "machdep.cpu.brand_string": {
+          "command": [
+            "sysctl",
+            "-n",
+            "machdep.cpu.brand_string"
+          ],
+          "returncode": 0,
+          "stdout": "Apple M4 Max\n",
+          "stderr": ""
+        },
+        "hw.logicalcpu": {
+          "command": [
+            "sysctl",
+            "-n",
+            "hw.logicalcpu"
+          ],
+          "returncode": 0,
+          "stdout": "16\n",
+          "stderr": ""
+        },
+        "hw.memsize": {
+          "command": [
+            "sysctl",
+            "-n",
+            "hw.memsize"
+          ],
+          "returncode": 0,
+          "stdout": "137438953472\n",
+          "stderr": ""
+        }
+      },
+      "complete": true,
+      "passed": false,
+      "valid_trials": 10,
+      "trials": [
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-1-0.json.gz",
+          "workers": 1,
+          "offered_rate": 180,
+          "repetition": 0,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 3.4470558166503906,
+          "offered_requests": 2355,
+          "measured_requests": 1788,
+          "useful_responses": 1788,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "eb0ea48676c1ef429245719ef7671e56c6e820e67f4a8506aca4f4a784799543",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.09753860974126555,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.17251407931850135,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-1-1.json.gz",
+          "workers": 1,
+          "offered_rate": 180,
+          "repetition": 1,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 3.5698413848876953,
+          "offered_requests": 2346,
+          "measured_requests": 1784,
+          "useful_responses": 1784,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "ed71f3acf72afbf48be1f0508b0ad0dd2aba7d1719e66c813d63adbe8dc83efa",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.09623235697158934,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.17648747833621917,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-1-2.json.gz",
+          "workers": 1,
+          "offered_rate": 180,
+          "repetition": 2,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 8.96000862121582,
+          "offered_requests": 2225,
+          "measured_requests": 1707,
+          "useful_responses": 1707,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "5606711f94995f09bceaaefb4bde433c625c98c3ea02e1b735e395059d758f0a",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.09705352216844243,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.21027740696090752,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 2213
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-1-0.json.gz",
+          "workers": 1,
+          "offered_rate": 360,
+          "repetition": 0,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 4.925727844238281,
+          "offered_requests": 4655,
+          "measured_requests": 3530,
+          "useful_responses": 3530,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "f4eeb55bbdb8b0cd6880060fed979fd591ecb39ebc25e49259e3c7ff12312637",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.1383986827036331,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.24034715852758615,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-1-1.json.gz",
+          "workers": 1,
+          "offered_rate": 360,
+          "repetition": 1,
+          "valid": false,
+          "validation_issues": [
+            "Generator scheduling-lag p95 exceeds 50ms"
+          ],
+          "dispatch_lag_p95_ms": 148.91409873962402,
+          "offered_requests": 4702,
+          "measured_requests": 3637,
+          "useful_responses": 3637,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "80508b4423f4aad9f9c7a024c712bf6702a9cd13f6286478fa8bffad77aadc77",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.1392211800384548,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.2505282665131623,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-1-2.json.gz",
+          "workers": 1,
+          "offered_rate": 360,
+          "repetition": 2,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 3.8192272186279297,
+          "offered_requests": 4634,
+          "measured_requests": 3629,
+          "useful_responses": 3629,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "e302b47552e56a64d1707eecc6d26e83abb01006ae1e29ec157329a2c29c1277",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.13385201422357515,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.2401084731869325,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-8-0.json.gz",
+          "workers": 8,
+          "offered_rate": 180,
+          "repetition": 0,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 7.853984832763672,
+          "offered_requests": 2355,
+          "measured_requests": 1788,
+          "useful_responses": 1788,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "eb0ea48676c1ef429245719ef7671e56c6e820e67f4a8506aca4f4a784799543",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.08752107683075705,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-2r5x4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.027116172391455723,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-6pt4r",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.029300166662174422,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-hbc7w",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.025400912713770395,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.026343483055412783,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lznk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.022999304482256837,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-sbzzh",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02635801963744204,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-tknwr",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02872716437181513,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-tnp9w",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.020414092299313156,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-8-1.json.gz",
+          "workers": 8,
+          "offered_rate": 180,
+          "repetition": 1,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 3.7550926208496094,
+          "offered_requests": 2346,
+          "measured_requests": 1784,
+          "useful_responses": 1784,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "ed71f3acf72afbf48be1f0508b0ad0dd2aba7d1719e66c813d63adbe8dc83efa",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.09251967564012005,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-4nrkn",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.030379041667799336,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-4sjhn",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.027227532743372484,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02512259293828245,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-pjlf7",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.023732418481384757,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-v7pdx",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.024386462604267852,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-vr6gb",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02465624800247755,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-zvhj9",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02524063238134006,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-zvmpb",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.026413036622015534,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-8-2.json.gz",
+          "workers": 8,
+          "offered_rate": 180,
+          "repetition": 2,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 17.088890075683594,
+          "offered_requests": 2225,
+          "measured_requests": 1707,
+          "useful_responses": 1707,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "5606711f94995f09bceaaefb4bde433c625c98c3ea02e1b735e395059d758f0a",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0812026216111362,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-2r5x4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02789259716329078,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-6pt4r",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.023663579502932117,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-hbc7w",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.022464256958850876,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.021949969051074904,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lznk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.022124470300257264,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-sbzzh",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.021005008285825806,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-tknwr",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02114134898376229,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-tnp9w",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02449023654233383,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-8-0.json.gz",
+          "workers": 8,
+          "offered_rate": 360,
+          "repetition": 0,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 8.649349212646484,
+          "offered_requests": 4655,
+          "measured_requests": 3530,
+          "useful_responses": 3530,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "f4eeb55bbdb8b0cd6880060fed979fd591ecb39ebc25e49259e3c7ff12312637",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.12205237836855715,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-2r5x4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03530316262547288,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-6pt4r",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.04374724182572849,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-hbc7w",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.052968328511664005,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 194872
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.031837358638478426,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lznk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.051778122264826566,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 127229
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-sbzzh",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.034323628349949675,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-tknwr",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0323489626810749,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-tnp9w",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0578264049665068,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 112388
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-8-1.json.gz",
+          "workers": 8,
+          "offered_rate": 360,
+          "repetition": 1,
+          "valid": false,
+          "validation_issues": [
+            "Generator scheduling-lag p95 exceeds 50ms"
+          ],
+          "dispatch_lag_p95_ms": 61.22088432312012,
+          "offered_requests": 4702,
+          "measured_requests": 3637,
+          "useful_responses": 3637,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "80508b4423f4aad9f9c7a024c712bf6702a9cd13f6286478fa8bffad77aadc77",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.1249233127834679,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-4nrkn",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03566466491143604,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-4sjhn",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.04686877700865318,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 10715
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03261713549077988,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-pjlf7",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.045425359233803884,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 27414
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-v7pdx",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.04383607252867584,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-vr6gb",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03330357859099552,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-zvhj9",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.033939780178748255,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-zvmpb",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.04149795647888901,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-8-2.json.gz",
+          "workers": 8,
+          "offered_rate": 360,
+          "repetition": 2,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 4.246711730957031,
+          "offered_requests": 4634,
+          "measured_requests": 3629,
+          "useful_responses": 3629,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": false,
+          "trace_sha256": "e302b47552e56a64d1707eecc6d26e83abb01006ae1e29ec157329a2c29c1277",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "upstream",
+                "pod": "provider-c4f6d768d-hq5sd",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.12939039706071753,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-2r5x4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03649565732883468,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-6pt4r",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03725622496018442,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-hbc7w",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03386116391215017,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lcvpl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03596369006140544,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-lznk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03359352368031908,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-sbzzh",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0341292913120795,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-tknwr",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03228705089168976,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-f76dbc448-tnp9w",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.030120154280325283,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        }
+      ]
+    },
+    {
+      "id": "local-v3",
+      "source_commit": "2bd49bd11c7fe935809c27d501949decf5526368",
+      "service_sha256": "7226fb07d48e4750b69f0c45861b1b23d19f68ccb88377b1b762e0cc14202cf7",
+      "environment": {
+        "system": "Darwin",
+        "machine": "arm64",
+        "release": "27.0.0",
+        "docker_capacity": {
+          "command": [
+            "docker",
+            "info",
+            "--format",
+            "{\"cpus\":{{.NCPU}},\"memory_bytes\":{{.MemTotal}},\"architecture\":\"{{.Architecture}}\",\"version\":\"{{.ServerVersion}}\"}"
+          ],
+          "returncode": 0,
+          "stdout": "{\"cpus\":16,\"memory_bytes\":50427629568,\"architecture\":\"aarch64\",\"version\":\"29.1.5\"}\n",
+          "stderr": ""
+        },
+        "node_limits": {
+          "command": [
+            "docker",
+            "inspect",
+            "a6-research-control-plane",
+            "--format",
+            "{\"nano_cpus\":{{.HostConfig.NanoCpus}},\"memory_bytes\":{{.HostConfig.Memory}},\"memory_swap_bytes\":{{.HostConfig.MemorySwap}}}"
+          ],
+          "returncode": 0,
+          "stdout": "{\"nano_cpus\":4000000000,\"memory_bytes\":8589934592,\"memory_swap_bytes\":8589934592}\n",
+          "stderr": ""
+        },
+        "hw.model": {
+          "command": [
+            "sysctl",
+            "-n",
+            "hw.model"
+          ],
+          "returncode": 0,
+          "stdout": "Mac16,5\n",
+          "stderr": ""
+        },
+        "machdep.cpu.brand_string": {
+          "command": [
+            "sysctl",
+            "-n",
+            "machdep.cpu.brand_string"
+          ],
+          "returncode": 0,
+          "stdout": "Apple M4 Max\n",
+          "stderr": ""
+        },
+        "hw.logicalcpu": {
+          "command": [
+            "sysctl",
+            "-n",
+            "hw.logicalcpu"
+          ],
+          "returncode": 0,
+          "stdout": "16\n",
+          "stderr": ""
+        },
+        "hw.memsize": {
+          "command": [
+            "sysctl",
+            "-n",
+            "hw.memsize"
+          ],
+          "returncode": 0,
+          "stdout": "137438953472\n",
+          "stderr": ""
+        }
+      },
+      "complete": true,
+      "passed": false,
+      "valid_trials": 10,
+      "trials": [
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-1-0.json.gz",
+          "workers": 1,
+          "offered_rate": 180,
+          "repetition": 0,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 5.244075897280709,
+          "offered_requests": 2355,
+          "measured_requests": 1788,
+          "useful_responses": 1788,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "eb0ea48676c1ef429245719ef7671e56c6e820e67f4a8506aca4f4a784799543",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.11950753073849729,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.09992789677613023,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.18326996836854526,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.053566375000154945,
+              "upstream": 0.013214458000657032,
+              "worker": 0.017587249998978222
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-1-1.json.gz",
+          "workers": 1,
+          "offered_rate": 180,
+          "repetition": 1,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 4.485354200369329,
+          "offered_requests": 2346,
+          "measured_requests": 1784,
+          "useful_responses": 1784,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "ed71f3acf72afbf48be1f0508b0ad0dd2aba7d1719e66c813d63adbe8dc83efa",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.11708537473218317,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.0950102354099791,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.17698722499815625,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.0547608340006991,
+              "upstream": 0.010807540999376215,
+              "worker": 0.01978304200063576
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-1-2.json.gz",
+          "workers": 1,
+          "offered_rate": 180,
+          "repetition": 2,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 4.674419411458075,
+          "offered_requests": 2225,
+          "measured_requests": 1707,
+          "useful_responses": 1707,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "5606711f94995f09bceaaefb4bde433c625c98c3ea02e1b735e395059d758f0a",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.11247348625808397,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.09241934188924279,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.19671612359876717,
+                "throttled_period_delta": 3,
+                "throttled_usec_delta": 788624
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.04543087499994726,
+              "upstream": 0.022144458000620943,
+              "worker": 0.06407962499950372
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-1-0.json.gz",
+          "workers": 1,
+          "offered_rate": 360,
+          "repetition": 0,
+          "valid": false,
+          "validation_issues": [
+            "Generator scheduling-lag p95 exceeds 50ms"
+          ],
+          "dispatch_lag_p95_ms": 67.69894119133824,
+          "offered_requests": 4655,
+          "measured_requests": 3530,
+          "useful_responses": 3530,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "f4eeb55bbdb8b0cd6880060fed979fd591ecb39ebc25e49259e3c7ff12312637",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.1610147581557447,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.14452284577591992,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.25496649631023277,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.018414417000240064,
+              "upstream": 0.022303000000174506,
+              "worker": 0.03561704100000497
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-1-1.json.gz",
+          "workers": 1,
+          "offered_rate": 360,
+          "repetition": 1,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 20.68297918958706,
+          "offered_requests": 4702,
+          "measured_requests": 3637,
+          "useful_responses": 3637,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "80508b4423f4aad9f9c7a024c712bf6702a9cd13f6286478fa8bffad77aadc77",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.1576983108778107,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.13917494810636072,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.24302402732340148,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 3484
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.018293583000267972,
+              "upstream": 0.04951866700001119,
+              "worker": 0.046241792001164864
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-1-2.json.gz",
+          "workers": 1,
+          "offered_rate": 360,
+          "repetition": 2,
+          "valid": false,
+          "validation_issues": [
+            "Generator scheduling-lag p95 exceeds 50ms"
+          ],
+          "dispatch_lag_p95_ms": 60.63849776001007,
+          "offered_requests": 4634,
+          "measured_requests": 3629,
+          "useful_responses": 3629,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "e302b47552e56a64d1707eecc6d26e83abb01006ae1e29ec157329a2c29c1277",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.1570746905486134,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.14583549244517302,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.2562529991656356,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.03125633399984508,
+              "upstream": 0.048020250000699885,
+              "worker": 0.04700224999985948
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-8-0.json.gz",
+          "workers": 8,
+          "offered_rate": 180,
+          "repetition": 0,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 4.81331859191414,
+          "offered_requests": 2355,
+          "measured_requests": 1788,
+          "useful_responses": 1788,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "eb0ea48676c1ef429245719ef7671e56c6e820e67f4a8506aca4f4a784799543",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.11715003523271646,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.091389204206063,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-2lk77",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.030513808879852923,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-79sxk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.026348463706028415,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.026426833371602298,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-cmxff",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.030356991019328025,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-gnzln",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.027945719456654625,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-htgq9",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.027045455585146667,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-j6lzk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.024769259867181738,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-rwpt6",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02646692660047938,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.027486749999734456,
+              "upstream": 0.021411875001358566,
+              "worker": 0.03979458299952966
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-8-1.json.gz",
+          "workers": 8,
+          "offered_rate": 180,
+          "repetition": 1,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 4.504902855842374,
+          "offered_requests": 2346,
+          "measured_requests": 1784,
+          "useful_responses": 1784,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "ed71f3acf72afbf48be1f0508b0ad0dd2aba7d1719e66c813d63adbe8dc83efa",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.10612665906458486,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.09041310662122912,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-22q72",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.030632531320427335,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.026224430822277028,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9tbkr",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.022156684295953858,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-gpq2p",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.028322292647634695,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-md28x",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.028012037427406825,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-mw22f",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02322183652307893,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-tvbp4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.027044829548852005,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-vtk4l",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.026828966500417356,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.03705929199939419,
+              "upstream": 0.032903707999575996,
+              "worker": 0.03288545900111785
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-8-2.json.gz",
+          "workers": 8,
+          "offered_rate": 180,
+          "repetition": 2,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 7.283273967914283,
+          "offered_requests": 2225,
+          "measured_requests": 1707,
+          "useful_responses": 1707,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "5606711f94995f09bceaaefb4bde433c625c98c3ea02e1b735e395059d758f0a",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.1115229571003402,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.09053765698101705,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-2lk77",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02703591664535409,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-79sxk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02854559576649531,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02630175536708005,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-cmxff",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.025532461855211033,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-gnzln",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.02661508353080958,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-htgq9",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.026501655235980096,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-j6lzk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.026646642787831534,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-rwpt6",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03259616484211611,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.024374041999617475,
+              "upstream": 0.018039082999603124,
+              "worker": 0.025976457999131525
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-8-0.json.gz",
+          "workers": 8,
+          "offered_rate": 360,
+          "repetition": 0,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 13.820951962770778,
+          "offered_requests": 4655,
+          "measured_requests": 3530,
+          "useful_responses": 3530,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "f4eeb55bbdb8b0cd6880060fed979fd591ecb39ebc25e49259e3c7ff12312637",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.1467189665897411,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.12606943548770777,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-2lk77",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.038499048691394054,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-79sxk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.05308262815633694,
+                "throttled_period_delta": 2,
+                "throttled_usec_delta": 77149
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.033455572778229976,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-cmxff",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.04402346379569518,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 27041
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-gnzln",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.048655339513391516,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 162855
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-htgq9",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0463788027486554,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-j6lzk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0497022382592751,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 155053
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-rwpt6",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0461591954161909,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 4413
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.06392579199971805,
+              "upstream": 0.05911208400037139,
+              "worker": 0.06392883300075482
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-8-1.json.gz",
+          "workers": 8,
+          "offered_rate": 360,
+          "repetition": 1,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 25.649423952927464,
+          "offered_requests": 4702,
+          "measured_requests": 3637,
+          "useful_responses": 3637,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "80508b4423f4aad9f9c7a024c712bf6702a9cd13f6286478fa8bffad77aadc77",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.15333762922084404,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.13122571593905202,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-22q72",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.035269345794984204,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.034668593065693386,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9tbkr",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.05144854465650538,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 126030
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-gpq2p",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.04139066074477638,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-md28x",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03502109173731203,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-mw22f",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0570656949825206,
+                "throttled_period_delta": 2,
+                "throttled_usec_delta": 297121
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-tvbp4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.052737576048531826,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-vtk4l",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.05683021922359498,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.04292012499943666,
+              "upstream": 0.0628109169997333,
+              "worker": 0.06236770800067461
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-8-2.json.gz",
+          "workers": 8,
+          "offered_rate": 360,
+          "repetition": 2,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 32.03513447624573,
+          "offered_requests": 4634,
+          "measured_requests": 3629,
+          "useful_responses": 3629,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "e302b47552e56a64d1707eecc6d26e83abb01006ae1e29ec157329a2c29c1277",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-d5lk5",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.1628281828193425,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-q89ml",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.13476404262268757,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-2lk77",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.04019757047175269,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-79sxk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03766285668227359,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-9qqrk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03434473223696681,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-cmxff",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03588869932069477,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-gnzln",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.041136640149200134,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-htgq9",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.034448346034265206,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-j6lzk",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.036535264073641195,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-rwpt6",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.04232024857981193,
+                "throttled_period_delta": 1,
+                "throttled_usec_delta": 13056
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.12019704199927218,
+              "upstream": 0.05857216699994751,
+              "worker": 0.06489424999970651
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        }
+      ]
+    },
+    {
+      "id": "linux-v3",
+      "source_commit": "2bd49bd11c7fe935809c27d501949decf5526368",
+      "service_sha256": "7226fb07d48e4750b69f0c45861b1b23d19f68ccb88377b1b762e0cc14202cf7",
+      "environment": {
+        "system": "Linux",
+        "machine": "x86_64",
+        "release": "7.0.0-1017-azure",
+        "docker_capacity": {
+          "command": [
+            "docker",
+            "info",
+            "--format",
+            "{\"cpus\":{{.NCPU}},\"memory_bytes\":{{.MemTotal}},\"architecture\":\"{{.Architecture}}\",\"version\":\"{{.ServerVersion}}\"}"
+          ],
+          "returncode": 0,
+          "stdout": "{\"cpus\":4,\"memory_bytes\":16760344576,\"architecture\":\"x86_64\",\"version\":\"28.0.4\"}\n",
+          "stderr": ""
+        },
+        "node_limits": {
+          "command": [
+            "docker",
+            "inspect",
+            "a6-research-control-plane",
+            "--format",
+            "{\"nano_cpus\":{{.HostConfig.NanoCpus}},\"memory_bytes\":{{.HostConfig.Memory}},\"memory_swap_bytes\":{{.HostConfig.MemorySwap}}}"
+          ],
+          "returncode": 0,
+          "stdout": "{\"nano_cpus\":4000000000,\"memory_bytes\":8589934592,\"memory_swap_bytes\":8589934592}\n",
+          "stderr": ""
+        }
+      },
+      "complete": true,
+      "passed": true,
+      "valid_trials": 12,
+      "trials": [
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-1-0.json.gz",
+          "workers": 1,
+          "offered_rate": 180,
+          "repetition": 0,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.2481938168727993,
+          "offered_requests": 2355,
+          "measured_requests": 1788,
+          "useful_responses": 1788,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "eb0ea48676c1ef429245719ef7671e56c6e820e67f4a8506aca4f4a784799543",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.1387140363153753,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.09692887976968287,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.20033321069641546,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-1-1.json.gz",
+          "workers": 1,
+          "offered_rate": 180,
+          "repetition": 1,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.25884796082209505,
+          "offered_requests": 2346,
+          "measured_requests": 1784,
+          "useful_responses": 1784,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "ed71f3acf72afbf48be1f0508b0ad0dd2aba7d1719e66c813d63adbe8dc83efa",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.1393656218544605,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.0973551138935759,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.20108541297596805,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-1-2.json.gz",
+          "workers": 1,
+          "offered_rate": 180,
+          "repetition": 2,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.236901175554749,
+          "offered_requests": 2225,
+          "measured_requests": 1707,
+          "useful_responses": 1707,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "5606711f94995f09bceaaefb4bde433c625c98c3ea02e1b735e395059d758f0a",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.12913320118478733,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.09016693056201289,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.2011276958019095,
+                "throttled_period_delta": 2,
+                "throttled_usec_delta": 71721
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "worker": 0.0348580229999942
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-1-0.json.gz",
+          "workers": 1,
+          "offered_rate": 360,
+          "repetition": 0,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.45558796585964956,
+          "offered_requests": 4655,
+          "measured_requests": 3530,
+          "useful_responses": 3530,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "f4eeb55bbdb8b0cd6880060fed979fd591ecb39ebc25e49259e3c7ff12312637",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.2586958526821576,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.17952406187295994,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.38928398100988704,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.014781995999992432
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-1-1.json.gz",
+          "workers": 1,
+          "offered_rate": 360,
+          "repetition": 1,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.36892267087296204,
+          "offered_requests": 4702,
+          "measured_requests": 3637,
+          "useful_responses": 3637,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "80508b4423f4aad9f9c7a024c712bf6702a9cd13f6286478fa8bffad77aadc77",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.25837759483325556,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.1807427557249504,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.3923508925419605,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "worker": 0.005360908999999765
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-1-2.json.gz",
+          "workers": 1,
+          "offered_rate": 360,
+          "repetition": 2,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.3903135061307239,
+          "offered_requests": 4634,
+          "measured_requests": 3629,
+          "useful_responses": 3629,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "e302b47552e56a64d1707eecc6d26e83abb01006ae1e29ec157329a2c29c1277",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.2526434071396816,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.17752943580248406,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 27,
+                "observed_mean_cpu_cores": 0.38366736624882,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-8-0.json.gz",
+          "workers": 8,
+          "offered_rate": 180,
+          "repetition": 0,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.28506664034466667,
+          "offered_requests": 2355,
+          "measured_requests": 1788,
+          "useful_responses": 1788,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "eb0ea48676c1ef429245719ef7671e56c6e820e67f4a8506aca4f4a784799543",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.14842052343891565,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.09928379258284621,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5fcjl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03435499236894116,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5tqfz",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03542705033791185,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03574894833711673,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-6zcqn",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.036266444643701705,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-p4j4r",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03659888193230563,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-qqks4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03266650284127747,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-t6rz6",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0343871533206696,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-vmhj4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03448468207668344,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-8-1.json.gz",
+          "workers": 8,
+          "offered_rate": 180,
+          "repetition": 1,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.28002022148143624,
+          "offered_requests": 2346,
+          "measured_requests": 1784,
+          "useful_responses": 1784,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "ed71f3acf72afbf48be1f0508b0ad0dd2aba7d1719e66c813d63adbe8dc83efa",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.14524480480364194,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0978575089568588,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5dkpz",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.036190395788171445,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.034459630363454084,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-6xpv6",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.033733717174594814,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-cbghw",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0337560139775869,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-hwtfc",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03475342185974176,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-nbqt4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03491421808348729,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-qlwc4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03400452999210831,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-tmdwf",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.033751314630758644,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-8-2.json.gz",
+          "workers": 8,
+          "offered_rate": 180,
+          "repetition": 2,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.2397870782147038,
+          "offered_requests": 2225,
+          "measured_requests": 1707,
+          "useful_responses": 1707,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "5606711f94995f09bceaaefb4bde433c625c98c3ea02e1b735e395059d758f0a",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.13974317808908415,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.09367372301239295,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5fcjl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.033854451403150077,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5tqfz",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03371308216945104,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03446863439864732,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-6zcqn",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.033120190421671004,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-p4j4r",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03516353016908072,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-qqks4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03522594411340213,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-t6rz6",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03062453408389413,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-vmhj4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.03382132465431437,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {},
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-8-0.json.gz",
+          "workers": 8,
+          "offered_rate": 360,
+          "repetition": 0,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.9856719530318969,
+          "offered_requests": 4655,
+          "measured_requests": 3530,
+          "useful_responses": 3530,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "f4eeb55bbdb8b0cd6880060fed979fd591ecb39ebc25e49259e3c7ff12312637",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.2668011517591797,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.18022245329632278,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5fcjl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07658005986980086,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5tqfz",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07430766730734496,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0613534742743477,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-6zcqn",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07211921096137947,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-p4j4r",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07181447968589538,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-qqks4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07137727136322218,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-t6rz6",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07301737218114275,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-vmhj4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07696347809928772,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.008699908000021423,
+              "upstream": 0.005653094999995573,
+              "worker": 0.055299079000018306
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-8-1.json.gz",
+          "workers": 8,
+          "offered_rate": 360,
+          "repetition": 1,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.7734349938459673,
+          "offered_requests": 4702,
+          "measured_requests": 3637,
+          "useful_responses": 3637,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "80508b4423f4aad9f9c7a024c712bf6702a9cd13f6286478fa8bffad77aadc77",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.2665566577137485,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.18056571109197733,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5dkpz",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07211462232697524,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.06163396101859049,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-6xpv6",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0733722955441482,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-cbghw",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07529624621583605,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-hwtfc",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07296021773546045,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-nbqt4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.06359624766119185,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-qlwc4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07510677871549953,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-tmdwf",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.07600312077468332,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "controller": 0.0104383630000018,
+              "worker": 0.06426627599999392
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        },
+        {
+          "file": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-8-2.json.gz",
+          "workers": 8,
+          "offered_rate": 360,
+          "repetition": 2,
+          "valid": true,
+          "validation_issues": [],
+          "dispatch_lag_p95_ms": 0.5713730649858917,
+          "offered_requests": 4634,
+          "measured_requests": 3629,
+          "useful_responses": 3629,
+          "useful_fraction": 1.0,
+          "monotonic_accounting": true,
+          "trace_sha256": "e302b47552e56a64d1707eecc6d26e83abb01006ae1e29ec157329a2c29c1277",
+          "resource_diagnostics": {
+            "resource_windows": [
+              {
+                "role": "controller",
+                "pod": "controller-5bb9d499cd-tw98v",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.26504037606897046,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "upstream",
+                "pod": "provider-855d57dc89-58hdx",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.17942188786977464,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5fcjl",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.0611927736163033,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5tqfz",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.06250882763342241,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-5wwnc",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.06375708879757463,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-6zcqn",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.06254837683434086,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-p4j4r",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.061395491794046665,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-qqks4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.061079779040375676,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-t6rz6",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.058220719957463175,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              },
+              {
+                "role": "worker",
+                "pod": "workers-599bcd68bf-vmhj4",
+                "samples": 26,
+                "observed_mean_cpu_cores": 0.06322890315715442,
+                "throttled_period_delta": 0,
+                "throttled_usec_delta": 0
+              }
+            ],
+            "largest_retained_heartbeat_lag_seconds": {
+              "worker": 0.005064220999979625
+            },
+            "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+          }
+        }
+      ]
+    }
+  ]
+}
