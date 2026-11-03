@@ -1,0 +1,23 @@
+{
+  "source": "Selected settings parsed from the dedicated server startup log; no unrelated environment variables retained.",
+  "observed": {
+    "OLLAMA_HOST": [
+      "http://127.0.0.1:11435"
+    ],
+    "OLLAMA_NUM_PARALLEL": [
+      "4"
+    ],
+    "OLLAMA_MAX_QUEUE": [
+      "256"
+    ],
+    "OLLAMA_MAX_LOADED_MODELS": [
+      "1"
+    ],
+    "OLLAMA_CONTEXT_LENGTH": [
+      "8192"
+    ],
+    "OLLAMA_NO_CLOUD": [
+      "true"
+    ]
+  }
+}

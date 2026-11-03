@@ -1,0 +1,29 @@
+#!/usr/sbin/nft -f
+# Load only inside the dedicated a6-ollama-study container, never on its host.
+flush ruleset
+
+table inet alien6_research {
+    chain input {
+        type filter hook input priority filter; policy drop;
+        iifname "lo" accept
+        ct state invalid drop
+        ct state established,related accept
+        ip saddr 172.16.0.243 tcp dport { 11436, 11437 } accept
+        ip saddr 172.16.0.1 udp sport 67 udp dport 68 accept
+    }
+
+    chain forward {
+        type filter hook forward priority filter; policy drop;
+    }
+
+    chain output {
+        type filter hook output priority filter; policy drop;
+        oifname "lo" accept
+        ct state invalid drop
+        ct state established,related accept
+        ip daddr { 172.16.0.1, 255.255.255.255 } udp sport 68 udp dport 67 accept
+        ip daddr 172.16.0.1 udp dport 53 accept
+        ip daddr 172.16.0.1 tcp dport 53 accept
+        meta nfproto ipv4 tcp dport 443 accept
+    }
+}

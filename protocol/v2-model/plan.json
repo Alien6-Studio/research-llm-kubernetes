@@ -1,0 +1,1384 @@
+{
+  "pilot_sha256": "646f96af7855f48c2962a6ba0b7c24b6608e43a0d4ddab41d2f6a6d8044aabdc",
+  "native_pilot_capacity": 4.689436567862612,
+  "rates": {
+    "low": 1.17,
+    "near": 3.99,
+    "high": 7.03
+  },
+  "blocks": {
+    "model-qualification": [
+      {
+        "trial_id": "model-qualification-headroom-1-0",
+        "block": "model-qualification",
+        "profile": "headroom",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/headroom-0.json.gz",
+          "sha256": "dce094f09717cce1f59c76381b7e1a9bf12ead6a4fb647f9e97dfee7039bda5c"
+        }
+      },
+      {
+        "trial_id": "model-qualification-headroom-8-1",
+        "block": "model-qualification",
+        "profile": "headroom",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/headroom-1.json.gz",
+          "sha256": "6d5c557c07b0de230df395a113197ccdc09fc031283f450b7365868a69b1cfc8"
+        }
+      },
+      {
+        "trial_id": "model-qualification-headroom-1-1",
+        "block": "model-qualification",
+        "profile": "headroom",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/headroom-1.json.gz",
+          "sha256": "6d5c557c07b0de230df395a113197ccdc09fc031283f450b7365868a69b1cfc8"
+        }
+      },
+      {
+        "trial_id": "model-qualification-high-8-0",
+        "block": "model-qualification",
+        "profile": "high",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-0.json.gz",
+          "sha256": "cea36a97efc2a5a5446ebbb52d82135fb7d1758df48621666fafe0fdb129ffcc"
+        }
+      },
+      {
+        "trial_id": "model-qualification-high-1-2",
+        "block": "model-qualification",
+        "profile": "high",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-2.json.gz",
+          "sha256": "3a61b726816d218580250e278b58b5faa0af8a20f6052908d7e0c10e03a3f130"
+        }
+      },
+      {
+        "trial_id": "model-qualification-headroom-8-0",
+        "block": "model-qualification",
+        "profile": "headroom",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/headroom-0.json.gz",
+          "sha256": "dce094f09717cce1f59c76381b7e1a9bf12ead6a4fb647f9e97dfee7039bda5c"
+        }
+      },
+      {
+        "trial_id": "model-qualification-high-8-1",
+        "block": "model-qualification",
+        "profile": "high",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-1.json.gz",
+          "sha256": "8e2604ed24de54ccad61c4783102599434e6a016d78d1a458293ef9831dee2bf"
+        }
+      },
+      {
+        "trial_id": "model-qualification-headroom-1-2",
+        "block": "model-qualification",
+        "profile": "headroom",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/headroom-2.json.gz",
+          "sha256": "ccdaf6bb172ad1c48f1d6f3ab80c754bc7ec9df08b6041eafb912db8cff01e77"
+        }
+      },
+      {
+        "trial_id": "model-qualification-high-8-2",
+        "block": "model-qualification",
+        "profile": "high",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-2.json.gz",
+          "sha256": "3a61b726816d218580250e278b58b5faa0af8a20f6052908d7e0c10e03a3f130"
+        }
+      },
+      {
+        "trial_id": "model-qualification-headroom-8-2",
+        "block": "model-qualification",
+        "profile": "headroom",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/headroom-2.json.gz",
+          "sha256": "ccdaf6bb172ad1c48f1d6f3ab80c754bc7ec9df08b6041eafb912db8cff01e77"
+        }
+      },
+      {
+        "trial_id": "model-qualification-high-1-0",
+        "block": "model-qualification",
+        "profile": "high",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-0.json.gz",
+          "sha256": "cea36a97efc2a5a5446ebbb52d82135fb7d1758df48621666fafe0fdb129ffcc"
+        }
+      },
+      {
+        "trial_id": "model-qualification-high-1-1",
+        "block": "model-qualification",
+        "profile": "high",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": true,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "emulator",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-1.json.gz",
+          "sha256": "8e2604ed24de54ccad61c4783102599434e6a016d78d1a458293ef9831dee2bf"
+        }
+      }
+    ],
+    "real-model": [
+      {
+        "trial_id": "real-model-low-8-2",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-2.json.gz",
+          "sha256": "73b740257827a761d73b76aaeeb9537c21f17bf1a6507741b64f3ad4b8fa1598"
+        }
+      },
+      {
+        "trial_id": "real-model-near-2-1",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 2,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-1.json.gz",
+          "sha256": "1bc1e9753bf264a21f5101c1d208bb9482ff53062dfd94bf974d0749f1b0abd6"
+        }
+      },
+      {
+        "trial_id": "real-model-near-8-2",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-2.json.gz",
+          "sha256": "2ec3783aab829f6641a2686b5ee4cd5336e59c553f5e0907099d6f5320d4efeb"
+        }
+      },
+      {
+        "trial_id": "real-model-near-1-2",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-2.json.gz",
+          "sha256": "2ec3783aab829f6641a2686b5ee4cd5336e59c553f5e0907099d6f5320d4efeb"
+        }
+      },
+      {
+        "trial_id": "real-model-high-4-2",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 4,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-2.json.gz",
+          "sha256": "3a61b726816d218580250e278b58b5faa0af8a20f6052908d7e0c10e03a3f130"
+        }
+      },
+      {
+        "trial_id": "real-model-near-4-1",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 4,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-1.json.gz",
+          "sha256": "1bc1e9753bf264a21f5101c1d208bb9482ff53062dfd94bf974d0749f1b0abd6"
+        }
+      },
+      {
+        "trial_id": "real-model-high-8-0",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-0.json.gz",
+          "sha256": "cea36a97efc2a5a5446ebbb52d82135fb7d1758df48621666fafe0fdb129ffcc"
+        }
+      },
+      {
+        "trial_id": "real-model-low-4-2",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 4,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-2.json.gz",
+          "sha256": "73b740257827a761d73b76aaeeb9537c21f17bf1a6507741b64f3ad4b8fa1598"
+        }
+      },
+      {
+        "trial_id": "real-model-high-1-2",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-2.json.gz",
+          "sha256": "3a61b726816d218580250e278b58b5faa0af8a20f6052908d7e0c10e03a3f130"
+        }
+      },
+      {
+        "trial_id": "real-model-near-4-0",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 4,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-0.json.gz",
+          "sha256": "8bcd90cf95545f3bd430de254fc43a0f17a860aafa8c3b5b6b60ac36487968e8"
+        }
+      },
+      {
+        "trial_id": "real-model-high-2-2",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 2,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-2.json.gz",
+          "sha256": "3a61b726816d218580250e278b58b5faa0af8a20f6052908d7e0c10e03a3f130"
+        }
+      },
+      {
+        "trial_id": "real-model-near-2-0",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 2,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-0.json.gz",
+          "sha256": "8bcd90cf95545f3bd430de254fc43a0f17a860aafa8c3b5b6b60ac36487968e8"
+        }
+      },
+      {
+        "trial_id": "real-model-near-0-1",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 1,
+        "direct_ollama": true,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-1.json.gz",
+          "sha256": "1bc1e9753bf264a21f5101c1d208bb9482ff53062dfd94bf974d0749f1b0abd6"
+        }
+      },
+      {
+        "trial_id": "real-model-low-1-1",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-1.json.gz",
+          "sha256": "61d1f1859cd3f066b9746c2151630da497465449d58ba306acd414e31ef84a07"
+        }
+      },
+      {
+        "trial_id": "real-model-high-1-1",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-1.json.gz",
+          "sha256": "8e2604ed24de54ccad61c4783102599434e6a016d78d1a458293ef9831dee2bf"
+        }
+      },
+      {
+        "trial_id": "real-model-low-4-1",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 4,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-1.json.gz",
+          "sha256": "61d1f1859cd3f066b9746c2151630da497465449d58ba306acd414e31ef84a07"
+        }
+      },
+      {
+        "trial_id": "real-model-high-0-0",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 1,
+        "direct_ollama": true,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-0.json.gz",
+          "sha256": "cea36a97efc2a5a5446ebbb52d82135fb7d1758df48621666fafe0fdb129ffcc"
+        }
+      },
+      {
+        "trial_id": "real-model-near-4-2",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 4,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-2.json.gz",
+          "sha256": "2ec3783aab829f6641a2686b5ee4cd5336e59c553f5e0907099d6f5320d4efeb"
+        }
+      },
+      {
+        "trial_id": "real-model-low-1-2",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-2.json.gz",
+          "sha256": "73b740257827a761d73b76aaeeb9537c21f17bf1a6507741b64f3ad4b8fa1598"
+        }
+      },
+      {
+        "trial_id": "real-model-low-2-0",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 2,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-0.json.gz",
+          "sha256": "291b8b03a601d43b2e9edb15812d306c9bc7c809c9bc3a357510787d61306bf3"
+        }
+      },
+      {
+        "trial_id": "real-model-low-0-1",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 1,
+        "direct_ollama": true,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-1.json.gz",
+          "sha256": "61d1f1859cd3f066b9746c2151630da497465449d58ba306acd414e31ef84a07"
+        }
+      },
+      {
+        "trial_id": "real-model-low-8-0",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-0.json.gz",
+          "sha256": "291b8b03a601d43b2e9edb15812d306c9bc7c809c9bc3a357510787d61306bf3"
+        }
+      },
+      {
+        "trial_id": "real-model-low-8-1",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-1.json.gz",
+          "sha256": "61d1f1859cd3f066b9746c2151630da497465449d58ba306acd414e31ef84a07"
+        }
+      },
+      {
+        "trial_id": "real-model-near-1-1",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-1.json.gz",
+          "sha256": "1bc1e9753bf264a21f5101c1d208bb9482ff53062dfd94bf974d0749f1b0abd6"
+        }
+      },
+      {
+        "trial_id": "real-model-low-0-2",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 1,
+        "direct_ollama": true,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-2.json.gz",
+          "sha256": "73b740257827a761d73b76aaeeb9537c21f17bf1a6507741b64f3ad4b8fa1598"
+        }
+      },
+      {
+        "trial_id": "real-model-low-2-2",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 2,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-2.json.gz",
+          "sha256": "73b740257827a761d73b76aaeeb9537c21f17bf1a6507741b64f3ad4b8fa1598"
+        }
+      },
+      {
+        "trial_id": "real-model-near-8-1",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-1.json.gz",
+          "sha256": "1bc1e9753bf264a21f5101c1d208bb9482ff53062dfd94bf974d0749f1b0abd6"
+        }
+      },
+      {
+        "trial_id": "real-model-high-4-0",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 4,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-0.json.gz",
+          "sha256": "cea36a97efc2a5a5446ebbb52d82135fb7d1758df48621666fafe0fdb129ffcc"
+        }
+      },
+      {
+        "trial_id": "real-model-near-0-0",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 1,
+        "direct_ollama": true,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-0.json.gz",
+          "sha256": "8bcd90cf95545f3bd430de254fc43a0f17a860aafa8c3b5b6b60ac36487968e8"
+        }
+      },
+      {
+        "trial_id": "real-model-high-0-2",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 1,
+        "direct_ollama": true,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-2.json.gz",
+          "sha256": "3a61b726816d218580250e278b58b5faa0af8a20f6052908d7e0c10e03a3f130"
+        }
+      },
+      {
+        "trial_id": "real-model-high-8-2",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-2.json.gz",
+          "sha256": "3a61b726816d218580250e278b58b5faa0af8a20f6052908d7e0c10e03a3f130"
+        }
+      },
+      {
+        "trial_id": "real-model-near-1-0",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-0.json.gz",
+          "sha256": "8bcd90cf95545f3bd430de254fc43a0f17a860aafa8c3b5b6b60ac36487968e8"
+        }
+      },
+      {
+        "trial_id": "real-model-near-2-2",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 2,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-2.json.gz",
+          "sha256": "2ec3783aab829f6641a2686b5ee4cd5336e59c553f5e0907099d6f5320d4efeb"
+        }
+      },
+      {
+        "trial_id": "real-model-high-2-0",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 2,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-0.json.gz",
+          "sha256": "cea36a97efc2a5a5446ebbb52d82135fb7d1758df48621666fafe0fdb129ffcc"
+        }
+      },
+      {
+        "trial_id": "real-model-high-2-1",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 2,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-1.json.gz",
+          "sha256": "8e2604ed24de54ccad61c4783102599434e6a016d78d1a458293ef9831dee2bf"
+        }
+      },
+      {
+        "trial_id": "real-model-low-0-0",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 1,
+        "direct_ollama": true,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-0.json.gz",
+          "sha256": "291b8b03a601d43b2e9edb15812d306c9bc7c809c9bc3a357510787d61306bf3"
+        }
+      },
+      {
+        "trial_id": "real-model-high-1-0",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-0.json.gz",
+          "sha256": "cea36a97efc2a5a5446ebbb52d82135fb7d1758df48621666fafe0fdb129ffcc"
+        }
+      },
+      {
+        "trial_id": "real-model-high-8-1",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-1.json.gz",
+          "sha256": "8e2604ed24de54ccad61c4783102599434e6a016d78d1a458293ef9831dee2bf"
+        }
+      },
+      {
+        "trial_id": "real-model-low-1-0",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 1,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-0.json.gz",
+          "sha256": "291b8b03a601d43b2e9edb15812d306c9bc7c809c9bc3a357510787d61306bf3"
+        }
+      },
+      {
+        "trial_id": "real-model-near-8-0",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 8,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-0.json.gz",
+          "sha256": "8bcd90cf95545f3bd430de254fc43a0f17a860aafa8c3b5b6b60ac36487968e8"
+        }
+      },
+      {
+        "trial_id": "real-model-high-4-1",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 4,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-1.json.gz",
+          "sha256": "8e2604ed24de54ccad61c4783102599434e6a016d78d1a458293ef9831dee2bf"
+        }
+      },
+      {
+        "trial_id": "real-model-low-2-1",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 2,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-1.json.gz",
+          "sha256": "61d1f1859cd3f066b9746c2151630da497465449d58ba306acd414e31ef84a07"
+        }
+      },
+      {
+        "trial_id": "real-model-high-0-1",
+        "block": "real-model",
+        "profile": "high",
+        "replicas": 1,
+        "direct_ollama": true,
+        "policy": "none",
+        "repetition": 1,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/high-1.json.gz",
+          "sha256": "8e2604ed24de54ccad61c4783102599434e6a016d78d1a458293ef9831dee2bf"
+        }
+      },
+      {
+        "trial_id": "real-model-low-4-0",
+        "block": "real-model",
+        "profile": "low",
+        "replicas": 4,
+        "direct_ollama": false,
+        "policy": "none",
+        "repetition": 0,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/low-0.json.gz",
+          "sha256": "291b8b03a601d43b2e9edb15812d306c9bc7c809c9bc3a357510787d61306bf3"
+        }
+      },
+      {
+        "trial_id": "real-model-near-0-2",
+        "block": "real-model",
+        "profile": "near",
+        "replicas": 1,
+        "direct_ollama": true,
+        "policy": "none",
+        "repetition": 2,
+        "node_cpus": 4,
+        "fastpath": false,
+        "warmup_seconds": 5,
+        "measurement_seconds": 20,
+        "deadline_seconds": 10,
+        "provider": {
+          "mode": "ollama",
+          "tokens_per_second": 1000000000,
+          "requests_per_second": 1000,
+          "ollama_url": "http://host.docker.internal:11435"
+        },
+        "trace_reference": {
+          "path": "protocol/v2-model/near-2.json.gz",
+          "sha256": "2ec3783aab829f6641a2686b5ee4cd5336e59c553f5e0907099d6f5320d4efeb"
+        }
+      }
+    ]
+  },
+  "routing_rule": "Record exact serving UIDs. For sparse real load require a subset of the verified ready UID set, not that random low-volume traffic reaches every ready replica."
+}

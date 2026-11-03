@@ -1,0 +1,1250 @@
+{
+  "scope": "Descriptive essential contrasts on one independently hosted Linux VM after a complete passing fast-path block. Registered CPU-envelope, quota-level, admission, burst, autoscaling and real-model follow-ups remain incomplete; this is not the full confirmatory matrix.",
+  "source_commit": "2bd49bd11c7fe935809c27d501949decf5526368",
+  "service_sha256": "7226fb07d48e4750b69f0c45861b1b23d19f68ccb88377b1b762e0cc14202cf7",
+  "trace_archive_sha256": "03ed54c8eaf36c2d652783909934f56bca82dbd6e5b99d840f84e1e4e9465e2c",
+  "environment": {
+    "system": "Linux",
+    "machine": "x86_64",
+    "release": "7.0.0-1017-azure",
+    "docker_capacity": {
+      "command": [
+        "docker",
+        "info",
+        "--format",
+        "{\"cpus\":{{.NCPU}},\"memory_bytes\":{{.MemTotal}},\"architecture\":\"{{.Architecture}}\",\"version\":\"{{.ServerVersion}}\"}"
+      ],
+      "returncode": 0,
+      "stdout": "{\"cpus\":4,\"memory_bytes\":16760344576,\"architecture\":\"x86_64\",\"version\":\"28.0.4\"}\n",
+      "stderr": ""
+    },
+    "node_limits": {
+      "command": [
+        "docker",
+        "inspect",
+        "a6-research-control-plane",
+        "--format",
+        "{\"nano_cpus\":{{.HostConfig.NanoCpus}},\"memory_bytes\":{{.HostConfig.Memory}},\"memory_swap_bytes\":{{.HostConfig.MemorySwap}}}"
+      ],
+      "returncode": 0,
+      "stdout": "{\"nano_cpus\":4000000000,\"memory_bytes\":8589934592,\"memory_swap_bytes\":8589934592}\n",
+      "stderr": ""
+    }
+  },
+  "workload_pairing": "Within each repetition, all four arms have identical arrival offsets, service times, declared units and tasks. Only profile labels differ in request IDs.",
+  "cohort_definition": "Window completions count useful responses ending at offsets [3,13), including warm-up arrivals. Arrival-cohort results count requests scheduled at [3,13) and completed before their own 2-second deadline, including bounded drain. These measures are reported separately.",
+  "trials": [
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-1-0.json.gz",
+      "profile": "quota",
+      "workers": 1,
+      "repetition": 0,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "2a30e82de0aa6e2efd99ae65024f5d652584c13ac5480aa5d75ab7ef34f232e5",
+      "measurement_arrivals": 1788,
+      "useful_event_completions_in_10s": 210,
+      "useful_event_completions_per_second": 21.0,
+      "useful_measurement_arrivals_before_deadline": 210,
+      "useful_arrival_cohort_per_second": 21.0,
+      "arrival_cohort_status_counts": {
+        "429": 1572,
+        "200": 210,
+        "500": 4,
+        "504": 2
+      },
+      "arrival_cohort_failure_reasons": {
+        "queue_full": 1572,
+        "TimeoutError": 4,
+        "queue_deadline": 2
+      },
+      "http_500_reasons": {
+        "TimeoutError": 4
+      },
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 0.0012583768480567414,
+        "p95": 1.681231160615539,
+        "p99": 1.8019374326051434
+      },
+      "dispatch_lag_p95_ms": 0.23521273391224895,
+      "unknown_attempt_counts_in_arrival_cohort": 4,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.1295808844335355,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.021705710665302004,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.10341136115982755,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {},
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 314,
+        "quota_refused": 0,
+        "declared_tokens_accepted": 498800
+      }
+    },
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-1-1.json.gz",
+      "profile": "quota",
+      "workers": 1,
+      "repetition": 1,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "962037e7b4a3f9917008ed0506386599dbe055d2e00d37cb42690b93848dbae2",
+      "measurement_arrivals": 1784,
+      "useful_event_completions_in_10s": 202,
+      "useful_event_completions_per_second": 20.2,
+      "useful_measurement_arrivals_before_deadline": 205,
+      "useful_arrival_cohort_per_second": 20.5,
+      "arrival_cohort_status_counts": {
+        "429": 1571,
+        "200": 205,
+        "504": 4,
+        "500": 4
+      },
+      "arrival_cohort_failure_reasons": {
+        "queue_full": 1571,
+        "queue_deadline": 4,
+        "TimeoutError": 4
+      },
+      "http_500_reasons": {
+        "TimeoutError": 4
+      },
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 0.0012289438605534997,
+        "p95": 1.7118506591992286,
+        "p99": 1.8770555800769557
+      },
+      "dispatch_lag_p95_ms": 0.2292221437869557,
+      "unknown_attempt_counts_in_arrival_cohort": 4,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.12784639300285328,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.020581127414782168,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.10128026818755112,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {},
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 300,
+        "quota_refused": 0,
+        "declared_tokens_accepted": 486000
+      }
+    },
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-1-2.json.gz",
+      "profile": "quota",
+      "workers": 1,
+      "repetition": 2,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "cfeb9e443db32477a638735751be162db50f61581875f71e96dd06d34610f010",
+      "measurement_arrivals": 1707,
+      "useful_event_completions_in_10s": 204,
+      "useful_event_completions_per_second": 20.4,
+      "useful_measurement_arrivals_before_deadline": 203,
+      "useful_arrival_cohort_per_second": 20.3,
+      "arrival_cohort_status_counts": {
+        "429": 1494,
+        "200": 203,
+        "500": 7,
+        "504": 3
+      },
+      "arrival_cohort_failure_reasons": {
+        "queue_full": 1494,
+        "TimeoutError": 7,
+        "queue_deadline": 3
+      },
+      "http_500_reasons": {
+        "TimeoutError": 7
+      },
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 0.0012840208790976249,
+        "p95": 1.7234546394802237,
+        "p99": 1.8582551775384673
+      },
+      "dispatch_lag_p95_ms": 0.2761668677067064,
+      "unknown_attempt_counts_in_arrival_cohort": 7,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.1284940380344606,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.022307182104765476,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.10289202122451525,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {},
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 303,
+        "quota_refused": 0,
+        "declared_tokens_accepted": 480600
+      }
+    },
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-8-0.json.gz",
+      "profile": "quota",
+      "workers": 8,
+      "repetition": 0,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "2a30e82de0aa6e2efd99ae65024f5d652584c13ac5480aa5d75ab7ef34f232e5",
+      "measurement_arrivals": 1788,
+      "useful_event_completions_in_10s": 248,
+      "useful_event_completions_per_second": 24.8,
+      "useful_measurement_arrivals_before_deadline": 248,
+      "useful_arrival_cohort_per_second": 24.8,
+      "arrival_cohort_status_counts": {
+        "429": 1540,
+        "200": 248
+      },
+      "arrival_cohort_failure_reasons": {
+        "upstream_quota": 1540
+      },
+      "http_500_reasons": {},
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 0.002705955395754245,
+        "p95": 0.21483558218335475,
+        "p99": 0.23681289711657882
+      },
+      "dispatch_lag_p95_ms": 0.31566040581765265,
+      "unknown_attempt_counts_in_arrival_cohort": 0,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.14690826293617548,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.09364258741430995,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.03561183700343,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-lxq68",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.033633852160790595,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-nm4jt",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.03477330145525887,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-q425h",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.03465239426130474,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-r6dwf",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.03235726360112873,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-s29p5",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.030624242924507047,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-t4mmf",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.03529259809414201,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-xk65n",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.03400476653748223,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {},
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 2355,
+        "quota_refused": 2007,
+        "declared_tokens_accepted": 554400
+      }
+    },
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-8-1.json.gz",
+      "profile": "quota",
+      "workers": 8,
+      "repetition": 1,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "962037e7b4a3f9917008ed0506386599dbe055d2e00d37cb42690b93848dbae2",
+      "measurement_arrivals": 1784,
+      "useful_event_completions_in_10s": 243,
+      "useful_event_completions_per_second": 24.3,
+      "useful_measurement_arrivals_before_deadline": 243,
+      "useful_arrival_cohort_per_second": 24.3,
+      "arrival_cohort_status_counts": {
+        "429": 1541,
+        "200": 243
+      },
+      "arrival_cohort_failure_reasons": {
+        "upstream_quota": 1541
+      },
+      "http_500_reasons": {},
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 0.002926908485335389,
+        "p95": 0.2139780552760726,
+        "p99": 0.237739610324752
+      },
+      "dispatch_lag_p95_ms": 0.3292381389314869,
+      "unknown_attempt_counts_in_arrival_cohort": 0,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 26,
+            "observed_mean_cpu_cores": 0.15614387788248676,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 26,
+            "observed_mean_cpu_cores": 0.10150444596479712,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 26,
+            "observed_mean_cpu_cores": 0.032396793343368924,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-97lwl",
+            "samples": 26,
+            "observed_mean_cpu_cores": 0.03811275665403835,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-bdv67",
+            "samples": 26,
+            "observed_mean_cpu_cores": 0.03916870759875443,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-fdx4x",
+            "samples": 26,
+            "observed_mean_cpu_cores": 0.03604988897348313,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-j9hgg",
+            "samples": 26,
+            "observed_mean_cpu_cores": 0.0352260671865022,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-jvj7x",
+            "samples": 26,
+            "observed_mean_cpu_cores": 0.039252354075958444,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-jzjq7",
+            "samples": 26,
+            "observed_mean_cpu_cores": 0.034683101556396256,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-kfcjc",
+            "samples": 26,
+            "observed_mean_cpu_cores": 0.03685963500615358,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {},
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 2346,
+        "quota_refused": 1999,
+        "declared_tokens_accepted": 552200
+      }
+    },
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-8-2.json.gz",
+      "profile": "quota",
+      "workers": 8,
+      "repetition": 2,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "cfeb9e443db32477a638735751be162db50f61581875f71e96dd06d34610f010",
+      "measurement_arrivals": 1707,
+      "useful_event_completions_in_10s": 241,
+      "useful_event_completions_per_second": 24.1,
+      "useful_measurement_arrivals_before_deadline": 242,
+      "useful_arrival_cohort_per_second": 24.2,
+      "arrival_cohort_status_counts": {
+        "429": 1465,
+        "200": 242
+      },
+      "arrival_cohort_failure_reasons": {
+        "upstream_quota": 1465
+      },
+      "http_500_reasons": {},
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 0.00272182258970588,
+        "p95": 0.2162604839501796,
+        "p99": 0.2393197493262278
+      },
+      "dispatch_lag_p95_ms": 0.3104478924456089,
+      "unknown_attempt_counts_in_arrival_cohort": 0,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.1444977218848821,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.0934016123976677,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.035879325218286906,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-6xhnw",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.04079433936925055,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-9bprd",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.045512264036933495,
+            "throttled_period_delta": 1,
+            "throttled_usec_delta": 174882
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-cbbp6",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.033425918106676715,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-cwl8c",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.03683176675809276,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-fsxk8",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.03469327064484737,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-k2wb9",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.03495133552347408,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-klv77",
+            "samples": 27,
+            "observed_mean_cpu_cores": 0.038292743044641205,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {
+          "worker": 0.03238743199998907
+        },
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 2225,
+        "quota_refused": 1880,
+        "declared_tokens_accepted": 553800
+      }
+    },
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-1-0.json.gz",
+      "profile": "unlimited",
+      "workers": 1,
+      "repetition": 0,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "2a30e82de0aa6e2efd99ae65024f5d652584c13ac5480aa5d75ab7ef34f232e5",
+      "measurement_arrivals": 1788,
+      "useful_event_completions_in_10s": 197,
+      "useful_event_completions_per_second": 19.7,
+      "useful_measurement_arrivals_before_deadline": 202,
+      "useful_arrival_cohort_per_second": 20.2,
+      "arrival_cohort_status_counts": {
+        "429": 1574,
+        "200": 202,
+        "504": 4,
+        "500": 8
+      },
+      "arrival_cohort_failure_reasons": {
+        "queue_full": 1574,
+        "queue_deadline": 4,
+        "TimeoutError": 8
+      },
+      "http_500_reasons": {
+        "TimeoutError": 8
+      },
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 0.0012623459001588344,
+        "p95": 1.7278153803450778,
+        "p99": 1.9326249028110851
+      },
+      "dispatch_lag_p95_ms": 0.23948715619326322,
+      "unknown_attempt_counts_in_arrival_cohort": 8,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.13003562541618863,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.020971079674625175,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.10282720492258432,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {},
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 307,
+        "quota_refused": 0,
+        "declared_tokens_accepted": 487000
+      }
+    },
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-1-1.json.gz",
+      "profile": "unlimited",
+      "workers": 1,
+      "repetition": 1,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "962037e7b4a3f9917008ed0506386599dbe055d2e00d37cb42690b93848dbae2",
+      "measurement_arrivals": 1784,
+      "useful_event_completions_in_10s": 206,
+      "useful_event_completions_per_second": 20.6,
+      "useful_measurement_arrivals_before_deadline": 208,
+      "useful_arrival_cohort_per_second": 20.8,
+      "arrival_cohort_status_counts": {
+        "429": 1570,
+        "200": 208,
+        "504": 3,
+        "500": 3
+      },
+      "arrival_cohort_failure_reasons": {
+        "queue_full": 1570,
+        "queue_deadline": 3,
+        "TimeoutError": 3
+      },
+      "http_500_reasons": {
+        "TimeoutError": 3
+      },
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 0.001288808027993582,
+        "p95": 1.6945071284387154,
+        "p99": 1.832451703578613
+      },
+      "dispatch_lag_p95_ms": 0.2557451696247881,
+      "unknown_attempt_counts_in_arrival_cohort": 3,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.13269247819730523,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.021407200847833537,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.1041712479567061,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {
+          "controller": 0.011526957000039601
+        },
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 302,
+        "quota_refused": 0,
+        "declared_tokens_accepted": 483200
+      }
+    },
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-1-2.json.gz",
+      "profile": "unlimited",
+      "workers": 1,
+      "repetition": 2,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "cfeb9e443db32477a638735751be162db50f61581875f71e96dd06d34610f010",
+      "measurement_arrivals": 1707,
+      "useful_event_completions_in_10s": 203,
+      "useful_event_completions_per_second": 20.3,
+      "useful_measurement_arrivals_before_deadline": 205,
+      "useful_arrival_cohort_per_second": 20.5,
+      "arrival_cohort_status_counts": {
+        "429": 1494,
+        "200": 205,
+        "500": 3,
+        "504": 5
+      },
+      "arrival_cohort_failure_reasons": {
+        "queue_full": 1494,
+        "TimeoutError": 3,
+        "queue_deadline": 5
+      },
+      "http_500_reasons": {
+        "TimeoutError": 3
+      },
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 0.001260169135207434,
+        "p95": 1.7410667537967015,
+        "p99": 1.8859667641096962
+      },
+      "dispatch_lag_p95_ms": 0.23429383151096772,
+      "unknown_attempt_counts_in_arrival_cohort": 3,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.12456675596840013,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.02098454905906477,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.0993617777200206,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {},
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 303,
+        "quota_refused": 0,
+        "declared_tokens_accepted": 501000
+      }
+    },
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-8-0.json.gz",
+      "profile": "unlimited",
+      "workers": 8,
+      "repetition": 0,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "2a30e82de0aa6e2efd99ae65024f5d652584c13ac5480aa5d75ab7ef34f232e5",
+      "measurement_arrivals": 1788,
+      "useful_event_completions_in_10s": 1655,
+      "useful_event_completions_per_second": 165.5,
+      "useful_measurement_arrivals_before_deadline": 1738,
+      "useful_arrival_cohort_per_second": 173.8,
+      "arrival_cohort_status_counts": {
+        "200": 1738,
+        "429": 45,
+        "504": 3,
+        "500": 2
+      },
+      "arrival_cohort_failure_reasons": {
+        "queue_full": 45,
+        "queue_deadline": 3,
+        "TimeoutError": 2
+      },
+      "http_500_reasons": {
+        "TimeoutError": 2
+      },
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 1.1226378464260733,
+        "p95": 1.6536382617858862,
+        "p99": 1.7375396720954086
+      },
+      "dispatch_lag_p95_ms": 0.5260139482743398,
+      "unknown_attempt_counts_in_arrival_cohort": 2,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.14264043198636508,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.09617188592990113,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-457w8",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.036801316680365945,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-558xj",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.04070041597932205,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5v7db",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.04590041972975486,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.039181920401657175,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-fphk8",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.04815797425372078,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-s6lw5",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.03712455263728643,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-vmdbg",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.04513777944982036,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-vvwkz",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.04594890255326796,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {
+          "controller": 0.009145955999979378,
+          "worker": 0.02585668300001089
+        },
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 2306,
+        "quota_refused": 0,
+        "declared_tokens_accepted": 3704000
+      }
+    },
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-8-1.json.gz",
+      "profile": "unlimited",
+      "workers": 8,
+      "repetition": 1,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "962037e7b4a3f9917008ed0506386599dbe055d2e00d37cb42690b93848dbae2",
+      "measurement_arrivals": 1784,
+      "useful_event_completions_in_10s": 1615,
+      "useful_event_completions_per_second": 161.5,
+      "useful_measurement_arrivals_before_deadline": 1696,
+      "useful_arrival_cohort_per_second": 169.6,
+      "arrival_cohort_status_counts": {
+        "200": 1696,
+        "429": 74,
+        "500": 14
+      },
+      "arrival_cohort_failure_reasons": {
+        "queue_full": 74,
+        "TimeoutError": 14
+      },
+      "http_500_reasons": {
+        "TimeoutError": 14
+      },
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 1.0699890209432397,
+        "p95": 1.769407672401826,
+        "p99": 1.909352474753348
+      },
+      "dispatch_lag_p95_ms": 0.5087494087661071,
+      "unknown_attempt_counts_in_arrival_cohort": 14,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.1311578766042429,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.08626641732709907,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.031955752315425745,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-lxq68",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.041205560598474265,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-nm4jt",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.03810161919822099,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-q425h",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.04181875905628688,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-r6dwf",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.04352135465206048,
+            "throttled_period_delta": 1,
+            "throttled_usec_delta": 8058
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-s29p5",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.04271277133379655,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-t4mmf",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.04118274182433249,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-xk65n",
+            "samples": 30,
+            "observed_mean_cpu_cores": 0.038647623569192054,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {
+          "controller": 0.008016304000004765,
+          "worker": 0.019779322000015327
+        },
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 2270,
+        "quota_refused": 0,
+        "declared_tokens_accepted": 3623600
+      }
+    },
+    {
+      "file": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-8-2.json.gz",
+      "profile": "unlimited",
+      "workers": 8,
+      "repetition": 2,
+      "valid": true,
+      "validation_issues": [],
+      "workload_without_labels_sha256": "cfeb9e443db32477a638735751be162db50f61581875f71e96dd06d34610f010",
+      "measurement_arrivals": 1707,
+      "useful_event_completions_in_10s": 1589,
+      "useful_event_completions_per_second": 158.9,
+      "useful_measurement_arrivals_before_deadline": 1701,
+      "useful_arrival_cohort_per_second": 170.1,
+      "arrival_cohort_status_counts": {
+        "200": 1701,
+        "429": 5,
+        "500": 1
+      },
+      "arrival_cohort_failure_reasons": {
+        "queue_full": 5,
+        "TimeoutError": 1
+      },
+      "http_500_reasons": {
+        "TimeoutError": 1
+      },
+      "all_arrival_cohort_latency_seconds": {
+        "p50": 0.8129791459249986,
+        "p95": 1.4852039712069995,
+        "p99": 1.705118042150275
+      },
+      "dispatch_lag_p95_ms": 0.4294993279359005,
+      "unknown_attempt_counts_in_arrival_cohort": 1,
+      "resource_diagnostics": {
+        "resource_windows": [
+          {
+            "role": "controller",
+            "pod": "controller-5bb9d499cd-tw98v",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.13394684804878484,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "upstream",
+            "pod": "provider-855d57dc89-58hdx",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.0912416417373584,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-5wwnc",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.03688930060188325,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-97lwl",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.03828837325069606,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-bdv67",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.03254101179436304,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-fdx4x",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.03628361743256849,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-j9hgg",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.03546531618587908,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-jvj7x",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.03563070852663706,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-jzjq7",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.035890870516560446,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          },
+          {
+            "role": "worker",
+            "pod": "workers-599bcd68bf-kfcjc",
+            "samples": 29,
+            "observed_mean_cpu_cores": 0.03789299651556432,
+            "throttled_period_delta": 0,
+            "throttled_usec_delta": 0
+          }
+        ],
+        "largest_retained_heartbeat_lag_seconds": {},
+        "note": "Mean CPU and retained heartbeat pauses are diagnostics, not proof of hardware headroom or a causal attribution. Windows can overlap."
+      },
+      "observed_cpu_counter_resets": [],
+      "observed_oom_kill_pods": [],
+      "provider_cumulative_counters": {
+        "calls": 2220,
+        "quota_refused": 0,
+        "declared_tokens_accepted": 3543600
+      }
+    }
+  ],
+  "paired_replica_gains": [
+    {
+      "repetition": 0,
+      "unlimited_replica_gain_per_second": 145.8,
+      "quota_replica_gain_per_second": 3.8000000000000007
+    },
+    {
+      "repetition": 1,
+      "unlimited_replica_gain_per_second": 140.9,
+      "quota_replica_gain_per_second": 4.100000000000001
+    },
+    {
+      "repetition": 2,
+      "unlimited_replica_gain_per_second": 138.6,
+      "quota_replica_gain_per_second": 3.700000000000003
+    }
+  ],
+  "limits": [
+    "Three seeded repetitions are the experimental units; requests within a trial are correlated.",
+    "HTTP500 TimeoutError outcomes are retained as failures, not dropped. Attempt counts missing from failure records remain unknown.",
+    "Sampled CPU and OOM counters show only observed windows; continuous pod restart counts were not archived, so their absence cannot prove no restart.",
+    "The local Mac v3 block did not qualify. Linux contrasts are not a successful cross-host replication of a capacity effect.",
+    "No real-model inference throughput, semantic quality, GPU, cloud cost or production sizing conclusion follows."
+  ]
+}

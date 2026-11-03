@@ -1,0 +1,21 @@
+.venv/
+data/
+__pycache__/
+*.pyc
+.kubeconfig*
+*.log
+.venv
+.DS_Store
+
+/runs/v2-*/
+
+# Transfer capsules and host-operation records remain local. Numerical evidence
+# is published as individually hashed gzip files under cpu-native-baseline/.
+/archives/v2-ollama-fra6s004-cpu-continuation/collection.tar.gz
+/archives/v2-ollama-fra6s004-cpu-continuation/method-snapshot.tar.gz
+/archives/v2-ollama-fra6s004-cpu-continuation/operational-*.tar.gz
+/archives/v2-ollama-fra6s004-cpu-long-window-partial-preservation/
+/evidence/v2-ollama-fra6s004-cpu-continuation/
+/runs/shared-admission/
+/archives/v2-ollama-shared-admission/collection.tar.gz
+/evidence/v2-ollama-shared-admission/

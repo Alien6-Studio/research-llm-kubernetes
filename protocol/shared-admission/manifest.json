@@ -1,0 +1,1294 @@
+{
+  "base_source_id": "sha256:bba1acee1beb772ccb9d45a18bb3e30c88dc5e05f53e7649d918db4d26afdd3f",
+  "calibration": {
+    "git_base": "db31fdad5e022ae165c1661c41632c1c9a761b84",
+    "path": "runs/v2-ollama-fra6s004-cpu-confirmation-pilot/pilot.json",
+    "selection": {
+      "capacity": 1,
+      "deadline_seconds": 10,
+      "groups": [
+        {
+          "concurrency": 1,
+          "p50_seconds": 5.653664905999904,
+          "p95_seconds": 11.098176331000104,
+          "request_seconds": [
+            5.485122887000216,
+            5.46374588100025,
+            10.94232055700013,
+            11.021569974999693,
+            5.653664905999904,
+            5.45439734699994,
+            10.982667899000262,
+            11.025740258999576,
+            5.468195423999532,
+            5.470877327999915,
+            11.098176331000104,
+            11.069802592000087,
+            5.508954552999967,
+            5.503399373999855,
+            10.950844855000469,
+            10.945176221999645
+          ],
+          "requests": 16,
+          "within_deadline": 8
+        },
+        {
+          "concurrency": 2,
+          "p50_seconds": 16.199365022000165,
+          "p95_seconds": 28.67011534499943,
+          "request_seconds": [
+            11.842174077999516,
+            11.921060337000199,
+            23.048258664999594,
+            28.67011534499943,
+            10.8048181260001,
+            16.391234142999565,
+            21.802715037999405,
+            16.382646834000298,
+            10.948692961999768,
+            16.199365022000165,
+            21.567972794000525,
+            16.134742711999934,
+            10.742326034000143,
+            16.25562817500031,
+            21.801186366000366,
+            11.168026832000578
+          ],
+          "requests": 16,
+          "within_deadline": 0
+        },
+        {
+          "concurrency": 4,
+          "p50_seconds": 27.340760934000173,
+          "p95_seconds": 49.3276185550003,
+          "request_seconds": [
+            33.573578427999564,
+            49.3276185550003,
+            33.713091276999876,
+            38.71890702099972,
+            27.014522534000207,
+            32.790779057999316,
+            22.600712677000047,
+            38.55891946700012,
+            16.066590581000128,
+            37.22197243200026,
+            27.10160280999935,
+            21.57425929799956,
+            31.63840201400035,
+            27.340760934000173,
+            22.47619242699966,
+            22.27314879699952
+          ],
+          "requests": 16,
+          "within_deadline": 0
+        }
+      ],
+      "pilot_deadline_feasible": false,
+      "quantile": "Pinned BBA percentile implementation; with16 samples the p95 is the maximum.",
+      "rule": "Largest tested concurrency with request p95 <=10s; otherwise the smallest tested concurrency, explicitly not SLO-qualified.",
+      "timing_scope": "Pilot HTTP elapsed after acquiring its closed-loop concurrency semaphore; not open-loop end-to-end capacity."
+    },
+    "sha256": "1f081e1a6174a7dcdbe479b06f7df4b18661bcd811bb0f8ac876b64a4bf10224",
+    "source_id": "sha256:c811876fbf14c2af54a18f600044368dd0a92561497e0bbdf8d02c2a6bd86c3b"
+  },
+  "cases": [
+    {
+      "capacity": 1,
+      "case_id": "admission-high-8-0-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 0,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-0.json.gz",
+          "sha256": "9839e8b37c219159109366377b1191924f1414dc13396f2c06dc2c9a4b70ef16"
+        },
+        "trial_id": "admission-high-8-0-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-8-0-global",
+      "mode": "global",
+      "pair_id": "high-8-0",
+      "parent_trial_id": "real-model-high-8-0",
+      "plan_path": "protocol/shared-admission/plans/admission-high-8-0-global.json",
+      "plan_sha256": "7c739c7b564efb8379e6a4205a03b6c4e8255d2f3dcc350e57b87ac546b2a441",
+      "recovery_path": "runs/shared-admission/trials/admission-high-8-0-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-8-0-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-8-0-global/real-model/admission-high-8-0-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-8-0-global/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-high-8-0-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 0,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-0.json.gz",
+          "sha256": "9839e8b37c219159109366377b1191924f1414dc13396f2c06dc2c9a4b70ef16"
+        },
+        "trial_id": "admission-high-8-0-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-8-0-bypass",
+      "mode": "bypass",
+      "pair_id": "high-8-0",
+      "parent_trial_id": "real-model-high-8-0",
+      "plan_path": "protocol/shared-admission/plans/admission-high-8-0-bypass.json",
+      "plan_sha256": "33c9db655ef62977cb5a6a56dbe8618ad43af84e814b1c21629a6d2dcc0a0185",
+      "recovery_path": "runs/shared-admission/trials/admission-high-8-0-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-8-0-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-8-0-bypass/real-model/admission-high-8-0-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-8-0-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-high-1-0-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 0,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-0.json.gz",
+          "sha256": "9839e8b37c219159109366377b1191924f1414dc13396f2c06dc2c9a4b70ef16"
+        },
+        "trial_id": "admission-high-1-0-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-1-0-bypass",
+      "mode": "bypass",
+      "pair_id": "high-1-0",
+      "parent_trial_id": "real-model-high-1-0",
+      "plan_path": "protocol/shared-admission/plans/admission-high-1-0-bypass.json",
+      "plan_sha256": "884da74772f7905ebe10ec45c8e772af1987af8b1f50183f504590bdb46cc09f",
+      "recovery_path": "runs/shared-admission/trials/admission-high-1-0-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-1-0-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-1-0-bypass/real-model/admission-high-1-0-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-1-0-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-high-1-0-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 0,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-0.json.gz",
+          "sha256": "9839e8b37c219159109366377b1191924f1414dc13396f2c06dc2c9a4b70ef16"
+        },
+        "trial_id": "admission-high-1-0-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-1-0-global",
+      "mode": "global",
+      "pair_id": "high-1-0",
+      "parent_trial_id": "real-model-high-1-0",
+      "plan_path": "protocol/shared-admission/plans/admission-high-1-0-global.json",
+      "plan_sha256": "dbed8acd0ca36d22a8f8f7941b19ab80abf4c194a36bbf6c36f7e08c7c785e44",
+      "recovery_path": "runs/shared-admission/trials/admission-high-1-0-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-1-0-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-1-0-global/real-model/admission-high-1-0-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-1-0-global/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-1-2-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 2,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-2.json.gz",
+          "sha256": "2e503c2b5725c80b67ba2c841adbcf2608a0242c1cfe31c460e930859e00ae1c"
+        },
+        "trial_id": "admission-near-1-2-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-1-2-global",
+      "mode": "global",
+      "pair_id": "near-1-2",
+      "parent_trial_id": "real-model-near-1-2",
+      "plan_path": "protocol/shared-admission/plans/admission-near-1-2-global.json",
+      "plan_sha256": "556d1e30a18925ea19a7cd6bc26a5c4ec3624ada31b4a88b543694ce48cfa323",
+      "recovery_path": "runs/shared-admission/trials/admission-near-1-2-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-1-2-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-1-2-global/real-model/admission-near-1-2-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-1-2-global/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-1-2-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 2,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-2.json.gz",
+          "sha256": "2e503c2b5725c80b67ba2c841adbcf2608a0242c1cfe31c460e930859e00ae1c"
+        },
+        "trial_id": "admission-near-1-2-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-1-2-bypass",
+      "mode": "bypass",
+      "pair_id": "near-1-2",
+      "parent_trial_id": "real-model-near-1-2",
+      "plan_path": "protocol/shared-admission/plans/admission-near-1-2-bypass.json",
+      "plan_sha256": "939a909c3e93259260ac86858b70f36f4e28eb24117167cc038ea4a7edf9c6ce",
+      "recovery_path": "runs/shared-admission/trials/admission-near-1-2-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-1-2-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-1-2-bypass/real-model/admission-near-1-2-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-1-2-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-high-8-1-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 1,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-1.json.gz",
+          "sha256": "8fb656aec1b763bcb30477c995465d93773e0b5d8bd2a2f44e7e1cc63d7f20d6"
+        },
+        "trial_id": "admission-high-8-1-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-8-1-global",
+      "mode": "global",
+      "pair_id": "high-8-1",
+      "parent_trial_id": "real-model-high-8-1",
+      "plan_path": "protocol/shared-admission/plans/admission-high-8-1-global.json",
+      "plan_sha256": "8bfbb62456ca5cb0337fe6159ba0071905302ab5bceb71a764a5e78e26a5e20b",
+      "recovery_path": "runs/shared-admission/trials/admission-high-8-1-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-8-1-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-8-1-global/real-model/admission-high-8-1-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-8-1-global/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-high-8-1-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 1,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-1.json.gz",
+          "sha256": "8fb656aec1b763bcb30477c995465d93773e0b5d8bd2a2f44e7e1cc63d7f20d6"
+        },
+        "trial_id": "admission-high-8-1-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-8-1-bypass",
+      "mode": "bypass",
+      "pair_id": "high-8-1",
+      "parent_trial_id": "real-model-high-8-1",
+      "plan_path": "protocol/shared-admission/plans/admission-high-8-1-bypass.json",
+      "plan_sha256": "8b4d8747ff7d6112d5bed438e60191e3d80c68e8d3a09fabb7bc58110bea628b",
+      "recovery_path": "runs/shared-admission/trials/admission-high-8-1-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-8-1-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-8-1-bypass/real-model/admission-high-8-1-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-8-1-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-high-1-1-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 1,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-1.json.gz",
+          "sha256": "8fb656aec1b763bcb30477c995465d93773e0b5d8bd2a2f44e7e1cc63d7f20d6"
+        },
+        "trial_id": "admission-high-1-1-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-1-1-bypass",
+      "mode": "bypass",
+      "pair_id": "high-1-1",
+      "parent_trial_id": "real-model-high-1-1",
+      "plan_path": "protocol/shared-admission/plans/admission-high-1-1-bypass.json",
+      "plan_sha256": "98c6432f37fe40677365b11ab634b4ab1686136a1e8751a446205cf28d70fd5b",
+      "recovery_path": "runs/shared-admission/trials/admission-high-1-1-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-1-1-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-1-1-bypass/real-model/admission-high-1-1-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-1-1-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-high-1-1-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 1,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-1.json.gz",
+          "sha256": "8fb656aec1b763bcb30477c995465d93773e0b5d8bd2a2f44e7e1cc63d7f20d6"
+        },
+        "trial_id": "admission-high-1-1-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-1-1-global",
+      "mode": "global",
+      "pair_id": "high-1-1",
+      "parent_trial_id": "real-model-high-1-1",
+      "plan_path": "protocol/shared-admission/plans/admission-high-1-1-global.json",
+      "plan_sha256": "51dd8326fb0a7d1424f1137a578adf938f7462af0bba921d9f0079a23d23c411",
+      "recovery_path": "runs/shared-admission/trials/admission-high-1-1-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-1-1-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-1-1-global/real-model/admission-high-1-1-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-1-1-global/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-high-1-2-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 2,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-2.json.gz",
+          "sha256": "8b8cbc69dd067f8aa992472667476eff69a8172f4d6aed548bedc1830b25a807"
+        },
+        "trial_id": "admission-high-1-2-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-1-2-global",
+      "mode": "global",
+      "pair_id": "high-1-2",
+      "parent_trial_id": "real-model-high-1-2",
+      "plan_path": "protocol/shared-admission/plans/admission-high-1-2-global.json",
+      "plan_sha256": "7e051513dc6280283ca35cf69c48829a7985bb97875393b000c35b15d3bfc966",
+      "recovery_path": "runs/shared-admission/trials/admission-high-1-2-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-1-2-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-1-2-global/real-model/admission-high-1-2-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-1-2-global/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-high-1-2-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 2,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-2.json.gz",
+          "sha256": "8b8cbc69dd067f8aa992472667476eff69a8172f4d6aed548bedc1830b25a807"
+        },
+        "trial_id": "admission-high-1-2-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-1-2-bypass",
+      "mode": "bypass",
+      "pair_id": "high-1-2",
+      "parent_trial_id": "real-model-high-1-2",
+      "plan_path": "protocol/shared-admission/plans/admission-high-1-2-bypass.json",
+      "plan_sha256": "cbd45aa4b3e905c7cf667e8eb724464086a89560aff2a161d56f982952b8b251",
+      "recovery_path": "runs/shared-admission/trials/admission-high-1-2-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-1-2-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-1-2-bypass/real-model/admission-high-1-2-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-1-2-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-8-0-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 0,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-0.json.gz",
+          "sha256": "ea8c9671deb50b0451df924be460ffa5ac3d11590259b45c609602608bb118cc"
+        },
+        "trial_id": "admission-near-8-0-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-8-0-bypass",
+      "mode": "bypass",
+      "pair_id": "near-8-0",
+      "parent_trial_id": "real-model-near-8-0",
+      "plan_path": "protocol/shared-admission/plans/admission-near-8-0-bypass.json",
+      "plan_sha256": "bd2935a489857f00752de10596681cf78160f789ac3c9728af669dbca1ff521b",
+      "recovery_path": "runs/shared-admission/trials/admission-near-8-0-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-8-0-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-8-0-bypass/real-model/admission-near-8-0-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-8-0-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-8-0-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 0,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-0.json.gz",
+          "sha256": "ea8c9671deb50b0451df924be460ffa5ac3d11590259b45c609602608bb118cc"
+        },
+        "trial_id": "admission-near-8-0-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-8-0-global",
+      "mode": "global",
+      "pair_id": "near-8-0",
+      "parent_trial_id": "real-model-near-8-0",
+      "plan_path": "protocol/shared-admission/plans/admission-near-8-0-global.json",
+      "plan_sha256": "e7fd75478e55a917102ef01b06fa3b3e332893e68822a48919f0a778000d1fca",
+      "recovery_path": "runs/shared-admission/trials/admission-near-8-0-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-8-0-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-8-0-global/real-model/admission-near-8-0-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-8-0-global/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-high-8-2-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 2,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-2.json.gz",
+          "sha256": "8b8cbc69dd067f8aa992472667476eff69a8172f4d6aed548bedc1830b25a807"
+        },
+        "trial_id": "admission-high-8-2-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-8-2-global",
+      "mode": "global",
+      "pair_id": "high-8-2",
+      "parent_trial_id": "real-model-high-8-2",
+      "plan_path": "protocol/shared-admission/plans/admission-high-8-2-global.json",
+      "plan_sha256": "20d42b111455c957c57659928c339ca3c8195b4dba178925e31d1c4944f17251",
+      "recovery_path": "runs/shared-admission/trials/admission-high-8-2-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-8-2-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-8-2-global/real-model/admission-high-8-2-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-8-2-global/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-high-8-2-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "high",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 2,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/high-2.json.gz",
+          "sha256": "8b8cbc69dd067f8aa992472667476eff69a8172f4d6aed548bedc1830b25a807"
+        },
+        "trial_id": "admission-high-8-2-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-high-8-2-bypass",
+      "mode": "bypass",
+      "pair_id": "high-8-2",
+      "parent_trial_id": "real-model-high-8-2",
+      "plan_path": "protocol/shared-admission/plans/admission-high-8-2-bypass.json",
+      "plan_sha256": "df27151e03162d7e643478f9eac563dd3fc06f2e67b6d65c700508aca7283dc4",
+      "recovery_path": "runs/shared-admission/trials/admission-high-8-2-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-high-8-2-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-high-8-2-bypass/real-model/admission-high-8-2-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-high-8-2-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-8-2-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 2,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-2.json.gz",
+          "sha256": "2e503c2b5725c80b67ba2c841adbcf2608a0242c1cfe31c460e930859e00ae1c"
+        },
+        "trial_id": "admission-near-8-2-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-8-2-bypass",
+      "mode": "bypass",
+      "pair_id": "near-8-2",
+      "parent_trial_id": "real-model-near-8-2",
+      "plan_path": "protocol/shared-admission/plans/admission-near-8-2-bypass.json",
+      "plan_sha256": "2ae1cbd6ffa5e26c0ba0696191b9466388c6be1f0beb69e0ac96b8e9cb98375c",
+      "recovery_path": "runs/shared-admission/trials/admission-near-8-2-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-8-2-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-8-2-bypass/real-model/admission-near-8-2-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-8-2-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-8-2-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 2,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-2.json.gz",
+          "sha256": "2e503c2b5725c80b67ba2c841adbcf2608a0242c1cfe31c460e930859e00ae1c"
+        },
+        "trial_id": "admission-near-8-2-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-8-2-global",
+      "mode": "global",
+      "pair_id": "near-8-2",
+      "parent_trial_id": "real-model-near-8-2",
+      "plan_path": "protocol/shared-admission/plans/admission-near-8-2-global.json",
+      "plan_sha256": "001ee816d075c795011f6256fc614c5f0b1a76bb07de0dfc687370a1f5539dfe",
+      "recovery_path": "runs/shared-admission/trials/admission-near-8-2-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-8-2-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-8-2-global/real-model/admission-near-8-2-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-8-2-global/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-1-0-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 0,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-0.json.gz",
+          "sha256": "ea8c9671deb50b0451df924be460ffa5ac3d11590259b45c609602608bb118cc"
+        },
+        "trial_id": "admission-near-1-0-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-1-0-bypass",
+      "mode": "bypass",
+      "pair_id": "near-1-0",
+      "parent_trial_id": "real-model-near-1-0",
+      "plan_path": "protocol/shared-admission/plans/admission-near-1-0-bypass.json",
+      "plan_sha256": "5e094227be063b74d1f4ea05b89dda9853db86b1990b5a08685117dcd5ee1813",
+      "recovery_path": "runs/shared-admission/trials/admission-near-1-0-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-1-0-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-1-0-bypass/real-model/admission-near-1-0-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-1-0-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-1-0-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 0,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-0.json.gz",
+          "sha256": "ea8c9671deb50b0451df924be460ffa5ac3d11590259b45c609602608bb118cc"
+        },
+        "trial_id": "admission-near-1-0-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-1-0-global",
+      "mode": "global",
+      "pair_id": "near-1-0",
+      "parent_trial_id": "real-model-near-1-0",
+      "plan_path": "protocol/shared-admission/plans/admission-near-1-0-global.json",
+      "plan_sha256": "da7f0a88f5d3eb836d608a03f8b66c171ff4e688279913df7b3db3ecc3a6fb17",
+      "recovery_path": "runs/shared-admission/trials/admission-near-1-0-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-1-0-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-1-0-global/real-model/admission-near-1-0-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-1-0-global/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-1-1-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 1,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-1.json.gz",
+          "sha256": "6751e5fa793d0eb4b60b59b92bbf1ae15585a756cafa09355bb57664ee1e6302"
+        },
+        "trial_id": "admission-near-1-1-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-1-1-global",
+      "mode": "global",
+      "pair_id": "near-1-1",
+      "parent_trial_id": "real-model-near-1-1",
+      "plan_path": "protocol/shared-admission/plans/admission-near-1-1-global.json",
+      "plan_sha256": "4d63a315fb70238a22cb6e619e7623033b317200356d666ea217f748ae1748ab",
+      "recovery_path": "runs/shared-admission/trials/admission-near-1-1-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-1-1-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-1-1-global/real-model/admission-near-1-1-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-1-1-global/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-1-1-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 1,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-1.json.gz",
+          "sha256": "6751e5fa793d0eb4b60b59b92bbf1ae15585a756cafa09355bb57664ee1e6302"
+        },
+        "trial_id": "admission-near-1-1-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-1-1-bypass",
+      "mode": "bypass",
+      "pair_id": "near-1-1",
+      "parent_trial_id": "real-model-near-1-1",
+      "plan_path": "protocol/shared-admission/plans/admission-near-1-1-bypass.json",
+      "plan_sha256": "cc83ad085f7e6d3b383d50aa01f70bc3f50571a16ad45de24325769caeda9806",
+      "recovery_path": "runs/shared-admission/trials/admission-near-1-1-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-1-1-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-1-1-bypass/real-model/admission-near-1-1-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-1-1-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-8-1-bypass",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 1,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-1.json.gz",
+          "sha256": "6751e5fa793d0eb4b60b59b92bbf1ae15585a756cafa09355bb57664ee1e6302"
+        },
+        "trial_id": "admission-near-8-1-bypass",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-8-1-bypass",
+      "mode": "bypass",
+      "pair_id": "near-8-1",
+      "parent_trial_id": "real-model-near-8-1",
+      "plan_path": "protocol/shared-admission/plans/admission-near-8-1-bypass.json",
+      "plan_sha256": "4199f69386d219778f1b982ca68f9990ba1fc93e3f4fa7c29d1cc220c7ecfe48",
+      "recovery_path": "runs/shared-admission/trials/admission-near-8-1-bypass/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-8-1-bypass/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-8-1-bypass/real-model/admission-near-8-1-bypass.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-8-1-bypass/warmup.json"
+    },
+    {
+      "capacity": 1,
+      "case_id": "admission-near-8-1-global",
+      "configuration": {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 1,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-1.json.gz",
+          "sha256": "6751e5fa793d0eb4b60b59b92bbf1ae15585a756cafa09355bb57664ee1e6302"
+        },
+        "trial_id": "admission-near-8-1-global",
+        "warmup_seconds": 5
+      },
+      "epoch_directory": "runs/shared-admission/trials/admission-near-8-1-global",
+      "mode": "global",
+      "pair_id": "near-8-1",
+      "parent_trial_id": "real-model-near-8-1",
+      "plan_path": "protocol/shared-admission/plans/admission-near-8-1-global.json",
+      "plan_sha256": "0c23bbd9a96f2453e6eacf93df2b60d1863ce85ba5cea244e0931bd842adba73",
+      "recovery_path": "runs/shared-admission/trials/admission-near-8-1-global/recovery.json",
+      "result_directory": "runs/shared-admission/trials/admission-near-8-1-global/real-model",
+      "result_path": "runs/shared-admission/trials/admission-near-8-1-global/real-model/admission-near-8-1-global.json",
+      "warmup_path": "runs/shared-admission/trials/admission-near-8-1-global/warmup.json"
+    }
+  ],
+  "created_utc": "2026-11-15T08:47:22.816643+00:00",
+  "git_base": "db31fdad5e022ae165c1661c41632c1c9a761b84",
+  "parent_manifest": {
+    "bytes": 37498,
+    "path": "protocol/ollama-fra6s004-cpu-continuation/manifest.json",
+    "sha256": "b44236e661a89971c427f4fe712895031c9f896aa7629c94e7e86420aba0274d"
+  },
+  "parent_plan": {
+    "bytes": 51391,
+    "path": "protocol/ollama-fra6s004-cpu-long-window-plan.json",
+    "sha256": "b1917a52bc70ed7ef83f8d1f071b14de62d9986184f23d4072536dfb7d1117ce"
+  },
+  "protocol": {
+    "client_deadline_seconds": 10,
+    "collector_budget_seconds": 900,
+    "inference": "Three paired trace repetitions per replica/load condition; exploratory only. No request pooling or confirmatory library claim.",
+    "loads": [
+      "near",
+      "high"
+    ],
+    "measurement_seconds": 335,
+    "model_call_timeout_seconds": 120,
+    "modes": [
+      "bypass",
+      "global"
+    ],
+    "native_forward_timeout_seconds": 180,
+    "native_uncertainty": "Retain observed client outcomes; censor native resource lifetime.",
+    "network_repetitions": 3,
+    "order_seed": 2026111501,
+    "pairs": 12,
+    "permit_release": "successful_native_terminal_only",
+    "primary_endpoint": "correct client response within10s / all scheduled measurement arrivals",
+    "qualification_trials": 12,
+    "queue_policy": "reject_immediately",
+    "repetitions": [
+      0,
+      1,
+      2
+    ],
+    "replicas": [
+      1,
+      8
+    ],
+    "reset_before_every_trial": true,
+    "trials": 24,
+    "uncertain_permit": "quarantine_until_certified_reset",
+    "warmup_responses": 4
+  },
+  "run_root": "runs/shared-admission",
+  "schema": "alien6-shared-admission-study-v1",
+  "source_files": [
+    {
+      "bytes": 951,
+      "path": "infra/alien6-admission-proxy.service",
+      "sha256": "6fb4c1881a48fcab0ed2f0a4baf071e9961a4f9592ae22183c0d95d87ce256c7"
+    },
+    {
+      "bytes": 947,
+      "path": "infra/alien6-ollama-monitor.service",
+      "sha256": "5cb85cb89d276d1ac76224ec5c545c5b05d31371a9f38bc8c841ed63940f5a55"
+    },
+    {
+      "bytes": 909,
+      "path": "infra/alien6-ollama.service",
+      "sha256": "8d9a0d2f4d7934d9174c5c075f394ad47a82fbbba1102317b2738920b2d7f232"
+    },
+    {
+      "bytes": 17758,
+      "path": "infra/recover-fra6s004-admission.py",
+      "sha256": "78903ab74c80d2d5b57bab5987b8fbfba04da8b9fbc70641ff05afb292b6f33b"
+    },
+    {
+      "bytes": 20986,
+      "path": "infra/recover-fra6s004-inference.py",
+      "sha256": "a403a20827f17a6f7115ecbaccd56dbad2044363b921f20f05f92efffe3b3a24"
+    },
+    {
+      "bytes": 26821,
+      "path": "infra/run-dell-cpu-campaign.py",
+      "sha256": "da8c75d64e1acbbdceff41e7ab25044ada02f652d7a7d01bb62f35593677856b"
+    },
+    {
+      "bytes": 15840,
+      "path": "infra/run-fra6s004-admission.py",
+      "sha256": "3439c95c4ad4bfd8d05f8b268b1e9c3a00e4dcdc4d1d167649089e8a8a44cdc1"
+    },
+    {
+      "bytes": 26956,
+      "path": "infra/run-fra6s004-continuation.py",
+      "sha256": "4d074a03fe8c64b6418f20689513b067f3ef3471c4ec139b8222f24963fd9756"
+    },
+    {
+      "bytes": 14646,
+      "path": "scripts/observe_study_host.py",
+      "sha256": "aaf3f85a32cafa968d34778b473a97efb74116a9f5ac1f84766f26870da4d278"
+    },
+    {
+      "bytes": 4842,
+      "path": "studies/shared-admission/PROTOCOL.md",
+      "sha256": "87afdff2dff0da2b062faaafcdae24cd2ca1c87d9de62c2b5c5f373a958a3086"
+    },
+    {
+      "bytes": 344,
+      "path": "v2/Dockerfile",
+      "sha256": "dc80d74efb06ce087b54d4341a870b51877d8e7e702a609fbf80579757332a31"
+    },
+    {
+      "bytes": 350,
+      "path": "v2/Model.Dockerfile",
+      "sha256": "7fdf5fe6576ce2e123eed9d8fc6ffe87e3646f9e4e970643e424e6b00868ab26"
+    },
+    {
+      "bytes": 81,
+      "path": "v2/__init__.py",
+      "sha256": "a7f4a180e29eb3b0ed3c850e6495faf8a1fe4ee4a0f671033f049dedabecdb77"
+    },
+    {
+      "bytes": 20769,
+      "path": "v2/admission_certificate.py",
+      "sha256": "cb1b9011e74ba4030c7111fc7c7b4bce1b576b5e8603f01bb397e1e97d5d9089"
+    },
+    {
+      "bytes": 9783,
+      "path": "v2/admission_driver.py",
+      "sha256": "d6cc08476724324455f98e8d04b9030c65b9fb69c4ec6109a2ac1b2e15fd75b9"
+    },
+    {
+      "bytes": 9025,
+      "path": "v2/admission_proxy.py",
+      "sha256": "eaddf9d0eaff8169471346f61da34246bd598363a757adc7617e9a4d68467d4c"
+    },
+    {
+      "bytes": 34928,
+      "path": "v2/admission_study.py",
+      "sha256": "e87b73660b3c98ebb485f7b56c8f06cc24ec21120e233f29b1f5acae755798c2"
+    },
+    {
+      "bytes": 4907,
+      "path": "v2/cpu_campaigns.py",
+      "sha256": "3dd13ea73e4b081d4a869c2bef826d8f143461d2ad1f594f514c7af4ceb98dcf"
+    },
+    {
+      "bytes": 8221,
+      "path": "v2/identity.py",
+      "sha256": "747072686f9cb72a3c3818019c9a5dbbc2d221e6873d7eedf547c001565114bb"
+    },
+    {
+      "bytes": 2566,
+      "path": "v2/inference_monitor.py",
+      "sha256": "b5f9b133b1dc14e9096b9425137de9a1b84db4d5a9ddbd8c466e575dced9b196"
+    },
+    {
+      "bytes": 6057,
+      "path": "v2/inference_proxy.py",
+      "sha256": "098e2c7a82e895affdd8673fa3a799c3cbd0929a7fde9a798b9cd16f6f30d14c"
+    },
+    {
+      "bytes": 51911,
+      "path": "v2/model.py",
+      "sha256": "fe571215de8b8b8f4e210e878c3d768126e4e5c956d46244e3ce76daaea8e35d"
+    },
+    {
+      "bytes": 2966,
+      "path": "v2/model_service.py",
+      "sha256": "b34a9c636bce9404a170eb89feeb0154d1793a2fd82afacf4013c82bdad211b3"
+    },
+    {
+      "bytes": 2583,
+      "path": "v2/network_policy.py",
+      "sha256": "14d205c1cbde42db639ebda0c1b4d4fa40a652f53c175f855e82260dce2787e4"
+    },
+    {
+      "bytes": 7833,
+      "path": "v2/network_probe.py",
+      "sha256": "e47ec7d9bc3e43a268c9a34c8cad95a932b37e259ad7ec0dc6ec2b2ff0f3342d"
+    },
+    {
+      "bytes": 4172,
+      "path": "v2/plan.py",
+      "sha256": "85880a21547fb14692eeb1df5b84478f210aa6fd39aefafb504cf59058da81bc"
+    },
+    {
+      "bytes": 4759,
+      "path": "v2/quota.py",
+      "sha256": "21902766fceb6ae492095afffc27b989f38e9c54ba2ae99c6e23fd18fcc193bb"
+    },
+    {
+      "bytes": 1366,
+      "path": "v2/remote_plan.py",
+      "sha256": "127579210673840ac820971e9946954b292c5130c4782566be720f25f86f1463"
+    },
+    {
+      "bytes": 14936,
+      "path": "v2/run.py",
+      "sha256": "ad3a4453041a6337571f582aa98514f24f1064bf858efd376d17f6406f65bfd8"
+    },
+    {
+      "bytes": 18722,
+      "path": "v2/service.py",
+      "sha256": "806c0d7302ea8efe554a10512b33f0f4f389f81beee26f58258f6c2670c1a235"
+    },
+    {
+      "bytes": 4881,
+      "path": "v2/transport.py",
+      "sha256": "2df0496f1624c3be48dedd8fb421486866371aaff0e293a5f9494610ed597ae6"
+    },
+    {
+      "bytes": 2249,
+      "path": "v2/tunnel_bridge.py",
+      "sha256": "658a3aee01753bf193d66684e7df7b2291a943a1ff8fd9fd4cffefe47d606f7c"
+    },
+    {
+      "bytes": 61979,
+      "path": "v2/verify.py",
+      "sha256": "0bdef9bf5c211b093ac30ed47d6714c6a48cb6daa1673c0c41600eca364044bd"
+    },
+    {
+      "bytes": 1094,
+      "path": "v2/workload.py",
+      "sha256": "a7abc68e0688fa5169fdfcb9110c1640a4450ac42ddabced70aea9a708de55af"
+    }
+  ],
+  "study_source_id": "sha256:025dad4d2ba37487cc21ab4c90488534b8dafe0a3fc1cb25833f558b7191a1cd",
+  "trace_files": [
+    {
+      "bytes": 5158,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/headroom-0.json.gz",
+      "sha256": "9f2e5c45174b0164f360f8c2691bf1f1f1e37c53d56d618816e0a9157281a9b7"
+    },
+    {
+      "bytes": 4301,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/headroom-1.json.gz",
+      "sha256": "d57330e06432dbc053c5972888d06763b9c3900ab9ee893a294c78d546e6eacc"
+    },
+    {
+      "bytes": 3953,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/headroom-2.json.gz",
+      "sha256": "534e26ebc5483f977c49be35df50a43216f300a2eda588de2dc5244e53508ff8"
+    },
+    {
+      "bytes": 2503,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/high-0.json.gz",
+      "sha256": "9839e8b37c219159109366377b1191924f1414dc13396f2c06dc2c9a4b70ef16"
+    },
+    {
+      "bytes": 2409,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/high-1.json.gz",
+      "sha256": "8fb656aec1b763bcb30477c995465d93773e0b5d8bd2a2f44e7e1cc63d7f20d6"
+    },
+    {
+      "bytes": 1662,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/high-2.json.gz",
+      "sha256": "8b8cbc69dd067f8aa992472667476eff69a8172f4d6aed548bedc1830b25a807"
+    },
+    {
+      "bytes": 641,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/low-0.json.gz",
+      "sha256": "82b4e90b85b7462e5f4dc1be6e6de6cfc724b647a9f8b76f435882705e244924"
+    },
+    {
+      "bytes": 626,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/low-1.json.gz",
+      "sha256": "57d3d11a37f941bfe3e4a2268af64158859e04dd17de66f583feec37c83bda22"
+    },
+    {
+      "bytes": 414,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/low-2.json.gz",
+      "sha256": "3feb693b3f9ccb137b0f00935034568465852e15a13499fd8d7c2123d4e83d59"
+    },
+    {
+      "bytes": 1597,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/near-0.json.gz",
+      "sha256": "ea8c9671deb50b0451df924be460ffa5ac3d11590259b45c609602608bb118cc"
+    },
+    {
+      "bytes": 1385,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/near-1.json.gz",
+      "sha256": "6751e5fa793d0eb4b60b59b92bbf1ae15585a756cafa09355bb57664ee1e6302"
+    },
+    {
+      "bytes": 1009,
+      "path": "protocol/ollama-fra6s004-cpu-long-window/near-2.json.gz",
+      "sha256": "2e503c2b5725c80b67ba2c841adbcf2608a0242c1cfe31c460e930859e00ae1c"
+    }
+  ]
+}

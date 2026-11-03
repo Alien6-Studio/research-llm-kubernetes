@@ -1,0 +1,14 @@
+{
+  "exported_at_utc": "2026-11-13T10:42:26.666862+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-remote-fixture-network/control.json.gz",
+      "source_relative_path": "runs/v2-remote-fixture-network/control.json",
+      "sha256": "2d44a9c0196649c48e4916e5e50eb39fa772bdd3389a9bac86f38008dc40bd6a",
+      "decoded_sha256": "d735bcfa62a400fa1a2f7f85f0c780725d3ca2a77fd2113c95bf8375cfc7e25a",
+      "decoded_bytes": 689526,
+      "bytes": 51493
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.git
+.github
+.venv
+data
+runs
+evidence
+archives
+analysis
+protocol
+.kubeconfig*
+__pycache__
+*.log

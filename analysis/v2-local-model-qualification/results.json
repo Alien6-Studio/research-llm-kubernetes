@@ -1,0 +1,4414 @@
+{
+  "block": {
+    "complete": true,
+    "qualified": true,
+    "trials": 12,
+    "invalid": []
+  },
+  "included_for_inference": true,
+  "trials": [
+    {
+      "trial_id": "model-qualification-headroom-1-0",
+      "block": "model-qualification",
+      "replicas": 1,
+      "path": "workers",
+      "profile": "headroom",
+      "policy": "none",
+      "repetition": 0,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 317,
+      "emitted": 317,
+      "worker_accepted": 317,
+      "provider_consumed": 317,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 317,
+      "useful_fraction": 1.0,
+      "offered_per_second": 15.85,
+      "emitted_per_second": 15.85,
+      "useful_cohort_per_second": 15.85,
+      "useful_window_per_second": 15.85,
+      "status_counts": {
+        "200": 317
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 317,
+        "p50": 0.004987438878742978,
+        "p95": 0.06701312190853059,
+        "p99": 0.461903506773524
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 317,
+        "p50": 0.004987438878742978,
+        "p95": 0.06701312190853059,
+        "p99": 0.461903506773524
+      },
+      "useful_latency_seconds": {
+        "n": 317,
+        "p50": 0.004987438878742978,
+        "p95": 0.06701312190853059,
+        "p99": 0.461903506773524
+      },
+      "emission_lag_seconds": {
+        "n": 392,
+        "p50": 0.0031415288176503964,
+        "p95": 0.032367551255447324,
+        "p99": 0.4404137445089873
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 317,
+          "p50": 1.5875004464760423e-05,
+          "p95": 5.94589946558699e-05,
+          "p99": 0.0037906249999650754
+        },
+        "admission": {
+          "n": 317,
+          "p50": 7.499984349124134e-07,
+          "p95": 1.5409968909807503e-06,
+          "p99": 3.2089956221170723e-06
+        },
+        "provider_http": {
+          "n": 317,
+          "p50": 0.0014536659946315922,
+          "p95": 0.006472333996498492,
+          "p99": 0.015296166995540261
+        }
+      },
+      "worker_concurrency_max_sampled": 3,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55551,
+          "units": 20600,
+          "utilization": 2.06e-05
+        },
+        {
+          "window": 55552,
+          "units": 23200,
+          "utilization": 2.32e-05
+        },
+        {
+          "window": 55553,
+          "units": 25400,
+          "utilization": 2.54e-05
+        },
+        {
+          "window": 55554,
+          "units": 22400,
+          "utilization": 2.24e-05
+        },
+        {
+          "window": 55555,
+          "units": 24800,
+          "utilization": 2.48e-05
+        },
+        {
+          "window": 55556,
+          "units": 21000,
+          "utilization": 2.1e-05
+        },
+        {
+          "window": 55557,
+          "units": 39000,
+          "utilization": 3.9e-05
+        },
+        {
+          "window": 55558,
+          "units": 30400,
+          "utilization": 3.04e-05
+        },
+        {
+          "window": 55559,
+          "units": 32200,
+          "utilization": 3.22e-05
+        },
+        {
+          "window": 55560,
+          "units": 24600,
+          "utilization": 2.46e-05
+        },
+        {
+          "window": 55561,
+          "units": 19200,
+          "utilization": 1.92e-05
+        },
+        {
+          "window": 55562,
+          "units": 39000,
+          "utilization": 3.9e-05
+        },
+        {
+          "window": 55563,
+          "units": 22400,
+          "utilization": 2.24e-05
+        },
+        {
+          "window": 55564,
+          "units": 21200,
+          "utilization": 2.12e-05
+        },
+        {
+          "window": 55565,
+          "units": 10400,
+          "utilization": 1.04e-05
+        },
+        {
+          "window": 55566,
+          "units": 17000,
+          "utilization": 1.7e-05
+        },
+        {
+          "window": 55567,
+          "units": 31800,
+          "utilization": 3.18e-05
+        },
+        {
+          "window": 55568,
+          "units": 16000,
+          "utilization": 1.6e-05
+        },
+        {
+          "window": 55569,
+          "units": 18200,
+          "utilization": 1.82e-05
+        },
+        {
+          "window": 55570,
+          "units": 15800,
+          "utilization": 1.58e-05
+        },
+        {
+          "window": 55571,
+          "units": 24800,
+          "utilization": 2.48e-05
+        },
+        {
+          "window": 55572,
+          "units": 42800,
+          "utilization": 4.28e-05
+        },
+        {
+          "window": 55573,
+          "units": 20400,
+          "utilization": 2.04e-05
+        },
+        {
+          "window": 55574,
+          "units": 35000,
+          "utilization": 3.5e-05
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 392,
+        "consumed": 392
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 51,
+          "observed_seconds": 25.21579363699857,
+          "cpu_seconds": 1.1022109999999998,
+          "cgroup_cpu_seconds": 1.102211,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 655932112.94454,
+          "memory_peak_observed_bytes": 29249536,
+          "max_sample_gap_seconds": 0.7497989170005894
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 51,
+          "observed_seconds": 25.215774136995606,
+          "cpu_seconds": 0.5985929999999999,
+          "cgroup_cpu_seconds": 0.598592,
+          "throttled_seconds": 0.109265,
+          "memory_byte_seconds": 432525740.17222697,
+          "memory_peak_observed_bytes": 17162240,
+          "max_sample_gap_seconds": 0.7492832499992801
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 51,
+          "observed_seconds": 25.21590001200093,
+          "cpu_seconds": 0.855057,
+          "cgroup_cpu_seconds": 0.855058,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 488891574.15146327,
+          "memory_peak_observed_bytes": 20172800,
+          "max_sample_gap_seconds": 0.7494498329979251
+        }
+      ],
+      "whole_trace_useful": 392,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.110103125000023,
+        "process_cpu_seconds_observed": 0.019999999999999574,
+        "process_rss_byte_seconds": 669979116028.2631,
+        "peak_process_rss_sum_bytes": 26681655296,
+        "max_sample_gap_seconds": 1.0074717909883475,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 5.102040816326422e-05,
+        "rss_byte_seconds_per_whole_trace_useful": 1709130398.0312834
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.006520053571428571,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 4023850.5797658935,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "model-qualification-headroom-1-1",
+      "block": "model-qualification",
+      "replicas": 1,
+      "path": "workers",
+      "profile": "headroom",
+      "policy": "none",
+      "repetition": 1,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 254,
+      "emitted": 254,
+      "worker_accepted": 254,
+      "provider_consumed": 254,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 254,
+      "useful_fraction": 1.0,
+      "offered_per_second": 12.7,
+      "emitted_per_second": 12.7,
+      "useful_cohort_per_second": 12.7,
+      "useful_window_per_second": 12.7,
+      "status_counts": {
+        "200": 254
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 254,
+        "p50": 0.004666798820835538,
+        "p95": 0.015610316382662859,
+        "p99": 0.06022710674733389
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 254,
+        "p50": 0.004666798820835538,
+        "p95": 0.015610316382662859,
+        "p99": 0.06022710674733389
+      },
+      "useful_latency_seconds": {
+        "n": 254,
+        "p50": 0.004666798820835538,
+        "p95": 0.015610316382662859,
+        "p99": 0.06022710674733389
+      },
+      "emission_lag_seconds": {
+        "n": 325,
+        "p50": 0.003045630954147782,
+        "p95": 0.009783840221643914,
+        "p99": 0.03708977374481037
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 254,
+          "p50": 1.416700251866132e-05,
+          "p95": 3.724999987753108e-05,
+          "p99": 6.441600271500647e-05
+        },
+        "admission": {
+          "n": 254,
+          "p50": 5.830006557516754e-07,
+          "p95": 1.2919990695081651e-06,
+          "p99": 1.8330028979107738e-06
+        },
+        "provider_http": {
+          "n": 254,
+          "p50": 0.0012689999930444174,
+          "p95": 0.0031584579992340878,
+          "p99": 0.01856716699694516
+        }
+      },
+      "worker_concurrency_max_sampled": 1,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55613,
+          "units": 20400,
+          "utilization": 2.04e-05
+        },
+        {
+          "window": 55614,
+          "units": 15800,
+          "utilization": 1.58e-05
+        },
+        {
+          "window": 55615,
+          "units": 21400,
+          "utilization": 2.14e-05
+        },
+        {
+          "window": 55616,
+          "units": 30400,
+          "utilization": 3.04e-05
+        },
+        {
+          "window": 55617,
+          "units": 20000,
+          "utilization": 2e-05
+        },
+        {
+          "window": 55618,
+          "units": 17000,
+          "utilization": 1.7e-05
+        },
+        {
+          "window": 55619,
+          "units": 23400,
+          "utilization": 2.34e-05
+        },
+        {
+          "window": 55620,
+          "units": 17200,
+          "utilization": 1.72e-05
+        },
+        {
+          "window": 55621,
+          "units": 30000,
+          "utilization": 3e-05
+        },
+        {
+          "window": 55622,
+          "units": 28800,
+          "utilization": 2.88e-05
+        },
+        {
+          "window": 55623,
+          "units": 14000,
+          "utilization": 1.4e-05
+        },
+        {
+          "window": 55624,
+          "units": 19200,
+          "utilization": 1.92e-05
+        },
+        {
+          "window": 55625,
+          "units": 17200,
+          "utilization": 1.72e-05
+        },
+        {
+          "window": 55626,
+          "units": 29800,
+          "utilization": 2.98e-05
+        },
+        {
+          "window": 55627,
+          "units": 17000,
+          "utilization": 1.7e-05
+        },
+        {
+          "window": 55628,
+          "units": 10400,
+          "utilization": 1.04e-05
+        },
+        {
+          "window": 55629,
+          "units": 16800,
+          "utilization": 1.68e-05
+        },
+        {
+          "window": 55630,
+          "units": 18400,
+          "utilization": 1.84e-05
+        },
+        {
+          "window": 55631,
+          "units": 15000,
+          "utilization": 1.5e-05
+        },
+        {
+          "window": 55632,
+          "units": 28400,
+          "utilization": 2.84e-05
+        },
+        {
+          "window": 55633,
+          "units": 26600,
+          "utilization": 2.66e-05
+        },
+        {
+          "window": 55634,
+          "units": 18200,
+          "utilization": 1.82e-05
+        },
+        {
+          "window": 55635,
+          "units": 25600,
+          "utilization": 2.56e-05
+        },
+        {
+          "window": 55636,
+          "units": 9600,
+          "utilization": 9.6e-06
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 325,
+        "consumed": 325
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 52,
+          "observed_seconds": 25.249955220999254,
+          "cpu_seconds": 0.7782119999999999,
+          "cgroup_cpu_seconds": 0.778213,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 868785570.7008977,
+          "memory_peak_observed_bytes": 35201024,
+          "max_sample_gap_seconds": 0.555664584004262
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 52,
+          "observed_seconds": 25.250044095002522,
+          "cpu_seconds": 0.4760960000000001,
+          "cgroup_cpu_seconds": 0.47605,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 433360045.5783778,
+          "memory_peak_observed_bytes": 17178624,
+          "max_sample_gap_seconds": 0.544622209003137
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 52,
+          "observed_seconds": 25.250355887001206,
+          "cpu_seconds": 0.6894689999999994,
+          "cgroup_cpu_seconds": 0.689469,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 504906043.28619397,
+          "memory_peak_observed_bytes": 20901888,
+          "max_sample_gap_seconds": 0.5061160000041127
+        }
+      ],
+      "whole_trace_useful": 325,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.112435458999244,
+        "process_cpu_seconds_observed": 0.029999999999999583,
+        "process_rss_byte_seconds": 670041346560.0653,
+        "peak_process_rss_sum_bytes": 26681655296,
+        "max_sample_gap_seconds": 1.0068328750057844,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 9.230769230769103e-05,
+        "rss_byte_seconds_per_whole_trace_useful": 2061665681.7232778
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.005980852307692306,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 5560158.952509137,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "model-qualification-headroom-1-2",
+      "block": "model-qualification",
+      "replicas": 1,
+      "path": "workers",
+      "profile": "headroom",
+      "policy": "none",
+      "repetition": 2,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 289,
+      "emitted": 289,
+      "worker_accepted": 289,
+      "provider_consumed": 289,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 289,
+      "useful_fraction": 1.0,
+      "offered_per_second": 14.45,
+      "emitted_per_second": 14.45,
+      "useful_cohort_per_second": 14.45,
+      "useful_window_per_second": 14.4,
+      "status_counts": {
+        "200": 289
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 289,
+        "p50": 0.004761362564750016,
+        "p95": 0.009413196727109607,
+        "p99": 0.02657384152553277
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 289,
+        "p50": 0.004761362564750016,
+        "p95": 0.009413196727109607,
+        "p99": 0.02657384152553277
+      },
+      "useful_latency_seconds": {
+        "n": 289,
+        "p50": 0.004761362564750016,
+        "p95": 0.009413196727109607,
+        "p99": 0.02657384152553277
+      },
+      "emission_lag_seconds": {
+        "n": 336,
+        "p50": 0.0029793105059070513,
+        "p95": 0.006154526148748118,
+        "p99": 0.012030053680064157
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 289,
+          "p50": 1.491699367761612e-05,
+          "p95": 3.6584002373274416e-05,
+          "p99": 9.179200424114242e-05
+        },
+        "admission": {
+          "n": 289,
+          "p50": 7.079943316057324e-07,
+          "p95": 1.6669946489855647e-06,
+          "p99": 2.2500025806948543e-06
+        },
+        "provider_http": {
+          "n": 289,
+          "p50": 0.0014170419963193126,
+          "p95": 0.003544291997968685,
+          "p99": 0.013591833994723856
+        }
+      },
+      "worker_concurrency_max_sampled": 1,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55764,
+          "units": 13800,
+          "utilization": 1.38e-05
+        },
+        {
+          "window": 55765,
+          "units": 14000,
+          "utilization": 1.4e-05
+        },
+        {
+          "window": 55766,
+          "units": 22600,
+          "utilization": 2.26e-05
+        },
+        {
+          "window": 55767,
+          "units": 10400,
+          "utilization": 1.04e-05
+        },
+        {
+          "window": 55768,
+          "units": 18200,
+          "utilization": 1.82e-05
+        },
+        {
+          "window": 55769,
+          "units": 15200,
+          "utilization": 1.52e-05
+        },
+        {
+          "window": 55770,
+          "units": 38400,
+          "utilization": 3.84e-05
+        },
+        {
+          "window": 55771,
+          "units": 27800,
+          "utilization": 2.78e-05
+        },
+        {
+          "window": 55772,
+          "units": 26600,
+          "utilization": 2.66e-05
+        },
+        {
+          "window": 55773,
+          "units": 16000,
+          "utilization": 1.6e-05
+        },
+        {
+          "window": 55774,
+          "units": 15000,
+          "utilization": 1.5e-05
+        },
+        {
+          "window": 55775,
+          "units": 20000,
+          "utilization": 2e-05
+        },
+        {
+          "window": 55776,
+          "units": 30800,
+          "utilization": 3.08e-05
+        },
+        {
+          "window": 55777,
+          "units": 19200,
+          "utilization": 1.92e-05
+        },
+        {
+          "window": 55778,
+          "units": 24200,
+          "utilization": 2.42e-05
+        },
+        {
+          "window": 55779,
+          "units": 28800,
+          "utilization": 2.88e-05
+        },
+        {
+          "window": 55780,
+          "units": 26800,
+          "utilization": 2.68e-05
+        },
+        {
+          "window": 55781,
+          "units": 10400,
+          "utilization": 1.04e-05
+        },
+        {
+          "window": 55782,
+          "units": 28200,
+          "utilization": 2.82e-05
+        },
+        {
+          "window": 55783,
+          "units": 24200,
+          "utilization": 2.42e-05
+        },
+        {
+          "window": 55784,
+          "units": 23800,
+          "utilization": 2.38e-05
+        },
+        {
+          "window": 55785,
+          "units": 20400,
+          "utilization": 2.04e-05
+        },
+        {
+          "window": 55786,
+          "units": 19200,
+          "utilization": 1.92e-05
+        },
+        {
+          "window": 55787,
+          "units": 24600,
+          "utilization": 2.46e-05
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 336,
+        "consumed": 336
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 52,
+          "observed_seconds": 25.252975261995743,
+          "cpu_seconds": 0.7829029999999992,
+          "cgroup_cpu_seconds": 0.782837,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 897568279.6793041,
+          "memory_peak_observed_bytes": 36438016,
+          "max_sample_gap_seconds": 0.5278840009996202
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 52,
+          "observed_seconds": 25.25295267799811,
+          "cpu_seconds": 0.4157340000000005,
+          "cgroup_cpu_seconds": 0.415734,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 444617028.30730003,
+          "memory_peak_observed_bytes": 17625088,
+          "max_sample_gap_seconds": 0.5269016669990378
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 52,
+          "observed_seconds": 25.25312009499612,
+          "cpu_seconds": 0.7494700000000005,
+          "cgroup_cpu_seconds": 0.74947,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 513461499.53926057,
+          "memory_peak_observed_bytes": 21155840,
+          "max_sample_gap_seconds": 0.5269245009985752
+        }
+      ],
+      "whole_trace_useful": 336,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.098840541992104,
+        "process_cpu_seconds_observed": 0.030000000000001137,
+        "process_rss_byte_seconds": 669679845328.9135,
+        "peak_process_rss_sum_bytes": 26681704448,
+        "max_sample_gap_seconds": 1.0053404999925988,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 8.928571428571767e-05,
+        "rss_byte_seconds_per_whole_trace_useful": 1993094777.7646234
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.005797937500000001,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 5522758.35573174,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "model-qualification-headroom-8-0",
+      "block": "model-qualification",
+      "replicas": 8,
+      "path": "workers",
+      "profile": "headroom",
+      "policy": "none",
+      "repetition": 0,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 317,
+      "emitted": 317,
+      "worker_accepted": 317,
+      "provider_consumed": 317,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 317,
+      "useful_fraction": 1.0,
+      "offered_per_second": 15.85,
+      "emitted_per_second": 15.85,
+      "useful_cohort_per_second": 15.85,
+      "useful_window_per_second": 15.85,
+      "status_counts": {
+        "200": 317
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 317,
+        "p50": 0.0048279506372637115,
+        "p95": 0.014500346085696947,
+        "p99": 0.0530230340664275
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 317,
+        "p50": 0.0048279506372637115,
+        "p95": 0.014500346085696947,
+        "p99": 0.0530230340664275
+      },
+      "useful_latency_seconds": {
+        "n": 317,
+        "p50": 0.0048279506372637115,
+        "p95": 0.014500346085696947,
+        "p99": 0.0530230340664275
+      },
+      "emission_lag_seconds": {
+        "n": 392,
+        "p50": 0.003002625046065077,
+        "p95": 0.006867206444439944,
+        "p99": 0.04281973031174857
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 317,
+          "p50": 1.2291005987208337e-05,
+          "p95": 3.4374999813735485e-05,
+          "p99": 6.670899892924353e-05
+        },
+        "admission": {
+          "n": 317,
+          "p50": 5.420006345957518e-07,
+          "p95": 1.3329990906640887e-06,
+          "p99": 2.0000006770715117e-06
+        },
+        "provider_http": {
+          "n": 317,
+          "p50": 0.0013759170033154078,
+          "p95": 0.0038297080027405173,
+          "p99": 0.016337917004420888
+        }
+      },
+      "worker_concurrency_max_sampled": 0,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55704,
+          "units": 26400,
+          "utilization": 2.64e-05
+        },
+        {
+          "window": 55705,
+          "units": 24400,
+          "utilization": 2.44e-05
+        },
+        {
+          "window": 55706,
+          "units": 19000,
+          "utilization": 1.9e-05
+        },
+        {
+          "window": 55707,
+          "units": 21800,
+          "utilization": 2.18e-05
+        },
+        {
+          "window": 55708,
+          "units": 25400,
+          "utilization": 2.54e-05
+        },
+        {
+          "window": 55709,
+          "units": 34400,
+          "utilization": 3.44e-05
+        },
+        {
+          "window": 55710,
+          "units": 30200,
+          "utilization": 3.02e-05
+        },
+        {
+          "window": 55711,
+          "units": 32400,
+          "utilization": 3.24e-05
+        },
+        {
+          "window": 55712,
+          "units": 28000,
+          "utilization": 2.8e-05
+        },
+        {
+          "window": 55713,
+          "units": 31000,
+          "utilization": 3.1e-05
+        },
+        {
+          "window": 55714,
+          "units": 27200,
+          "utilization": 2.72e-05
+        },
+        {
+          "window": 55715,
+          "units": 18000,
+          "utilization": 1.8e-05
+        },
+        {
+          "window": 55716,
+          "units": 31000,
+          "utilization": 3.1e-05
+        },
+        {
+          "window": 55717,
+          "units": 13800,
+          "utilization": 1.38e-05
+        },
+        {
+          "window": 55718,
+          "units": 14600,
+          "utilization": 1.46e-05
+        },
+        {
+          "window": 55719,
+          "units": 23400,
+          "utilization": 2.34e-05
+        },
+        {
+          "window": 55720,
+          "units": 23200,
+          "utilization": 2.32e-05
+        },
+        {
+          "window": 55721,
+          "units": 18400,
+          "utilization": 1.84e-05
+        },
+        {
+          "window": 55722,
+          "units": 15800,
+          "utilization": 1.58e-05
+        },
+        {
+          "window": 55723,
+          "units": 28000,
+          "utilization": 2.8e-05
+        },
+        {
+          "window": 55724,
+          "units": 32200,
+          "utilization": 3.22e-05
+        },
+        {
+          "window": 55725,
+          "units": 26800,
+          "utilization": 2.68e-05
+        },
+        {
+          "window": 55726,
+          "units": 27400,
+          "utilization": 2.74e-05
+        },
+        {
+          "window": 55727,
+          "units": 25600,
+          "utilization": 2.56e-05
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 392,
+        "consumed": 392
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 52,
+          "observed_seconds": 25.215838928997982,
+          "cpu_seconds": 0.920618000000001,
+          "cgroup_cpu_seconds": 0.920619,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 899482004.7571392,
+          "memory_peak_observed_bytes": 36986880,
+          "max_sample_gap_seconds": 0.5558815420008614
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 52,
+          "observed_seconds": 25.215946762000385,
+          "cpu_seconds": 0.4015690000000003,
+          "cgroup_cpu_seconds": 0.401569,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 438735589.41082245,
+          "memory_peak_observed_bytes": 17592320,
+          "max_sample_gap_seconds": 0.512797249997675
+        },
+        {
+          "role": "worker",
+          "uid": "d5c2549d-3720-4c59-8be4-dbaf5bba9f29",
+          "samples": 52,
+          "observed_seconds": 25.21611292900343,
+          "cpu_seconds": 0.32727699999999993,
+          "cgroup_cpu_seconds": 0.327277,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 476397372.7033475,
+          "memory_peak_observed_bytes": 19271680,
+          "max_sample_gap_seconds": 0.511700415998348
+        },
+        {
+          "role": "worker",
+          "uid": "dd0800a6-bb32-423f-9369-5c8e298fab72",
+          "samples": 52,
+          "observed_seconds": 25.216092345006473,
+          "cpu_seconds": 0.32378699999999994,
+          "cgroup_cpu_seconds": 0.323862,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 477771765.8041422,
+          "memory_peak_observed_bytes": 19517440,
+          "max_sample_gap_seconds": 0.5156498340002145
+        },
+        {
+          "role": "worker",
+          "uid": "a5a63a6c-c1bc-44da-ae8a-caef6777160e",
+          "samples": 52,
+          "observed_seconds": 25.216085553001903,
+          "cpu_seconds": 0.38859199999999994,
+          "cgroup_cpu_seconds": 0.388514,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 478079431.620047,
+          "memory_peak_observed_bytes": 19255296,
+          "max_sample_gap_seconds": 0.5145222079954692
+        },
+        {
+          "role": "worker",
+          "uid": "55935a7b-2f55-4eff-b570-9dfd2a7f9f40",
+          "samples": 52,
+          "observed_seconds": 25.21607538700482,
+          "cpu_seconds": 0.33432799999999996,
+          "cgroup_cpu_seconds": 0.334251,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 479661912.9911674,
+          "memory_peak_observed_bytes": 19517440,
+          "max_sample_gap_seconds": 0.5113035000031232
+        },
+        {
+          "role": "worker",
+          "uid": "cdba7456-785e-434e-92c8-440ebb0df78f",
+          "samples": 52,
+          "observed_seconds": 25.216017136997834,
+          "cpu_seconds": 0.311801,
+          "cgroup_cpu_seconds": 0.311767,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 478584576.54678816,
+          "memory_peak_observed_bytes": 19316736,
+          "max_sample_gap_seconds": 0.5112955829972634
+        },
+        {
+          "role": "worker",
+          "uid": "09d003b3-474e-4c01-81c1-aa45849588a7",
+          "samples": 52,
+          "observed_seconds": 25.21577734600578,
+          "cpu_seconds": 0.33218099999999995,
+          "cgroup_cpu_seconds": 0.332187,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 478091640.13859665,
+          "memory_peak_observed_bytes": 19513344,
+          "max_sample_gap_seconds": 0.5116772089968435
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 52,
+          "observed_seconds": 25.216060719998495,
+          "cpu_seconds": 0.34054300000000026,
+          "cgroup_cpu_seconds": 0.340528,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 503059915.9299183,
+          "memory_peak_observed_bytes": 20242432,
+          "max_sample_gap_seconds": 0.5156287909994717
+        },
+        {
+          "role": "worker",
+          "uid": "5a9b9ca8-4f8d-4613-9845-bb3718c5efa5",
+          "samples": 52,
+          "observed_seconds": 25.21571717900224,
+          "cpu_seconds": 0.30115899999999995,
+          "cgroup_cpu_seconds": 0.301158,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 477887733.82126474,
+          "memory_peak_observed_bytes": 19251200,
+          "max_sample_gap_seconds": 0.5141876250054338
+        }
+      ],
+      "whole_trace_useful": 392,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.093100250000134,
+        "process_cpu_seconds_observed": 0.029999999999999583,
+        "process_rss_byte_seconds": 669526626991.1826,
+        "peak_process_rss_sum_bytes": 26681704448,
+        "max_sample_gap_seconds": 1.006203416007338,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 7.65306122448969e-05,
+        "rss_byte_seconds_per_whole_trace_useful": 1707976089.263221
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.010157793367346943,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 13234061.080926616,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "model-qualification-headroom-8-1",
+      "block": "model-qualification",
+      "replicas": 8,
+      "path": "workers",
+      "profile": "headroom",
+      "policy": "none",
+      "repetition": 1,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 254,
+      "emitted": 254,
+      "worker_accepted": 254,
+      "provider_consumed": 254,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 254,
+      "useful_fraction": 1.0,
+      "offered_per_second": 12.7,
+      "emitted_per_second": 12.7,
+      "useful_cohort_per_second": 12.7,
+      "useful_window_per_second": 12.7,
+      "status_counts": {
+        "200": 254
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 254,
+        "p50": 0.004511019971687347,
+        "p95": 0.009459402535867412,
+        "p99": 0.017382717393047642
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 254,
+        "p50": 0.004511019971687347,
+        "p95": 0.009459402535867412,
+        "p99": 0.017382717393047642
+      },
+      "useful_latency_seconds": {
+        "n": 254,
+        "p50": 0.004511019971687347,
+        "p95": 0.009459402535867412,
+        "p99": 0.017382717393047642
+      },
+      "emission_lag_seconds": {
+        "n": 325,
+        "p50": 0.002877350001654122,
+        "p95": 0.0064314445335185155,
+        "p99": 0.01572988068801351
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 254,
+          "p50": 1.3582997780758888e-05,
+          "p95": 3.0375005735550076e-05,
+          "p99": 5.620800220640376e-05
+        },
+        "admission": {
+          "n": 254,
+          "p50": 6.659975042566657e-07,
+          "p95": 1.2090022210031748e-06,
+          "p99": 2.1669984562322497e-06
+        },
+        "provider_http": {
+          "n": 254,
+          "p50": 0.0012372080018394627,
+          "p95": 0.00293808300193632,
+          "p99": 0.011670332998619415
+        }
+      },
+      "worker_concurrency_max_sampled": 1,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55579,
+          "units": 22400,
+          "utilization": 2.24e-05
+        },
+        {
+          "window": 55580,
+          "units": 19200,
+          "utilization": 1.92e-05
+        },
+        {
+          "window": 55581,
+          "units": 20000,
+          "utilization": 2e-05
+        },
+        {
+          "window": 55582,
+          "units": 20600,
+          "utilization": 2.06e-05
+        },
+        {
+          "window": 55583,
+          "units": 23800,
+          "utilization": 2.38e-05
+        },
+        {
+          "window": 55584,
+          "units": 17800,
+          "utilization": 1.78e-05
+        },
+        {
+          "window": 55585,
+          "units": 21200,
+          "utilization": 2.12e-05
+        },
+        {
+          "window": 55586,
+          "units": 20400,
+          "utilization": 2.04e-05
+        },
+        {
+          "window": 55587,
+          "units": 26800,
+          "utilization": 2.68e-05
+        },
+        {
+          "window": 55588,
+          "units": 24600,
+          "utilization": 2.46e-05
+        },
+        {
+          "window": 55589,
+          "units": 26800,
+          "utilization": 2.68e-05
+        },
+        {
+          "window": 55590,
+          "units": 18200,
+          "utilization": 1.82e-05
+        },
+        {
+          "window": 55591,
+          "units": 10600,
+          "utilization": 1.06e-05
+        },
+        {
+          "window": 55592,
+          "units": 28000,
+          "utilization": 2.8e-05
+        },
+        {
+          "window": 55593,
+          "units": 22200,
+          "utilization": 2.22e-05
+        },
+        {
+          "window": 55594,
+          "units": 15800,
+          "utilization": 1.58e-05
+        },
+        {
+          "window": 55595,
+          "units": 16800,
+          "utilization": 1.68e-05
+        },
+        {
+          "window": 55596,
+          "units": 11600,
+          "utilization": 1.16e-05
+        },
+        {
+          "window": 55597,
+          "units": 17400,
+          "utilization": 1.74e-05
+        },
+        {
+          "window": 55598,
+          "units": 25400,
+          "utilization": 2.54e-05
+        },
+        {
+          "window": 55599,
+          "units": 23400,
+          "utilization": 2.34e-05
+        },
+        {
+          "window": 55600,
+          "units": 25600,
+          "utilization": 2.56e-05
+        },
+        {
+          "window": 55601,
+          "units": 15800,
+          "utilization": 1.58e-05
+        },
+        {
+          "window": 55602,
+          "units": 21400,
+          "utilization": 2.14e-05
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 325,
+        "consumed": 325
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 52,
+          "observed_seconds": 25.248283135995734,
+          "cpu_seconds": 0.905141,
+          "cgroup_cpu_seconds": 0.905213,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 748723106.5601778,
+          "memory_peak_observed_bytes": 32792576,
+          "max_sample_gap_seconds": 0.5423048750017188
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 52,
+          "observed_seconds": 25.24818259500171,
+          "cpu_seconds": 0.341402,
+          "cgroup_cpu_seconds": 0.341402,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 433358049.0368805,
+          "memory_peak_observed_bytes": 17170432,
+          "max_sample_gap_seconds": 0.5384100000010221
+        },
+        {
+          "role": "worker",
+          "uid": "28eca90b-e71a-4963-a22e-e8613605f067",
+          "samples": 52,
+          "observed_seconds": 25.248740220005857,
+          "cpu_seconds": 0.33949300000000004,
+          "cgroup_cpu_seconds": 0.339495,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 478524321.5765241,
+          "memory_peak_observed_bytes": 19320832,
+          "max_sample_gap_seconds": 0.5305730420004693
+        },
+        {
+          "role": "worker",
+          "uid": "abd08092-eaf3-4007-888f-1a11fda78148",
+          "samples": 52,
+          "observed_seconds": 25.248773095001525,
+          "cpu_seconds": 0.457805,
+          "cgroup_cpu_seconds": 0.457806,
+          "throttled_seconds": 0.085187,
+          "memory_byte_seconds": 477493652.4721069,
+          "memory_peak_observed_bytes": 19243008,
+          "max_sample_gap_seconds": 0.5157817500003148
+        },
+        {
+          "role": "worker",
+          "uid": "5aab5b11-9605-4c2a-b29b-168afe93d06d",
+          "samples": 52,
+          "observed_seconds": 25.248783344999538,
+          "cpu_seconds": 0.30183099999999996,
+          "cgroup_cpu_seconds": 0.30183,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 478594410.20630527,
+          "memory_peak_observed_bytes": 19259392,
+          "max_sample_gap_seconds": 0.5177767080022022
+        },
+        {
+          "role": "worker",
+          "uid": "6af20bb1-ad25-4917-b77d-3dbd3a22d92d",
+          "samples": 52,
+          "observed_seconds": 25.248792927995964,
+          "cpu_seconds": 0.30985100000000004,
+          "cgroup_cpu_seconds": 0.309852,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 478798882.4429135,
+          "memory_peak_observed_bytes": 19505152,
+          "max_sample_gap_seconds": 0.516479250996781
+        },
+        {
+          "role": "worker",
+          "uid": "43a5c1ce-303f-4333-a284-10d2b4f60616",
+          "samples": 52,
+          "observed_seconds": 25.248790345001908,
+          "cpu_seconds": 0.344364,
+          "cgroup_cpu_seconds": 0.344364,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 478435869.0143206,
+          "memory_peak_observed_bytes": 19259392,
+          "max_sample_gap_seconds": 0.533999416998995
+        },
+        {
+          "role": "worker",
+          "uid": "547d1756-ddc0-4762-a3e7-8e9c5910a5ff",
+          "samples": 52,
+          "observed_seconds": 25.248819011001615,
+          "cpu_seconds": 0.331036,
+          "cgroup_cpu_seconds": 0.331036,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 476953310.8305522,
+          "memory_peak_observed_bytes": 19263488,
+          "max_sample_gap_seconds": 0.5285518329983461
+        },
+        {
+          "role": "worker",
+          "uid": "0ded53d7-044a-44ee-93c8-1b67cd30ec99",
+          "samples": 52,
+          "observed_seconds": 25.248791760997847,
+          "cpu_seconds": 0.31703500000000007,
+          "cgroup_cpu_seconds": 0.317035,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 478510233.4477531,
+          "memory_peak_observed_bytes": 19251200,
+          "max_sample_gap_seconds": 0.5284169169972301
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 52,
+          "observed_seconds": 25.248783219998586,
+          "cpu_seconds": 0.5382010000000004,
+          "cgroup_cpu_seconds": 0.538201,
+          "throttled_seconds": 0.024812,
+          "memory_byte_seconds": 499521916.4727486,
+          "memory_peak_observed_bytes": 20029440,
+          "max_sample_gap_seconds": 0.5506591670055059
+        }
+      ],
+      "whole_trace_useful": 325,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.1059486669983,
+        "process_cpu_seconds_observed": 0.030000000000001137,
+        "process_rss_byte_seconds": 669868268211.9194,
+        "peak_process_rss_sum_bytes": 26681655296,
+        "max_sample_gap_seconds": 1.0069968339957995,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 9.23076923076958e-05,
+        "rss_byte_seconds_per_whole_trace_useful": 2061133132.959752
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.012880489230769234,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 15473580.7755701,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "model-qualification-headroom-8-2",
+      "block": "model-qualification",
+      "replicas": 8,
+      "path": "workers",
+      "profile": "headroom",
+      "policy": "none",
+      "repetition": 2,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 289,
+      "emitted": 289,
+      "worker_accepted": 289,
+      "provider_consumed": 289,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 289,
+      "useful_fraction": 1.0,
+      "offered_per_second": 14.45,
+      "emitted_per_second": 14.45,
+      "useful_cohort_per_second": 14.45,
+      "useful_window_per_second": 14.4,
+      "status_counts": {
+        "200": 289
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 289,
+        "p50": 0.004659973164962139,
+        "p95": 0.009597172873327509,
+        "p99": 0.3473571446738788
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 289,
+        "p50": 0.004659973164962139,
+        "p95": 0.009597172873327509,
+        "p99": 0.3473571446738788
+      },
+      "useful_latency_seconds": {
+        "n": 289,
+        "p50": 0.004659973164962139,
+        "p95": 0.009597172873327509,
+        "p99": 0.3473571446738788
+      },
+      "emission_lag_seconds": {
+        "n": 336,
+        "p50": 0.0030207265954231843,
+        "p95": 0.006901963868585881,
+        "p99": 0.3005921268631937
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 289,
+          "p50": 1.3250006304588169e-05,
+          "p95": 3.266699786763638e-05,
+          "p99": 6.804199801990762e-05
+        },
+        "admission": {
+          "n": 289,
+          "p50": 5.00003807246685e-07,
+          "p95": 1.3749959180131555e-06,
+          "p99": 2.2500025806948543e-06
+        },
+        "provider_http": {
+          "n": 289,
+          "p50": 0.0012795840011676773,
+          "p95": 0.0025477090021013282,
+          "p99": 0.005685042000550311
+        }
+      },
+      "worker_concurrency_max_sampled": 1,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55821,
+          "units": 11600,
+          "utilization": 1.16e-05
+        },
+        {
+          "window": 55822,
+          "units": 22800,
+          "utilization": 2.28e-05
+        },
+        {
+          "window": 55823,
+          "units": 13600,
+          "utilization": 1.36e-05
+        },
+        {
+          "window": 55824,
+          "units": 14000,
+          "utilization": 1.4e-05
+        },
+        {
+          "window": 55825,
+          "units": 12800,
+          "utilization": 1.28e-05
+        },
+        {
+          "window": 55826,
+          "units": 32200,
+          "utilization": 3.22e-05
+        },
+        {
+          "window": 55827,
+          "units": 25400,
+          "utilization": 2.54e-05
+        },
+        {
+          "window": 55828,
+          "units": 34400,
+          "utilization": 3.44e-05
+        },
+        {
+          "window": 55829,
+          "units": 17000,
+          "utilization": 1.7e-05
+        },
+        {
+          "window": 55830,
+          "units": 11600,
+          "utilization": 1.16e-05
+        },
+        {
+          "window": 55831,
+          "units": 22200,
+          "utilization": 2.22e-05
+        },
+        {
+          "window": 55832,
+          "units": 28800,
+          "utilization": 2.88e-05
+        },
+        {
+          "window": 55833,
+          "units": 23600,
+          "utilization": 2.36e-05
+        },
+        {
+          "window": 55834,
+          "units": 16800,
+          "utilization": 1.68e-05
+        },
+        {
+          "window": 55835,
+          "units": 31800,
+          "utilization": 3.18e-05
+        },
+        {
+          "window": 55836,
+          "units": 28800,
+          "utilization": 2.88e-05
+        },
+        {
+          "window": 55837,
+          "units": 18000,
+          "utilization": 1.8e-05
+        },
+        {
+          "window": 55838,
+          "units": 17200,
+          "utilization": 1.72e-05
+        },
+        {
+          "window": 55839,
+          "units": 28800,
+          "utilization": 2.88e-05
+        },
+        {
+          "window": 55840,
+          "units": 25600,
+          "utilization": 2.56e-05
+        },
+        {
+          "window": 55841,
+          "units": 20600,
+          "utilization": 2.06e-05
+        },
+        {
+          "window": 55842,
+          "units": 24600,
+          "utilization": 2.46e-05
+        },
+        {
+          "window": 55843,
+          "units": 16000,
+          "utilization": 1.6e-05
+        },
+        {
+          "window": 55844,
+          "units": 25800,
+          "utilization": 2.58e-05
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 336,
+        "consumed": 336
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 51,
+          "observed_seconds": 25.253471137002634,
+          "cpu_seconds": 1.0753649999999997,
+          "cgroup_cpu_seconds": 1.075365,
+          "throttled_seconds": 0.009062,
+          "memory_byte_seconds": 890225955.6088582,
+          "memory_peak_observed_bytes": 36651008,
+          "max_sample_gap_seconds": 0.7178216669999529
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 51,
+          "observed_seconds": 25.253324637000333,
+          "cpu_seconds": 0.3875669999999989,
+          "cgroup_cpu_seconds": 0.387546,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 444646137.49837387,
+          "memory_peak_observed_bytes": 17625088,
+          "max_sample_gap_seconds": 0.7184230839993688
+        },
+        {
+          "role": "worker",
+          "uid": "a0f6dfab-c60d-4b43-a01b-3e5713381347",
+          "samples": 51,
+          "observed_seconds": 25.253499512000417,
+          "cpu_seconds": 0.518896,
+          "cgroup_cpu_seconds": 0.518896,
+          "throttled_seconds": 0.143935,
+          "memory_byte_seconds": 453118844.95636326,
+          "memory_peak_observed_bytes": 18190336,
+          "max_sample_gap_seconds": 0.7215346669981955
+        },
+        {
+          "role": "worker",
+          "uid": "779d1823-8dc6-409b-8b4e-cb97b0c9c8ac",
+          "samples": 51,
+          "observed_seconds": 25.25351076199877,
+          "cpu_seconds": 0.4776290000000001,
+          "cgroup_cpu_seconds": 0.47763,
+          "throttled_seconds": 0.166052,
+          "memory_byte_seconds": 475594773.3490832,
+          "memory_peak_observed_bytes": 19095552,
+          "max_sample_gap_seconds": 0.7213926670010551
+        },
+        {
+          "role": "worker",
+          "uid": "5e56ce41-ef63-46bc-bff5-8e518a1d1aa7",
+          "samples": 51,
+          "observed_seconds": 25.253585595994082,
+          "cpu_seconds": 0.45421199999999995,
+          "cgroup_cpu_seconds": 0.454213,
+          "throttled_seconds": 0.084056,
+          "memory_byte_seconds": 475118633.0321073,
+          "memory_peak_observed_bytes": 19320832,
+          "max_sample_gap_seconds": 0.7213226259991643
+        },
+        {
+          "role": "worker",
+          "uid": "f8fc422d-e106-489f-99a8-f0a1c755fa78",
+          "samples": 51,
+          "observed_seconds": 25.253543302998878,
+          "cpu_seconds": 0.30377299999999996,
+          "cgroup_cpu_seconds": 0.303772,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 475763292.6018091,
+          "memory_peak_observed_bytes": 19312640,
+          "max_sample_gap_seconds": 0.7233059999998659
+        },
+        {
+          "role": "worker",
+          "uid": "126bd1ed-8b91-4e16-9887-130384588927",
+          "samples": 51,
+          "observed_seconds": 25.25353813700349,
+          "cpu_seconds": 0.274239,
+          "cgroup_cpu_seconds": 0.274239,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 474793826.7031778,
+          "memory_peak_observed_bytes": 19304448,
+          "max_sample_gap_seconds": 0.7220490420004353
+        },
+        {
+          "role": "worker",
+          "uid": "aea12ddd-43f8-44cc-99e0-34f285f747ba",
+          "samples": 51,
+          "observed_seconds": 25.253504721003992,
+          "cpu_seconds": 0.3109679999999999,
+          "cgroup_cpu_seconds": 0.310967,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 475155993.8489518,
+          "memory_peak_observed_bytes": 19050496,
+          "max_sample_gap_seconds": 0.7212663339960272
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 51,
+          "observed_seconds": 25.25349871999788,
+          "cpu_seconds": 0.30122800000000094,
+          "cgroup_cpu_seconds": 0.301228,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 507862402.9793912,
+          "memory_peak_observed_bytes": 20598784,
+          "max_sample_gap_seconds": 0.7234325419995002
+        },
+        {
+          "role": "worker",
+          "uid": "0d5143e3-8252-4425-a937-91d3c14942b8",
+          "samples": 51,
+          "observed_seconds": 25.253389678997337,
+          "cpu_seconds": 0.4366709999999999,
+          "cgroup_cpu_seconds": 0.436671,
+          "throttled_seconds": 0.097809,
+          "memory_byte_seconds": 475945287.1945042,
+          "memory_peak_observed_bytes": 19099648,
+          "max_sample_gap_seconds": 0.7215950419995352
+        }
+      ],
+      "whole_trace_useful": 336,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.103067957999883,
+        "process_cpu_seconds_observed": 0.03999999999999759,
+        "process_rss_byte_seconds": 669792639993.4117,
+        "peak_process_rss_sum_bytes": 26681704448,
+        "max_sample_gap_seconds": 1.007068334001815,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 0.00011904761904761188,
+        "rss_byte_seconds_per_whole_trace_useful": 1993430476.1708684
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.013513535714285712,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 15322098.65408518,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "model-qualification-high-1-0",
+      "block": "model-qualification",
+      "replicas": 1,
+      "path": "workers",
+      "profile": "high",
+      "policy": "none",
+      "repetition": 0,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 169,
+      "emitted": 169,
+      "worker_accepted": 169,
+      "provider_consumed": 169,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 169,
+      "useful_fraction": 1.0,
+      "offered_per_second": 8.45,
+      "emitted_per_second": 8.45,
+      "useful_cohort_per_second": 8.45,
+      "useful_window_per_second": 8.45,
+      "status_counts": {
+        "200": 169
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 169,
+        "p50": 0.005294349655741826,
+        "p95": 0.012887518976640422,
+        "p99": 0.02719269658700796
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 169,
+        "p50": 0.005294349655741826,
+        "p95": 0.012887518976640422,
+        "p99": 0.02719269658700796
+      },
+      "useful_latency_seconds": {
+        "n": 169,
+        "p50": 0.005294349655741826,
+        "p95": 0.012887518976640422,
+        "p99": 0.02719269658700796
+      },
+      "emission_lag_seconds": {
+        "n": 210,
+        "p50": 0.0032233719539362937,
+        "p95": 0.006696059979731217,
+        "p99": 0.020346960540337022
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 169,
+          "p50": 1.599999814061448e-05,
+          "p95": 4.0583996451459825e-05,
+          "p99": 5.6666001910343766e-05
+        },
+        "admission": {
+          "n": 169,
+          "p50": 8.329952834174037e-07,
+          "p95": 1.6250050975941122e-06,
+          "p99": 2.0419975044205785e-06
+        },
+        "provider_http": {
+          "n": 169,
+          "p50": 0.001404167000146117,
+          "p95": 0.0024357500005862676,
+          "p99": 0.006781124997360166
+        }
+      },
+      "worker_concurrency_max_sampled": 1,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55854,
+          "units": 9800,
+          "utilization": 9.8e-06
+        },
+        {
+          "window": 55855,
+          "units": 11800,
+          "utilization": 1.18e-05
+        },
+        {
+          "window": 55856,
+          "units": 14600,
+          "utilization": 1.46e-05
+        },
+        {
+          "window": 55857,
+          "units": 8600,
+          "utilization": 8.6e-06
+        },
+        {
+          "window": 55858,
+          "units": 15800,
+          "utilization": 1.58e-05
+        },
+        {
+          "window": 55859,
+          "units": 9600,
+          "utilization": 9.6e-06
+        },
+        {
+          "window": 55860,
+          "units": 9400,
+          "utilization": 9.4e-06
+        },
+        {
+          "window": 55861,
+          "units": 13000,
+          "utilization": 1.3e-05
+        },
+        {
+          "window": 55862,
+          "units": 8800,
+          "utilization": 8.8e-06
+        },
+        {
+          "window": 55863,
+          "units": 13800,
+          "utilization": 1.38e-05
+        },
+        {
+          "window": 55864,
+          "units": 11600,
+          "utilization": 1.16e-05
+        },
+        {
+          "window": 55865,
+          "units": 9400,
+          "utilization": 9.4e-06
+        },
+        {
+          "window": 55866,
+          "units": 21800,
+          "utilization": 2.18e-05
+        },
+        {
+          "window": 55867,
+          "units": 19400,
+          "utilization": 1.94e-05
+        },
+        {
+          "window": 55868,
+          "units": 14000,
+          "utilization": 1.4e-05
+        },
+        {
+          "window": 55869,
+          "units": 15400,
+          "utilization": 1.54e-05
+        },
+        {
+          "window": 55870,
+          "units": 17000,
+          "utilization": 1.7e-05
+        },
+        {
+          "window": 55871,
+          "units": 14000,
+          "utilization": 1.4e-05
+        },
+        {
+          "window": 55872,
+          "units": 11800,
+          "utilization": 1.18e-05
+        },
+        {
+          "window": 55873,
+          "units": 15000,
+          "utilization": 1.5e-05
+        },
+        {
+          "window": 55874,
+          "units": 18200,
+          "utilization": 1.82e-05
+        },
+        {
+          "window": 55875,
+          "units": 9200,
+          "utilization": 9.2e-06
+        },
+        {
+          "window": 55876,
+          "units": 18000,
+          "utilization": 1.8e-05
+        },
+        {
+          "window": 55877,
+          "units": 8400,
+          "utilization": 8.4e-06
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 210,
+        "consumed": 210
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 51,
+          "observed_seconds": 25.096321887001977,
+          "cpu_seconds": 0.7188369999999988,
+          "cgroup_cpu_seconds": 0.718837,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 870621281.2077404,
+          "memory_peak_observed_bytes": 35278848,
+          "max_sample_gap_seconds": 0.5480280419942574
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 51,
+          "observed_seconds": 25.096291512003518,
+          "cpu_seconds": 0.4220769999999998,
+          "cgroup_cpu_seconds": 0.422077,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 441995679.91513145,
+          "memory_peak_observed_bytes": 17616896,
+          "max_sample_gap_seconds": 0.5491008749959292
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 51,
+          "observed_seconds": 25.096306346000347,
+          "cpu_seconds": 0.6185179999999999,
+          "cgroup_cpu_seconds": 0.618533,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 507046548.67769706,
+          "memory_peak_observed_bytes": 21135360,
+          "max_sample_gap_seconds": 0.5486285829974804
+        }
+      ],
+      "whole_trace_useful": 210,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.102678041992476,
+        "process_cpu_seconds_observed": 0.030000000000003135,
+        "process_rss_byte_seconds": 669782236369.7426,
+        "peak_process_rss_sum_bytes": 26681704448,
+        "max_sample_gap_seconds": 1.0069427080015885,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 0.00014285714285715778,
+        "rss_byte_seconds_per_whole_trace_useful": 3189439220.808298
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.008378247619047612,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 8665064.332383662,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "model-qualification-high-1-1",
+      "block": "model-qualification",
+      "replicas": 1,
+      "path": "workers",
+      "profile": "high",
+      "policy": "none",
+      "repetition": 1,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 136,
+      "emitted": 136,
+      "worker_accepted": 136,
+      "provider_consumed": 136,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 136,
+      "useful_fraction": 1.0,
+      "offered_per_second": 6.8,
+      "emitted_per_second": 6.8,
+      "useful_cohort_per_second": 6.8,
+      "useful_window_per_second": 6.8,
+      "status_counts": {
+        "200": 136
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 136,
+        "p50": 0.004841231675527524,
+        "p95": 0.011558729565877002,
+        "p99": 0.03868349769618362
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 136,
+        "p50": 0.004841231675527524,
+        "p95": 0.011558729565877002,
+        "p99": 0.03868349769618362
+      },
+      "useful_latency_seconds": {
+        "n": 136,
+        "p50": 0.004841231675527524,
+        "p95": 0.011558729565877002,
+        "p99": 0.03868349769618362
+      },
+      "emission_lag_seconds": {
+        "n": 172,
+        "p50": 0.003022411576239392,
+        "p95": 0.012928750569699332,
+        "p99": 0.1840224496772862
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 136,
+          "p50": 1.029099803417921e-05,
+          "p95": 5.7375000324100256e-05,
+          "p99": 8.962500578491017e-05
+        },
+        "admission": {
+          "n": 136,
+          "p50": 5.420006345957518e-07,
+          "p95": 1.7499987734481692e-06,
+          "p99": 1.8339997041039169e-06
+        },
+        "provider_http": {
+          "n": 136,
+          "p50": 0.00143891699553933,
+          "p95": 0.003647958001238294,
+          "p99": 0.010867958000744693
+        }
+      },
+      "worker_concurrency_max_sampled": 2,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55881,
+          "units": 2000,
+          "utilization": 2e-06
+        },
+        {
+          "window": 55882,
+          "units": 22400,
+          "utilization": 2.24e-05
+        },
+        {
+          "window": 55883,
+          "units": 7400,
+          "utilization": 7.4e-06
+        },
+        {
+          "window": 55884,
+          "units": 9600,
+          "utilization": 9.6e-06
+        },
+        {
+          "window": 55885,
+          "units": 4200,
+          "utilization": 4.2e-06
+        },
+        {
+          "window": 55886,
+          "units": 11600,
+          "utilization": 1.16e-05
+        },
+        {
+          "window": 55887,
+          "units": 9600,
+          "utilization": 9.6e-06
+        },
+        {
+          "window": 55888,
+          "units": 12000,
+          "utilization": 1.2e-05
+        },
+        {
+          "window": 55889,
+          "units": 17400,
+          "utilization": 1.74e-05
+        },
+        {
+          "window": 55890,
+          "units": 7400,
+          "utilization": 7.4e-06
+        },
+        {
+          "window": 55891,
+          "units": 16000,
+          "utilization": 1.6e-05
+        },
+        {
+          "window": 55892,
+          "units": 5200,
+          "utilization": 5.2e-06
+        },
+        {
+          "window": 55893,
+          "units": 8600,
+          "utilization": 8.6e-06
+        },
+        {
+          "window": 55894,
+          "units": 12600,
+          "utilization": 1.26e-05
+        },
+        {
+          "window": 55895,
+          "units": 11800,
+          "utilization": 1.18e-05
+        },
+        {
+          "window": 55896,
+          "units": 9600,
+          "utilization": 9.6e-06
+        },
+        {
+          "window": 55897,
+          "units": 3200,
+          "utilization": 3.2e-06
+        },
+        {
+          "window": 55898,
+          "units": 16000,
+          "utilization": 1.6e-05
+        },
+        {
+          "window": 55899,
+          "units": 11800,
+          "utilization": 1.18e-05
+        },
+        {
+          "window": 55900,
+          "units": 18200,
+          "utilization": 1.82e-05
+        },
+        {
+          "window": 55901,
+          "units": 13800,
+          "utilization": 1.38e-05
+        },
+        {
+          "window": 55902,
+          "units": 13000,
+          "utilization": 1.3e-05
+        },
+        {
+          "window": 55903,
+          "units": 5400,
+          "utilization": 5.4e-06
+        },
+        {
+          "window": 55904,
+          "units": 10800,
+          "utilization": 1.08e-05
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 172,
+        "consumed": 172
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 51,
+          "observed_seconds": 25.061531677994935,
+          "cpu_seconds": 0.7450960000000002,
+          "cgroup_cpu_seconds": 0.745215,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 953602357.9403849,
+          "memory_peak_observed_bytes": 38969344,
+          "max_sample_gap_seconds": 0.8963333330029855
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 51,
+          "observed_seconds": 25.061449344997527,
+          "cpu_seconds": 0.5060159999999998,
+          "cgroup_cpu_seconds": 0.506016,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 440023846.31268096,
+          "memory_peak_observed_bytes": 17625088,
+          "max_sample_gap_seconds": 0.8781204590050038
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 51,
+          "observed_seconds": 25.061665637003898,
+          "cpu_seconds": 0.6398139999999994,
+          "cgroup_cpu_seconds": 0.639814,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 506397084.9654409,
+          "memory_peak_observed_bytes": 20860928,
+          "max_sample_gap_seconds": 0.8607736250050948
+        }
+      ],
+      "whole_trace_useful": 172,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.08774416698725,
+        "process_cpu_seconds_observed": 0.019999999999999574,
+        "process_rss_byte_seconds": 669383775130.5897,
+        "peak_process_rss_sum_bytes": 26681704448,
+        "max_sample_gap_seconds": 1.00521329100593,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 0.00011627906976743939,
+        "rss_byte_seconds_per_whole_trace_useful": 3891766134.4801726
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.010993755813953485,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 11046647.030340156,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "model-qualification-high-1-2",
+      "block": "model-qualification",
+      "replicas": 1,
+      "path": "workers",
+      "profile": "high",
+      "policy": "none",
+      "repetition": 2,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 131,
+      "emitted": 131,
+      "worker_accepted": 131,
+      "provider_consumed": 131,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 131,
+      "useful_fraction": 1.0,
+      "offered_per_second": 6.55,
+      "emitted_per_second": 6.55,
+      "useful_cohort_per_second": 6.55,
+      "useful_window_per_second": 6.55,
+      "status_counts": {
+        "200": 131
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 131,
+        "p50": 0.005214989614614751,
+        "p95": 0.017718492810672615,
+        "p99": 0.21978821932862047
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 131,
+        "p50": 0.005214989614614751,
+        "p95": 0.017718492810672615,
+        "p99": 0.21978821932862047
+      },
+      "useful_latency_seconds": {
+        "n": 131,
+        "p50": 0.005214989614614751,
+        "p95": 0.017718492810672615,
+        "p99": 0.21978821932862047
+      },
+      "emission_lag_seconds": {
+        "n": 153,
+        "p50": 0.003290614615252707,
+        "p95": 0.007803830194461625,
+        "p99": 0.21872084432834527
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 131,
+          "p50": 1.5249999705702066e-05,
+          "p95": 3.316700167488307e-05,
+          "p99": 3.883400495396927e-05
+        },
+        "admission": {
+          "n": 131,
+          "p50": 7.499984349124134e-07,
+          "p95": 1.4999968698248267e-06,
+          "p99": 1.7499987734481692e-06
+        },
+        "provider_http": {
+          "n": 131,
+          "p50": 0.00141816699760966,
+          "p95": 0.0030321249942062423,
+          "p99": 0.010776374998386018
+        }
+      },
+      "worker_concurrency_max_sampled": 1,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55675,
+          "units": 7600,
+          "utilization": 7.6e-06
+        },
+        {
+          "window": 55676,
+          "units": 8400,
+          "utilization": 8.4e-06
+        },
+        {
+          "window": 55677,
+          "units": 4200,
+          "utilization": 4.2e-06
+        },
+        {
+          "window": 55678,
+          "units": 10800,
+          "utilization": 1.08e-05
+        },
+        {
+          "window": 55679,
+          "units": 7600,
+          "utilization": 7.6e-06
+        },
+        {
+          "window": 55680,
+          "units": 10800,
+          "utilization": 1.08e-05
+        },
+        {
+          "window": 55681,
+          "units": 11600,
+          "utilization": 1.16e-05
+        },
+        {
+          "window": 55682,
+          "units": 4200,
+          "utilization": 4.2e-06
+        },
+        {
+          "window": 55683,
+          "units": 3200,
+          "utilization": 3.2e-06
+        },
+        {
+          "window": 55684,
+          "units": 13000,
+          "utilization": 1.3e-05
+        },
+        {
+          "window": 55685,
+          "units": 5200,
+          "utilization": 5.2e-06
+        },
+        {
+          "window": 55686,
+          "units": 6600,
+          "utilization": 6.6e-06
+        },
+        {
+          "window": 55687,
+          "units": 16000,
+          "utilization": 1.6e-05
+        },
+        {
+          "window": 55688,
+          "units": 24600,
+          "utilization": 2.46e-05
+        },
+        {
+          "window": 55689,
+          "units": 10400,
+          "utilization": 1.04e-05
+        },
+        {
+          "window": 55690,
+          "units": 9800,
+          "utilization": 9.8e-06
+        },
+        {
+          "window": 55691,
+          "units": 19400,
+          "utilization": 1.94e-05
+        },
+        {
+          "window": 55692,
+          "units": 17000,
+          "utilization": 1.7e-05
+        },
+        {
+          "window": 55693,
+          "units": 4200,
+          "utilization": 4.2e-06
+        },
+        {
+          "window": 55694,
+          "units": 10600,
+          "utilization": 1.06e-05
+        },
+        {
+          "window": 55695,
+          "units": 4200,
+          "utilization": 4.2e-06
+        },
+        {
+          "window": 55696,
+          "units": 8600,
+          "utilization": 8.6e-06
+        },
+        {
+          "window": 55697,
+          "units": 11600,
+          "utilization": 1.16e-05
+        },
+        {
+          "window": 55698,
+          "units": 4200,
+          "utilization": 4.2e-06
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 153,
+        "consumed": 153
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 52,
+          "observed_seconds": 25.1752805540018,
+          "cpu_seconds": 0.8149760000000006,
+          "cgroup_cpu_seconds": 0.814975,
+          "throttled_seconds": 0.053046,
+          "memory_byte_seconds": 828373829.0685618,
+          "memory_peak_observed_bytes": 33550336,
+          "max_sample_gap_seconds": 0.5167890420052572
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 52,
+          "observed_seconds": 25.17528034499992,
+          "cpu_seconds": 0.3277239999999999,
+          "cgroup_cpu_seconds": 0.327651,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 431892868.5503936,
+          "memory_peak_observed_bytes": 17174528,
+          "max_sample_gap_seconds": 0.5080349580020993
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 52,
+          "observed_seconds": 25.175387470000715,
+          "cpu_seconds": 0.4852629999999998,
+          "cgroup_cpu_seconds": 0.485364,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 502637298.49309546,
+          "memory_peak_observed_bytes": 20639744,
+          "max_sample_gap_seconds": 0.5054770420028944
+        }
+      ],
+      "whole_trace_useful": 153,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.100253582990263,
+        "process_cpu_seconds_observed": 0.019999999999999574,
+        "process_rss_byte_seconds": 669717119961.6561,
+        "peak_process_rss_sum_bytes": 26681688064,
+        "max_sample_gap_seconds": 1.0056871670094552,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 0.00013071895424836323,
+        "rss_byte_seconds_per_whole_trace_useful": 4377236078.180759
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.010640281045751637,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 11522248.34060164,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "model-qualification-high-8-0",
+      "block": "model-qualification",
+      "replicas": 8,
+      "path": "workers",
+      "profile": "high",
+      "policy": "none",
+      "repetition": 0,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 169,
+      "emitted": 169,
+      "worker_accepted": 169,
+      "provider_consumed": 169,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 169,
+      "useful_fraction": 1.0,
+      "offered_per_second": 8.45,
+      "emitted_per_second": 8.45,
+      "useful_cohort_per_second": 8.45,
+      "useful_window_per_second": 8.45,
+      "status_counts": {
+        "200": 169
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 169,
+        "p50": 0.004483915508899372,
+        "p95": 0.011757524422137067,
+        "p99": 0.17240901554760057
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 169,
+        "p50": 0.004483915508899372,
+        "p95": 0.011757524422137067,
+        "p99": 0.17240901554760057
+      },
+      "useful_latency_seconds": {
+        "n": 169,
+        "p50": 0.004483915508899372,
+        "p95": 0.011757524422137067,
+        "p99": 0.17240901554760057
+      },
+      "emission_lag_seconds": {
+        "n": 210,
+        "p50": 0.00294652531738393,
+        "p95": 0.007490026531741023,
+        "p99": 0.04661420925549464
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 169,
+          "p50": 1.1083000572398305e-05,
+          "p95": 2.237500302726403e-05,
+          "p99": 3.579199983505532e-05
+        },
+        "admission": {
+          "n": 169,
+          "p50": 5.00003807246685e-07,
+          "p95": 1.1250012903474271e-06,
+          "p99": 1.2090022210031748e-06
+        },
+        "provider_http": {
+          "n": 169,
+          "p50": 0.001039916998706758,
+          "p95": 0.0034218750006402843,
+          "p99": 0.04366904099879321
+        }
+      },
+      "worker_concurrency_max_sampled": 2,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55641,
+          "units": 14800,
+          "utilization": 1.48e-05
+        },
+        {
+          "window": 55642,
+          "units": 14000,
+          "utilization": 1.4e-05
+        },
+        {
+          "window": 55643,
+          "units": 12800,
+          "utilization": 1.28e-05
+        },
+        {
+          "window": 55644,
+          "units": 16000,
+          "utilization": 1.6e-05
+        },
+        {
+          "window": 55645,
+          "units": 5000,
+          "utilization": 5e-06
+        },
+        {
+          "window": 55646,
+          "units": 12800,
+          "utilization": 1.28e-05
+        },
+        {
+          "window": 55647,
+          "units": 12800,
+          "utilization": 1.28e-05
+        },
+        {
+          "window": 55648,
+          "units": 9600,
+          "utilization": 9.6e-06
+        },
+        {
+          "window": 55649,
+          "units": 10800,
+          "utilization": 1.08e-05
+        },
+        {
+          "window": 55650,
+          "units": 13000,
+          "utilization": 1.3e-05
+        },
+        {
+          "window": 55651,
+          "units": 10600,
+          "utilization": 1.06e-05
+        },
+        {
+          "window": 55652,
+          "units": 10400,
+          "utilization": 1.04e-05
+        },
+        {
+          "window": 55653,
+          "units": 15000,
+          "utilization": 1.5e-05
+        },
+        {
+          "window": 55654,
+          "units": 22800,
+          "utilization": 2.28e-05
+        },
+        {
+          "window": 55655,
+          "units": 11800,
+          "utilization": 1.18e-05
+        },
+        {
+          "window": 55656,
+          "units": 19600,
+          "utilization": 1.96e-05
+        },
+        {
+          "window": 55657,
+          "units": 19600,
+          "utilization": 1.96e-05
+        },
+        {
+          "window": 55658,
+          "units": 14800,
+          "utilization": 1.48e-05
+        },
+        {
+          "window": 55659,
+          "units": 10800,
+          "utilization": 1.08e-05
+        },
+        {
+          "window": 55660,
+          "units": 12800,
+          "utilization": 1.28e-05
+        },
+        {
+          "window": 55661,
+          "units": 12800,
+          "utilization": 1.28e-05
+        },
+        {
+          "window": 55662,
+          "units": 16000,
+          "utilization": 1.6e-05
+        },
+        {
+          "window": 55663,
+          "units": 17800,
+          "utilization": 1.78e-05
+        },
+        {
+          "window": 55664,
+          "units": 11800,
+          "utilization": 1.18e-05
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 210,
+        "consumed": 210
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 51,
+          "observed_seconds": 25.098648844999843,
+          "cpu_seconds": 0.80314,
+          "cgroup_cpu_seconds": 0.803056,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 829283254.4583247,
+          "memory_peak_observed_bytes": 34992128,
+          "max_sample_gap_seconds": 0.6951127499996801
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 51,
+          "observed_seconds": 25.098456178995548,
+          "cpu_seconds": 0.36420299999999983,
+          "cgroup_cpu_seconds": 0.364202,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 430685852.5748485,
+          "memory_peak_observed_bytes": 17178624,
+          "max_sample_gap_seconds": 0.6357346670047264
+        },
+        {
+          "role": "worker",
+          "uid": "7f102dd7-5e9d-47ae-9d04-a9ade1cfe853",
+          "samples": 51,
+          "observed_seconds": 25.097923845001787,
+          "cpu_seconds": 0.35764799999999997,
+          "cgroup_cpu_seconds": 0.357675,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 469535523.1572825,
+          "memory_peak_observed_bytes": 19259392,
+          "max_sample_gap_seconds": 0.586917041997367
+        },
+        {
+          "role": "worker",
+          "uid": "12480772-a377-4ebd-a16b-16d21ab1ad6b",
+          "samples": 51,
+          "observed_seconds": 25.09793222099688,
+          "cpu_seconds": 0.3958879999999999,
+          "cgroup_cpu_seconds": 0.395907,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 475957384.053724,
+          "memory_peak_observed_bytes": 19521536,
+          "max_sample_gap_seconds": 0.5439632919951691
+        },
+        {
+          "role": "worker",
+          "uid": "9bba56dd-7a02-4727-90a6-bec1f7d59a16",
+          "samples": 51,
+          "observed_seconds": 25.097916304002865,
+          "cpu_seconds": 0.34176999999999996,
+          "cgroup_cpu_seconds": 0.34178,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 476037767.03395534,
+          "memory_peak_observed_bytes": 19517440,
+          "max_sample_gap_seconds": 0.5786437499991735
+        },
+        {
+          "role": "worker",
+          "uid": "7a22511a-49b3-493b-b9de-4991f2efa019",
+          "samples": 51,
+          "observed_seconds": 25.09786488700047,
+          "cpu_seconds": 0.340617,
+          "cgroup_cpu_seconds": 0.340617,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 476084330.2485448,
+          "memory_peak_observed_bytes": 19505152,
+          "max_sample_gap_seconds": 0.5558384590040077
+        },
+        {
+          "role": "worker",
+          "uid": "1a174582-9c4a-4058-b5bf-3b84b430aba3",
+          "samples": 51,
+          "observed_seconds": 25.097803094999108,
+          "cpu_seconds": 0.347103,
+          "cgroup_cpu_seconds": 0.347117,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 473133302.3875382,
+          "memory_peak_observed_bytes": 19247104,
+          "max_sample_gap_seconds": 0.5450367500016
+        },
+        {
+          "role": "worker",
+          "uid": "4f7bba22-a327-40d5-89d8-f39b10249876",
+          "samples": 51,
+          "observed_seconds": 25.098295346004306,
+          "cpu_seconds": 0.32186799999999993,
+          "cgroup_cpu_seconds": 0.321867,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 475795852.8629025,
+          "memory_peak_observed_bytes": 19251200,
+          "max_sample_gap_seconds": 0.5430234169980395
+        },
+        {
+          "role": "worker",
+          "uid": "cde58f1f-3d15-4390-a7ef-d84c799182f5",
+          "samples": 51,
+          "observed_seconds": 25.098388678998163,
+          "cpu_seconds": 0.39534699999999995,
+          "cgroup_cpu_seconds": 0.395347,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 474339422.9924904,
+          "memory_peak_observed_bytes": 19243008,
+          "max_sample_gap_seconds": 0.6450661670023692
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 51,
+          "observed_seconds": 25.098452679005277,
+          "cpu_seconds": 0.4237269999999995,
+          "cgroup_cpu_seconds": 0.423943,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 498252478.1155173,
+          "memory_peak_observed_bytes": 20365312,
+          "max_sample_gap_seconds": 0.5702587509949808
+        }
+      ],
+      "whole_trace_useful": 210,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.096862708000117,
+        "process_cpu_seconds_observed": 0.019999999999999574,
+        "process_rss_byte_seconds": 669625839785.8962,
+        "peak_process_rss_sum_bytes": 26681655296,
+        "max_sample_gap_seconds": 1.0051181250019,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 9.523809523809321e-05,
+        "rss_byte_seconds_per_whole_trace_useful": 3188694475.1709347
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.01948243333333333,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 24186215.085167278,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "model-qualification-high-8-1",
+      "block": "model-qualification",
+      "replicas": 8,
+      "path": "workers",
+      "profile": "high",
+      "policy": "none",
+      "repetition": 1,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 136,
+      "emitted": 136,
+      "worker_accepted": 136,
+      "provider_consumed": 136,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 136,
+      "useful_fraction": 1.0,
+      "offered_per_second": 6.8,
+      "emitted_per_second": 6.8,
+      "useful_cohort_per_second": 6.8,
+      "useful_window_per_second": 6.8,
+      "status_counts": {
+        "200": 136
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 136,
+        "p50": 0.005236902674369048,
+        "p95": 0.011357580697222147,
+        "p99": 0.04985660312377149
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 136,
+        "p50": 0.005236902674369048,
+        "p95": 0.011357580697222147,
+        "p99": 0.04985660312377149
+      },
+      "useful_latency_seconds": {
+        "n": 136,
+        "p50": 0.005236902674369048,
+        "p95": 0.011357580697222147,
+        "p99": 0.04985660312377149
+      },
+      "emission_lag_seconds": {
+        "n": 172,
+        "p50": 0.003263070735556539,
+        "p95": 0.0074095125164603814,
+        "p99": 0.03582643970003119
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 136,
+          "p50": 1.2458003766369075e-05,
+          "p95": 3.529099922161549e-05,
+          "p99": 4.762499884236604e-05
+        },
+        "admission": {
+          "n": 136,
+          "p50": 5.409965524449944e-07,
+          "p95": 1.2090022210031748e-06,
+          "p99": 1.6660051187500358e-06
+        },
+        "provider_http": {
+          "n": 136,
+          "p50": 0.0013657500021508895,
+          "p95": 0.005294624999805819,
+          "p99": 0.01425533400470158
+        }
+      },
+      "worker_concurrency_max_sampled": 1,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55731,
+          "units": 7200,
+          "utilization": 7.2e-06
+        },
+        {
+          "window": 55732,
+          "units": 17200,
+          "utilization": 1.72e-05
+        },
+        {
+          "window": 55733,
+          "units": 7400,
+          "utilization": 7.4e-06
+        },
+        {
+          "window": 55734,
+          "units": 9600,
+          "utilization": 9.6e-06
+        },
+        {
+          "window": 55735,
+          "units": 4200,
+          "utilization": 4.2e-06
+        },
+        {
+          "window": 55736,
+          "units": 13800,
+          "utilization": 1.38e-05
+        },
+        {
+          "window": 55737,
+          "units": 7400,
+          "utilization": 7.4e-06
+        },
+        {
+          "window": 55738,
+          "units": 12000,
+          "utilization": 1.2e-05
+        },
+        {
+          "window": 55739,
+          "units": 17400,
+          "utilization": 1.74e-05
+        },
+        {
+          "window": 55740,
+          "units": 7400,
+          "utilization": 7.4e-06
+        },
+        {
+          "window": 55741,
+          "units": 16000,
+          "utilization": 1.6e-05
+        },
+        {
+          "window": 55742,
+          "units": 5200,
+          "utilization": 5.2e-06
+        },
+        {
+          "window": 55743,
+          "units": 8600,
+          "utilization": 8.6e-06
+        },
+        {
+          "window": 55744,
+          "units": 12600,
+          "utilization": 1.26e-05
+        },
+        {
+          "window": 55745,
+          "units": 11800,
+          "utilization": 1.18e-05
+        },
+        {
+          "window": 55746,
+          "units": 9600,
+          "utilization": 9.6e-06
+        },
+        {
+          "window": 55747,
+          "units": 4200,
+          "utilization": 4.2e-06
+        },
+        {
+          "window": 55748,
+          "units": 17200,
+          "utilization": 1.72e-05
+        },
+        {
+          "window": 55749,
+          "units": 11800,
+          "utilization": 1.18e-05
+        },
+        {
+          "window": 55750,
+          "units": 16000,
+          "utilization": 1.6e-05
+        },
+        {
+          "window": 55751,
+          "units": 13800,
+          "utilization": 1.38e-05
+        },
+        {
+          "window": 55752,
+          "units": 13000,
+          "utilization": 1.3e-05
+        },
+        {
+          "window": 55753,
+          "units": 5400,
+          "utilization": 5.4e-06
+        },
+        {
+          "window": 55754,
+          "units": 10800,
+          "utilization": 1.08e-05
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 172,
+        "consumed": 172
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 51,
+          "observed_seconds": 25.064770345998113,
+          "cpu_seconds": 0.7614360000000007,
+          "cgroup_cpu_seconds": 0.761452,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 831458821.9756919,
+          "memory_peak_observed_bytes": 35155968,
+          "max_sample_gap_seconds": 0.6579897089977749
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 51,
+          "observed_seconds": 25.064714053994976,
+          "cpu_seconds": 0.3512270000000006,
+          "cgroup_cpu_seconds": 0.351227,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 441268450.8791837,
+          "memory_peak_observed_bytes": 17866752,
+          "max_sample_gap_seconds": 0.560990749996563
+        },
+        {
+          "role": "worker",
+          "uid": "d5c2549d-3720-4c59-8be4-dbaf5bba9f29",
+          "samples": 51,
+          "observed_seconds": 25.063026677999005,
+          "cpu_seconds": 0.283273,
+          "cgroup_cpu_seconds": 0.283274,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 473772923.8256752,
+          "memory_peak_observed_bytes": 19390464,
+          "max_sample_gap_seconds": 0.5357042500036187
+        },
+        {
+          "role": "worker",
+          "uid": "dd0800a6-bb32-423f-9369-5c8e298fab72",
+          "samples": 51,
+          "observed_seconds": 25.063066969996726,
+          "cpu_seconds": 0.28823699999999997,
+          "cgroup_cpu_seconds": 0.288239,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 471646617.5879268,
+          "memory_peak_observed_bytes": 19058688,
+          "max_sample_gap_seconds": 0.5326979579986073
+        },
+        {
+          "role": "worker",
+          "uid": "a5a63a6c-c1bc-44da-ae8a-caef6777160e",
+          "samples": 51,
+          "observed_seconds": 25.06307167900377,
+          "cpu_seconds": 0.32900299999999993,
+          "cgroup_cpu_seconds": 0.329003,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 473069997.0902033,
+          "memory_peak_observed_bytes": 19116032,
+          "max_sample_gap_seconds": 0.5364314589969581
+        },
+        {
+          "role": "worker",
+          "uid": "55935a7b-2f55-4eff-b570-9dfd2a7f9f40",
+          "samples": 51,
+          "observed_seconds": 25.06334817899915,
+          "cpu_seconds": 0.300484,
+          "cgroup_cpu_seconds": 0.300485,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 473886548.7841378,
+          "memory_peak_observed_bytes": 19124224,
+          "max_sample_gap_seconds": 0.5144761670017033
+        },
+        {
+          "role": "worker",
+          "uid": "cdba7456-785e-434e-92c8-440ebb0df78f",
+          "samples": 51,
+          "observed_seconds": 25.06294738699944,
+          "cpu_seconds": 0.40119099999999996,
+          "cgroup_cpu_seconds": 0.401189,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 472860950.3618745,
+          "memory_peak_observed_bytes": 19107840,
+          "max_sample_gap_seconds": 0.5259545000008075
+        },
+        {
+          "role": "worker",
+          "uid": "09d003b3-474e-4c01-81c1-aa45849588a7",
+          "samples": 51,
+          "observed_seconds": 25.063035929000762,
+          "cpu_seconds": 0.29695099999999996,
+          "cgroup_cpu_seconds": 0.296951,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 471116596.67091393,
+          "memory_peak_observed_bytes": 19050496,
+          "max_sample_gap_seconds": 0.6130184169960557
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 51,
+          "observed_seconds": 25.06288296999992,
+          "cpu_seconds": 0.3416819999999996,
+          "cgroup_cpu_seconds": 0.341683,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 501883240.3977681,
+          "memory_peak_observed_bytes": 20262912,
+          "max_sample_gap_seconds": 0.5316104590019677
+        },
+        {
+          "role": "worker",
+          "uid": "5a9b9ca8-4f8d-4613-9845-bb3718c5efa5",
+          "samples": 51,
+          "observed_seconds": 25.063171345005685,
+          "cpu_seconds": 0.3170169999999999,
+          "cgroup_cpu_seconds": 0.317017,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 471493502.71842146,
+          "memory_peak_observed_bytes": 19042304,
+          "max_sample_gap_seconds": 0.656903416995192
+        }
+      ],
+      "whole_trace_useful": 172,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.093621041989536,
+        "process_cpu_seconds_observed": 0.040000000000001146,
+        "process_rss_byte_seconds": 669540580172.4786,
+        "peak_process_rss_sum_bytes": 26681704448,
+        "max_sample_gap_seconds": 1.0051574999961304,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 0.00023255813953489037,
+        "rss_byte_seconds_per_whole_trace_useful": 3892677791.700457
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.02134012209302326,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 29549172.385417424,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    },
+    {
+      "trial_id": "model-qualification-high-8-2",
+      "block": "model-qualification",
+      "replicas": 8,
+      "path": "workers",
+      "profile": "high",
+      "policy": "none",
+      "repetition": 2,
+      "node_cpus": 4,
+      "quota": 1000000000,
+      "valid": true,
+      "issues": [],
+      "offered": 131,
+      "emitted": 131,
+      "worker_accepted": 131,
+      "provider_consumed": 131,
+      "consumed_without_timely_client_outcome": 0,
+      "useful": 131,
+      "useful_fraction": 1.0,
+      "offered_per_second": 6.55,
+      "emitted_per_second": 6.55,
+      "useful_cohort_per_second": 6.55,
+      "useful_window_per_second": 6.55,
+      "status_counts": {
+        "200": 131
+      },
+      "failure_reasons": {},
+      "client_expirations": 0,
+      "all_terminal_latency_seconds": {
+        "n": 131,
+        "p50": 0.004578110339934938,
+        "p95": 0.009147971890342887,
+        "p99": 0.03865082653646823
+      },
+      "emitted_terminal_latency_seconds": {
+        "n": 131,
+        "p50": 0.004578110339934938,
+        "p95": 0.009147971890342887,
+        "p99": 0.03865082653646823
+      },
+      "useful_latency_seconds": {
+        "n": 131,
+        "p50": 0.004578110339934938,
+        "p95": 0.009147971890342887,
+        "p99": 0.03865082653646823
+      },
+      "emission_lag_seconds": {
+        "n": 153,
+        "p50": 0.0029217384580988437,
+        "p95": 0.005856505151314195,
+        "p99": 0.00864353453653166
+      },
+      "stage_seconds": {
+        "queue": {
+          "n": 131,
+          "p50": 1.4708995877299458e-05,
+          "p95": 3.9083002775441855e-05,
+          "p99": 8.691599941812456e-05
+        },
+        "admission": {
+          "n": 131,
+          "p50": 6.67001586407423e-07,
+          "p95": 1.334003172814846e-06,
+          "p99": 1.6670019249431789e-06
+        },
+        "provider_http": {
+          "n": 131,
+          "p50": 0.0013023330029682256,
+          "p95": 0.0023350420015049167,
+          "p99": 0.029489165994164068
+        }
+      },
+      "worker_concurrency_max_sampled": 1,
+      "worker_queue_max_sampled": 0,
+      "provider_complete_windows": [
+        {
+          "window": 55793,
+          "units": 5400,
+          "utilization": 5.4e-06
+        },
+        {
+          "window": 55794,
+          "units": 7400,
+          "utilization": 7.4e-06
+        },
+        {
+          "window": 55795,
+          "units": 4200,
+          "utilization": 4.2e-06
+        },
+        {
+          "window": 55796,
+          "units": 10800,
+          "utilization": 1.08e-05
+        },
+        {
+          "window": 55797,
+          "units": 7600,
+          "utilization": 7.6e-06
+        },
+        {
+          "window": 55798,
+          "units": 11800,
+          "utilization": 1.18e-05
+        },
+        {
+          "window": 55799,
+          "units": 10600,
+          "utilization": 1.06e-05
+        },
+        {
+          "window": 55800,
+          "units": 5200,
+          "utilization": 5.2e-06
+        },
+        {
+          "window": 55801,
+          "units": 4400,
+          "utilization": 4.4e-06
+        },
+        {
+          "window": 55802,
+          "units": 10800,
+          "utilization": 1.08e-05
+        },
+        {
+          "window": 55803,
+          "units": 5200,
+          "utilization": 5.2e-06
+        },
+        {
+          "window": 55804,
+          "units": 6600,
+          "utilization": 6.6e-06
+        },
+        {
+          "window": 55805,
+          "units": 16000,
+          "utilization": 1.6e-05
+        },
+        {
+          "window": 55806,
+          "units": 24600,
+          "utilization": 2.46e-05
+        },
+        {
+          "window": 55807,
+          "units": 12600,
+          "utilization": 1.26e-05
+        },
+        {
+          "window": 55808,
+          "units": 7600,
+          "utilization": 7.6e-06
+        },
+        {
+          "window": 55809,
+          "units": 19400,
+          "utilization": 1.94e-05
+        },
+        {
+          "window": 55810,
+          "units": 17000,
+          "utilization": 1.7e-05
+        },
+        {
+          "window": 55811,
+          "units": 4200,
+          "utilization": 4.2e-06
+        },
+        {
+          "window": 55812,
+          "units": 10600,
+          "utilization": 1.06e-05
+        },
+        {
+          "window": 55813,
+          "units": 4200,
+          "utilization": 4.2e-06
+        },
+        {
+          "window": 55814,
+          "units": 9600,
+          "utilization": 9.6e-06
+        },
+        {
+          "window": 55815,
+          "units": 11600,
+          "utilization": 1.16e-05
+        },
+        {
+          "window": 55816,
+          "units": 6400,
+          "utilization": 6.4e-06
+        }
+      ],
+      "ledger_event_counts": {
+        "reserved": 153,
+        "consumed": 153
+      },
+      "provider_http_refusals": 0,
+      "resources": [
+        {
+          "role": "controller",
+          "uid": "7eec5281-81c0-435e-a8dc-89a8868236aa",
+          "samples": 52,
+          "observed_seconds": 25.175908137003717,
+          "cpu_seconds": 0.6805500000000002,
+          "cgroup_cpu_seconds": 0.68055,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 930395008.2287247,
+          "memory_peak_observed_bytes": 38268928,
+          "max_sample_gap_seconds": 0.5094238340025186
+        },
+        {
+          "role": "provider",
+          "uid": "2f6df136-5e0b-4f45-94ae-b99e3f9adb35",
+          "samples": 52,
+          "observed_seconds": 25.17558497000573,
+          "cpu_seconds": 0.3128679999999999,
+          "cgroup_cpu_seconds": 0.312872,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 443104020.57776165,
+          "memory_peak_observed_bytes": 17612800,
+          "max_sample_gap_seconds": 0.5093086659981054
+        },
+        {
+          "role": "worker",
+          "uid": "a0f6dfab-c60d-4b43-a01b-3e5713381347",
+          "samples": 52,
+          "observed_seconds": 25.175785721003194,
+          "cpu_seconds": 0.340054,
+          "cgroup_cpu_seconds": 0.340006,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 452240823.6335865,
+          "memory_peak_observed_bytes": 18391040,
+          "max_sample_gap_seconds": 0.5057957080061897
+        },
+        {
+          "role": "worker",
+          "uid": "779d1823-8dc6-409b-8b4e-cb97b0c9c8ac",
+          "samples": 52,
+          "observed_seconds": 25.17577776199323,
+          "cpu_seconds": 0.41644799999999993,
+          "cgroup_cpu_seconds": 0.416433,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 469073534.2066381,
+          "memory_peak_observed_bytes": 19554304,
+          "max_sample_gap_seconds": 0.505811208000523
+        },
+        {
+          "role": "worker",
+          "uid": "5e56ce41-ef63-46bc-bff5-8e518a1d1aa7",
+          "samples": 52,
+          "observed_seconds": 25.175779804005288,
+          "cpu_seconds": 0.3459669999999999,
+          "cgroup_cpu_seconds": 0.345967,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 477566463.4899001,
+          "memory_peak_observed_bytes": 19263488,
+          "max_sample_gap_seconds": 0.506809250000515
+        },
+        {
+          "role": "worker",
+          "uid": "f8fc422d-e106-489f-99a8-f0a1c755fa78",
+          "samples": 52,
+          "observed_seconds": 25.17574213699845,
+          "cpu_seconds": 0.35150899999999996,
+          "cgroup_cpu_seconds": 0.351509,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 472327052.36549264,
+          "memory_peak_observed_bytes": 19271680,
+          "max_sample_gap_seconds": 0.5070985409984132
+        },
+        {
+          "role": "worker",
+          "uid": "126bd1ed-8b91-4e16-9887-130384588927",
+          "samples": 52,
+          "observed_seconds": 25.175700261999737,
+          "cpu_seconds": 0.36891799999999997,
+          "cgroup_cpu_seconds": 0.368918,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 476116647.42365813,
+          "memory_peak_observed_bytes": 19496960,
+          "max_sample_gap_seconds": 0.5071595000044908
+        },
+        {
+          "role": "worker",
+          "uid": "aea12ddd-43f8-44cc-99e0-34f285f747ba",
+          "samples": 52,
+          "observed_seconds": 25.175671261997195,
+          "cpu_seconds": 0.39485,
+          "cgroup_cpu_seconds": 0.39485,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 474578345.00560844,
+          "memory_peak_observed_bytes": 19255296,
+          "max_sample_gap_seconds": 0.507183374997112
+        },
+        {
+          "role": "worker",
+          "uid": "795a89f9-70b2-44b5-8937-5a0cb3b64ffb",
+          "samples": 52,
+          "observed_seconds": 25.175847095997597,
+          "cpu_seconds": 0.2728989999999989,
+          "cgroup_cpu_seconds": 0.272901,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 506321924.9293829,
+          "memory_peak_observed_bytes": 20344832,
+          "max_sample_gap_seconds": 0.5078296670035343
+        },
+        {
+          "role": "worker",
+          "uid": "0d5143e3-8252-4425-a937-91d3c14942b8",
+          "samples": 52,
+          "observed_seconds": 25.17581709499791,
+          "cpu_seconds": 0.30784500000000004,
+          "cgroup_cpu_seconds": 0.307885,
+          "throttled_seconds": 0.0,
+          "memory_byte_seconds": 475815650.7412835,
+          "memory_peak_observed_bytes": 19238912,
+          "max_sample_gap_seconds": 0.5079026249950402
+        }
+      ],
+      "whole_trace_useful": 153,
+      "model": {
+        "observed_responses": 0,
+        "prompt_eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "prompt_eval_cached_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "eval_count": {
+          "sum_observed": 0,
+          "known_responses": 0,
+          "unknown_responses": 0
+        },
+        "load_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "prompt_eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "eval_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "total_duration_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "unattributed_server_residual_seconds": {
+          "n": 0,
+          "p50": null,
+          "p95": null,
+          "p99": null
+        },
+        "timing_limit": "API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.",
+        "observed_output_tokens_per_arrival_second": 0.0,
+        "output_tokens_per_summed_reported_decode_second": null
+      },
+      "host_resources": {
+        "available": false
+      },
+      "native_resources": {
+        "available": true,
+        "samples": 26,
+        "observed_seconds": 25.095436415998847,
+        "process_cpu_seconds_observed": 0.029999999999999583,
+        "process_rss_byte_seconds": 669589017445.2576,
+        "peak_process_rss_sum_bytes": 26681704448,
+        "max_sample_gap_seconds": 1.005250458008959,
+        "other_server_loaded_model_count_max": 0,
+        "scope": "Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.",
+        "cpu_seconds_per_whole_trace_useful": 0.0001960784313725463,
+        "rss_byte_seconds_per_whole_trace_useful": 4376398806.831749
+      },
+      "observed_role_cpu_seconds_per_whole_trace_useful": 0.024783712418300647,
+      "observed_role_memory_byte_seconds_per_whole_trace_useful": 33840127.25883684,
+      "resource_accounting_scope": "Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate."
+    }
+  ],
+  "conditions": [
+    {
+      "condition": {
+        "block": "model-qualification",
+        "path": "workers",
+        "profile": "headroom",
+        "policy": "none",
+        "replicas": 1,
+        "node_cpus": 4,
+        "quota": 1000000000
+      },
+      "useful_cohort_per_second": {
+        "values": [
+          15.85,
+          12.7,
+          14.45
+        ],
+        "n": 3,
+        "mean": 14.333333333333332,
+        "sd": 1.5782374134880133,
+        "descriptive_95pct_t_interval": [
+          10.412774256245015,
+          18.25389241042165
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      },
+      "useful_fraction": {
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "descriptive_95pct_t_interval": [
+          1.0,
+          1.0
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      }
+    },
+    {
+      "condition": {
+        "block": "model-qualification",
+        "path": "workers",
+        "profile": "headroom",
+        "policy": "none",
+        "replicas": 8,
+        "node_cpus": 4,
+        "quota": 1000000000
+      },
+      "useful_cohort_per_second": {
+        "values": [
+          15.85,
+          12.7,
+          14.45
+        ],
+        "n": 3,
+        "mean": 14.333333333333332,
+        "sd": 1.5782374134880133,
+        "descriptive_95pct_t_interval": [
+          10.412774256245015,
+          18.25389241042165
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      },
+      "useful_fraction": {
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "descriptive_95pct_t_interval": [
+          1.0,
+          1.0
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      }
+    },
+    {
+      "condition": {
+        "block": "model-qualification",
+        "path": "workers",
+        "profile": "high",
+        "policy": "none",
+        "replicas": 1,
+        "node_cpus": 4,
+        "quota": 1000000000
+      },
+      "useful_cohort_per_second": {
+        "values": [
+          8.45,
+          6.8,
+          6.55
+        ],
+        "n": 3,
+        "mean": 7.266666666666667,
+        "sd": 1.0323920443965717,
+        "descriptive_95pct_t_interval": [
+          4.702062655773673,
+          9.83127067755966
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      },
+      "useful_fraction": {
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "descriptive_95pct_t_interval": [
+          1.0,
+          1.0
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      }
+    },
+    {
+      "condition": {
+        "block": "model-qualification",
+        "path": "workers",
+        "profile": "high",
+        "policy": "none",
+        "replicas": 8,
+        "node_cpus": 4,
+        "quota": 1000000000
+      },
+      "useful_cohort_per_second": {
+        "values": [
+          8.45,
+          6.8,
+          6.55
+        ],
+        "n": 3,
+        "mean": 7.266666666666667,
+        "sd": 1.0323920443965717,
+        "descriptive_95pct_t_interval": [
+          4.702062655773673,
+          9.83127067755966
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      },
+      "useful_fraction": {
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "n": 3,
+        "mean": 1.0,
+        "sd": 0.0,
+        "descriptive_95pct_t_interval": [
+          1.0,
+          1.0
+        ],
+        "assumption": "Three independent trial-level repetitions, normal paired effects; normality is not established by n=3. No multiplicity-adjusted confirmatory test."
+      }
+    }
+  ],
+  "rule": "All raw trials remain described; no passing subset from an invalid block is used for causal interpretation."
+}

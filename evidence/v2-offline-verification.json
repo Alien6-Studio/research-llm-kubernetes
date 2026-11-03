@@ -1,0 +1,104 @@
+{
+  "verified_files": 290,
+  "verified_trials": 261,
+  "verified_model_predictions": 3752,
+  "blocks": [
+    {
+      "archive": "archives/v2-independent-calibration-4/manifest.json",
+      "trials": 12,
+      "complete": true,
+      "qualified": true
+    },
+    {
+      "archive": "archives/v2-independent-calibration-8/manifest.json",
+      "trials": 12,
+      "complete": true,
+      "qualified": true
+    },
+    {
+      "archive": "archives/v2-independent-cpu-sensitivity/manifest.json",
+      "trials": 48,
+      "complete": true,
+      "qualified": true
+    },
+    {
+      "archive": "archives/v2-linux-calibration-4/manifest.json",
+      "trials": 12,
+      "complete": true,
+      "qualified": true
+    },
+    {
+      "archive": "archives/v2-linux-primary/manifest.json",
+      "trials": 72,
+      "complete": true,
+      "qualified": true
+    },
+    {
+      "archive": "archives/v2-linux-provider-control/manifest.json",
+      "trials": 12,
+      "complete": true,
+      "qualified": true
+    },
+    {
+      "archive": "archives/v2-linux-quota-sensitivity/manifest.json",
+      "trials": 12,
+      "complete": true,
+      "qualified": true
+    },
+    {
+      "archive": "archives/v2-local-calibration-4/manifest.json",
+      "trials": 12,
+      "complete": true,
+      "qualified": false
+    },
+    {
+      "archive": "archives/v2-local-calibration-8/manifest.json",
+      "trials": 12,
+      "complete": true,
+      "qualified": false
+    },
+    {
+      "archive": "archives/v2-local-model-qualification/manifest.json",
+      "trials": 12,
+      "complete": true,
+      "qualified": true
+    },
+    {
+      "archive": "archives/v2-local-real-model/manifest.json",
+      "trials": 45,
+      "complete": true,
+      "qualified": false
+    },
+    {
+      "archive": "archives/v2-model-control-interruption/manifest.json",
+      "trials": 0,
+      "complete": false,
+      "qualified": false
+    },
+    {
+      "archive": "archives/v2-model-pilot/manifest.json",
+      "trials": 0,
+      "complete": null,
+      "qualified": null
+    },
+    {
+      "archive": "archives/v2-remote-compressed-network/manifest.json",
+      "trials": 0,
+      "complete": null,
+      "qualified": null
+    },
+    {
+      "archive": "archives/v2-remote-fixture-network/manifest.json",
+      "trials": 0,
+      "complete": null,
+      "qualified": null
+    },
+    {
+      "archive": "archives/v2-remote-network/manifest.json",
+      "trials": 0,
+      "complete": null,
+      "qualified": null
+    }
+  ],
+  "scope": "Identity and deterministic record replay, not a new measurement or proof of causal validity."
+}

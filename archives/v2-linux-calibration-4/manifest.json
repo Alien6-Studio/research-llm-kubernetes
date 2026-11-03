@@ -1,0 +1,118 @@
+{
+  "exported_at_utc": "2026-11-13T09:53:22.637393+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-linux-calibration-4/block.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/block.json",
+      "sha256": "c1cb80dc0d8288e9ee7401c1fe1617bf7d5bad5d7b92925e7574b37bed0ecc42",
+      "decoded_sha256": "9fa0e347f2f9ade1c01e5ac7fa67622b5b20fa34da6cba8f85d82217b1565e5c",
+      "decoded_bytes": 160,
+      "bytes": 134
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-188ec0be222d3284.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-188ec0be222d3284.json",
+      "sha256": "ea6bea5ba1c72eb5d64fe0f09ed07434a2448c9131970ae188d0812f26b7d8de",
+      "decoded_sha256": "f5f196c1d5f2f835fa3ac5206976096586d3b9bab4cd609da9577285ad705851",
+      "decoded_bytes": 13970705,
+      "bytes": 1598750
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-363b6b01634f7944.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-363b6b01634f7944.json",
+      "sha256": "6f5df149021940fdb26ab602766bf004ebda684f2c4e6ed73a887a6b81f49984",
+      "decoded_sha256": "7bb96c0f7f97842a9f7740ac07e381351e1efd7ca6e3c5b335d86fc7fd2f6123",
+      "decoded_bytes": 7603154,
+      "bytes": 935721
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-41283e3a00becba6.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-41283e3a00becba6.json",
+      "sha256": "423deaa442d436880421dd3047cba2eabc272c2a372ac1ddd74c8e83b773729e",
+      "decoded_sha256": "157fca1ff0e4dc585461cd7afe644bb39ca563ee0debd3fe3b9b0db577976a84",
+      "decoded_bytes": 13435888,
+      "bytes": 1394847
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-53419f6f4297bf41.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-53419f6f4297bf41.json",
+      "sha256": "535c5189612befb7a510c9e9a6013ffdce461f81cbb6aabc4c76c140caec2576",
+      "decoded_sha256": "18fb2664c666ea510abfdc3fbd7761751aff1926c22dfa409774339caf982e12",
+      "decoded_bytes": 14159472,
+      "bytes": 1618870
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-729968689ec69c96.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-729968689ec69c96.json",
+      "sha256": "923eebb4fce96a29fa48ffda4f58810958863cf10d64aaca95b695d207243e83",
+      "decoded_sha256": "f74383eb7de7c533e88196f6514c5daf1fdb018a538d79d3588d435266b54413",
+      "decoded_bytes": 7266887,
+      "bytes": 899023
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-742839bf3c4faa1e.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-742839bf3c4faa1e.json",
+      "sha256": "575ac0890bc8c25a4969f8fc1e9e91c1c77cd34d16bf21d491da4495cac22cbd",
+      "decoded_sha256": "8486432e5e9d888b89233258074de62cb51dee5b5ef7be0115e65ad86e0a929a",
+      "decoded_bytes": 6542850,
+      "bytes": 694102
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-750faa583fe2f6e9.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-750faa583fe2f6e9.json",
+      "sha256": "97706293b7dd9d5ca0a98f3457ce6e9a7b2110d4285443aeeeba7cca26b44366",
+      "decoded_sha256": "7a88b30fd4191efbf12c365e5a9d253398a1d450986fda6a1a2e616c58f88d38",
+      "decoded_bytes": 13304885,
+      "bytes": 1381432
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-8569a3156962059e.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-8569a3156962059e.json",
+      "sha256": "023fd269777291750082288405930785c7497732329a1fc1ede47e1dbe3defbe",
+      "decoded_sha256": "29efc3aeddeafdd094a25a9dbba322d6e265be243ddd8d063fd97ece77a46af3",
+      "decoded_bytes": 13246949,
+      "bytes": 1374858
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-a9cd2d503e38273d.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-a9cd2d503e38273d.json",
+      "sha256": "7c5751ddb62798fdf66dafb6dddb896b8ecf2eb639d7173a5391f1e2755c948a",
+      "decoded_sha256": "9b790f135d9bba686139ef95b997dd723d9134ec46c51910d6019c7eef13022e",
+      "decoded_bytes": 6879777,
+      "bytes": 727267
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-de9d570dfe57b09b.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-de9d570dfe57b09b.json",
+      "sha256": "58525e892e3448753726206c22413c380697a0a192c496ffe94f9d5510059820",
+      "decoded_sha256": "63e2460bbfc0d89d9694a687fd56318d1ffeb7163ec9ef3ff8b5ae23ba5c7207",
+      "decoded_bytes": 6904524,
+      "bytes": 730646
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-e4ad8b9927b39294.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-e4ad8b9927b39294.json",
+      "sha256": "5338a6cb7ee4bea64f1458afe8b715d308b29338f9cd8a6f77554ae671928bae",
+      "decoded_sha256": "c5f8cbd4075ed227598d07eadf9e667d7706ace450c63a397fa85317c9cdb8a8",
+      "decoded_bytes": 7528210,
+      "bytes": 934389
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/calibration-4-f67910fffa81f27c.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/calibration-4-f67910fffa81f27c.json",
+      "sha256": "6237f1542710bdb02e806356fc6ac347ed1b08a55b4b17511507a4756d4a63d2",
+      "decoded_sha256": "d653dccd234cc6c4678c1f553ea6b463d8d09beb2394f229faaf3af5a80b0a5e",
+      "decoded_bytes": 13933236,
+      "bytes": 1600888
+    },
+    {
+      "path": "archives/v2-linux-calibration-4/manifest.json.gz",
+      "source_relative_path": "/tmp/alien6-k8s-v2-linux-43395996529/runs/v2-linux-43395996529/calibration-4/manifest.json",
+      "sha256": "39c7e6b16dbd48d5fe0b79df433536abcbaf239e5946a5200293a32671822675",
+      "decoded_sha256": "35f10ba2bb8cfeda0a658895681d4fcd1edf63bda2287a697afa43905cc0ece8",
+      "decoded_bytes": 1516,
+      "bytes": 706
+    }
+  ]
+}

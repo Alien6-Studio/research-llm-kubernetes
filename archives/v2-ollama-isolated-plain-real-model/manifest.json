@@ -1,0 +1,254 @@
+{
+  "exported_at_utc": "2026-11-13T18:16:52.733199+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/block.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/block.json",
+      "sha256": "faf57efb53b4b6c40abf851ef09fc9b58898d208b96436e342a569023e63caad",
+      "decoded_sha256": "b6987db7bef8600651f58222bf83a4e37e1aca8e7973f7a9495ada5fa4fcd3a0",
+      "decoded_bytes": 307,
+      "bytes": 231
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/manifest.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/manifest.json",
+      "sha256": "2293512bff5d34cac936b551324508ea95b015a1ba3e31eb5fc92857c9d2aa12",
+      "decoded_sha256": "9a2d4d9ce3512586ad496dbb3c63d2d40cbbeccc98c70287b7ba5522ee836cd0",
+      "decoded_bytes": 6100,
+      "bytes": 2195
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-high-0-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-high-0-0.json",
+      "sha256": "0b8cb8807d73334156b13df72dc3622b3ede2a05aa81fa795f837957f69a3235",
+      "decoded_sha256": "7dd72c0e83a4fec0c2176a3f5f83a7fe4291d4673002c34ec92c0ac4eca854cf",
+      "decoded_bytes": 4185571,
+      "bytes": 296650
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-high-1-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-high-1-1.json",
+      "sha256": "b36b26ee34c5dc42afaed15e3caa7a50a993516e049ff3799e62786adb94de89",
+      "decoded_sha256": "c5243f13ca46cc01d40f368a88eb58e7ecf690a5071b6a0d31f246bb0c865f6b",
+      "decoded_bytes": 4251907,
+      "bytes": 208547
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-high-1-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-high-1-2.json",
+      "sha256": "671692e022a94bd9b1595aa3c8174e4321e132c9dd2cdd188ba93588f893021d",
+      "decoded_sha256": "638a9ed1eb3270d626195afb993f89680cecb4506e1b9ec64754f5ea6ed0abdd",
+      "decoded_bytes": 3982304,
+      "bytes": 205194
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-high-2-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-high-2-2.json",
+      "sha256": "9d881f6276fa87e87723cf12d459871b981a5878a4d4311f80cd6674613a5a5b",
+      "decoded_sha256": "edb281320f64b437d0f77a45914900b65a7cd037e8b56b927bccc8caf887c0c9",
+      "decoded_bytes": 4202359,
+      "bytes": 241496
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-high-4-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-high-4-0.json",
+      "sha256": "1c1df6c6b9c9d28ca379c3edf5f9c252c22bf19435080bf2f8083813efe6ff2a",
+      "decoded_sha256": "a57efc72db89e9f154d83d22686cba127acd3ad2b5def31cad409a5f24341aa4",
+      "decoded_bytes": 5326405,
+      "bytes": 340582
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-high-4-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-high-4-2.json",
+      "sha256": "3b4503c868ca1a28b559d8a9876738184f95867a31864de8610318ba648e7e29",
+      "decoded_sha256": "e5de59f7dc5ce429e42a977c7c47a40853fd4bd0c4aa6838111492820c37ce28",
+      "decoded_bytes": 4954624,
+      "bytes": 326470
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-high-8-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-high-8-0.json",
+      "sha256": "863a68b7f6e1ed5df0b7919409794453b045c583d67bbc12cbecc598f8ccda53",
+      "decoded_sha256": "ba6f1db84bec113e9f7802716efe932c3f93ad795c3a6d6cd49a0a73b5d99034",
+      "decoded_bytes": 6966336,
+      "bytes": 1003096
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-low-0-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-low-0-1.json",
+      "sha256": "809700779f7dbf2f8eef3c8ec4a15e822bc3580fdbeae5d5f72b1373e73e8bc6",
+      "decoded_sha256": "2ede695e0a99ca0cd1221c2e9edf072943fbe6e1e84d81348d1996bcfe2c0779",
+      "decoded_bytes": 1091547,
+      "bytes": 97792
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-low-0-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-low-0-2.json",
+      "sha256": "e03df676bd68056770e51941cda51ada5ad1d314578617640212bb7f2cb80e91",
+      "decoded_sha256": "1e640444efc18966bc2a770c240fdc40ab1190373f72d40584035e2693325d6e",
+      "decoded_bytes": 1001885,
+      "bytes": 97552
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-low-1-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-low-1-1.json",
+      "sha256": "a8071ec2ff699cbcaa3378b92dd417a2c4b29bea1402cd23e14f1f87267af27e",
+      "decoded_sha256": "0314a987958c9b73a26852b2d1b76ace0fb6fd0ca0f21f97db75af9f8de19753",
+      "decoded_bytes": 1748419,
+      "bytes": 115723
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-low-1-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-low-1-2.json",
+      "sha256": "106aa47268c7fd1f3d3d42de2e0965b623804036e65308a31869a840b95114e2",
+      "decoded_sha256": "3a568199cc9c269261ae49732b762ec858805aee659abf5d880472272c161bf3",
+      "decoded_bytes": 1386844,
+      "bytes": 107131
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-low-2-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-low-2-0.json",
+      "sha256": "279b0646681f7cd1e091846119ae054f7762eaad319b9be11f84cdceb09198a0",
+      "decoded_sha256": "00a0db5609d08ea3fb1a17dafeb3f37ecf281a2cd3e6e88dc3b69fb3de8bcacc",
+      "decoded_bytes": 2064671,
+      "bytes": 142457
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-low-2-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-low-2-2.json",
+      "sha256": "a001417a698cc4f33c70bb023a641d64b555fc73b44d86f7d944c01be91beb85",
+      "decoded_sha256": "e55aeac459ec0f5673fc16f556554d8227e99282f641519251b53cdec7bdd55c",
+      "decoded_bytes": 1620021,
+      "bytes": 132978
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-low-4-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-low-4-1.json",
+      "sha256": "dca02d73f7b526581a34b8fdc84617ddc8a914a9ec5e9819ba065a9e7cc55df9",
+      "decoded_sha256": "4b575afe012852362810c84213be6f57ec31e143f70fd020dc828135d3174d65",
+      "decoded_bytes": 2348954,
+      "bytes": 182931
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-low-4-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-low-4-2.json",
+      "sha256": "2a1c5e093e70b169c2e74a214a63bf35779a65da0a2b4386082cb77028432600",
+      "decoded_sha256": "84d062394879e9ab3ce7d7afabc96488d28ef28df0e000367b2e0f942fa70348",
+      "decoded_bytes": 2009925,
+      "bytes": 175308
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-low-8-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-low-8-0.json",
+      "sha256": "2c2029d4e53b8a183ab092569f565d3e4dc8d761d3d115644f2f2d87b7f1502e",
+      "decoded_sha256": "dba3bf44eff6b618690a23ffee5453f11c3aaba6a7937731927824364b48aee3",
+      "decoded_bytes": 3293909,
+      "bytes": 490616
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-low-8-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-low-8-1.json",
+      "sha256": "c30cb8c15809994a94ad85eb8372c0c26e6bb9e3e3554916b455a46d8f988529",
+      "decoded_sha256": "eba278316baeb009a080f36e7abc9f9e7d36679db21ce9a9c0628b56bfe9ef9d",
+      "decoded_bytes": 3172796,
+      "bytes": 487868
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-low-8-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-low-8-2.json",
+      "sha256": "8296f7b97e649eaa4ab272864f8b6e2e38385ffde84387c7b6c1e052d0840cef",
+      "decoded_sha256": "7547b9a55e224fb9fc641e19aae57c9fa347e111f21430c137d67bad191d0c62",
+      "decoded_bytes": 2927142,
+      "bytes": 499543
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-near-0-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-near-0-0.json",
+      "sha256": "16da6cc6469c0065eaf9c54d3e65805c8c8f05740d9fa6a687dbdbae3f917ca0",
+      "decoded_sha256": "039753468208045bff66eaad05f7b8350aac83f5d670f9d7f8ce52cc67382b45",
+      "decoded_bytes": 2083668,
+      "bytes": 146370
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-near-0-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-near-0-1.json",
+      "sha256": "0fc19426bd0a163b6b98ee56b023ec5c8da2ecc997ba3684c68df468625c4f1a",
+      "decoded_sha256": "1c406fffa633e4139be2e2b21d4339bcc22ee96f750cb2671a53971afd530ba1",
+      "decoded_bytes": 2256107,
+      "bytes": 175247
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-near-1-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-near-1-1.json",
+      "sha256": "6a9e870ac864b1d32c2cef97dc385e821f1bb3eaeed0d10f33950d6a67ddf2dc",
+      "decoded_sha256": "ff147930324a61f223cdc5666bdbdbe20ccd06e7ea18e06ebb148df2a4e2f4ae",
+      "decoded_bytes": 3683129,
+      "bytes": 166780
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-near-1-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-near-1-2.json",
+      "sha256": "4e3b60fa04e081bb527affbd85131c5f8402f134d8de9f50a575e8469c1d56fa",
+      "decoded_sha256": "72c1cdf68e0c9d2d19a6dd1a98168042f9838864a6c0a46d5bb52e7847392026",
+      "decoded_bytes": 3229037,
+      "bytes": 158843
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-near-2-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-near-2-0.json",
+      "sha256": "a00798cc372d64b95b49bb30c2e8e809d12cb1659085bfa01ddf32384b1665d2",
+      "decoded_sha256": "5363106e6ca107de0b7b46619e8c962f0d14afd9b0a6ac8665a45dc9c1ea79e8",
+      "decoded_bytes": 3416749,
+      "bytes": 218984
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-near-2-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-near-2-1.json",
+      "sha256": "fcd6f460d20a1f282655a1c3d43411dfe5d5b932d169b0770de988e865c56fc5",
+      "decoded_sha256": "98f55ddc665c1121dc6997438d4fffa2213c5d12956b3177e5effca05e995406",
+      "decoded_bytes": 3936933,
+      "bytes": 214125
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-near-4-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-near-4-0.json",
+      "sha256": "2ff98accd7f135938dad396fc962ac1434d7ca83522c414a408aea3c65c6e63f",
+      "decoded_sha256": "2b82067a1d664b914e8a43dd36f3afd854435dc8bd1c8a14274b6d4a86800261",
+      "decoded_bytes": 4574933,
+      "bytes": 313744
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-near-4-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-near-4-1.json",
+      "sha256": "d65a8be8ffe88fa4d679fb5c5265818559aa1118cd0fcf733749afbd5e62a7d0",
+      "decoded_sha256": "98df1d77f06943bf3ec1587b71dbd078348983b8a8436245ac65111e6df8307c",
+      "decoded_bytes": 4592552,
+      "bytes": 314122
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-near-4-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-near-4-2.json",
+      "sha256": "efe4a056463cc988adcdb99eb76f95616c625705f3abb85a34699e87deebeb1a",
+      "decoded_sha256": "a53714a2d8ba98c6b4ec2498e28a103cfadd3ef18c5c64d390faa93da751cc35",
+      "decoded_bytes": 4079715,
+      "bytes": 256040
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-near-8-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-near-8-1.json",
+      "sha256": "cb8ae0fbfe4204b86eb7063cbc2485304743c10dd4691b832bdceca2534add6a",
+      "decoded_sha256": "3b7b5064314500a43cc0c2078cdaaa55625c4a11a5844d39e1a13efee3dddc5d",
+      "decoded_bytes": 5117051,
+      "bytes": 547119
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-real-model/real-model-near-8-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-real-model/real-model-near-8-2.json",
+      "sha256": "0ad089dcc98cd4c8ef1914100ce84ce84be8f3c3364d03d305f5a4da2dc1e163",
+      "decoded_sha256": "bc30a413389773210fe70d0b0397113ea44d0317b843b4433b651e8a803415ac",
+      "decoded_bytes": 4780522,
+      "bytes": 567525
+    }
+  ]
+}

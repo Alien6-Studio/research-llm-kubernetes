@@ -1,0 +1,22 @@
+{
+  "exported_at_utc": "2026-11-13T18:16:52.952992+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-isolated-plain-restart-diagnostics/loopback-load.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-restart-diagnostics/loopback-load.json",
+      "sha256": "7a86f46abd6cb9574cb260b72c358753cc573997ea791b58386de01f06c5d5df",
+      "decoded_sha256": "66c2143c0533490763f6e9f36ad541c526563042a41807c6972235be675db82e",
+      "decoded_bytes": 491461,
+      "bytes": 48487
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-restart-diagnostics/path-timings.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-restart-diagnostics/path-timings.json",
+      "sha256": "1648a8e02a1b503691b40199657e757461cb4114ef4d7f930d5c029e98a98926",
+      "decoded_sha256": "4eaf7411617297a29f26bd5714baa8b8b4353504e8380c1d6aa9c9f309d2e652",
+      "decoded_bytes": 18149,
+      "bytes": 2846
+    }
+  ]
+}

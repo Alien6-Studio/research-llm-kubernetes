@@ -1,0 +1,422 @@
+{
+  "exported_at_utc": "2026-11-14T08:30:15.078424+00:00",
+  "format": "Lossless gzip copies of the complete confirmation native pilot, registered infeasibility decision, journals and executed source; original bytes are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/collection-receipt.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/collection-receipt.json",
+      "sha256": "f5d5993fa1e16304a815ecd8e087cb5e9a5aa9150d7bc58f172f730d8edc1e70",
+      "decoded_sha256": "d65c11714cfa1083fe211e4b242881b489cd81e491b6ed5a16faa9a31191e8fa",
+      "decoded_bytes": 18548,
+      "bytes": 3807
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/executed-auto-start.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/executed-auto-start.py",
+      "sha256": "e7ea8e6a521ebdca6c3b78ad4fbbd190e51065805db81065f79045682c40110c",
+      "decoded_sha256": "00a3a32bc48681e2c1b94566987c765b725a4cd4ab860123be6ea570d030c4d3",
+      "decoded_bytes": 6592,
+      "bytes": 2647
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/executed-infra__run-dell-cpu-campaign.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/executed-infra__run-dell-cpu-campaign.py",
+      "sha256": "aa017e5e47c7bcac8562f2046d2515440091f4412a51128c1893e4e41be8026c",
+      "decoded_sha256": "b9dd6e9c23dbe0585a9b7d4e7ba1a958e4e53529e4dcfb163673ec0d32f691de",
+      "decoded_bytes": 24097,
+      "bytes": 7107
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/executed-instrument-registry.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/executed-instrument-registry.json",
+      "sha256": "064a3f21744fb28dd6bb9a6f276abda2eb7d3167d293822ece5537c5c0f9456c",
+      "decoded_sha256": "a1df0f7d07a508a23ed868eec59a53c7c732b56f4f9aecc29c1bda4cebf4dfe4",
+      "decoded_bytes": 50887,
+      "bytes": 4040
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/executed-launch-campaign.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/executed-launch-campaign.py",
+      "sha256": "4108036311f4f9b0f50bfc80cc0ce07b71d4ea4dedf504244d267b28e5b6f647",
+      "decoded_sha256": "40163775a1d233c0c93d5212ee2f2a96821d2efc40240f544dd5d5649e7c1bdc",
+      "decoded_bytes": 3313,
+      "bytes": 1587
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/executed-scripts__freeze_cpu_campaign.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/executed-scripts__freeze_cpu_campaign.py",
+      "sha256": "eaf30d8dfa15821a6bd8288ed94e56b7872b65665db5a97b17a72d3367f459e7",
+      "decoded_sha256": "a800f6588b60d5af1c4d84c4280b780368476b2da0f65444f76836848c678a21",
+      "decoded_bytes": 9753,
+      "bytes": 3241
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/executed-scripts__observe_study_host.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/executed-scripts__observe_study_host.py",
+      "sha256": "67641adc66fcfee75af4703dec0fd38ee9c18b4e18208096ac64cedce00e31d9",
+      "decoded_sha256": "75eb4e3c6b5673613e32d4e1457f99cba5900ed4bff010bf3c19e6d64e4a94d9",
+      "decoded_bytes": 14585,
+      "bytes": 4567
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/executed-v2__cpu_campaigns.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/executed-v2__cpu_campaigns.py",
+      "sha256": "4c88119d26705276eb2e12e7fd3874da74cdbf2fb481312840213a3a043891f3",
+      "decoded_sha256": "95ebb113b9eb4b9efb40816c6d18ca25becf97e9e18fcc228593e007f636956c",
+      "decoded_bytes": 3215,
+      "bytes": 870
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/host-auto-start-status.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/host-auto-start-status.json",
+      "sha256": "c918924f945c5b642ae3a90b8859f015444c4a6ae60428aeef2f5b807ce95e79",
+      "decoded_sha256": "e4684f55d808e6b74ca55fd5c67a32c53ec4ba8fc0bc71ad21e2f946813c5038",
+      "decoded_bytes": 840,
+      "bytes": 470
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/host-auto-start.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/host-auto-start.log",
+      "sha256": "7b73fbe1b4e3205af7da357c2414129f23c4f6a641c32baa56ce30f1bafc944f",
+      "decoded_sha256": "7489058bd18705e4efa9f89136d6e83daaf70f119d166e865f90773d9054728e",
+      "decoded_bytes": 141,
+      "bytes": 136
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/host-campaign.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/host-campaign.log",
+      "sha256": "f0029d3e4a3271a5cb642ca7e17ee27218e5beceb5f1ca6d15ec95f88c4a4c4d",
+      "decoded_sha256": "2f175764f1e505722f420f8040afa581cd4d4b840fbb22b5a9d21d7a3f04b729",
+      "decoded_bytes": 155,
+      "bytes": 144
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/host-guard-current.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/host-guard-current.json",
+      "sha256": "8159913c39ebe8dba7cbb96bdd96564d7ecbbd39459434247621f16fc8cb9488",
+      "decoded_sha256": "51b5d111052f7d764ab89b3606cd48156ba7856ff171420c595623b40ac004eb",
+      "decoded_bytes": 259964,
+      "bytes": 33116
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/host-planning.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/host-planning.json",
+      "sha256": "464635669fe7e3afdd326f7e04a85da2edd333d40870f2cfff58685bcd2ef02c",
+      "decoded_sha256": "4127453abe6d0892b74432d0c4e836af52a4c1a26911ad0035a33d5da763ab63",
+      "decoded_bytes": 537,
+      "bytes": 336
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/host-readiness.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/host-readiness.json",
+      "sha256": "a31e1909ae2929fc4d9cafa5aa41fe9b3b9594c909fe394fe5cde84134cb3078",
+      "decoded_sha256": "6703d9523ba1978960192464893454384ca18c5e0e4b9571f87f4b5fa62733bc",
+      "decoded_bytes": 63295,
+      "bytes": 6779
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/host-supervisor-freeze.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/host-supervisor-freeze.log",
+      "sha256": "43a74c5404df0cad90ed8b981a09fb0d818a7942ab7966f0cbbc02bd9c8d205e",
+      "decoded_sha256": "a3211a8e75cf42d2b4d1d143393b07cd93e50766d1825f4d7bfab15b63de2b61",
+      "decoded_bytes": 515,
+      "bytes": 332
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/host-supervisor-pilot.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/host-supervisor-pilot.log",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decoded_bytes": 0,
+      "bytes": 20
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/host-supervisor-status.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/host-supervisor-status.json",
+      "sha256": "c65974d2fff55ee88dcd384161a62aa42414f5136e4d31d82ad818370e15a1f3",
+      "decoded_sha256": "c7f4a46a1c8c95fbcace6fc436aa40c0eff1db4dc48eb4c7784d15e82d37c811",
+      "decoded_bytes": 5099,
+      "bytes": 1699
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-source-verification.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-source-verification.json",
+      "sha256": "0f9c5b03147f40f8debfafd9efe125dcc76daeb606b63f603b8b97a96310f8c5",
+      "decoded_sha256": "87513491f38e9136c51e82ddae435959e27f420680c939c8d984862a00d8ab1a",
+      "decoded_bytes": 4432,
+      "bytes": 1476
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__Dockerfile.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__Dockerfile",
+      "sha256": "f4ad8512083f6dee258ae703ff79415662afc6560d65372be7f54c0fdc550c04",
+      "decoded_sha256": "dc80d74efb06ce087b54d4341a870b51877d8e7e702a609fbf80579757332a31",
+      "decoded_bytes": 344,
+      "bytes": 273
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__Model.Dockerfile.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__Model.Dockerfile",
+      "sha256": "f1e85e3a39666758cd92fa7c93fde8f58d574302a43444e26c768285294dc187",
+      "decoded_sha256": "7fdf5fe6576ce2e123eed9d8fc6ffe87e3646f9e4e970643e424e6b00868ab26",
+      "decoded_bytes": 350,
+      "bytes": 278
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2____init__.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2____init__.py",
+      "sha256": "80ea4841e34eb529be39047d8b19099f71038f74e327952a5486373a254a1ead",
+      "decoded_sha256": "a7f4a180e29eb3b0ed3c850e6495faf8a1fe4ee4a0f671033f049dedabecdb77",
+      "decoded_bytes": 81,
+      "bytes": 93
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__identity.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__identity.py",
+      "sha256": "71eb9d96753403f053b46a39667d9cfb81c088bbcfad7d0b45e5ac9eca2cac19",
+      "decoded_sha256": "747072686f9cb72a3c3818019c9a5dbbc2d221e6873d7eedf547c001565114bb",
+      "decoded_bytes": 8221,
+      "bytes": 2756
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__inference_monitor.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__inference_monitor.py",
+      "sha256": "4dd6cb6831253f8f4af8b125d3f5f09c2369a69c6c84141e5d734a27e08d17b5",
+      "decoded_sha256": "b5f9b133b1dc14e9096b9425137de9a1b84db4d5a9ddbd8c466e575dced9b196",
+      "decoded_bytes": 2566,
+      "bytes": 1017
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__inference_proxy.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__inference_proxy.py",
+      "sha256": "126b0239771e43fbc22776ad9ed412716b25746922017c6477f6b9f86aea2e3a",
+      "decoded_sha256": "0cbc5c4b7dd94fad1c8742f97ebc5014d9c2c0917677ba5b20099377494b597a",
+      "decoded_bytes": 1430,
+      "bytes": 768
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__model.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__model.py",
+      "sha256": "df4722f0620d57eb5ce360a042c1555c8f7d1a13522f306505a94e722ee75582",
+      "decoded_sha256": "8425eb3b399fac23acae08ba14a73a000ce06699f8f61d2444d93ecaa6acd389",
+      "decoded_bytes": 35657,
+      "bytes": 10138
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__model_service.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__model_service.py",
+      "sha256": "1a47b58b56f1b63f5e98e8e928369cfd401ad53430fb49dcc50335c67c76df16",
+      "decoded_sha256": "b34a9c636bce9404a170eb89feeb0154d1793a2fd82afacf4013c82bdad211b3",
+      "decoded_bytes": 2966,
+      "bytes": 1072
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__network_policy.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__network_policy.py",
+      "sha256": "45e7c30c8d48fba30af0b896d6bfa4d41fb0882d064826a549709be30d864001",
+      "decoded_sha256": "14d205c1cbde42db639ebda0c1b4d4fa40a652f53c175f855e82260dce2787e4",
+      "decoded_bytes": 2583,
+      "bytes": 1028
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__network_probe.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__network_probe.py",
+      "sha256": "84f78a6e40224a22da3e32d7a6922a51cfdcf1c10f237498a698d394862a1060",
+      "decoded_sha256": "e47ec7d9bc3e43a268c9a34c8cad95a932b37e259ad7ec0dc6ec2b2ff0f3342d",
+      "decoded_bytes": 7833,
+      "bytes": 2717
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__plan.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__plan.py",
+      "sha256": "0db973092894df7706f7849b90aca20cbcc127bae8020b53448686984af5da91",
+      "decoded_sha256": "85880a21547fb14692eeb1df5b84478f210aa6fd39aefafb504cf59058da81bc",
+      "decoded_bytes": 4172,
+      "bytes": 1650
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__quota.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__quota.py",
+      "sha256": "ad319a8fd14e42ce2ac5d5a951702f54818e8f49ab4906a315e19af8d6be07eb",
+      "decoded_sha256": "21902766fceb6ae492095afffc27b989f38e9c54ba2ae99c6e23fd18fcc193bb",
+      "decoded_bytes": 4759,
+      "bytes": 1224
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__remote_plan.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__remote_plan.py",
+      "sha256": "94ea43ed57657abb30aea388bbd1a100f8d12542ae5f02dfeb3fd08cf6b01532",
+      "decoded_sha256": "127579210673840ac820971e9946954b292c5130c4782566be720f25f86f1463",
+      "decoded_bytes": 1366,
+      "bytes": 717
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__run.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__run.py",
+      "sha256": "56e8c28a6899ff782c28bf5e4067d48971f3c80d4677511368d87faa037be4fc",
+      "decoded_sha256": "ad3a4453041a6337571f582aa98514f24f1064bf858efd376d17f6406f65bfd8",
+      "decoded_bytes": 14936,
+      "bytes": 5064
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__service.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__service.py",
+      "sha256": "44fada3ae69cefcad58b93de1005619d1acb8dd6894662468abd3690dac02fa2",
+      "decoded_sha256": "806c0d7302ea8efe554a10512b33f0f4f389f81beee26f58258f6c2670c1a235",
+      "decoded_bytes": 18722,
+      "bytes": 4530
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__transport.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__transport.py",
+      "sha256": "5e633e3fb93c18a00e8433c3513c494eaeb8c97a47baa605a1fbf69641edbd09",
+      "decoded_sha256": "2df0496f1624c3be48dedd8fb421486866371aaff0e293a5f9494610ed597ae6",
+      "decoded_bytes": 4881,
+      "bytes": 1576
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__tunnel_bridge.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__tunnel_bridge.py",
+      "sha256": "5969b327945c8d5758a8a7395a1519fbe129fdcad6a548e43070831b47af5457",
+      "decoded_sha256": "658a3aee01753bf193d66684e7df7b2291a943a1ff8fd9fd4cffefe47d606f7c",
+      "decoded_bytes": 2249,
+      "bytes": 938
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__workload.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/instrument-v2__workload.py",
+      "sha256": "73f3b3f37c53a8486ad5cf593bd943f32a9ead3d6789526217fe9addd110a8fd",
+      "decoded_sha256": "a7abc68e0688fa5169fdfcb9110c1640a4450ac42ddabced70aea9a708de55af",
+      "decoded_bytes": 1094,
+      "bytes": 627
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/native-monitor-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/native-monitor-journal.log",
+      "sha256": "5b3c7ea551a35d0809c8c9a37d2cc59d41e1a8860ebab900686340546f318cce",
+      "decoded_sha256": "487a2c922d50ff61386f679e6107999bbebe405037294c3b1512a6db414d09b1",
+      "decoded_bytes": 779,
+      "bytes": 255
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/native-ollama-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/native-ollama-journal.log",
+      "sha256": "133bc2452a4c1938da9bb05ce0000e88a03b33f3e8a0539a6517a4bde4f316a6",
+      "decoded_sha256": "13f58077b416976a38a8d9f6a1c404a952ea772879d6128c168c4fbc83da809b",
+      "decoded_bytes": 349811,
+      "bytes": 28680
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/native-proxy-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/native-proxy-journal.log",
+      "sha256": "13fc20d8b18c317325263368ebfbe460d05d4ec0f46bc909f4393b090848d57e",
+      "decoded_sha256": "e0b4ca005c86bb59af5c3e859f63b43c7505fd97f781fe9ff2898754329c7d43",
+      "decoded_bytes": 11760,
+      "bytes": 1905
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/preservation-summary.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/preservation-summary.json",
+      "sha256": "fef6fe77cafdb1be33cf8878b4efdef4d7b7d497bb1a7516a60cca87f8b37b8c",
+      "decoded_sha256": "2c90199e043a9628d7d84d5c12df203337c72deef7dcb3f737dab3da0abf4a68",
+      "decoded_bytes": 3003,
+      "bytes": 1240
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-agent-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-agent-journal.log",
+      "sha256": "05ea734d88eff8a2532fb288bd34f6f58129f37f76b47bb35cca35f90d2e37f0",
+      "decoded_sha256": "995377d4a1cd5fc42283931c301e4c10b82c8621e5bfeb3a1418555d6d583131",
+      "decoded_bytes": 64272,
+      "bytes": 2523
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-controller-readiness.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-controller-readiness.json",
+      "sha256": "e9779bfb7d82a747751b68705830c74c08d6fc757d2a7ca0647bb4959265da0f",
+      "decoded_sha256": "1d4a77ec1dfd25bcf36fb813dd1a8bcde3d6a57f2f2823b9114d17a914bd314a",
+      "decoded_bytes": 5174,
+      "bytes": 1654
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-existing-pilot-manifest.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-existing-pilot-manifest.json",
+      "sha256": "b2da8104fdafd062f8303cbc17b42f8948afab46e39d1e471c3b08a3290b61b0",
+      "decoded_sha256": "38bfd44604b2ee5485a123cdec80caa6f8ea38296238fe130f784e8f752f94a7",
+      "decoded_bytes": 592,
+      "bytes": 372
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-existing-pilot.json.gz.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-existing-pilot.json.gz",
+      "sha256": "36fa46e7ce6a10075ee5ac9d81c72a5552cefdaa21b82dfcc1b929b0a5a3ed1b",
+      "decoded_sha256": "0de3f7de6a5e5bf32e167de8d8e9c28be27ffa5e1770906da4aeed85f7e0e64f",
+      "decoded_bytes": 17722,
+      "bytes": 13116
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-freeze.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-freeze.log",
+      "sha256": "43a74c5404df0cad90ed8b981a09fb0d818a7942ab7966f0cbbc02bd9c8d205e",
+      "decoded_sha256": "a3211a8e75cf42d2b4d1d143393b07cd93e50766d1825f4d7bfab15b63de2b61",
+      "decoded_bytes": 515,
+      "bytes": 332
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-kernel-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-kernel-journal.log",
+      "sha256": "121447589ec7d872bd0d3d084b0eb002fc87a546a900a3e2fabdaaeeff55c0c6",
+      "decoded_sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e",
+      "decoded_bytes": 17,
+      "bytes": 37
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-pilot-unit-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-pilot-unit-journal.log",
+      "sha256": "a99408a86ac4fdd0a743d6789cdb9f7e7d3c3933de5e556460e94d4b04d09941",
+      "decoded_sha256": "d67d1ea79fdb175a785b184fa42b1fa09b9b451f32a29ba4c90b2c4a6a0330c5",
+      "decoded_bytes": 444,
+      "bytes": 201
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-pilot-unit-show.txt.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-pilot-unit-show.txt",
+      "sha256": "450a5ccadba0a59e1b07002a6e7d710cdcf93d762a8b3a352a83312464c36b9f",
+      "decoded_sha256": "43161d70c2b247810f5e5d32dcb11558e326e93e4e84a95c8d016f8dda8ba9ca",
+      "decoded_bytes": 295,
+      "bytes": 198
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-pilot.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-pilot.json",
+      "sha256": "1b205c34b80232f2b9448843a53974a906f141c6cbc208ab7319dab92f46b08c",
+      "decoded_sha256": "1f081e1a6174a7dcdbe479b06f7df4b18661bcd811bb0f8ac876b64a4bf10224",
+      "decoded_bytes": 1144848,
+      "bytes": 17722
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-pilot.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-pilot.log",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decoded_bytes": 0,
+      "bytes": 20
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-planning.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-planning.json",
+      "sha256": "464635669fe7e3afdd326f7e04a85da2edd333d40870f2cfff58685bcd2ef02c",
+      "decoded_sha256": "4127453abe6d0892b74432d0c4e836af52a4c1a26911ad0035a33d5da763ab63",
+      "decoded_bytes": 537,
+      "bytes": 336
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-planning/vm-setup-acceptance.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-planning/vm-setup-acceptance.json",
+      "sha256": "560646b97843f420ccbaf152b49dbf0044f4771b348a84f779680a0b4da52bef",
+      "decoded_sha256": "b03b0612f8139f845902a29ec01a3ee7ff5c948f8cc47a4701d43a522e5ff7c4",
+      "decoded_bytes": 1565,
+      "bytes": 598
+    }
+  ]
+}

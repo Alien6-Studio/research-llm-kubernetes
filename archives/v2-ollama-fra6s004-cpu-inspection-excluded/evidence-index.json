@@ -1,0 +1,382 @@
+{
+  "exported_at_utc": "2026-11-14T08:11:20.112379+00:00",
+  "format": "Lossless gzip copies of the curated original interrupted FRA pilot, journals and executed source; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/collection-receipt.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/collection-receipt.json",
+      "sha256": "51ed60ec1484827dd41cda1b8e5fa1c8063b5292a666b7882c748e00fb7d948c",
+      "decoded_sha256": "fe5df2b477d1057485758e04a3282ddaca45b650f2c81ec0f740d4a47266c366",
+      "decoded_bytes": 16691,
+      "bytes": 3552
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/exclusion.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/exclusion.json",
+      "sha256": "319d925594396cc323dffdb7127932e1cd5f4c85a863272bac6f576c6e1a44c0",
+      "decoded_sha256": "e82197d54769b9d4a80bf4b1e07962bca5ad186cc0bcc78b8220c72bcc00d658",
+      "decoded_bytes": 2837,
+      "bytes": 1376
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/executed-auto-start.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/executed-auto-start.py",
+      "sha256": "ee4ba777a1261d4dfde939392d694d5e70ba88b6f2b4ca03e4710b096d4a7ba5",
+      "decoded_sha256": "030854e63c16d94e34e802ca3ae17d52791b7f581c761cfe346dd3f73e6046f7",
+      "decoded_bytes": 6517,
+      "bytes": 2633
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/executed-infra__run-dell-cpu-campaign.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/executed-infra__run-dell-cpu-campaign.py",
+      "sha256": "a637b6a242af6592b96f4485c85b9f6c19a92fcdcc5e2defcc7ee224eb3e0ef6",
+      "decoded_sha256": "c49bdf466ff812c868868fef4d3b8bce7e8fa9726b1fd2bb9b30639fec334f81",
+      "decoded_bytes": 21908,
+      "bytes": 6431
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/executed-instrument-registry.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/executed-instrument-registry.json",
+      "sha256": "064a3f21744fb28dd6bb9a6f276abda2eb7d3167d293822ece5537c5c0f9456c",
+      "decoded_sha256": "a1df0f7d07a508a23ed868eec59a53c7c732b56f4f9aecc29c1bda4cebf4dfe4",
+      "decoded_bytes": 50887,
+      "bytes": 4040
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/executed-launch-campaign.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/executed-launch-campaign.py",
+      "sha256": "b9b96682c4bfb20e6907184d573c5a49550ba77b33d1cc629b09420672feaf3d",
+      "decoded_sha256": "09034a205d2a0c70319fb522361c53cd22e94be79486cfbe8d086f02abe65a26",
+      "decoded_bytes": 3255,
+      "bytes": 1578
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/executed-scripts__freeze_cpu_campaign.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/executed-scripts__freeze_cpu_campaign.py",
+      "sha256": "eaf30d8dfa15821a6bd8288ed94e56b7872b65665db5a97b17a72d3367f459e7",
+      "decoded_sha256": "a800f6588b60d5af1c4d84c4280b780368476b2da0f65444f76836848c678a21",
+      "decoded_bytes": 9753,
+      "bytes": 3241
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/executed-scripts__observe_study_host.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/executed-scripts__observe_study_host.py",
+      "sha256": "67641adc66fcfee75af4703dec0fd38ee9c18b4e18208096ac64cedce00e31d9",
+      "decoded_sha256": "75eb4e3c6b5673613e32d4e1457f99cba5900ed4bff010bf3c19e6d64e4a94d9",
+      "decoded_bytes": 14585,
+      "bytes": 4567
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/executed-v2__cpu_campaigns.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/executed-v2__cpu_campaigns.py",
+      "sha256": "e64d416d409d3ecbc2c8833d24d69b5c3ac72d939fe0e114524deeab96a32c43",
+      "decoded_sha256": "59ac024df764fa7d21dd8ff97d4a0ec02775016e5167a09931cd8477db39c6cb",
+      "decoded_bytes": 2372,
+      "bytes": 826
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/host-auto-start-status.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/host-auto-start-status.json",
+      "sha256": "dd69b16f5a6784747522bf225047f08a10be6ff7660de9c6d6b6381833ee72cc",
+      "decoded_sha256": "13e8f0c9cedeaf50b8c412dbdf10d68ed9b6d6e1407085e97678af20a89586f9",
+      "decoded_bytes": 840,
+      "bytes": 470
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/host-auto-start.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/host-auto-start.log",
+      "sha256": "cb3770dea748cadf7ce6edf58f49b48c74cb0f861d0f003abb0d98fa16f3fc51",
+      "decoded_sha256": "252dd3d0441420e6ad9ba85df170817e97c9d875e6a4aeae7d8fc137eec9457b",
+      "decoded_bytes": 128,
+      "bytes": 129
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/host-campaign.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/host-campaign.log",
+      "sha256": "c9e7e9ac8a864209850bbca4eb035bf3c78c4ef5f851293e25e1108d1a281b49",
+      "decoded_sha256": "06f97f2d2a107300e0e2b1adda73acb9ddba7321c2d7e510eb07f767517d65b4",
+      "decoded_bytes": 153,
+      "bytes": 144
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/host-guard-current.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/host-guard-current.json",
+      "sha256": "38f5667355184179690724d85f8505d4a6ba7d3c5aa8d730e12de454ad1e8b4a",
+      "decoded_sha256": "195c93d854123b858231ab3f8587794f5066aeeadbf1758383f1c94c98750dc4",
+      "decoded_bytes": 1087631,
+      "bytes": 126200
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/host-inspection-channel-control.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/host-inspection-channel-control.json",
+      "sha256": "94a4a1cf0c79a83f5e27bfe5c5f8fa520a57cd88af2a61f735b105a33e21c5c6",
+      "decoded_sha256": "204b1bf03e82cb7a56e4339850e2700eae874dbec759957c84f28ed6c985c706",
+      "decoded_bytes": 11249,
+      "bytes": 1094
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/host-readiness.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/host-readiness.json",
+      "sha256": "00eb0db8ece014d6eb279fc9f8a9135ff3b0f62d264903f7d595391df032ae41",
+      "decoded_sha256": "a7ee002497464f4b5c9a124b56bd086a24f783fda19c4b4e6fb18edc713f68f1",
+      "decoded_bytes": 63204,
+      "bytes": 6855
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/host-supervisor-pilot.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/host-supervisor-pilot.log",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decoded_bytes": 0,
+      "bytes": 20
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/host-supervisor-status.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/host-supervisor-status.json",
+      "sha256": "58f56c161823ba88e7a1b975ee5dfa8e500797f38c34236ee02adc047971cd03",
+      "decoded_sha256": "cb408224c0edaa156b218cadfde3ac2b7158e34f3e36209c26232a2a3ae0256d",
+      "decoded_bytes": 3235,
+      "bytes": 1338
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-source-verification.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-source-verification.json",
+      "sha256": "7465999b8910de1a8aabd55ab4c1b28be30a06487363d738e2367ab4eedf46a9",
+      "decoded_sha256": "fd189e2628e162e845b5bf4c6ed6db39096e1a90384810aacca0f4dc61e6e0af",
+      "decoded_bytes": 4432,
+      "bytes": 1476
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__Dockerfile.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__Dockerfile",
+      "sha256": "f4ad8512083f6dee258ae703ff79415662afc6560d65372be7f54c0fdc550c04",
+      "decoded_sha256": "dc80d74efb06ce087b54d4341a870b51877d8e7e702a609fbf80579757332a31",
+      "decoded_bytes": 344,
+      "bytes": 273
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__Model.Dockerfile.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__Model.Dockerfile",
+      "sha256": "f1e85e3a39666758cd92fa7c93fde8f58d574302a43444e26c768285294dc187",
+      "decoded_sha256": "7fdf5fe6576ce2e123eed9d8fc6ffe87e3646f9e4e970643e424e6b00868ab26",
+      "decoded_bytes": 350,
+      "bytes": 278
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2____init__.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2____init__.py",
+      "sha256": "80ea4841e34eb529be39047d8b19099f71038f74e327952a5486373a254a1ead",
+      "decoded_sha256": "a7f4a180e29eb3b0ed3c850e6495faf8a1fe4ee4a0f671033f049dedabecdb77",
+      "decoded_bytes": 81,
+      "bytes": 93
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__identity.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__identity.py",
+      "sha256": "71eb9d96753403f053b46a39667d9cfb81c088bbcfad7d0b45e5ac9eca2cac19",
+      "decoded_sha256": "747072686f9cb72a3c3818019c9a5dbbc2d221e6873d7eedf547c001565114bb",
+      "decoded_bytes": 8221,
+      "bytes": 2756
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__inference_monitor.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__inference_monitor.py",
+      "sha256": "4dd6cb6831253f8f4af8b125d3f5f09c2369a69c6c84141e5d734a27e08d17b5",
+      "decoded_sha256": "b5f9b133b1dc14e9096b9425137de9a1b84db4d5a9ddbd8c466e575dced9b196",
+      "decoded_bytes": 2566,
+      "bytes": 1017
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__inference_proxy.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__inference_proxy.py",
+      "sha256": "126b0239771e43fbc22776ad9ed412716b25746922017c6477f6b9f86aea2e3a",
+      "decoded_sha256": "0cbc5c4b7dd94fad1c8742f97ebc5014d9c2c0917677ba5b20099377494b597a",
+      "decoded_bytes": 1430,
+      "bytes": 768
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__model.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__model.py",
+      "sha256": "df4722f0620d57eb5ce360a042c1555c8f7d1a13522f306505a94e722ee75582",
+      "decoded_sha256": "8425eb3b399fac23acae08ba14a73a000ce06699f8f61d2444d93ecaa6acd389",
+      "decoded_bytes": 35657,
+      "bytes": 10138
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__model_service.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__model_service.py",
+      "sha256": "1a47b58b56f1b63f5e98e8e928369cfd401ad53430fb49dcc50335c67c76df16",
+      "decoded_sha256": "b34a9c636bce9404a170eb89feeb0154d1793a2fd82afacf4013c82bdad211b3",
+      "decoded_bytes": 2966,
+      "bytes": 1072
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__network_policy.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__network_policy.py",
+      "sha256": "45e7c30c8d48fba30af0b896d6bfa4d41fb0882d064826a549709be30d864001",
+      "decoded_sha256": "14d205c1cbde42db639ebda0c1b4d4fa40a652f53c175f855e82260dce2787e4",
+      "decoded_bytes": 2583,
+      "bytes": 1028
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__network_probe.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__network_probe.py",
+      "sha256": "84f78a6e40224a22da3e32d7a6922a51cfdcf1c10f237498a698d394862a1060",
+      "decoded_sha256": "e47ec7d9bc3e43a268c9a34c8cad95a932b37e259ad7ec0dc6ec2b2ff0f3342d",
+      "decoded_bytes": 7833,
+      "bytes": 2717
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__plan.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__plan.py",
+      "sha256": "0db973092894df7706f7849b90aca20cbcc127bae8020b53448686984af5da91",
+      "decoded_sha256": "85880a21547fb14692eeb1df5b84478f210aa6fd39aefafb504cf59058da81bc",
+      "decoded_bytes": 4172,
+      "bytes": 1650
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__quota.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__quota.py",
+      "sha256": "ad319a8fd14e42ce2ac5d5a951702f54818e8f49ab4906a315e19af8d6be07eb",
+      "decoded_sha256": "21902766fceb6ae492095afffc27b989f38e9c54ba2ae99c6e23fd18fcc193bb",
+      "decoded_bytes": 4759,
+      "bytes": 1224
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__remote_plan.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__remote_plan.py",
+      "sha256": "94ea43ed57657abb30aea388bbd1a100f8d12542ae5f02dfeb3fd08cf6b01532",
+      "decoded_sha256": "127579210673840ac820971e9946954b292c5130c4782566be720f25f86f1463",
+      "decoded_bytes": 1366,
+      "bytes": 717
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__run.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__run.py",
+      "sha256": "56e8c28a6899ff782c28bf5e4067d48971f3c80d4677511368d87faa037be4fc",
+      "decoded_sha256": "ad3a4453041a6337571f582aa98514f24f1064bf858efd376d17f6406f65bfd8",
+      "decoded_bytes": 14936,
+      "bytes": 5064
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__service.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__service.py",
+      "sha256": "44fada3ae69cefcad58b93de1005619d1acb8dd6894662468abd3690dac02fa2",
+      "decoded_sha256": "806c0d7302ea8efe554a10512b33f0f4f389f81beee26f58258f6c2670c1a235",
+      "decoded_bytes": 18722,
+      "bytes": 4530
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__transport.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__transport.py",
+      "sha256": "5e633e3fb93c18a00e8433c3513c494eaeb8c97a47baa605a1fbf69641edbd09",
+      "decoded_sha256": "2df0496f1624c3be48dedd8fb421486866371aaff0e293a5f9494610ed597ae6",
+      "decoded_bytes": 4881,
+      "bytes": 1576
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__tunnel_bridge.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__tunnel_bridge.py",
+      "sha256": "5969b327945c8d5758a8a7395a1519fbe129fdcad6a548e43070831b47af5457",
+      "decoded_sha256": "658a3aee01753bf193d66684e7df7b2291a943a1ff8fd9fd4cffefe47d606f7c",
+      "decoded_bytes": 2249,
+      "bytes": 938
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__workload.py.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/instrument-v2__workload.py",
+      "sha256": "73f3b3f37c53a8486ad5cf593bd943f32a9ead3d6789526217fe9addd110a8fd",
+      "decoded_sha256": "a7abc68e0688fa5169fdfcb9110c1640a4450ac42ddabced70aea9a708de55af",
+      "decoded_bytes": 1094,
+      "bytes": 627
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/native-monitor-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/native-monitor-journal.log",
+      "sha256": "cd6ba909bad769c5e136506fa784bcde6d29fbc164d658b35a7d3887cf0dd9c3",
+      "decoded_sha256": "fb3607902ac163194e0cfd6445bde3edc41a75f062e6f6410504ba936693233b",
+      "decoded_bytes": 931,
+      "bytes": 312
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/native-ollama-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/native-ollama-journal.log",
+      "sha256": "2ab8fc07bddd7c87ec0b021a34d59d521dc6e8e0a5b29d9806f3e30edb922961",
+      "decoded_sha256": "b74c7565d367ac239188e73313ea3edfe0068b0f6900f21c4b84a5ee096c0e98",
+      "decoded_bytes": 87346,
+      "bytes": 12554
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/native-proxy-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/native-proxy-journal.log",
+      "sha256": "0ca4555c2a35f97cab401a5d80724364eebfe094521fba9948080a3e3addf25c",
+      "decoded_sha256": "7bd600b813b886f18fde02c7f4321c72910bc34deb9ceab2a8018bc3f1a6e2cd",
+      "decoded_bytes": 2813,
+      "bytes": 672
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/vm-agent-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/vm-agent-journal.log",
+      "sha256": "766308672a3e45913d4781a32dbe7696ab89fee8e54aa73e1eb1468f6cee2ce3",
+      "decoded_sha256": "e3c66b6ef99208e14a13d89ea6ebafb82b9e8a72f124850201c482f2135a46f0",
+      "decoded_bytes": 17632,
+      "bytes": 911
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/vm-controller-readiness.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/vm-controller-readiness.json",
+      "sha256": "e9779bfb7d82a747751b68705830c74c08d6fc757d2a7ca0647bb4959265da0f",
+      "decoded_sha256": "1d4a77ec1dfd25bcf36fb813dd1a8bcde3d6a57f2f2823b9114d17a914bd314a",
+      "decoded_bytes": 5174,
+      "bytes": 1654
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/vm-kernel-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/vm-kernel-journal.log",
+      "sha256": "121447589ec7d872bd0d3d084b0eb002fc87a546a900a3e2fabdaaeeff55c0c6",
+      "decoded_sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e",
+      "decoded_bytes": 17,
+      "bytes": 37
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/vm-pilot-unit-journal.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/vm-pilot-unit-journal.log",
+      "sha256": "d8beba45f9598f1ef90c247a361668771448fccb7cfc6abd5b2632528ef05af1",
+      "decoded_sha256": "ba3164015f216363f93eee2f43556e3b114dd08e48911701b7c102ec05b902ee",
+      "decoded_bytes": 665,
+      "bytes": 269
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/vm-pilot-unit-show.txt.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/vm-pilot-unit-show.txt",
+      "sha256": "c1a2487a51d0907379f76928e35c89ff6b5c2d73e609a637d4ce1db7c71a59bb",
+      "decoded_sha256": "85aba1000e2d332952e043866c1c87295bda1e77e9a5e5bbc9faf06b9b9b961c",
+      "decoded_bytes": 295,
+      "bytes": 196
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/vm-pilot.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/vm-pilot.json",
+      "sha256": "27bde87dc508b34af3c4da09696db52e919a80542adb175412137a3e8801be5b",
+      "decoded_sha256": "ff88fb5e064983fda82b5d92b55f1fc3db887a8a128d42db9dd7683a7e832d24",
+      "decoded_bytes": 100850,
+      "bytes": 6254
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/vm-pilot.log.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/vm-pilot.log",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decoded_bytes": 0,
+      "bytes": 20
+    },
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-inspection-excluded/vm-setup-acceptance.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-inspection-excluded/vm-setup-acceptance.json",
+      "sha256": "560646b97843f420ccbaf152b49dbf0044f4771b348a84f779680a0b4da52bef",
+      "decoded_sha256": "b03b0612f8139f845902a29ec01a3ee7ff5c948f8cc47a4701d43a522e5ff7c4",
+      "decoded_bytes": 1565,
+      "bytes": 598
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+*.parquet binary
+# Preserve the exact archived CSV bytes used by deterministic replay.
+*.csv -text -eol

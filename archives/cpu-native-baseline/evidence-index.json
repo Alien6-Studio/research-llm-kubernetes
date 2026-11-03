@@ -1,0 +1,1852 @@
+{
+  "collection_inventory": {
+    "path": "archives/v2-ollama-fra6s004-cpu-continuation/collection-manifest.json",
+    "sha256": "0f9a6efa40ab853d261e5df3a49ab405b08310c315b2bbe9d049a5f2f8560db7"
+  },
+  "compression": "Lossless gzip; header mtime is zero; decoded bytes and original collection times are unchanged.",
+  "files": [
+    {
+      "bytes": 2737,
+      "decoded_bytes": 23658,
+      "decoded_sha256": "5091cda60ed64a8dea1225236a5411062c6b6813847552f8307b4f092d74a32e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/initial-recovery.json.gz",
+      "sha256": "fa6d43e0b290c31029234d976c189a15fa968bce83441f933394de9b96fc96bb",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/initial-recovery.json"
+    },
+    {
+      "bytes": 54439,
+      "decoded_bytes": 572173,
+      "decoded_sha256": "0aaf24ed105cb3b219af90dd99ec181b8d99eb1c0fb4798ed411422171f42a7f",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/network/control.json.gz",
+      "sha256": "bf474c918867c8ced7bf825682e2b8bea1884b3c45b43c9da213d5d67c2ea235",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/network/control.json"
+    },
+    {
+      "bytes": 77,
+      "decoded_bytes": 77,
+      "decoded_sha256": "e90fe7883307cfc47722a7c78fdbc2066d260a0a8b154c33553b1d23a905a13d",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/block.json.gz",
+      "sha256": "0e7cfcadc9814b5553acace38fb32f7936d22fd91c9605dee1e3a30ce4be2cb6",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/block.json"
+    },
+    {
+      "bytes": 5397,
+      "decoded_bytes": 29881,
+      "decoded_sha256": "c637c2582a9f8abe399be0022571c239bad26d991204d1ff3975a373add8c083",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/manifest.json.gz",
+      "sha256": "2d2cbbf078f549afda1749bf94154fe5d1fa98b520741b4951d13021ceb1e90a",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/manifest.json"
+    },
+    {
+      "bytes": 1369809,
+      "decoded_bytes": 16793778,
+      "decoded_sha256": "aab75d21504fac1c98c9413fead063a4b60cce0a64e0105bfbd0130b366964b5",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-1-0.json.gz",
+      "sha256": "e77ca46da2e777c46951bc821b720600a28ced4da9bcc40b03d7c760983cbf61",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-1-0.json"
+    },
+    {
+      "bytes": 1371794,
+      "decoded_bytes": 16574885,
+      "decoded_sha256": "abb3ef5efffb4a0ad275810a6bd16b2651b424664c3f1852909e468585267b5f",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-1-1.json.gz",
+      "sha256": "57d8058ea3d5b12e7db29459978137d821d969d584c82519d314b753985b39b6",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-1-1.json"
+    },
+    {
+      "bytes": 1324126,
+      "decoded_bytes": 16204660,
+      "decoded_sha256": "a4b69b51bffa48ca47dc5d7a5e79e86eac40cf7db444536e53a6932411b73848",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-1-2.json.gz",
+      "sha256": "e38471b3bdf77cc28a73f4f86991dac1ae4fa098efbce529bcf3db05ee0770df",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-1-2.json"
+    },
+    {
+      "bytes": 6534391,
+      "decoded_bytes": 36379417,
+      "decoded_sha256": "24cbb4b3cf8b7337f23f131ed59a5498f67de7a09b333f617b6ca5991dd3a5dc",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-8-0.json.gz",
+      "sha256": "1a950ae1faacd2fee8669a69f768505cf776077ed6f924b89ce0bed787e5a040",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-8-0.json"
+    },
+    {
+      "bytes": 6525588,
+      "decoded_bytes": 36156582,
+      "decoded_sha256": "06420375f9e1e7b0d48b1a8d6f8b5f019469044604c790c026fdca633bbc2aa7",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-8-1.json.gz",
+      "sha256": "03c3673068eaf55a39ef1ed8cb4330970b42f8aea9b3c7e7da2ab16992126ad4",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-8-1.json"
+    },
+    {
+      "bytes": 6374498,
+      "decoded_bytes": 35436817,
+      "decoded_sha256": "658aca0ca491b8698c9ed94c3d87c9954428944ae2457df7110de596398ac6ab",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-8-2.json.gz",
+      "sha256": "fe7ea94bb4411de400db33e5f43e9d49fff950ec4f2f72b0173da6216ed3c9aa",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-8-2.json"
+    },
+    {
+      "bytes": 1336722,
+      "decoded_bytes": 16088120,
+      "decoded_sha256": "10343dc77eaffaabadd6fff04a1494b3ae7e7ecbe53a6ef832c41c599d4a6e51",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-1-0.json.gz",
+      "sha256": "9e154a4f378ce00eb42c78876da2313a3359044c2002d96db84088a38a948e9e",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-1-0.json"
+    },
+    {
+      "bytes": 1320724,
+      "decoded_bytes": 16077915,
+      "decoded_sha256": "d495c90639c04016e14b764db9073d97559d4d7b1479d9eaf458c3256b718aa0",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-1-1.json.gz",
+      "sha256": "44934cacfa11702d4e932552078d4a0e37c9a6dcd1bb2657953e569a4217424f",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-1-1.json"
+    },
+    {
+      "bytes": 1318695,
+      "decoded_bytes": 15872825,
+      "decoded_sha256": "e84083a62753c16448f84406a9c3fa0ced41f1c0bdf060eb45176167bcbe9853",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-1-2.json.gz",
+      "sha256": "6fe76cd3941391c3e32f0d4c9631257f6dc575ca9aca1a80f113f8b1bc6e7309",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-1-2.json"
+    },
+    {
+      "bytes": 6484314,
+      "decoded_bytes": 35616623,
+      "decoded_sha256": "517048584eb20d010f9a4239e282f79a1f61ad4280ffa9d7800217b4d4559328",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-8-0.json.gz",
+      "sha256": "becbac38d0759ce0188da084063613e0daa85002b6f8f459b5cb211032b32615",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-8-0.json"
+    },
+    {
+      "bytes": 6488766,
+      "decoded_bytes": 35660352,
+      "decoded_sha256": "0069e42e7205084fc70bb25c28b7f44e9b6fbb5b1e5984db33c8bc253d361d06",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-8-1.json.gz",
+      "sha256": "44faa58ee4f3d188c4b165b09afd82c9d8b16a483db4beed4d618a97d1f40720",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-8-1.json"
+    },
+    {
+      "bytes": 6452198,
+      "decoded_bytes": 35408062,
+      "decoded_sha256": "265a9bc40c5f0c2e57ac0a482407950303a49d30384a93c0a3927e23a84c9478",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-8-2.json.gz",
+      "sha256": "f89a4e04a885d9ee3640dd70d8b9e1498bfc98ea26188458547f0d49ab058986",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-8-2.json"
+    },
+    {
+      "bytes": 7287,
+      "decoded_bytes": 104290,
+      "decoded_sha256": "a83827a4544fd3d7b102297c22b5423599038ee6cdc07ca0e912393b5f1f3f2a",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/supervisor-final.json.gz",
+      "sha256": "5fcb26d66f9384a8f54bc92dbe88583dca952a38097b122f04c1d8e0489c4a47",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/supervisor-final.json"
+    },
+    {
+      "bytes": 285,
+      "decoded_bytes": 451,
+      "decoded_sha256": "cb45537676e3870b39ae3bbcf3bbe8000871b10ca8497e2f31e940f62940e32a",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/assessment.json.gz",
+      "sha256": "629bf6ea10255c1fa6d81db94af65f05ebf5e037297012288ff27d9f9e40ff24",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/real-model/block.json"
+    },
+    {
+      "bytes": 5544,
+      "decoded_bytes": 30640,
+      "decoded_sha256": "3ea17caae0c0049ccd82c3904506d4d0d584f62dd2456c0c7baab7186e7a9526",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/real-model/manifest.json.gz",
+      "sha256": "bc7c0b337a9a15066ae1b7fc9ae07c4c341943bb98fab744bb5d85301656b0fd",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/real-model/manifest.json"
+    },
+    {
+      "bytes": 1340075,
+      "decoded_bytes": 17396635,
+      "decoded_sha256": "02caf7bfddebe392de4972c9211e15c7329f659ada459e7642cb36275cd2ae84",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/real-model/real-model-high-0-1.json.gz",
+      "sha256": "7f2b915aad66ab35fb84a2793f6e02884b677cb3a2a38aea004b50733af1e952",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/real-model/real-model-high-0-1.json"
+    },
+    {
+      "bytes": 8011,
+      "decoded_bytes": 296761,
+      "decoded_sha256": "e7c1fd0e78791e817dc2eaeace46d07bcd2dce78cee36bdf4cefa356818435c6",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/recovery.json.gz",
+      "sha256": "a8e9cc6f3a8f272d49fa03bf9b4899ca0e0c1f42089f6d2b9a8dcb12495ec654",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/recovery.json"
+    },
+    {
+      "bytes": 6516,
+      "decoded_bytes": 101669,
+      "decoded_sha256": "01c59f942c4a65d79b3d4fe382d6878401680edd380185299a9d55d417ea83bf",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/warmup.json.gz",
+      "sha256": "1d79bd9f9773b3e18c08dfa87cbcf9c3482e41eeb3889e14c2900e1b07e6b113",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/warmup.json"
+    },
+    {
+      "bytes": 284,
+      "decoded_bytes": 451,
+      "decoded_sha256": "d9452271dc95402e6f78eda43957b7a44bc133f9aa2666ba34e2fcc0c28fb875",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/assessment.json.gz",
+      "sha256": "080fa871e7086393044db2878980a2701a4ad4772561b4e11a9d35929baffaae",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/real-model/block.json"
+    },
+    {
+      "bytes": 5540,
+      "decoded_bytes": 30636,
+      "decoded_sha256": "bbf698a38f12b9e03190ce453ac83ee9594c45b7880450c905a359adcc6661a6",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/real-model/manifest.json.gz",
+      "sha256": "3ad39d4f3d4446451423a622fd9eb60965fa1613a195679cf65bf725f67b66c2",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/real-model/manifest.json"
+    },
+    {
+      "bytes": 1306245,
+      "decoded_bytes": 17007845,
+      "decoded_sha256": "58443dfae8b9e757623da909d9303fa8a38a05e7087d79417f6fd189ad676a90",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/real-model/real-model-high-0-2.json.gz",
+      "sha256": "6d6df711025c2003c3e1897e516e70a470be137d9fba6bfbfdb343513a6996be",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/real-model/real-model-high-0-2.json"
+    },
+    {
+      "bytes": 13945,
+      "decoded_bytes": 782247,
+      "decoded_sha256": "9a9ae8fa695f5ca0287b5720e2dba02d7e9763debe5e866fe80c700b55d501fe",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/recovery.json.gz",
+      "sha256": "4b46a5bb5eb60bebcf03bbca5117716f22898583d2b085c8cc286b83c78b4f1d",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/recovery.json"
+    },
+    {
+      "bytes": 6517,
+      "decoded_bytes": 101667,
+      "decoded_sha256": "4a6aedd3c94dbd2da2e58bab591b4d3f996a418b18fcba929ed2a82091869779",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/warmup.json.gz",
+      "sha256": "68799ec809bbc91ee6d8ecc188efd319ad622e2a534b96cc1d6d7e544114cac7",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/warmup.json"
+    },
+    {
+      "bytes": 284,
+      "decoded_bytes": 451,
+      "decoded_sha256": "8765bef9af9f76ce2ac3097ebb27189986822715b2cb38b9a00235db5ad20b2e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/assessment.json.gz",
+      "sha256": "b7cfa6a0acf935dafc4d724b2d9d92019bc76af31d50d19fd450624db82a5f43",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/real-model/block.json"
+    },
+    {
+      "bytes": 5532,
+      "decoded_bytes": 30638,
+      "decoded_sha256": "648633b4cfc56a08a54715d70064a8675cff261eac5a69af21b251cb09c773c0",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/real-model/manifest.json.gz",
+      "sha256": "5529375f65dafacb3f6fb225d5db4d6d909ffb46868775a475f52880bd7faad1",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/real-model/manifest.json"
+    },
+    {
+      "bytes": 1353731,
+      "decoded_bytes": 18266753,
+      "decoded_sha256": "278398dd6862a121fd79743718e635b7d6dd0299b7212a3f67e51e75297f60d1",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/real-model/real-model-high-1-0.json.gz",
+      "sha256": "7ffa8e202a7367d9d06a6dee9a1151e259de851d25cad799af7f362ac329bdd2",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/real-model/real-model-high-1-0.json"
+    },
+    {
+      "bytes": 8228,
+      "decoded_bytes": 306259,
+      "decoded_sha256": "fb222d10c1be1869c3962e70aa12de97801a51fd5f43273b38e259143cd8cd6d",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/recovery.json.gz",
+      "sha256": "f8cca23f9430116848f322d4cfd402d19e394d4146af9cd6b05e1c6f194dfbe7",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/recovery.json"
+    },
+    {
+      "bytes": 6514,
+      "decoded_bytes": 101672,
+      "decoded_sha256": "abd14d893e3406c77fba22afe547d91fd5d83587d4621e4d4c1c169cda8d15da",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/warmup.json.gz",
+      "sha256": "a03b91080fb7427fb2bc002948d78398927c240956aabd819184fd6fa998f1a7",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/warmup.json"
+    },
+    {
+      "bytes": 284,
+      "decoded_bytes": 451,
+      "decoded_sha256": "91f900ab547c466817f05007ab107c6bf0ba38a09c58cf1160816e4e4689dcc5",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/assessment.json.gz",
+      "sha256": "18d92fe6c89d50ad10f0998651b5c00ab7f90923d17e494ccecf356b2fefbab6",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/real-model/block.json"
+    },
+    {
+      "bytes": 5546,
+      "decoded_bytes": 30639,
+      "decoded_sha256": "fbcc0cd83f26dabeaf3ac3ddabff6b9c061257b7aff1ae912317a70dee86503e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/real-model/manifest.json.gz",
+      "sha256": "36419e3a75e89fc52dd9bb8aa4bb34af051d9539c4aee0833523bebacfa033d6",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/real-model/manifest.json"
+    },
+    {
+      "bytes": 1666996,
+      "decoded_bytes": 21074029,
+      "decoded_sha256": "fb5e4b7022a665e4d3bd80a30099d7a43bc7b6fc7dff14b372254ac18ba22285",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/real-model/real-model-high-2-0.json.gz",
+      "sha256": "4769da0207c465a6c7144e6c5348c5bd4f65583184b42ddef7ea6b683e37a6f4",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/real-model/real-model-high-2-0.json"
+    },
+    {
+      "bytes": 10850,
+      "decoded_bytes": 498108,
+      "decoded_sha256": "e3dfcd2c1847adc20e99312c1328108d341eff0fd0aded90c3276de7a7517e79",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/recovery.json.gz",
+      "sha256": "b87f90dd6c69fd8d0f63f2a43960ce9767ba3d94297aa871c7ad42f93e57882f",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/recovery.json"
+    },
+    {
+      "bytes": 6530,
+      "decoded_bytes": 101669,
+      "decoded_sha256": "b8c0921318f269651fcf1a10d72060d2d3030322d9835afcda624adc2448dec5",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/warmup.json.gz",
+      "sha256": "996859bff7bba07c1e3c2c4efb4e0753f1e7f15a8e7cc06308c2ece6d55ad36b",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/warmup.json"
+    },
+    {
+      "bytes": 284,
+      "decoded_bytes": 451,
+      "decoded_sha256": "11678b655ca5f840a6df2cf3013834b044693ad17e617b6b1343b9943bfa390a",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/assessment.json.gz",
+      "sha256": "a9aade02a91534bb388da88020bbc35e9edcd91f50021ce29e9da175cfa428ee",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/real-model/block.json"
+    },
+    {
+      "bytes": 5545,
+      "decoded_bytes": 30638,
+      "decoded_sha256": "b56607503383e0217cd0e80e35597b4c44fc335101fd52653e2c1eadccd8cc8f",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/real-model/manifest.json.gz",
+      "sha256": "f6e6770c26c9b657bd78a695621aee694f65011dacdb7821da6a0718111b8c0c",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/real-model/manifest.json"
+    },
+    {
+      "bytes": 1663240,
+      "decoded_bytes": 20926238,
+      "decoded_sha256": "ada19d6d25471fdafad7fefc9f0f5986b084c67cf5aae383daf5b21e19c19d2a",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/real-model/real-model-high-2-1.json.gz",
+      "sha256": "1cf6ebc59827bc5e71ce0e588c70b2d8e4cf4bebf38e735ba46b4e62f25926fa",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/real-model/real-model-high-2-1.json"
+    },
+    {
+      "bytes": 19350,
+      "decoded_bytes": 1178135,
+      "decoded_sha256": "6c1c23d45d69e4929db6b7639b379629ac688584ac336ddb22dfcdbdddbf62d1",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/recovery.json.gz",
+      "sha256": "9cf361e8af042015310690bf9ac4172bb5247a6fb11f4d4460bbd0f60eb41d75",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/recovery.json"
+    },
+    {
+      "bytes": 6525,
+      "decoded_bytes": 101666,
+      "decoded_sha256": "900c8d4fe25eab35b29fd7a3fee834c3e67e5a7971b9c3384294ea522eec014e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/warmup.json.gz",
+      "sha256": "1f144579e9955a79eb179ac16c49f22a63ce9be70a649158821cd3b5219c2189",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/warmup.json"
+    },
+    {
+      "bytes": 284,
+      "decoded_bytes": 451,
+      "decoded_sha256": "b500e80f8bdc833469fd3ef01f9a7df15f82729b88d3d564c1a5b20532b80f93",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/assessment.json.gz",
+      "sha256": "29caa7b0835db833bb94ae8501114c05a4e4a02024e9a3554084e46fb36c926c",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/real-model/block.json"
+    },
+    {
+      "bytes": 5546,
+      "decoded_bytes": 30636,
+      "decoded_sha256": "6fec66d29a957adb10f3dfa304835ad227e5ecf28773f3ecbc09d2d53c43173e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/real-model/manifest.json.gz",
+      "sha256": "83e3bb40f117c1c419fd0d465bd35ca82466edec7417f807d3cdf6ce8ffd392d",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/real-model/manifest.json"
+    },
+    {
+      "bytes": 2439175,
+      "decoded_bytes": 27996808,
+      "decoded_sha256": "5629743e53c18877098f9773f336e9c7049daffcaef1a44e21f20402e08b5111",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/real-model/real-model-high-4-0.json.gz",
+      "sha256": "c9d66f520631b56ac5bfde6a4f3ec780931914d594de8824cdf29969c8c8ce40",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/real-model/real-model-high-4-0.json"
+    },
+    {
+      "bytes": 13054,
+      "decoded_bytes": 682405,
+      "decoded_sha256": "ff7f37f6470311d5bff9c8f78fcc4d684983692beab650a59b016d6a5057fbc4",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/recovery.json.gz",
+      "sha256": "1241a4854752ac696ea746d20431076883333e9f0ac9d2fc629ee407ed7ce0f2",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/recovery.json"
+    },
+    {
+      "bytes": 6524,
+      "decoded_bytes": 101665,
+      "decoded_sha256": "f03c5dd2f8425ba9e2f080dc2fbd01dbf6e7382e93e695c1ec2c45b184f63b33",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/warmup.json.gz",
+      "sha256": "7d04bf99193d7b018ebda4e6c0fe6dad1c63c6ba8fa2ba041eab8b7fcfddc170",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 451,
+      "decoded_sha256": "68170e7b2374652035e5a0d8b4b892406e1707b671d48a191cc8311f86de8c25",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/assessment.json.gz",
+      "sha256": "a2fe018e669cca416000385bba6cc0ab4c2a64adbead9d2bef46f7f337ef15a5",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/real-model/block.json"
+    },
+    {
+      "bytes": 5547,
+      "decoded_bytes": 30636,
+      "decoded_sha256": "04885ab7afd29be6dfdd8a09efd2d63d3072f4ed557f920f79dbf98c8ff0c6f6",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/real-model/manifest.json.gz",
+      "sha256": "3f6cee665a937c7dd34d2eca324e18f32b3b3c15d5b475c592715959e4734d2e",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/real-model/manifest.json"
+    },
+    {
+      "bytes": 2587753,
+      "decoded_bytes": 29562802,
+      "decoded_sha256": "9403670273df6975eade2874cbc9ffc49a0e023a0a71fc2560ff5c051e1ce885",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/real-model/real-model-high-4-1.json.gz",
+      "sha256": "57f7b1f1ca0a25aa5d681a40c31b21b5affca15bba9741558a534668e8088c5a",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/real-model/real-model-high-4-1.json"
+    },
+    {
+      "bytes": 14077,
+      "decoded_bytes": 782678,
+      "decoded_sha256": "ef6821067cd987a9fd602587b26cae3f919d512ea09a67a32290acbd78ac79cb",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/recovery.json.gz",
+      "sha256": "32a334f6adf8cf02c293f3571dfd002989ac6e9856d6e1ad33f0159a053bea5b",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/recovery.json"
+    },
+    {
+      "bytes": 6533,
+      "decoded_bytes": 101670,
+      "decoded_sha256": "c293df0468786d3eb1e6456286128c89718c40dd5bc06ef6284db58696c7c122",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/warmup.json.gz",
+      "sha256": "1e8107dc982bb48a36296fb74b46e5302822effeb73c748c5722094cd6377e89",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/warmup.json"
+    },
+    {
+      "bytes": 285,
+      "decoded_bytes": 451,
+      "decoded_sha256": "cbc111d2d1677ba7acf5f649643a92635abc786771a9a8a63a8acb32885b1691",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/assessment.json.gz",
+      "sha256": "3ea90c7596fd2ab3e14ea4b803d5a50e38b87e0cd16072190c7e9abbf7a8a8a5",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/real-model/block.json"
+    },
+    {
+      "bytes": 5535,
+      "decoded_bytes": 30639,
+      "decoded_sha256": "5009bf18c6a5362ada9676623ca6588882b79a1ec8dae2f47ff232f5a4aad49a",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/real-model/manifest.json.gz",
+      "sha256": "05163dcd16e12e60da6685389006245c079d20d7510b155da825e188ce7f5f6c",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/real-model/manifest.json"
+    },
+    {
+      "bytes": 7569766,
+      "decoded_bytes": 43075171,
+      "decoded_sha256": "30e2655dbc2669bc1169eb8f7a7a659d5987a750eba9a7e1e176f0de129ddb67",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/real-model/real-model-high-8-1.json.gz",
+      "sha256": "ef9a478b1da41cc738f9778a9fb683699ae193073e6e8d2801a8aed745bf357d",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/real-model/real-model-high-8-1.json"
+    },
+    {
+      "bytes": 17449,
+      "decoded_bytes": 1059875,
+      "decoded_sha256": "3f9d92c524197cb83e3785ab7697a35090723cb6b9bb753ad46824150d07ee2d",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/recovery.json.gz",
+      "sha256": "4cd28761b365af547f4d5b8214bcbf4542e27637762359f84622a44ea0003165",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/recovery.json"
+    },
+    {
+      "bytes": 6520,
+      "decoded_bytes": 101673,
+      "decoded_sha256": "532d37c50f4bdf9e3b67c921f727f76e112ceb470713144674128eedf4fb32c4",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/warmup.json.gz",
+      "sha256": "df43f107b639f6ce59e1e246c5c787b6d123945e60250ea6e59763a180448b6c",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/warmup.json"
+    },
+    {
+      "bytes": 284,
+      "decoded_bytes": 451,
+      "decoded_sha256": "0ebfc19c2242280fcb4648a2ec119adc499bcf696eed8ae545e27285126d2ac7",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/assessment.json.gz",
+      "sha256": "1ae65f52f359d6eab13f8cfb0e85da88cfd0ef336ddb782e20c3cac6ccea9169",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/real-model/block.json"
+    },
+    {
+      "bytes": 5544,
+      "decoded_bytes": 30638,
+      "decoded_sha256": "2064def19cfdbb29cfbb0c5a816cd6390d789a1168269f91569d011f83034cdd",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/real-model/manifest.json.gz",
+      "sha256": "27ae561d66a4ab7864b857a00838f9b8db024312afa43d465d36128eadc84df2",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/real-model/manifest.json"
+    },
+    {
+      "bytes": 6501121,
+      "decoded_bytes": 37394641,
+      "decoded_sha256": "ff4510d55b7694d9c260d6f8f3f35a6ba2e43c1d71cf8591e31692ff29fc7e0f",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/real-model/real-model-high-8-2.json.gz",
+      "sha256": "e90eb0f1288f1a53326fd3fa82ec235a98f971194b80d41a4b79eec0e3d44c16",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/real-model/real-model-high-8-2.json"
+    },
+    {
+      "bytes": 14349,
+      "decoded_bytes": 838910,
+      "decoded_sha256": "59e3bfc25dc88c0ed7ccbefc386d703f36a05ceab2317afdc15845b2d16be699",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/recovery.json.gz",
+      "sha256": "cb71ac9e34e1fb39f932e2ceea22552a6724befdc39bde94ed5d7d07be4d5a21",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/recovery.json"
+    },
+    {
+      "bytes": 6523,
+      "decoded_bytes": 101672,
+      "decoded_sha256": "1a4c29df8a65da25e69c0e0c393a50591a6c8e3e9886903e3487ab3eb775f584",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/warmup.json.gz",
+      "sha256": "ce4eb56732993d95acee212b9a8a2ba38c7e8e9fb4da516cb5d53768c4de17eb",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/warmup.json"
+    },
+    {
+      "bytes": 282,
+      "decoded_bytes": 448,
+      "decoded_sha256": "3266cb3657c1bab646b556647803d22dbf61bfd79144605079ec39a09f614740",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/assessment.json.gz",
+      "sha256": "1473b6ac92ee2637b9487f536ca37101b761452445a54cb22e6041157e140e6e",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/real-model/block.json"
+    },
+    {
+      "bytes": 5542,
+      "decoded_bytes": 30638,
+      "decoded_sha256": "d1c8c85692ec421704a69c6a33cbfaadde1c773ac67a8d36ff1c5bdd241b3126",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/real-model/manifest.json.gz",
+      "sha256": "f49d55e6ed9af33d5e1a4f67e7a4d9c98c5f26e7c2742a69cfc6a28742b0fe4c",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/real-model/manifest.json"
+    },
+    {
+      "bytes": 1132464,
+      "decoded_bytes": 14560430,
+      "decoded_sha256": "0d858e60b6684e99cde638241b54cbc4f2ec47ff0322e44959037e8beabbd429",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/real-model/real-model-low-0-0.json.gz",
+      "sha256": "863c2500f02e9f22b9701608ae41bd7d746cdbbb3490eb758fdf3008cd209c95",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/real-model/real-model-low-0-0.json"
+    },
+    {
+      "bytes": 17961,
+      "decoded_bytes": 1086902,
+      "decoded_sha256": "8e6d01ff06752e5b60d39b73572d18708aa738fa348a2e40b1d4707734875c01",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/recovery.json.gz",
+      "sha256": "85caf95f5802fcfd9003a8fd70cf6e70f06e774ebebb547d78570612a1930913",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/recovery.json"
+    },
+    {
+      "bytes": 6523,
+      "decoded_bytes": 101664,
+      "decoded_sha256": "a9d7a01bdd88c693d059a2836c6b0a6e30e1513b5f180c75582aef5db3fa833a",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/warmup.json.gz",
+      "sha256": "3a816d912bcbac46b2a63a012ed79580dc801db181f35088042a156b9debca06",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 448,
+      "decoded_sha256": "b76463c5e7bffd3479021d8e0417d03d2deffd6bf1453f967432cf595b307561",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/assessment.json.gz",
+      "sha256": "2ec5d3e67773dea8515ce166dcafdea9cf785eebb39f182fc7a85dfb037c886a",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/real-model/block.json"
+    },
+    {
+      "bytes": 5550,
+      "decoded_bytes": 30630,
+      "decoded_sha256": "47442a80a3c5b4865dd020a0f98d4c6705deff2eb92eaa7584a6eb3beac07c41",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/real-model/manifest.json.gz",
+      "sha256": "335d692b873fe5b1430035f7b725d717b3235820cf55eadf272fc0ee15b34e5e",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/real-model/manifest.json"
+    },
+    {
+      "bytes": 1137822,
+      "decoded_bytes": 14403082,
+      "decoded_sha256": "0eb03410b2d2677099e927e115a15556266e6e086557189727e18770431a53d3",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/real-model/real-model-low-0-1.json.gz",
+      "sha256": "7798e8f2e499320785aba09070eb57b64bae9da3203a9c28392876412bfbd0ca",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/real-model/real-model-low-0-1.json"
+    },
+    {
+      "bytes": 8221,
+      "decoded_bytes": 306257,
+      "decoded_sha256": "9d74d0c8ef59ca0e3a5664c09239f5815f3b8575ec6dcdb6b2aba8b7b9612b6b",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/recovery.json.gz",
+      "sha256": "5e89fe42312a3cef0e42471b6b4e1730eecef1b253511a3419d8fcd51909d896",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/recovery.json"
+    },
+    {
+      "bytes": 6513,
+      "decoded_bytes": 101664,
+      "decoded_sha256": "339064bf3f74c091ae0ce380f3ac6cd35013097e09bb6259f460d3471a25edb7",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/warmup.json.gz",
+      "sha256": "f55cb42e6461ee7520d41d82f3a86fd43894cf948271e94e435e4e00b292f572",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 448,
+      "decoded_sha256": "85ba929602faf31880091cb2cf2aea28ea76c37545460a0639331bc6d2861a1f",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/assessment.json.gz",
+      "sha256": "1783f4e649ba80c81e854cb19f781c92063d635f62d3828e134f346f64dd3731",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/real-model/block.json"
+    },
+    {
+      "bytes": 5553,
+      "decoded_bytes": 30632,
+      "decoded_sha256": "85da4633951ce097eec578cdad8da54f0670aa148e3fb9270c78ee1ea85ed8a5",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/real-model/manifest.json.gz",
+      "sha256": "63d77e5e578f8587e4385d39d00999d7833c3aaa88be5fa0d69693bdb01249ba",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/real-model/manifest.json"
+    },
+    {
+      "bytes": 1249738,
+      "decoded_bytes": 15907209,
+      "decoded_sha256": "fa3c8fe85edb2c779e27a10ad34b190f804ecb9e36147251e8d507a4addafca5",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/real-model/real-model-low-0-2.json.gz",
+      "sha256": "6c73e3d52c279784c4ec52560cd46b9a297ff5ce377677a607c7a95c2f4b9016",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/real-model/real-model-low-0-2.json"
+    },
+    {
+      "bytes": 12283,
+      "decoded_bytes": 630688,
+      "decoded_sha256": "664a660b39084ff420cb1520f84923a3ba50baa198d518c4866f7cf6c3ec69c5",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/recovery.json.gz",
+      "sha256": "4fc1b6f95ac6addedb25457958e693816f268629f3e543b7466778b3de5a1902",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/recovery.json"
+    },
+    {
+      "bytes": 6522,
+      "decoded_bytes": 101665,
+      "decoded_sha256": "451d5876f490203db42bd79811b28c2d9f1d3b3b54c3f9d90b5a8e959e9a6410",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/warmup.json.gz",
+      "sha256": "fc92ad6512d2b4b87fd2b1bfa07bda721f221577b34d1588f1bc02994666e66a",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 448,
+      "decoded_sha256": "53f3d45d4d1a10dc26f6a391bc91f0ee71d7d0ea53e95fccb2a2beb82dd83d38",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/assessment.json.gz",
+      "sha256": "f776b618b9efa7a7cd54cdcaaa6b6d0156cc2856f0c15e7ed1b20002c086408c",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/real-model/block.json"
+    },
+    {
+      "bytes": 5542,
+      "decoded_bytes": 30636,
+      "decoded_sha256": "a791ff5b7e7eb96c0672dac8932959a05c7160e9bb626c7f8e6e55aa30d4d9ee",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/real-model/manifest.json.gz",
+      "sha256": "3e36eea5078677de5289021976ca4db28c8b0ca52c49b754d21d4fc7f6abf121",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/real-model/manifest.json"
+    },
+    {
+      "bytes": 1198489,
+      "decoded_bytes": 14756412,
+      "decoded_sha256": "0e90d4d75d635794d6c4b4fda64b37e1e89da2a68851a0313b18d4126c7d82ff",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/real-model/real-model-low-1-0.json.gz",
+      "sha256": "bfc03366e6cba162e05bb7bb93dad50f2aab90b6252ea253c386512fd27fdf93",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/real-model/real-model-low-1-0.json"
+    },
+    {
+      "bytes": 19231,
+      "decoded_bytes": 1164656,
+      "decoded_sha256": "aa1937f0355539e717a55c4625fe15dbf47bbcadd0c224094472f65c4a96fae2",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/recovery.json.gz",
+      "sha256": "ee822f4999c1c8663f69d322efe4431e7dcd4ddae599239d02688764bd8d3841",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/recovery.json"
+    },
+    {
+      "bytes": 6527,
+      "decoded_bytes": 101669,
+      "decoded_sha256": "a6bd31ff5bcc228de2963e0df9f08ef45569f7b029f09733db8bc2d517168e87",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/warmup.json.gz",
+      "sha256": "4621a5b3539ebbe02d3f29f4bb31c4cede57a75a13324b8314263c25593fcb27",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 448,
+      "decoded_sha256": "00559230d7abe956541463fc5487c6db312e2d634a11ef80944f27a19921da5d",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/assessment.json.gz",
+      "sha256": "6e198fb7e1d092f15b3ece8979d4a16abc81172dddccded6cf712c3b6d93376d",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/real-model/block.json"
+    },
+    {
+      "bytes": 5548,
+      "decoded_bytes": 30630,
+      "decoded_sha256": "34626166acd0702c18cdaec297ef5fd13fad792511c07d31c4465ef1fc735782",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/real-model/manifest.json.gz",
+      "sha256": "d3cb4fa4384e5c4ad2ba217734647761d9e32eb41a6b89131c07918e99311425",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/real-model/manifest.json"
+    },
+    {
+      "bytes": 1255471,
+      "decoded_bytes": 15979306,
+      "decoded_sha256": "5cb464a5c5de7efc3ffc7626f118c6f54da2f47b8c44fd315b34dff6b6ec46a6",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/real-model/real-model-low-1-2.json.gz",
+      "sha256": "3a70c686503659fdca5aec92d16005ecf9950d8c293182e68f582c2ed59244cb",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/real-model/real-model-low-1-2.json"
+    },
+    {
+      "bytes": 10843,
+      "decoded_bytes": 498115,
+      "decoded_sha256": "3ee8268ade7d1ef54181b350a55d69116fd026babce5bc0f6ca72da893e58c1b",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/recovery.json.gz",
+      "sha256": "9e6b414067ef7673bf04ee0b78deea15ff7ba411c34c2782c0c86d9b6203900c",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/recovery.json"
+    },
+    {
+      "bytes": 6511,
+      "decoded_bytes": 101662,
+      "decoded_sha256": "0f60f4e77abbfa697d309e1cdd419904a04ab85587733824b0739f5985a24272",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/warmup.json.gz",
+      "sha256": "044a5e7abd05de341230d813b39bdf8124de65687be82c45524a1d35e5bec9a0",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 448,
+      "decoded_sha256": "2e479c230b282f7b3b575fde65e572b8111e6b3b0108e8745a384bc8ccae3044",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/assessment.json.gz",
+      "sha256": "272d297287acc21b46846b018aa842956d494edd14fafe8f10c32632ccb853e2",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/real-model/block.json"
+    },
+    {
+      "bytes": 5543,
+      "decoded_bytes": 30630,
+      "decoded_sha256": "b16e63f1d96aec47f8c45d1c3d15f91314d4ae2ab436a8899ae734c9a6c1c07d",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/real-model/manifest.json.gz",
+      "sha256": "ddaf997821208bcd432537c5427604adcad116bc6e60f79a696b8e542087bbff",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/real-model/manifest.json"
+    },
+    {
+      "bytes": 1435190,
+      "decoded_bytes": 17192518,
+      "decoded_sha256": "69c38fe2fb3978514f96ccb24ad77bca324e929b8baab33a557b590af97809af",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/real-model/real-model-low-2-0.json.gz",
+      "sha256": "9c75211e408359c338e536176dbb4b2e88021f6143c89f19c448e2f5b050aca2",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/real-model/real-model-low-2-0.json"
+    },
+    {
+      "bytes": 6813,
+      "decoded_bytes": 196161,
+      "decoded_sha256": "5c9daeb25c8022cce19b5040d832173612cc8d3ab2723c183e234d739d743f30",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/recovery.json.gz",
+      "sha256": "2781588d9b1157d428c4ab63744fecd2526f55b481e360f934fda55eddf57bde",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/recovery.json"
+    },
+    {
+      "bytes": 6520,
+      "decoded_bytes": 101663,
+      "decoded_sha256": "88e24e79f298ccfa40afc416630bc69b5b164b8391966288f89d49e2df94596e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/warmup.json.gz",
+      "sha256": "c5db46ba5eef266ba2968b7a69d6a4afabcab203b8234e15c60ce3fb4c216607",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 448,
+      "decoded_sha256": "b7821217b097fd78d67034f756c3515dca0a1ac54bf7338833061cd9f3adf2bc",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/assessment.json.gz",
+      "sha256": "3ffeec777ee0483ec8c38841dd23db8132ad59cbf51beb333e7a4a7e97b3a861",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/real-model/block.json"
+    },
+    {
+      "bytes": 5553,
+      "decoded_bytes": 30631,
+      "decoded_sha256": "cd0ab7dd133fb8fb6fcd9d600ccab35708f082d7b33ac8da7a25bcffe36825d8",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/real-model/manifest.json.gz",
+      "sha256": "ef73773429ede53a14004135166bf2f324061a0b77ffcd585af60d924593f514",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/real-model/manifest.json"
+    },
+    {
+      "bytes": 1412186,
+      "decoded_bytes": 17006403,
+      "decoded_sha256": "946b951c47cd93d7b644371b2bffce5ab47a45e620fe50fb38d21060c288e321",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/real-model/real-model-low-2-1.json.gz",
+      "sha256": "ecd74c8526141bd1edc98e9e534d3015dff2ad614cdebc08d5a08669d7089c24",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/real-model/real-model-low-2-1.json"
+    },
+    {
+      "bytes": 18621,
+      "decoded_bytes": 1151334,
+      "decoded_sha256": "b7ace947c2a2338b1b6effe9216573ccaf4a350f530bc4a82051ab653d817863",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/recovery.json.gz",
+      "sha256": "481f5d972c1675fe5a62f5fcd1c66ee82665d6618b72c0bdd53d3758a1d07845",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/recovery.json"
+    },
+    {
+      "bytes": 6553,
+      "decoded_bytes": 101669,
+      "decoded_sha256": "8d683cb8cc6de938742443297dff1b61e7995189c4d4786300b57db8957cc66f",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/warmup.json.gz",
+      "sha256": "fe61b2e29411a1dc1aac763780c9ff0198e8b73f56dd3daea8b8f27225e57abb",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 448,
+      "decoded_sha256": "c57fab891976f23fb409d08dd43b21ae0ec2751d511f6f0d304e2912a5a0af7d",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/assessment.json.gz",
+      "sha256": "0fdc76f35623b13863a2f5db43ca28acd1d342537c8c23989582dd55421c258e",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/real-model/block.json"
+    },
+    {
+      "bytes": 5538,
+      "decoded_bytes": 30632,
+      "decoded_sha256": "922a430f084342b7bc79f2845335bb3ef3ddaeda2611bfc6265da1da940065aa",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/real-model/manifest.json.gz",
+      "sha256": "d7cb0466e0f4fc5e737b5b60664ca722a4a29caa6cada3a456abc2e8eea14cf9",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/real-model/manifest.json"
+    },
+    {
+      "bytes": 1561831,
+      "decoded_bytes": 18681688,
+      "decoded_sha256": "49cc52206ecf4949a2e2a2246c7cf1d27b8fdfa5b1b4e3fc22ebe0d589042304",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/real-model/real-model-low-2-2.json.gz",
+      "sha256": "371a8687c934966e8cd518006eed63e9ee64eedd7583967ffc59d0cb65019d89",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/real-model/real-model-low-2-2.json"
+    },
+    {
+      "bytes": 6830,
+      "decoded_bytes": 196159,
+      "decoded_sha256": "91e38bb92506d8ddae3e16daa0a3de52d362f2980565449849c064777ade9af5",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/recovery.json.gz",
+      "sha256": "5fff269c1271e73895379fac127c7448aace8ad47ef9eaafe69a3646b8ec7f37",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/recovery.json"
+    },
+    {
+      "bytes": 6509,
+      "decoded_bytes": 101662,
+      "decoded_sha256": "61e518a560a1f85be712465b9901f03bfc9960e54b7e4e7b84babf0a09407791",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/warmup.json.gz",
+      "sha256": "cdca08c6935de21a226291b72e429ad1e4de0d7ae06f22f3b2efd65260d2e1e1",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 448,
+      "decoded_sha256": "5de81de32f380f6aca1b35c978e2d23712a62e8363747df949d964084f670b41",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/assessment.json.gz",
+      "sha256": "2b6550c5660da86c039c42613f25d0b416cad211daeac22f80f414362cfb557e",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/real-model/block.json"
+    },
+    {
+      "bytes": 5529,
+      "decoded_bytes": 30636,
+      "decoded_sha256": "a7a7cc1fa70b24c7e725cb3be747a865ac429fad88c5df62b988b8fd8e50f11f",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/real-model/manifest.json.gz",
+      "sha256": "fb6df6bae211516d081975b9ab4eefd93a18c4d10e96f8e659f9e1329164927b",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/real-model/manifest.json"
+    },
+    {
+      "bytes": 1978992,
+      "decoded_bytes": 22107400,
+      "decoded_sha256": "00fd438eae4eabf4d5caa4e56dd7737179e4be412325b0166dce3fb1758e0304",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/real-model/real-model-low-4-0.json.gz",
+      "sha256": "e0b8b8aa3d90fb2aca9bbbed692b00844048828b439fcdf92b236465680f0c7b",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/real-model/real-model-low-4-0.json"
+    },
+    {
+      "bytes": 19649,
+      "decoded_bytes": 1236308,
+      "decoded_sha256": "69fca9193bb82f28a7492d4bda0047e853d5e487f1444995bd4ed6acd0d21e6b",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/recovery.json.gz",
+      "sha256": "44848e341bba207cbce2e74f9152610b4f38e780dd40711cc548bcac49d2c322",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/recovery.json"
+    },
+    {
+      "bytes": 6535,
+      "decoded_bytes": 101671,
+      "decoded_sha256": "aa444bf0c506e40c7ac519f3dbe4e2c4a1a2471520c8d2fd6d4f25a651905384",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/warmup.json.gz",
+      "sha256": "083a5571a74177250ffeae786802ef97df1f8acca750bf6dc776e097470c7da8",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 448,
+      "decoded_sha256": "346270ef7e3a995e1b45d07bc24c37559db8f92f02c4f2245198dd1869deb748",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/assessment.json.gz",
+      "sha256": "9bf90f532fe0871a7986ebafb67e0bff40c6f4dc15a545b35f20640f82235a05",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/real-model/block.json"
+    },
+    {
+      "bytes": 5536,
+      "decoded_bytes": 30625,
+      "decoded_sha256": "ac857aef21829b30ec6384aa4e5c5081b2d17226d09445b916d70fa703df74cc",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/real-model/manifest.json.gz",
+      "sha256": "85602fbd635a6be0538873a1cb03a3d549eb7d0660c6805e8e4577060206875c",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/real-model/manifest.json"
+    },
+    {
+      "bytes": 5686449,
+      "decoded_bytes": 31907307,
+      "decoded_sha256": "002339b393afaca892d5d5a9242af5d6c7c116fb488840906892cfaff8056622",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/real-model/real-model-low-8-0.json.gz",
+      "sha256": "03bf79315b0ad7085727116521675955b27c4df2fce6c985ed2d276abee4b5bd",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/real-model/real-model-low-8-0.json"
+    },
+    {
+      "bytes": 8025,
+      "decoded_bytes": 296761,
+      "decoded_sha256": "a9e1c56696589401ddd5e5eb336889dd3812bf526b9f031edf92f12629f465b5",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/recovery.json.gz",
+      "sha256": "65d4c944a8137f6bc0d714c59bb39bafb47f649656e6f1169ff62df161fccf9a",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/recovery.json"
+    },
+    {
+      "bytes": 6530,
+      "decoded_bytes": 101664,
+      "decoded_sha256": "111ed3094e9093a62a0fb2a8c935b21b194bd2fd3bb256f62ea910ee74d863e2",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/warmup.json.gz",
+      "sha256": "91b9e254d3f52102741aa984b1d6df036080aea93b33e872c7748db66d2b11cb",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 448,
+      "decoded_sha256": "022bee130ab260f42a7c7de038aca5b9931812369b605d7223d645e63e6afe5b",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/assessment.json.gz",
+      "sha256": "5d3fbf2002272626d99a84a725b0585af96d3622246f8b75bcecde8299d3f287",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/real-model/block.json"
+    },
+    {
+      "bytes": 5555,
+      "decoded_bytes": 30626,
+      "decoded_sha256": "5203e8312324822076490b26b2d26ce1edb77479eb4b77902e33e2abaa4ca194",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/real-model/manifest.json.gz",
+      "sha256": "21dd7f5ba4d6651c90a85084e4e3b1dab0221cf4579e141d4c825632a8c8f7ea",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/real-model/manifest.json"
+    },
+    {
+      "bytes": 5621435,
+      "decoded_bytes": 31593955,
+      "decoded_sha256": "d1cc8f7e0cb091478938bb89708dc7b83b6c0727644d30ebcf1c1e7115147d27",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/real-model/real-model-low-8-1.json.gz",
+      "sha256": "7b5c1e8db768778b98776dcb0ba0079746301212830c175ed5c866369757d745",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/real-model/real-model-low-8-1.json"
+    },
+    {
+      "bytes": 8234,
+      "decoded_bytes": 306293,
+      "decoded_sha256": "c471bb87d50b3baee1413625bc65adc4b3400dfa65fd08e9955dee0cb6fce889",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/recovery.json.gz",
+      "sha256": "c4698b18274274bba26c51aaf34156a69207c709521179e01e410936d59b8af2",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/recovery.json"
+    },
+    {
+      "bytes": 6519,
+      "decoded_bytes": 101664,
+      "decoded_sha256": "7f1b7a2704b3e6859a28316fee916ead0277c814b3ed39df037c0bdba5c03f92",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/warmup.json.gz",
+      "sha256": "6877f8ab7a13a7358e5d24de4aea5c7916c604937aab37fea531b9ce56bd08d8",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/warmup.json"
+    },
+    {
+      "bytes": 282,
+      "decoded_bytes": 451,
+      "decoded_sha256": "83e539809d8a965f31de5aa2da4b09598beb9fcd375c2b24934116affdf8bc40",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/assessment.json.gz",
+      "sha256": "9e3257242ed7c437e1e1c9685abd8bbe600faff68db53ae09b581d4955e38a08",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/real-model/block.json"
+    },
+    {
+      "bytes": 5531,
+      "decoded_bytes": 30636,
+      "decoded_sha256": "3300b3800141278bbb6761e343d625f68de66530c50627264e56ba88ce2ad018",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/real-model/manifest.json.gz",
+      "sha256": "376e2eb467b14cd83c0c5d99e93097e64c5b84ca44b4cefd704f28836a5ac6f0",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/real-model/manifest.json"
+    },
+    {
+      "bytes": 1296033,
+      "decoded_bytes": 16857033,
+      "decoded_sha256": "9357834614611812a135b65c04d61c54f81f28224ba9fa5bb4a11bbfdd22c78b",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/real-model/real-model-near-0-0.json.gz",
+      "sha256": "754829efddead67a04c31e06febdb8a1c45e973ed26b6b931a7d743ec096582d",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/real-model/real-model-near-0-0.json"
+    },
+    {
+      "bytes": 18555,
+      "decoded_bytes": 1145209,
+      "decoded_sha256": "c366236bf1587f98f0e087b77d01c9487c31c20e8cfdd33b96cf346c08728da9",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/recovery.json.gz",
+      "sha256": "e36bc8c6315fbe0a13a34700efa081b8fe7c090e7baa8583221ed42fc25c95ce",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/recovery.json"
+    },
+    {
+      "bytes": 6528,
+      "decoded_bytes": 101666,
+      "decoded_sha256": "c4d5bf3de47687761fac9cb01d54527381020a3b3c250de2b06ed574cac2385f",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/warmup.json.gz",
+      "sha256": "8429c7ae595d3fb46d12fa83936d66f2c37ba7e01fc3d50a6d8a58d4ee0d5810",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 451,
+      "decoded_sha256": "5d2147779943f36dd110b15c65ca6fd28f3e690f5363a7d491d8a4d910076bdb",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/assessment.json.gz",
+      "sha256": "a1a747cd205b99fa65c13ccc20060e5eb25517d2e26aeb3c48f4e4e12f4060de",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/real-model/block.json"
+    },
+    {
+      "bytes": 5540,
+      "decoded_bytes": 30636,
+      "decoded_sha256": "a0561040d779bbca082d405bb367cf16557b5feecc8dde156825f9c26f020f44",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/real-model/manifest.json.gz",
+      "sha256": "87eb5b1a5257fa2df0eedc2ae5fac730b0ae4c3131cd2faf6e2d94608bc27715",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/real-model/manifest.json"
+    },
+    {
+      "bytes": 1297078,
+      "decoded_bytes": 16521117,
+      "decoded_sha256": "96fb9165b6c4f1fcc18ebf0980f6447c52e4efddf24256161a6020e697caaa2f",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/real-model/real-model-near-0-2.json.gz",
+      "sha256": "d5dadb0381a24c2ce356e40e1e81565542cc1122336aad96f7be8fd379a3958c",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/real-model/real-model-near-0-2.json"
+    },
+    {
+      "bytes": 8208,
+      "decoded_bytes": 306255,
+      "decoded_sha256": "783e6516f2d8184b069941ca188e2aeb8a721a36cf2cd6fdac8d978324802b7e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/recovery.json.gz",
+      "sha256": "10aeb953d9f0b74619203b8839e7d60d9ca3df913c8e4f7807628bf14b202e64",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/recovery.json"
+    },
+    {
+      "bytes": 6522,
+      "decoded_bytes": 101669,
+      "decoded_sha256": "0e25e8e3c3f9f43956113cfa9f1638c7551c9e42b9cbda82b9201fe5fb4d9507",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/warmup.json.gz",
+      "sha256": "c35bd665ff1de1865675f590102f5955dae21b2c00886979b568138953291b0c",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 451,
+      "decoded_sha256": "f18d938f06839fa0e4b8865849738198fd08e3f031876c7a0eed720976c3523d",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/assessment.json.gz",
+      "sha256": "2993d5993db6186c7ca82c3fb0d755ee0caebb9e759f6f300d7706a4c9f619e6",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/real-model/block.json"
+    },
+    {
+      "bytes": 5549,
+      "decoded_bytes": 30638,
+      "decoded_sha256": "81ca85422eaf80cc54ba6709305791f7819e4ebdd145702ea87dc764bdbda455",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/real-model/manifest.json.gz",
+      "sha256": "bd2a721e9dec6469ecb9153efcb698a86b631894e286e260322a8aa33669d3d9",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/real-model/manifest.json"
+    },
+    {
+      "bytes": 1315200,
+      "decoded_bytes": 17544942,
+      "decoded_sha256": "4a710cc3cb757fef32f4a7b542ce1b0392416a7b5eb5e477434fc9334277a0c0",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/real-model/real-model-near-1-0.json.gz",
+      "sha256": "c477d695c7ef4f5306dc32b0c10d210f4965622f3c0cd998ac789989c5a6d648",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/real-model/real-model-near-1-0.json"
+    },
+    {
+      "bytes": 14366,
+      "decoded_bytes": 840872,
+      "decoded_sha256": "e2e2af291b0c267ee64c20a54cd9784dc5cdd92fd5d4ad57640ac44f71a31a50",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/recovery.json.gz",
+      "sha256": "96ee10f9af2e57c8d0725796ca4f62f431dba00f98fe8b66ecb1f19605dea946",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/recovery.json"
+    },
+    {
+      "bytes": 6533,
+      "decoded_bytes": 101670,
+      "decoded_sha256": "fa6772d9a0fc958ee25fffee1166bbb39166ff96ee0c994733a96bbc50db9d6c",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/warmup.json.gz",
+      "sha256": "8fc964d0585aadc382608bab8d6141b5156c4c769f69119ddd2fa2c22419a114",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 451,
+      "decoded_sha256": "b7b358e7b9bab5ff400f064e4e2b646f0f436f7c1873c30fc11658c0f1a96d14",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/assessment.json.gz",
+      "sha256": "a05b37ffaf55ffe6da091f7f4820fb0eb557d73622557a20d002024922239d08",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/real-model/block.json"
+    },
+    {
+      "bytes": 5548,
+      "decoded_bytes": 30632,
+      "decoded_sha256": "e40449ad94f2e9d6c813aa18b507e2638227301e829eaf0a86d31641089feb44",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/real-model/manifest.json.gz",
+      "sha256": "f297563a23c8c1a3bac2e8239ff450dccbe8a42fc9cad15f14c221d2aefc5fb6",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/real-model/manifest.json"
+    },
+    {
+      "bytes": 1265162,
+      "decoded_bytes": 16629627,
+      "decoded_sha256": "08f0ba15c547dc4d8465771b17d67f469b27bbf0e835cc378b07c749a1b56ea9",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/real-model/real-model-near-1-1.json.gz",
+      "sha256": "c0933b7968a988aa826caaa0b574047eec9e47b30ef38f9ec10218b0efc95452",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/real-model/real-model-near-1-1.json"
+    },
+    {
+      "bytes": 8048,
+      "decoded_bytes": 296756,
+      "decoded_sha256": "195d27903b93d6b0211fdedac17fef47b213667aa254694ea4d8ef6a625da817",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/recovery.json.gz",
+      "sha256": "fdbe4843f4a806f11dece17d7d6bf8cfcbe041bbdf37e20d8e43324d5de2bbab",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/recovery.json"
+    },
+    {
+      "bytes": 6535,
+      "decoded_bytes": 101668,
+      "decoded_sha256": "6d1343ef75672c4691bd977eaf1195ddae54372be160e0923d0e4a4344748183",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/warmup.json.gz",
+      "sha256": "4a3a2d002853e46f6e20d7f8e5b7ac4f70fea99622d52ac8bf41629693606903",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/warmup.json"
+    },
+    {
+      "bytes": 284,
+      "decoded_bytes": 451,
+      "decoded_sha256": "9999fe3ff7801f2f87a4ca58fd72af67c769e60279d560e7fb5e3ef31f28ebbe",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/assessment.json.gz",
+      "sha256": "9a9ad7c8069c64c7fcb0ed8d4d113b56480f6212d46e11f8f33019047d65a9e4",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/real-model/block.json"
+    },
+    {
+      "bytes": 5540,
+      "decoded_bytes": 30633,
+      "decoded_sha256": "d7498ba9f70480436beef8b6a45940abf82ac2d1724e9c1dcf330c6a479ac9d0",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/real-model/manifest.json.gz",
+      "sha256": "6b5fd8577ba0195c48923360e1d7ad232150d6d297d74102bb8f90c7119f10bb",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/real-model/manifest.json"
+    },
+    {
+      "bytes": 1597784,
+      "decoded_bytes": 19700965,
+      "decoded_sha256": "3517adc04fadf33ca7c58b16ffa038f71b8ad7707c9b2faedc59f723b371d708",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/real-model/real-model-near-2-2.json.gz",
+      "sha256": "0b0d1e1d8bad4ca6c7b24a3cd816cfd60d95ee5ad99d6ab7b95f411ba73c61ec",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/real-model/real-model-near-2-2.json"
+    },
+    {
+      "bytes": 13542,
+      "decoded_bytes": 729385,
+      "decoded_sha256": "be33ca9da0a83f405ec396522f9184925f878862bb467b747a82b29cc1220e75",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/recovery.json.gz",
+      "sha256": "b6c5aee262e58f71f22ed7c451ecb50f47b7d20b52424577b27ae11af607b18a",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/recovery.json"
+    },
+    {
+      "bytes": 6529,
+      "decoded_bytes": 101665,
+      "decoded_sha256": "1602fec54b3ebbccf5dfc086dedccf65b5fb0fa0349a621a3ed2412e0f3cd329",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/warmup.json.gz",
+      "sha256": "076293bd9c79d384e43d254d7bba0997d44a20bdce7e97eae29034b6153a3ffe",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/warmup.json"
+    },
+    {
+      "bytes": 284,
+      "decoded_bytes": 451,
+      "decoded_sha256": "631af084178240bd67f5d2b2afa0b4a6097cbd1368f2cf9be8e8e5164deb548d",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/assessment.json.gz",
+      "sha256": "73cdafe29f26ae4cf17902866394d2334649c71c827a56fbda6804301c8ca7cf",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/real-model/block.json"
+    },
+    {
+      "bytes": 5535,
+      "decoded_bytes": 30637,
+      "decoded_sha256": "013e78bf230f51872b1f30146ed3e7159a1c4073f6615617f24139552131b5a5",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/real-model/manifest.json.gz",
+      "sha256": "411656fa57db0da13a9a8078f096d47ed8aabaca15eaa1c4b44a416933748f17",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/real-model/manifest.json"
+    },
+    {
+      "bytes": 2252884,
+      "decoded_bytes": 25189516,
+      "decoded_sha256": "58dc005e70ee39ec22278aadfbb4c67540b46b295d660159bdd5678529de585a",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/real-model/real-model-near-4-2.json.gz",
+      "sha256": "e02c574eded1543448e9a3d7b3c000325dc93f3adeae92d226d59440b20ebe11",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/real-model/real-model-near-4-2.json"
+    },
+    {
+      "bytes": 3154,
+      "decoded_bytes": 27101,
+      "decoded_sha256": "acfdfd36c57a58fb89388ee81a9584761868141aadc26867469bded4e3cbf0db",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/recovery.json.gz",
+      "sha256": "edf66308d23130aa8781a45f4099df83f8aa1aa65da6464632f2c7ab23103235",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/recovery.json"
+    },
+    {
+      "bytes": 6525,
+      "decoded_bytes": 101659,
+      "decoded_sha256": "4331f096c215501660c9eb876aa51df4ff24951d8789918bc6d72505b5e0915c",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/warmup.json.gz",
+      "sha256": "6ae2bc78a15afd7528c4cffbeffef44d50faabf8dfe63959d11fed1cf9649ea5",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/warmup.json"
+    },
+    {
+      "bytes": 283,
+      "decoded_bytes": 451,
+      "decoded_sha256": "e63c855aeca6f1a0dcaaaef12517ccae223f4564ef5a66c45ffa74933d3051fb",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/assessment.json.gz",
+      "sha256": "82d7a9c40677e006b2db399aed5fb0d55a9389d7abfa77370ac8fc44d2635b37",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/real-model/block.json"
+    },
+    {
+      "bytes": 5548,
+      "decoded_bytes": 30639,
+      "decoded_sha256": "75fe47cc65f962b8778f3bf2738f2821e1c86663179a7b3b43df2e0e1e19cf2b",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/real-model/manifest.json.gz",
+      "sha256": "e905f4610e114c1ef888e43c71e5a4c8ca919b29d1bdeb9e7f331baa88370901",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/real-model/manifest.json"
+    },
+    {
+      "bytes": 6479352,
+      "decoded_bytes": 37001635,
+      "decoded_sha256": "c60caab198e1e724424bbfbd0d7f59d0c3ea443e35a506d33f103e8c4c867008",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/real-model/real-model-near-8-0.json.gz",
+      "sha256": "6bfd128b389541c96b524542ab1c1815fc406281532deac38b09b0c3fa43bae1",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/real-model/real-model-near-8-0.json"
+    },
+    {
+      "bytes": 8220,
+      "decoded_bytes": 306258,
+      "decoded_sha256": "292bb181ca184ae461b348dcadc9d434c41d0907292b7e40b8fc7afc9da31339",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/recovery.json.gz",
+      "sha256": "6d0192bd5f0cdc85e943b79020d1789c8ef88f15bc5fe44f699e03230f03c606",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/recovery.json"
+    },
+    {
+      "bytes": 6522,
+      "decoded_bytes": 101667,
+      "decoded_sha256": "15b067e95137e2a0e09ff5be59bce545b510b6587fa85e209cb1c0417ad89d16",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/warmup.json.gz",
+      "sha256": "17879a147256beb19ec1dd22348c85b30650c39ae83c873c03e9cda82784000a",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/warmup.json"
+    },
+    {
+      "bytes": 284,
+      "decoded_bytes": 451,
+      "decoded_sha256": "e36e87776e3e1b22ba248b8d6a12ba4748602051b94edf65f02853b048abfa8d",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/assessment.json.gz",
+      "sha256": "ed4d4b5a6a532597cca714aab09848b3ae284953ef42d7fbaee8fca52351388e",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/assessment.json"
+    },
+    {
+      "bytes": 76,
+      "decoded_bytes": 76,
+      "decoded_sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/real-model/block.json.gz",
+      "sha256": "6e64f4d94463fa292b691a40551460cb871b4d483864fab3984a1ddf0754d4b3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/real-model/block.json"
+    },
+    {
+      "bytes": 5533,
+      "decoded_bytes": 30632,
+      "decoded_sha256": "cd83cc4a9eb13d5e870b3ccdae534bcc5237697c800a1070f74ae29780abcf3c",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/real-model/manifest.json.gz",
+      "sha256": "c62933dac0bae04cfa1ad882603c68f5bb7088f050af378fb208392a3aca2c3d",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/real-model/manifest.json"
+    },
+    {
+      "bytes": 6279985,
+      "decoded_bytes": 35639421,
+      "decoded_sha256": "d65d11ffd34af3126f140d3d800f734ce731615c8035f38a170cc2302a0e1dad",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/real-model/real-model-near-8-1.json.gz",
+      "sha256": "fa705dc577fecb13d0c61fa3bf22f20908bb4681f71356b3fc2f63e867a9b135",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/real-model/real-model-near-8-1.json"
+    },
+    {
+      "bytes": 6896,
+      "decoded_bytes": 198259,
+      "decoded_sha256": "8ce95177a61cebd4defbc97fc4f6bd04bbc976185cbc1a297cb0832953832a6f",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/recovery.json.gz",
+      "sha256": "79fd0ff40f36f5c71582133199d74de3009e1f04460824eb8d343a17fdf779d5",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/recovery.json"
+    },
+    {
+      "bytes": 6527,
+      "decoded_bytes": 101665,
+      "decoded_sha256": "056c6b215c253dc014ea1043609363489db53742ea06b9d85423f5e865c7e6e5",
+      "group": "continuation",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/warmup.json.gz",
+      "sha256": "227353e126c573fe93d4426ebe77e403d3929d2988346dc62addaeb6da3f096f",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/warmup.json"
+    },
+    {
+      "bytes": 132,
+      "decoded_bytes": 155,
+      "decoded_sha256": "2ade99e2986d76ddb441a46f260313e17d0cb2c5734a24865e32b74b2d172981",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/block.json.gz",
+      "sha256": "1e08b5cb8db96305de18231a93c3aca46f784988c54f0099edbd72bcdeeb3b91",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/block.json"
+    },
+    {
+      "bytes": 5546,
+      "decoded_bytes": 30572,
+      "decoded_sha256": "5cfcd607184ec476dea3330449dba239cdc53fc4a23aaa137dd3bddb5e7186e7",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/manifest.json.gz",
+      "sha256": "a2a73070d959cf0d895a273e5c3492236b10a07e1b5cc1f5a7b5701f2f7882d0",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/manifest.json"
+    },
+    {
+      "bytes": 1800142,
+      "decoded_bytes": 23358279,
+      "decoded_sha256": "c11804355194b62b5a91d95ab6cd9e9e40e6117df78af054e3b43e4e5bfb2826",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-0-0.json.gz",
+      "sha256": "963abfd8b3a0e1af7f682d686a54e25cfc038698c5efff9cf96d5054d28f68c5",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-0-0.json"
+    },
+    {
+      "bytes": 1357105,
+      "decoded_bytes": 18382468,
+      "decoded_sha256": "a9869ac138b618505c6639c0dfaea72add2802632e70568a82c0b7fd4e4115fe",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-1-1.json.gz",
+      "sha256": "40868aeec8465c7cbc14a2704d17ebc15b5ea116c5dd34116481b0900b1a5205",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-1-1.json"
+    },
+    {
+      "bytes": 1355940,
+      "decoded_bytes": 17906843,
+      "decoded_sha256": "275aed96ce02735ec8a68adb8c83d94994833ec7bcbe2695e335d6e4ab6e8c70",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-1-2.json.gz",
+      "sha256": "3a4929a6cb9199065ad42f27c1f2df6876167ce1cc601e8efe06d19b77c7cb6d",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-1-2.json"
+    },
+    {
+      "bytes": 1662175,
+      "decoded_bytes": 20702078,
+      "decoded_sha256": "6653f923dcdcf582692c7ca74126a9003c1f6d99c82f0bcb3d781d87cec3ba9f",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-2-2.json.gz",
+      "sha256": "cd1161553d390d00b76ebd1d23452f49a190dcd444efc2a33ee92417dc858026",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-2-2.json"
+    },
+    {
+      "bytes": 2264167,
+      "decoded_bytes": 26262865,
+      "decoded_sha256": "90bdd5fcf26649ad67fcf0b1b8b7e7889281c6aeb122dfa67e640813fc0b1d3a",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-4-2.json.gz",
+      "sha256": "c1c59e155f112731281c1681df62d1e6d67e19b92bfd16d7f67afdb116044bc7",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-4-2.json"
+    },
+    {
+      "bytes": 6492079,
+      "decoded_bytes": 38317957,
+      "decoded_sha256": "ec886fcbd3a4fef9974adb1a670b2f2b47f53282a013452e360d3adace6ca9eb",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-8-0.json.gz",
+      "sha256": "606178c6d4c01b16369be59f32859ad74c7b6ebc230f3614a93c15ce61f7b060",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-high-8-0.json"
+    },
+    {
+      "bytes": 1129988,
+      "decoded_bytes": 14572107,
+      "decoded_sha256": "a0ec8de6518664b6b9acd948eabb5f4fcb36202d7301396a1846996f04d7a836",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-low-1-1.json.gz",
+      "sha256": "4a43a6822705ebb8f78600dbd8044c8b4a5dee88a42f1ad56276f19153aae72e",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-low-1-1.json"
+    },
+    {
+      "bytes": 1950512,
+      "decoded_bytes": 21888473,
+      "decoded_sha256": "f184f48d0334362a2a7410bbab871996512fbc5a2f7851ad594b4b5f799fc46a",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-low-4-1.json.gz",
+      "sha256": "496553ee8a35a7a55c8ede9f116ddd676b082fa9b011098ee891ea86e1110117",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-low-4-1.json"
+    },
+    {
+      "bytes": 2191064,
+      "decoded_bytes": 24129345,
+      "decoded_sha256": "17cdaba53304a4659c46433c47f8406b6263c177afa7891cfa976044aa06df44",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-low-4-2.json.gz",
+      "sha256": "5e7d22677930c8660b0cf55d46cf5171f5adc26eef7c993f78da91da78779d65",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-low-4-2.json"
+    },
+    {
+      "bytes": 6193476,
+      "decoded_bytes": 34813897,
+      "decoded_sha256": "7606e968ec85f1ee2d3d451c47d858fe9c054b4051b1303b0daf3e362ca47689",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-low-8-2.json.gz",
+      "sha256": "dfe8373f14f1b1174b1c6b41c3ea84a9d581869b8f6708c2f856611c8b380160",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-low-8-2.json"
+    },
+    {
+      "bytes": 1258531,
+      "decoded_bytes": 16012305,
+      "decoded_sha256": "41d8ccf3f54e355576cdfe7b6632c24f361f0fd26009361ea36d239bc45f2746",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-0-1.json.gz",
+      "sha256": "123fbae1e172a84c77a7a4e0cb13934078cf93546972b9d8fe1e0287d630d26b",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-0-1.json"
+    },
+    {
+      "bytes": 1291637,
+      "decoded_bytes": 16949426,
+      "decoded_sha256": "db74856f60d90af7b540b0bdad78801097ac913988f84d43a3d8ae14c682764a",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-1-2.json.gz",
+      "sha256": "6a215f7e3f6a9987197e2a0c32c55589bfa657088c6ac1a0b748b6627a881703",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-1-2.json"
+    },
+    {
+      "bytes": 1639807,
+      "decoded_bytes": 20477602,
+      "decoded_sha256": "a9c48a33d1ecc643a5ff286fe219d315b0dbb4f24b42e9a54be5ccae388b31cc",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-2-0.json.gz",
+      "sha256": "a28052224eec1176dac5d0a2a3e2d39f53c81bbfe0c02c3ea975c627dc04cdd3",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-2-0.json"
+    },
+    {
+      "bytes": 1577179,
+      "decoded_bytes": 19491231,
+      "decoded_sha256": "c087aa0276e160dd494ee59f4082153127acb9c392e7e8bbad6eb011e32e8604",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-2-1.json.gz",
+      "sha256": "5ab1176f23f27deb0fa7d2441705845c76949570a1822d143daff323d0b0dff8",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-2-1.json"
+    },
+    {
+      "bytes": 2274949,
+      "decoded_bytes": 26016174,
+      "decoded_sha256": "dc5f4b2833c49940f3c887f7c5684607bac3a135fc10c3323b89bca642b1c8d5",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-4-0.json.gz",
+      "sha256": "f0772a2d147cef8a6c57c618f9bf1224ff6bc355653595e3832344080d7d708c",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-4-0.json"
+    },
+    {
+      "bytes": 2142321,
+      "decoded_bytes": 24694048,
+      "decoded_sha256": "cd3edb2475b535e03664fa08e8f251d5a6b6d41acd5199e1b23c3710697e1ae4",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-4-1.json.gz",
+      "sha256": "687d3e99705171cfe5a90e052239632ed166b41fb3e1a8a56f3d0ce6d0e8e490",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-4-1.json"
+    },
+    {
+      "bytes": 6357316,
+      "decoded_bytes": 36240414,
+      "decoded_sha256": "f6bfd1a899e0d862ca806dae3faf23a4137fb0fb92b83371f167f9461001ce2e",
+      "group": "prior",
+      "path": "archives/cpu-native-baseline/files/runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-8-2.json.gz",
+      "sha256": "8a180ce6e322aecfe448335f74c9b66dad2377f0f8b53b29360edffb3db314e9",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-long-window-partial-preservation/vm/runs/v2-ollama-fra6s004-cpu-long-window-real-model/real-model-near-8-2.json"
+    }
+  ],
+  "git_base": "db31fdad5e022ae165c1661c41632c1c9a761b84",
+  "protocol": {
+    "path": "protocol/ollama-fra6s004-cpu-continuation/manifest.json",
+    "sha256": "b44236e661a89971c427f4fe712895031c9f896aa7629c94e7e86420aba0274d"
+  },
+  "schema": "alien6-cpu-native-evidence-v1",
+  "source_id": "sha256:bba1acee1beb772ccb9d45a18bb3e30c88dc5e05f53e7649d918db4d26afdd3f"
+}

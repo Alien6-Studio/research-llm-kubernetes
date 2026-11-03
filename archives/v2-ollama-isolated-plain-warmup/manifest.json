@@ -1,0 +1,14 @@
+{
+  "exported_at_utc": "2026-11-13T18:16:51.341218+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-isolated-plain-warmup/warmup.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-warmup/warmup.json",
+      "sha256": "ecb489b1df0eb412e583e80090c195c871f755b79e1eed2154570e8d495922c4",
+      "decoded_sha256": "896cf17982de1c2d1df3bf2db57345bf325980f1f37a101efe4b4a62d28ea814",
+      "decoded_bytes": 77886,
+      "bytes": 3294
+    }
+  ]
+}

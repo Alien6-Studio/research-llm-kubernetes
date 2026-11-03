@@ -1,0 +1,932 @@
+{
+  "files": [
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/initial-recovery.json",
+      "bytes": 23658,
+      "sha256": "5091cda60ed64a8dea1225236a5411062c6b6813847552f8307b4f092d74a32e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/network/control.json",
+      "bytes": 572173,
+      "sha256": "0aaf24ed105cb3b219af90dd99ec181b8d99eb1c0fb4798ed411422171f42a7f"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/block.json",
+      "bytes": 77,
+      "sha256": "e90fe7883307cfc47722a7c78fdbc2066d260a0a8b154c33553b1d23a905a13d"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/manifest.json",
+      "bytes": 29881,
+      "sha256": "c637c2582a9f8abe399be0022571c239bad26d991204d1ff3975a373add8c083"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-1-0.json",
+      "bytes": 16793778,
+      "sha256": "aab75d21504fac1c98c9413fead063a4b60cce0a64e0105bfbd0130b366964b5"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-1-1.json",
+      "bytes": 16574885,
+      "sha256": "abb3ef5efffb4a0ad275810a6bd16b2651b424664c3f1852909e468585267b5f"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-1-2.json",
+      "bytes": 16204660,
+      "sha256": "a4b69b51bffa48ca47dc5d7a5e79e86eac40cf7db444536e53a6932411b73848"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-8-0.json",
+      "bytes": 36379417,
+      "sha256": "24cbb4b3cf8b7337f23f131ed59a5498f67de7a09b333f617b6ca5991dd3a5dc"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-8-1.json",
+      "bytes": 36156582,
+      "sha256": "06420375f9e1e7b0d48b1a8d6f8b5f019469044604c790c026fdca633bbc2aa7"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-headroom-8-2.json",
+      "bytes": 35436817,
+      "sha256": "658aca0ca491b8698c9ed94c3d87c9954428944ae2457df7110de596398ac6ab"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-1-0.json",
+      "bytes": 16088120,
+      "sha256": "10343dc77eaffaabadd6fff04a1494b3ae7e7ecbe53a6ef832c41c599d4a6e51"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-1-1.json",
+      "bytes": 16077915,
+      "sha256": "d495c90639c04016e14b764db9073d97559d4d7b1479d9eaf458c3256b718aa0"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-1-2.json",
+      "bytes": 15872825,
+      "sha256": "e84083a62753c16448f84406a9c3fa0ced41f1c0bdf060eb45176167bcbe9853"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-8-0.json",
+      "bytes": 35616623,
+      "sha256": "517048584eb20d010f9a4239e282f79a1f61ad4280ffa9d7800217b4d4559328"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-8-1.json",
+      "bytes": 35660352,
+      "sha256": "0069e42e7205084fc70bb25c28b7f44e9b6fbb5b1e5984db33c8bc253d361d06"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/qualification/model-qualification-high-8-2.json",
+      "bytes": 35408062,
+      "sha256": "265a9bc40c5f0c2e57ac0a482407950303a49d30384a93c0a3927e23a84c9478"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/supervisor-final.json",
+      "bytes": 104290,
+      "sha256": "a83827a4544fd3d7b102297c22b5423599038ee6cdc07ca0e912393b5f1f3f2a"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/assessment.json",
+      "bytes": 451,
+      "sha256": "cb45537676e3870b39ae3bbcf3bbe8000871b10ca8497e2f31e940f62940e32a"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/real-model/manifest.json",
+      "bytes": 30640,
+      "sha256": "3ea17caae0c0049ccd82c3904506d4d0d584f62dd2456c0c7baab7186e7a9526"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/real-model/real-model-high-0-1.json",
+      "bytes": 17396635,
+      "sha256": "02caf7bfddebe392de4972c9211e15c7329f659ada459e7642cb36275cd2ae84"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/recovery.json",
+      "bytes": 296761,
+      "sha256": "e7c1fd0e78791e817dc2eaeace46d07bcd2dce78cee36bdf4cefa356818435c6"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-1/warmup.json",
+      "bytes": 101669,
+      "sha256": "01c59f942c4a65d79b3d4fe382d6878401680edd380185299a9d55d417ea83bf"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/assessment.json",
+      "bytes": 451,
+      "sha256": "d9452271dc95402e6f78eda43957b7a44bc133f9aa2666ba34e2fcc0c28fb875"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/real-model/manifest.json",
+      "bytes": 30636,
+      "sha256": "bbf698a38f12b9e03190ce453ac83ee9594c45b7880450c905a359adcc6661a6"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/real-model/real-model-high-0-2.json",
+      "bytes": 17007845,
+      "sha256": "58443dfae8b9e757623da909d9303fa8a38a05e7087d79417f6fd189ad676a90"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/recovery.json",
+      "bytes": 782247,
+      "sha256": "9a9ae8fa695f5ca0287b5720e2dba02d7e9763debe5e866fe80c700b55d501fe"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-0-2/warmup.json",
+      "bytes": 101667,
+      "sha256": "4a6aedd3c94dbd2da2e58bab591b4d3f996a418b18fcba929ed2a82091869779"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/assessment.json",
+      "bytes": 451,
+      "sha256": "8765bef9af9f76ce2ac3097ebb27189986822715b2cb38b9a00235db5ad20b2e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/real-model/manifest.json",
+      "bytes": 30638,
+      "sha256": "648633b4cfc56a08a54715d70064a8675cff261eac5a69af21b251cb09c773c0"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/real-model/real-model-high-1-0.json",
+      "bytes": 18266753,
+      "sha256": "278398dd6862a121fd79743718e635b7d6dd0299b7212a3f67e51e75297f60d1"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/recovery.json",
+      "bytes": 306259,
+      "sha256": "fb222d10c1be1869c3962e70aa12de97801a51fd5f43273b38e259143cd8cd6d"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-1-0/warmup.json",
+      "bytes": 101672,
+      "sha256": "abd14d893e3406c77fba22afe547d91fd5d83587d4621e4d4c1c169cda8d15da"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/assessment.json",
+      "bytes": 451,
+      "sha256": "91f900ab547c466817f05007ab107c6bf0ba38a09c58cf1160816e4e4689dcc5"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/real-model/manifest.json",
+      "bytes": 30639,
+      "sha256": "fbcc0cd83f26dabeaf3ac3ddabff6b9c061257b7aff1ae912317a70dee86503e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/real-model/real-model-high-2-0.json",
+      "bytes": 21074029,
+      "sha256": "fb5e4b7022a665e4d3bd80a30099d7a43bc7b6fc7dff14b372254ac18ba22285"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/recovery.json",
+      "bytes": 498108,
+      "sha256": "e3dfcd2c1847adc20e99312c1328108d341eff0fd0aded90c3276de7a7517e79"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-0/warmup.json",
+      "bytes": 101669,
+      "sha256": "b8c0921318f269651fcf1a10d72060d2d3030322d9835afcda624adc2448dec5"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/assessment.json",
+      "bytes": 451,
+      "sha256": "11678b655ca5f840a6df2cf3013834b044693ad17e617b6b1343b9943bfa390a"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/real-model/manifest.json",
+      "bytes": 30638,
+      "sha256": "b56607503383e0217cd0e80e35597b4c44fc335101fd52653e2c1eadccd8cc8f"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/real-model/real-model-high-2-1.json",
+      "bytes": 20926238,
+      "sha256": "ada19d6d25471fdafad7fefc9f0f5986b084c67cf5aae383daf5b21e19c19d2a"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/recovery.json",
+      "bytes": 1178135,
+      "sha256": "6c1c23d45d69e4929db6b7639b379629ac688584ac336ddb22dfcdbdddbf62d1"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-2-1/warmup.json",
+      "bytes": 101666,
+      "sha256": "900c8d4fe25eab35b29fd7a3fee834c3e67e5a7971b9c3384294ea522eec014e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/assessment.json",
+      "bytes": 451,
+      "sha256": "b500e80f8bdc833469fd3ef01f9a7df15f82729b88d3d564c1a5b20532b80f93"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/real-model/manifest.json",
+      "bytes": 30636,
+      "sha256": "6fec66d29a957adb10f3dfa304835ad227e5ecf28773f3ecbc09d2d53c43173e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/real-model/real-model-high-4-0.json",
+      "bytes": 27996808,
+      "sha256": "5629743e53c18877098f9773f336e9c7049daffcaef1a44e21f20402e08b5111"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/recovery.json",
+      "bytes": 682405,
+      "sha256": "ff7f37f6470311d5bff9c8f78fcc4d684983692beab650a59b016d6a5057fbc4"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-0/warmup.json",
+      "bytes": 101665,
+      "sha256": "f03c5dd2f8425ba9e2f080dc2fbd01dbf6e7382e93e695c1ec2c45b184f63b33"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/assessment.json",
+      "bytes": 451,
+      "sha256": "68170e7b2374652035e5a0d8b4b892406e1707b671d48a191cc8311f86de8c25"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/real-model/manifest.json",
+      "bytes": 30636,
+      "sha256": "04885ab7afd29be6dfdd8a09efd2d63d3072f4ed557f920f79dbf98c8ff0c6f6"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/real-model/real-model-high-4-1.json",
+      "bytes": 29562802,
+      "sha256": "9403670273df6975eade2874cbc9ffc49a0e023a0a71fc2560ff5c051e1ce885"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/recovery.json",
+      "bytes": 782678,
+      "sha256": "ef6821067cd987a9fd602587b26cae3f919d512ea09a67a32290acbd78ac79cb"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-4-1/warmup.json",
+      "bytes": 101670,
+      "sha256": "c293df0468786d3eb1e6456286128c89718c40dd5bc06ef6284db58696c7c122"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/assessment.json",
+      "bytes": 451,
+      "sha256": "cbc111d2d1677ba7acf5f649643a92635abc786771a9a8a63a8acb32885b1691"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/real-model/manifest.json",
+      "bytes": 30639,
+      "sha256": "5009bf18c6a5362ada9676623ca6588882b79a1ec8dae2f47ff232f5a4aad49a"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/real-model/real-model-high-8-1.json",
+      "bytes": 43075171,
+      "sha256": "30e2655dbc2669bc1169eb8f7a7a659d5987a750eba9a7e1e176f0de129ddb67"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/recovery.json",
+      "bytes": 1059875,
+      "sha256": "3f9d92c524197cb83e3785ab7697a35090723cb6b9bb753ad46824150d07ee2d"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-1/warmup.json",
+      "bytes": 101673,
+      "sha256": "532d37c50f4bdf9e3b67c921f727f76e112ceb470713144674128eedf4fb32c4"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/assessment.json",
+      "bytes": 451,
+      "sha256": "0ebfc19c2242280fcb4648a2ec119adc499bcf696eed8ae545e27285126d2ac7"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/real-model/manifest.json",
+      "bytes": 30638,
+      "sha256": "2064def19cfdbb29cfbb0c5a816cd6390d789a1168269f91569d011f83034cdd"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/real-model/real-model-high-8-2.json",
+      "bytes": 37394641,
+      "sha256": "ff4510d55b7694d9c260d6f8f3f35a6ba2e43c1d71cf8591e31692ff29fc7e0f"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/recovery.json",
+      "bytes": 838910,
+      "sha256": "59e3bfc25dc88c0ed7ccbefc386d703f36a05ceab2317afdc15845b2d16be699"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-high-8-2/warmup.json",
+      "bytes": 101672,
+      "sha256": "1a4c29df8a65da25e69c0e0c393a50591a6c8e3e9886903e3487ab3eb775f584"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/assessment.json",
+      "bytes": 448,
+      "sha256": "3266cb3657c1bab646b556647803d22dbf61bfd79144605079ec39a09f614740"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/real-model/manifest.json",
+      "bytes": 30638,
+      "sha256": "d1c8c85692ec421704a69c6a33cbfaadde1c773ac67a8d36ff1c5bdd241b3126"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/real-model/real-model-low-0-0.json",
+      "bytes": 14560430,
+      "sha256": "0d858e60b6684e99cde638241b54cbc4f2ec47ff0322e44959037e8beabbd429"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/recovery.json",
+      "bytes": 1086902,
+      "sha256": "8e6d01ff06752e5b60d39b73572d18708aa738fa348a2e40b1d4707734875c01"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-0/warmup.json",
+      "bytes": 101664,
+      "sha256": "a9d7a01bdd88c693d059a2836c6b0a6e30e1513b5f180c75582aef5db3fa833a"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/assessment.json",
+      "bytes": 448,
+      "sha256": "b76463c5e7bffd3479021d8e0417d03d2deffd6bf1453f967432cf595b307561"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/real-model/manifest.json",
+      "bytes": 30630,
+      "sha256": "47442a80a3c5b4865dd020a0f98d4c6705deff2eb92eaa7584a6eb3beac07c41"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/real-model/real-model-low-0-1.json",
+      "bytes": 14403082,
+      "sha256": "0eb03410b2d2677099e927e115a15556266e6e086557189727e18770431a53d3"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/recovery.json",
+      "bytes": 306257,
+      "sha256": "9d74d0c8ef59ca0e3a5664c09239f5815f3b8575ec6dcdb6b2aba8b7b9612b6b"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-1/warmup.json",
+      "bytes": 101664,
+      "sha256": "339064bf3f74c091ae0ce380f3ac6cd35013097e09bb6259f460d3471a25edb7"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/assessment.json",
+      "bytes": 448,
+      "sha256": "85ba929602faf31880091cb2cf2aea28ea76c37545460a0639331bc6d2861a1f"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/real-model/manifest.json",
+      "bytes": 30632,
+      "sha256": "85da4633951ce097eec578cdad8da54f0670aa148e3fb9270c78ee1ea85ed8a5"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/real-model/real-model-low-0-2.json",
+      "bytes": 15907209,
+      "sha256": "fa3c8fe85edb2c779e27a10ad34b190f804ecb9e36147251e8d507a4addafca5"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/recovery.json",
+      "bytes": 630688,
+      "sha256": "664a660b39084ff420cb1520f84923a3ba50baa198d518c4866f7cf6c3ec69c5"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-0-2/warmup.json",
+      "bytes": 101665,
+      "sha256": "451d5876f490203db42bd79811b28c2d9f1d3b3b54c3f9d90b5a8e959e9a6410"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/assessment.json",
+      "bytes": 448,
+      "sha256": "53f3d45d4d1a10dc26f6a391bc91f0ee71d7d0ea53e95fccb2a2beb82dd83d38"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/real-model/manifest.json",
+      "bytes": 30636,
+      "sha256": "a791ff5b7e7eb96c0672dac8932959a05c7160e9bb626c7f8e6e55aa30d4d9ee"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/real-model/real-model-low-1-0.json",
+      "bytes": 14756412,
+      "sha256": "0e90d4d75d635794d6c4b4fda64b37e1e89da2a68851a0313b18d4126c7d82ff"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/recovery.json",
+      "bytes": 1164656,
+      "sha256": "aa1937f0355539e717a55c4625fe15dbf47bbcadd0c224094472f65c4a96fae2"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-0/warmup.json",
+      "bytes": 101669,
+      "sha256": "a6bd31ff5bcc228de2963e0df9f08ef45569f7b029f09733db8bc2d517168e87"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/assessment.json",
+      "bytes": 448,
+      "sha256": "00559230d7abe956541463fc5487c6db312e2d634a11ef80944f27a19921da5d"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/real-model/manifest.json",
+      "bytes": 30630,
+      "sha256": "34626166acd0702c18cdaec297ef5fd13fad792511c07d31c4465ef1fc735782"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/real-model/real-model-low-1-2.json",
+      "bytes": 15979306,
+      "sha256": "5cb464a5c5de7efc3ffc7626f118c6f54da2f47b8c44fd315b34dff6b6ec46a6"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/recovery.json",
+      "bytes": 498115,
+      "sha256": "3ee8268ade7d1ef54181b350a55d69116fd026babce5bc0f6ca72da893e58c1b"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-1-2/warmup.json",
+      "bytes": 101662,
+      "sha256": "0f60f4e77abbfa697d309e1cdd419904a04ab85587733824b0739f5985a24272"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/assessment.json",
+      "bytes": 448,
+      "sha256": "2e479c230b282f7b3b575fde65e572b8111e6b3b0108e8745a384bc8ccae3044"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/real-model/manifest.json",
+      "bytes": 30630,
+      "sha256": "b16e63f1d96aec47f8c45d1c3d15f91314d4ae2ab436a8899ae734c9a6c1c07d"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/real-model/real-model-low-2-0.json",
+      "bytes": 17192518,
+      "sha256": "69c38fe2fb3978514f96ccb24ad77bca324e929b8baab33a557b590af97809af"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/recovery.json",
+      "bytes": 196161,
+      "sha256": "5c9daeb25c8022cce19b5040d832173612cc8d3ab2723c183e234d739d743f30"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-0/warmup.json",
+      "bytes": 101663,
+      "sha256": "88e24e79f298ccfa40afc416630bc69b5b164b8391966288f89d49e2df94596e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/assessment.json",
+      "bytes": 448,
+      "sha256": "b7821217b097fd78d67034f756c3515dca0a1ac54bf7338833061cd9f3adf2bc"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/real-model/manifest.json",
+      "bytes": 30631,
+      "sha256": "cd0ab7dd133fb8fb6fcd9d600ccab35708f082d7b33ac8da7a25bcffe36825d8"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/real-model/real-model-low-2-1.json",
+      "bytes": 17006403,
+      "sha256": "946b951c47cd93d7b644371b2bffce5ab47a45e620fe50fb38d21060c288e321"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/recovery.json",
+      "bytes": 1151334,
+      "sha256": "b7ace947c2a2338b1b6effe9216573ccaf4a350f530bc4a82051ab653d817863"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-1/warmup.json",
+      "bytes": 101669,
+      "sha256": "8d683cb8cc6de938742443297dff1b61e7995189c4d4786300b57db8957cc66f"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/assessment.json",
+      "bytes": 448,
+      "sha256": "c57fab891976f23fb409d08dd43b21ae0ec2751d511f6f0d304e2912a5a0af7d"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/real-model/manifest.json",
+      "bytes": 30632,
+      "sha256": "922a430f084342b7bc79f2845335bb3ef3ddaeda2611bfc6265da1da940065aa"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/real-model/real-model-low-2-2.json",
+      "bytes": 18681688,
+      "sha256": "49cc52206ecf4949a2e2a2246c7cf1d27b8fdfa5b1b4e3fc22ebe0d589042304"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/recovery.json",
+      "bytes": 196159,
+      "sha256": "91e38bb92506d8ddae3e16daa0a3de52d362f2980565449849c064777ade9af5"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-2-2/warmup.json",
+      "bytes": 101662,
+      "sha256": "61e518a560a1f85be712465b9901f03bfc9960e54b7e4e7b84babf0a09407791"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/assessment.json",
+      "bytes": 448,
+      "sha256": "5de81de32f380f6aca1b35c978e2d23712a62e8363747df949d964084f670b41"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/real-model/manifest.json",
+      "bytes": 30636,
+      "sha256": "a7a7cc1fa70b24c7e725cb3be747a865ac429fad88c5df62b988b8fd8e50f11f"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/real-model/real-model-low-4-0.json",
+      "bytes": 22107400,
+      "sha256": "00fd438eae4eabf4d5caa4e56dd7737179e4be412325b0166dce3fb1758e0304"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/recovery.json",
+      "bytes": 1236308,
+      "sha256": "69fca9193bb82f28a7492d4bda0047e853d5e487f1444995bd4ed6acd0d21e6b"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-4-0/warmup.json",
+      "bytes": 101671,
+      "sha256": "aa444bf0c506e40c7ac519f3dbe4e2c4a1a2471520c8d2fd6d4f25a651905384"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/assessment.json",
+      "bytes": 448,
+      "sha256": "346270ef7e3a995e1b45d07bc24c37559db8f92f02c4f2245198dd1869deb748"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/real-model/manifest.json",
+      "bytes": 30625,
+      "sha256": "ac857aef21829b30ec6384aa4e5c5081b2d17226d09445b916d70fa703df74cc"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/real-model/real-model-low-8-0.json",
+      "bytes": 31907307,
+      "sha256": "002339b393afaca892d5d5a9242af5d6c7c116fb488840906892cfaff8056622"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/recovery.json",
+      "bytes": 296761,
+      "sha256": "a9e1c56696589401ddd5e5eb336889dd3812bf526b9f031edf92f12629f465b5"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-0/warmup.json",
+      "bytes": 101664,
+      "sha256": "111ed3094e9093a62a0fb2a8c935b21b194bd2fd3bb256f62ea910ee74d863e2"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/assessment.json",
+      "bytes": 448,
+      "sha256": "022bee130ab260f42a7c7de038aca5b9931812369b605d7223d645e63e6afe5b"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/real-model/manifest.json",
+      "bytes": 30626,
+      "sha256": "5203e8312324822076490b26b2d26ce1edb77479eb4b77902e33e2abaa4ca194"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/real-model/real-model-low-8-1.json",
+      "bytes": 31593955,
+      "sha256": "d1cc8f7e0cb091478938bb89708dc7b83b6c0727644d30ebcf1c1e7115147d27"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/recovery.json",
+      "bytes": 306293,
+      "sha256": "c471bb87d50b3baee1413625bc65adc4b3400dfa65fd08e9955dee0cb6fce889"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-low-8-1/warmup.json",
+      "bytes": 101664,
+      "sha256": "7f1b7a2704b3e6859a28316fee916ead0277c814b3ed39df037c0bdba5c03f92"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/assessment.json",
+      "bytes": 451,
+      "sha256": "83e539809d8a965f31de5aa2da4b09598beb9fcd375c2b24934116affdf8bc40"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/real-model/manifest.json",
+      "bytes": 30636,
+      "sha256": "3300b3800141278bbb6761e343d625f68de66530c50627264e56ba88ce2ad018"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/real-model/real-model-near-0-0.json",
+      "bytes": 16857033,
+      "sha256": "9357834614611812a135b65c04d61c54f81f28224ba9fa5bb4a11bbfdd22c78b"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/recovery.json",
+      "bytes": 1145209,
+      "sha256": "c366236bf1587f98f0e087b77d01c9487c31c20e8cfdd33b96cf346c08728da9"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-0/warmup.json",
+      "bytes": 101666,
+      "sha256": "c4d5bf3de47687761fac9cb01d54527381020a3b3c250de2b06ed574cac2385f"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/assessment.json",
+      "bytes": 451,
+      "sha256": "5d2147779943f36dd110b15c65ca6fd28f3e690f5363a7d491d8a4d910076bdb"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/real-model/manifest.json",
+      "bytes": 30636,
+      "sha256": "a0561040d779bbca082d405bb367cf16557b5feecc8dde156825f9c26f020f44"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/real-model/real-model-near-0-2.json",
+      "bytes": 16521117,
+      "sha256": "96fb9165b6c4f1fcc18ebf0980f6447c52e4efddf24256161a6020e697caaa2f"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/recovery.json",
+      "bytes": 306255,
+      "sha256": "783e6516f2d8184b069941ca188e2aeb8a721a36cf2cd6fdac8d978324802b7e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-0-2/warmup.json",
+      "bytes": 101669,
+      "sha256": "0e25e8e3c3f9f43956113cfa9f1638c7551c9e42b9cbda82b9201fe5fb4d9507"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/assessment.json",
+      "bytes": 451,
+      "sha256": "f18d938f06839fa0e4b8865849738198fd08e3f031876c7a0eed720976c3523d"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/real-model/manifest.json",
+      "bytes": 30638,
+      "sha256": "81ca85422eaf80cc54ba6709305791f7819e4ebdd145702ea87dc764bdbda455"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/real-model/real-model-near-1-0.json",
+      "bytes": 17544942,
+      "sha256": "4a710cc3cb757fef32f4a7b542ce1b0392416a7b5eb5e477434fc9334277a0c0"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/recovery.json",
+      "bytes": 840872,
+      "sha256": "e2e2af291b0c267ee64c20a54cd9784dc5cdd92fd5d4ad57640ac44f71a31a50"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-0/warmup.json",
+      "bytes": 101670,
+      "sha256": "fa6772d9a0fc958ee25fffee1166bbb39166ff96ee0c994733a96bbc50db9d6c"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/assessment.json",
+      "bytes": 451,
+      "sha256": "b7b358e7b9bab5ff400f064e4e2b646f0f436f7c1873c30fc11658c0f1a96d14"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/real-model/manifest.json",
+      "bytes": 30632,
+      "sha256": "e40449ad94f2e9d6c813aa18b507e2638227301e829eaf0a86d31641089feb44"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/real-model/real-model-near-1-1.json",
+      "bytes": 16629627,
+      "sha256": "08f0ba15c547dc4d8465771b17d67f469b27bbf0e835cc378b07c749a1b56ea9"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/recovery.json",
+      "bytes": 296756,
+      "sha256": "195d27903b93d6b0211fdedac17fef47b213667aa254694ea4d8ef6a625da817"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-1-1/warmup.json",
+      "bytes": 101668,
+      "sha256": "6d1343ef75672c4691bd977eaf1195ddae54372be160e0923d0e4a4344748183"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/assessment.json",
+      "bytes": 451,
+      "sha256": "9999fe3ff7801f2f87a4ca58fd72af67c769e60279d560e7fb5e3ef31f28ebbe"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/real-model/manifest.json",
+      "bytes": 30633,
+      "sha256": "d7498ba9f70480436beef8b6a45940abf82ac2d1724e9c1dcf330c6a479ac9d0"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/real-model/real-model-near-2-2.json",
+      "bytes": 19700965,
+      "sha256": "3517adc04fadf33ca7c58b16ffa038f71b8ad7707c9b2faedc59f723b371d708"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/recovery.json",
+      "bytes": 729385,
+      "sha256": "be33ca9da0a83f405ec396522f9184925f878862bb467b747a82b29cc1220e75"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-2-2/warmup.json",
+      "bytes": 101665,
+      "sha256": "1602fec54b3ebbccf5dfc086dedccf65b5fb0fa0349a621a3ed2412e0f3cd329"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/assessment.json",
+      "bytes": 451,
+      "sha256": "631af084178240bd67f5d2b2afa0b4a6097cbd1368f2cf9be8e8e5164deb548d"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/real-model/manifest.json",
+      "bytes": 30637,
+      "sha256": "013e78bf230f51872b1f30146ed3e7159a1c4073f6615617f24139552131b5a5"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/real-model/real-model-near-4-2.json",
+      "bytes": 25189516,
+      "sha256": "58dc005e70ee39ec22278aadfbb4c67540b46b295d660159bdd5678529de585a"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/recovery.json",
+      "bytes": 27101,
+      "sha256": "acfdfd36c57a58fb89388ee81a9584761868141aadc26867469bded4e3cbf0db"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-4-2/warmup.json",
+      "bytes": 101659,
+      "sha256": "4331f096c215501660c9eb876aa51df4ff24951d8789918bc6d72505b5e0915c"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/assessment.json",
+      "bytes": 451,
+      "sha256": "e63c855aeca6f1a0dcaaaef12517ccae223f4564ef5a66c45ffa74933d3051fb"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/real-model/manifest.json",
+      "bytes": 30639,
+      "sha256": "75fe47cc65f962b8778f3bf2738f2821e1c86663179a7b3b43df2e0e1e19cf2b"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/real-model/real-model-near-8-0.json",
+      "bytes": 37001635,
+      "sha256": "c60caab198e1e724424bbfbd0d7f59d0c3ea443e35a506d33f103e8c4c867008"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/recovery.json",
+      "bytes": 306258,
+      "sha256": "292bb181ca184ae461b348dcadc9d434c41d0907292b7e40b8fc7afc9da31339"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-0/warmup.json",
+      "bytes": 101667,
+      "sha256": "15b067e95137e2a0e09ff5be59bce545b510b6587fa85e209cb1c0417ad89d16"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/assessment.json",
+      "bytes": 451,
+      "sha256": "e36e87776e3e1b22ba248b8d6a12ba4748602051b94edf65f02853b048abfa8d"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/real-model/block.json",
+      "bytes": 76,
+      "sha256": "7e2322660c2cf0c5dcdfc9b9270ad022c413cbba95424971908297e6cbe9525e"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/real-model/manifest.json",
+      "bytes": 30632,
+      "sha256": "cd83cc4a9eb13d5e870b3ccdae534bcc5237697c800a1070f74ae29780abcf3c"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/real-model/real-model-near-8-1.json",
+      "bytes": 35639421,
+      "sha256": "d65d11ffd34af3126f140d3d800f734ce731615c8035f38a170cc2302a0e1dad"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/recovery.json",
+      "bytes": 198259,
+      "sha256": "8ce95177a61cebd4defbc97fc4f6bd04bbc976185cbc1a297cb0832953832a6f"
+    },
+    {
+      "path": "runs/v2-ollama-fra6s004-cpu-continuation/trials/real-model-near-8-1/warmup.json",
+      "bytes": 101665,
+      "sha256": "056c6b215c253dc014ea1043609363489db53742ea06b9d85423f5e865c7e6e5"
+    }
+  ],
+  "archive_sha256": "979e239fb9d7556169d7c5530a0fac8b5b6d60a02f290277bd46a4ec8266bccd",
+  "exported_utc": "2026-11-14T22:05:50.574099+00:00",
+  "scope": "All retained continuation files, including failed observations."
+}

@@ -1,0 +1,30 @@
+{
+  "exported_at_utc": "2026-11-13T18:16:53.030535+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-physical-network-diagnostics/native-state-before-controls.json.gz",
+      "source_relative_path": "runs/v2-ollama-physical-network-diagnostics/native-state-before-controls.json",
+      "sha256": "417229f3ba32c022a1bdea865ec7e7cfbe87110511d8e8d03d7e463e0fe32adf",
+      "decoded_sha256": "f68fd13e4234ae65d6ece7d7a519bf678ea2d811bc57cad0bf76f30555fba2db",
+      "decoded_bytes": 347,
+      "bytes": 241
+    },
+    {
+      "path": "archives/v2-ollama-physical-network-diagnostics/network-dell-to-mac-20261113T180353Z.log.gz",
+      "source_relative_path": "runs/v2-ollama-physical-network-diagnostics/network-dell-to-mac-20261113T180353Z.log",
+      "sha256": "3095b92cacce6d2bf0b74e229047f8976ea662d91ecd50f93067fc6dedb13662",
+      "decoded_sha256": "518303f252681a80f902b6e22d4b559a9a193dba362afc52890009d73f25c793",
+      "decoded_bytes": 3238,
+      "bytes": 673
+    },
+    {
+      "path": "archives/v2-ollama-physical-network-diagnostics/network-mac-to-dell-20261113T180351Z.log.gz",
+      "source_relative_path": "runs/v2-ollama-physical-network-diagnostics/network-mac-to-dell-20261113T180351Z.log",
+      "sha256": "45c118f5adef452a88a6da39ef1f72e1b174e21e1e5d11985f7ba5f33a057b08",
+      "decoded_sha256": "236c58b122a027b3434cc4c4c6fe2df2c1eb6278813ef1c434c613399d7bf2ff",
+      "decoded_bytes": 2484,
+      "bytes": 475
+    }
+  ]
+}

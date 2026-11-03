@@ -1,0 +1,118 @@
+{
+  "exported_at_utc": "2026-11-13T10:27:45.061370+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-independent-calibration-8/block.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/block.json",
+      "sha256": "ac7f5fe109667803c49836a6765d30110e1429533808ae84b3491fa625ace427",
+      "decoded_sha256": "9fa0e347f2f9ade1c01e5ac7fa67622b5b20fa34da6cba8f85d82217b1565e5c",
+      "decoded_bytes": 160,
+      "bytes": 134
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-06789d1393a91909.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-06789d1393a91909.json",
+      "sha256": "30c87da2c71d48131f60a4ad224c9f84ae80ada89e496836637e00799152e83c",
+      "decoded_sha256": "0fb4babf34476c88d1b8ce7cbba1833867b671ec6e2fd6b439e5fc8f95748ee2",
+      "decoded_bytes": 8776475,
+      "bytes": 956064
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-10238fd791405908.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-10238fd791405908.json",
+      "sha256": "9ce12242d0fb12912d76170492cfa03a4b49e4dcd1b4b2439b78e7a3a2e9ce8f",
+      "decoded_sha256": "e08550938d2973f1455c28ef4fa31c54a9bcf0f98594528b66817bd9c620dc19",
+      "decoded_bytes": 8066042,
+      "bytes": 748253
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-200ccfbeafeba005.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-200ccfbeafeba005.json",
+      "sha256": "6259efeb7e442e77b4acb7fee2f3a3a80031bc4b56eb75a88c6dd952aadb3339",
+      "decoded_sha256": "6aa9093934bd3a6649b9ab7acb0d6ceeac68c4f4f732a924eca515dc1833855c",
+      "decoded_bytes": 15588954,
+      "bytes": 1408157
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-49f6ef587a21048a.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-49f6ef587a21048a.json",
+      "sha256": "d02e59902c2dd505b78009c84cf84bb8697e50de8055bc3429e5af63d1002676",
+      "decoded_sha256": "b23b5431c311d34b486344bef751508dfe2938813780f82a5592ae69c6e0ba63",
+      "decoded_bytes": 15743349,
+      "bytes": 1423458
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-5f617737321b40e3.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-5f617737321b40e3.json",
+      "sha256": "72110484a472e4ebbc4ad49d98a0a41546a787ccd6b36709a1e31c7f7576a3c3",
+      "decoded_sha256": "3bfeffc3ab003d3923e02046e260d551b208b00ae2870ddbb6688062cf260cdb",
+      "decoded_bytes": 16333272,
+      "bytes": 1638847
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-6f1880115bec8ba3.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-6f1880115bec8ba3.json",
+      "sha256": "0407e1e5715536dae9ee99edb9d9e374af2384cc4cccc6af38eaef56915fbae0",
+      "decoded_sha256": "fd3d140dde95fdb3f797c3110e76e56a4e1576e2d0f83d0156567d6503e0944a",
+      "decoded_bytes": 16265872,
+      "bytes": 1632649
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-7a1acd6049f00e95.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-7a1acd6049f00e95.json",
+      "sha256": "c021f2b300d60a9505c5691b1fb440267829565a692d47cc204b87801a5f4641",
+      "decoded_sha256": "e6033c9cd41d0f119dd28c4cc83069fb662cfb79ac8c39d8781a1b394ec3909c",
+      "decoded_bytes": 15520958,
+      "bytes": 1401758
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-7debd800de8b2fdb.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-7debd800de8b2fdb.json",
+      "sha256": "da4a9efd5565b5c18c694422dae108aefc2d2de1a00f5eadb40fd934c343a998",
+      "decoded_sha256": "4ce976f011bc0a6414a1e48f8b4be61f93ba04001160e0b41bc762e667916049",
+      "decoded_bytes": 8806442,
+      "bytes": 959495
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-c2b90db34c3e3cbe.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-c2b90db34c3e3cbe.json",
+      "sha256": "86bbd67fb7d27d67ecc9db8f3065a446fcde0fdd0a97d053011923ac1c50453c",
+      "decoded_sha256": "6bf365906f392312b5627b07e01003f30eb9caacc5cb4cda9de91da0d39a8a4f",
+      "decoded_bytes": 8381828,
+      "bytes": 920965
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-d4d47a7290249dd1.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-d4d47a7290249dd1.json",
+      "sha256": "1ac16759a3249cf751b481a371d589c89f56706312ecc4a0522f7bc1b0759199",
+      "decoded_sha256": "7f97a5a37ab98e46e698237525497c9a422a2faa765350e4482a550a22c68825",
+      "decoded_bytes": 16486994,
+      "bytes": 1651737
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-e6c6917f6593a307.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-e6c6917f6593a307.json",
+      "sha256": "2d2b7408371fc326ad730fa463719341b0077c3d6bada32d579573919a5878ac",
+      "decoded_sha256": "db65287d95a56e9b042210e5602a4bfc2c468f4450d4ffdcc70d3ca0b5068dff",
+      "decoded_bytes": 7640835,
+      "bytes": 710048
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/calibration-8-f657c2233a7926b6.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/calibration-8-f657c2233a7926b6.json",
+      "sha256": "75b8e1822e49cfd665cd9e2c4ca8c9c28975b10296e466f837d1090319560e2e",
+      "decoded_sha256": "08df2f76099be8abc8fee37c29b0e4056495b4a9c06ea4db4f2c0448b4e80f48",
+      "decoded_bytes": 8036721,
+      "bytes": 745702
+    },
+    {
+      "path": "archives/v2-independent-calibration-8/manifest.json.gz",
+      "source_relative_path": "runs/v2-independent-calibration-8/manifest.json",
+      "sha256": "5eb9c08ac0d5b4794ded0022253fcaa8c116085ef5f0b35ee242b4af42a4cd54",
+      "decoded_sha256": "4ebd6ff4e6d2475698584839d325f48e34cc3caa46045e6a1ea63488ea388114",
+      "decoded_bytes": 2033,
+      "bytes": 872
+    }
+  ]
+}

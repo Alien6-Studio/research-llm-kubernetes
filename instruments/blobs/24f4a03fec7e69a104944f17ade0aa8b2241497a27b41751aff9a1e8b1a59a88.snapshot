@@ -1,0 +1,275 @@
+#!/usr/bin/env python3
+"""Observe the shared Dell host and guard only the dedicated inference instance."""
+
+import argparse
+from datetime import datetime, timezone
+import hashlib
+import json
+import math
+import os
+from pathlib import Path
+import platform
+import shutil
+import signal
+import socket
+import subprocess
+import tempfile
+import threading
+import time
+import uuid
+
+
+INSTANCE = "a6-ollama-study"
+GIB = 1024 ** 3
+MEMORY_FIELDS = (
+    "MemTotal", "MemFree", "MemAvailable", "Buffers", "Cached", "SwapCached",
+    "Active", "Inactive", "Slab", "SReclaimable", "Dirty", "Writeback",
+    "SwapTotal", "SwapFree",
+)
+CPU_FIELDS = ("user", "nice", "system", "idle", "iowait", "irq", "softirq", "steal", "guest", "guest_nice")
+
+
+def utc_now():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def parse_meminfo(text):
+    values = {}
+    for line in text.splitlines():
+        key, separator, remainder = line.partition(":")
+        if not separator or key not in MEMORY_FIELDS:
+            continue
+        fields = remainder.split()
+        if len(fields) != 2 or fields[1] != "kB" or not fields[0].isdigit():
+            raise ValueError("Invalid memory field: " + key)
+        values[key] = int(fields[0]) * 1024
+    if any(key not in values for key in ("MemTotal", "MemAvailable", "SwapTotal", "SwapFree")):
+        raise ValueError("Required memory fields are missing")
+    return values
+
+
+def parse_vmstat(text):
+    values = {}
+    for line in text.splitlines():
+        fields = line.split()
+        if fields and fields[0] in ("pswpin", "pswpout", "pgmajfault", "oom_kill"):
+            if len(fields) != 2 or not fields[1].isdigit():
+                raise ValueError("Invalid VM counter")
+            values[fields[0]] = int(fields[1])
+    if any(key not in values for key in ("pswpin", "pswpout")):
+        raise ValueError("Swap counters are missing")
+    return values
+
+
+def parse_pressure(text):
+    values = {}
+    for line in text.splitlines():
+        fields = line.split()
+        if not fields or fields[0] not in ("some", "full"):
+            continue
+        pairs = dict(field.split("=", 1) for field in fields[1:])
+        item = {key: float(pairs[key]) for key in ("avg10", "avg60", "avg300")}
+        if any(not math.isfinite(value) or not 0 <= value <= 100 for value in item.values()):
+            raise ValueError("Invalid memory pressure average")
+        if not pairs.get("total", "").isdigit():
+            raise ValueError("Invalid memory pressure duration")
+        values[fields[0]] = {**item, "total_microseconds": int(pairs["total"])}
+    if set(values) != {"some", "full"}:
+        raise ValueError("Memory pressure counters are missing")
+    return values
+
+
+def parse_cpu_stat(text):
+    result = {"aggregate_ticks": {}, "logical_cpus": 0}
+    for line in text.splitlines():
+        fields = line.split()
+        if not fields:
+            continue
+        if fields[0] == "cpu":
+            if len(fields) < 9 or any(not value.isdigit() for value in fields[1:]):
+                raise ValueError("Invalid aggregate CPU counters")
+            result["aggregate_ticks"] = dict(zip(CPU_FIELDS, map(int, fields[1:])))
+        elif fields[0].startswith("cpu") and fields[0][3:].isdigit():
+            result["logical_cpus"] += 1
+        elif fields[0] in ("ctxt", "processes", "procs_running", "procs_blocked", "btime"):
+            if len(fields) != 2 or not fields[1].isdigit():
+                raise ValueError("Invalid host scheduling counter")
+            result[fields[0]] = int(fields[1])
+    if not result["aggregate_ticks"] or not result["logical_cpus"]:
+        raise ValueError("CPU counters are missing")
+    return result
+
+
+def parse_loadavg(text):
+    fields = text.split()
+    if len(fields) != 5:
+        raise ValueError("Invalid host load average")
+    averages = list(map(float, fields[:3]))
+    running, tasks = map(int, fields[3].split("/"))
+    if any(not math.isfinite(value) or value < 0 for value in averages) or not 0 <= running <= tasks:
+        raise ValueError("Invalid host load values")
+    return {"one_minute": averages[0], "five_minutes": averages[1], "fifteen_minutes": averages[2],
+            "runnable_tasks": running, "total_tasks": tasks}
+
+
+class MemoryGuard:
+    def __init__(self, floor_bytes):
+        if type(floor_bytes) is not int or floor_bytes <= 0:
+            raise ValueError("The memory floor must be a positive byte count")
+        self.floor_bytes = floor_bytes
+        self.consecutive_low_samples = 0
+        self.triggered = False
+
+    def observe(self, available_bytes):
+        if type(available_bytes) is not int or available_bytes < 0:
+            raise ValueError("Available memory must be a nonnegative byte count")
+        if self.triggered:
+            return False
+        self.consecutive_low_samples = self.consecutive_low_samples + 1 if available_bytes < self.floor_bytes else 0
+        self.triggered = self.consecutive_low_samples >= 2
+        return self.triggered
+
+
+def stop_study_instance(instance, runner=subprocess.run):
+    if instance != INSTANCE:
+        raise ValueError("Only the dedicated inference instance may be stopped")
+    command = ["lxc", "stop", "local:" + INSTANCE, "--force"]
+    try:
+        completed = runner(command, capture_output=True, text=True, timeout=60, check=False)
+        return {"command": command, "returncode": completed.returncode,
+                "stdout": completed.stdout, "stderr": completed.stderr,
+                "succeeded": completed.returncode == 0}
+    except (OSError, subprocess.TimeoutExpired) as error:
+        return {"command": command, "succeeded": False, "error": type(error).__name__, "detail": str(error)}
+
+
+def atomic_checkpoint(path, state):
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent,
+                                         prefix="." + path.name + ".", delete=False) as stream:
+            temporary = Path(stream.name)
+            json.dump(state, stream, separators=(",", ":"), allow_nan=False)
+            stream.write("\n")
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(temporary, path)
+        temporary = None
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+def collect_sample(proc, started):
+    return {"utc": utc_now(), "monotonic": time.monotonic(),
+            "elapsed_seconds": time.monotonic() - started,
+            "memory_bytes": parse_meminfo((proc / "meminfo").read_text()),
+            "vmstat_pages": parse_vmstat((proc / "vmstat").read_text()),
+            "memory_pressure": parse_pressure((proc / "pressure/memory").read_text()),
+            "cpu": parse_cpu_stat((proc / "stat").read_text()),
+            "loadavg": parse_loadavg((proc / "loadavg").read_text())}
+
+
+def observe(args):
+    if platform.system() != "Linux" or not shutil.which("lxc"):
+        raise RuntimeError("Run on the outer Linux LXD host, not inside a study instance")
+    proc = Path("/proc")
+    started = time.monotonic()
+    guard = MemoryGuard(round(args.min_available_gib * GIB))
+    state = {"metadata": {
+        "scope": "Shared physical host; affinity does not isolate memory bandwidth, caches or unrelated services.",
+        "completion_scope": "Observer lifecycle only; experimental completion and qualification are not inferred.",
+        "host": socket.gethostname(), "system": platform.system(), "release": platform.release(),
+        "architecture": platform.machine(), "started_utc": utc_now(), "started_monotonic": started,
+        "clock_domain": "outer-study-host:" + uuid.uuid4().hex,
+        "boot_id": (proc / "sys/kernel/random/boot_id").read_text().strip(),
+        "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "page_size_bytes": os.sysconf("SC_PAGE_SIZE"), "clock_ticks_per_second": os.sysconf("SC_CLK_TCK"),
+        "instance": args.instance, "memory_floor_bytes": guard.floor_bytes,
+        "required_consecutive_low_samples": 2, "interval_seconds": args.interval_seconds,
+        "max_duration_seconds": args.max_duration_seconds,
+        "duration_rule": "Reaching the duration limit ends observation without stopping the instance.",
+        "counter_units": "Memory is bytes; pswpin/pswpout are pages; PSI total is microseconds; CPU counters are ticks.",
+    }, "status": "running", "complete": False, "baseline": None, "samples": [], "guard_action": None}
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    descriptor = os.open(args.out, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+    os.close(descriptor)
+    atomic_checkpoint(args.out, state)
+    stop = threading.Event()
+    received_signal = []
+
+    def signal_handler(number, frame):
+        received_signal.append(signal.Signals(number).name)
+        stop.set()
+
+    handlers = {number: signal.signal(number, signal_handler) for number in (signal.SIGINT, signal.SIGTERM)}
+    exit_code = 0
+    try:
+        while not stop.is_set() and time.monotonic() - started < args.max_duration_seconds:
+            sample = collect_sample(proc, started)
+            sample["index"] = len(state["samples"])
+            sample["memory_below_floor"] = sample["memory_bytes"]["MemAvailable"] < guard.floor_bytes
+            triggered = guard.observe(sample["memory_bytes"]["MemAvailable"])
+            sample["consecutive_low_samples"] = guard.consecutive_low_samples
+            state["samples"].append(sample)
+            if state["baseline"] is None:
+                state["baseline"] = sample
+            if triggered:
+                state["status"] = "memory_guard_triggered"
+                state["guard_action"] = {
+                    "reason": "MemAvailable remained below the configured floor for two consecutive samples.",
+                    "memory_floor_bytes": guard.floor_bytes,
+                    "observed_available_bytes": [item["memory_bytes"]["MemAvailable"] for item in state["samples"][-2:]],
+                    "requested_utc": utc_now(), "instance": INSTANCE,
+                }
+                # Record the reason durably before requesting the one permitted stop.
+                atomic_checkpoint(args.out, state)
+                outcome = stop_study_instance(args.instance)
+                state["guard_action"]["outcome"] = outcome
+                state["status"] = "study_stopped_for_memory" if outcome["succeeded"] else "study_stop_failed"
+                state["complete"] = outcome["succeeded"]
+                exit_code = 2 if outcome["succeeded"] else 3
+                break
+            atomic_checkpoint(args.out, state)
+            remaining = args.max_duration_seconds - (time.monotonic() - started)
+            stop.wait(max(0, min(args.interval_seconds, remaining)))
+        else:
+            state["status"] = "signal_received" if received_signal else "duration_limit_reached"
+            state["received_signals"] = received_signal
+            state["complete"] = True
+    except Exception as error:
+        state["status"] = "observer_failed"
+        state["complete"] = False
+        state["error"] = {"type": type(error).__name__, "detail": str(error)}
+        # An unavailable observation is not silently treated as a low-memory sample.
+        exit_code = 1
+    finally:
+        state["finished_utc"] = utc_now()
+        state["finished_monotonic"] = time.monotonic()
+        atomic_checkpoint(args.out, state)
+        for number, handler in handlers.items():
+            signal.signal(number, handler)
+    print(json.dumps({"output": str(args.out), "status": state["status"], "samples": len(state["samples"]),
+                      "complete": state["complete"], "study_stop_requested": state["guard_action"] is not None}))
+    return exit_code
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--out", required=True, type=Path, help="Fresh checkpoint JSON path")
+    parser.add_argument("--instance", choices=[INSTANCE], default=INSTANCE)
+    parser.add_argument("--min-available-gib", type=float, default=8)
+    parser.add_argument("--interval-seconds", type=float, default=5)
+    parser.add_argument("--max-duration-seconds", type=float, default=6 * 3600)
+    args = parser.parse_args()
+    if not math.isfinite(args.min_available_gib) or args.min_available_gib < 8:
+        parser.error("The available-memory floor must be at least 8 GiB")
+    if not math.isfinite(args.interval_seconds) or not 2 <= args.interval_seconds <= 5:
+        parser.error("The sample interval must be between two and five seconds")
+    if not math.isfinite(args.max_duration_seconds) or not 0 < args.max_duration_seconds <= 6 * 3600:
+        parser.error("The observation duration must be positive and at most six hours")
+    return observe(args)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

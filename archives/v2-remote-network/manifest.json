@@ -1,0 +1,14 @@
+{
+  "exported_at_utc": "2026-11-13T10:35:59.770107+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-remote-network/control.json.gz",
+      "source_relative_path": "runs/v2-remote-network/control.json",
+      "sha256": "8681ea4fac4ae6ad2bcef0f3a6f06d5a6f337dcc506ba438b685b06b390db233",
+      "decoded_sha256": "33f4d8bcd16ee46228e29f548cc50e350f85747386b8324eadb5b51e61947636",
+      "decoded_bytes": 640859,
+      "bytes": 51178
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "exported_at_utc": "2026-11-13T18:16:51.271618+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/block.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/block.json",
+      "sha256": "0e7cfcadc9814b5553acace38fb32f7936d22fd91c9605dee1e3a30ce4be2cb6",
+      "decoded_sha256": "e90fe7883307cfc47722a7c78fdbc2066d260a0a8b154c33553b1d23a905a13d",
+      "decoded_bytes": 77,
+      "bytes": 77
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/manifest.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/manifest.json",
+      "sha256": "43c6850b2b66d839f8ae44908c67ca06c42a6d5cb74f223994151a81642d1747",
+      "decoded_sha256": "1c8d4a81361d3f9c5b8386901098416074fc2c1063ebb0f38d99f9cdccedf6d4",
+      "decoded_bytes": 6100,
+      "bytes": 2189
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-headroom-1-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-headroom-1-0.json",
+      "sha256": "963d00c72f0c26102d515c93bb11393c2adae2feec27e5bd36bcc9e7e074365c",
+      "decoded_sha256": "f43cbc7dac2ef003e2949d5a98c477631187823e84657ad79c554798ae21f522",
+      "decoded_bytes": 3823932,
+      "bytes": 260055
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-headroom-1-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-headroom-1-1.json",
+      "sha256": "2ba593665bd8cc7c5463d6b99cd775c202b440c5a314941a6476f8438221c6e8",
+      "decoded_sha256": "93bb04be7e5a5738130342c80e953fb8557939ae22f7f81bc19c93262eb35cc9",
+      "decoded_bytes": 3306207,
+      "bytes": 231449
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-headroom-1-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-headroom-1-2.json",
+      "sha256": "36e0cc9cede3e51f7eaa0cb8ecdf1e73b359fc5d86d3d95e34b7062b1b3aa0f5",
+      "decoded_sha256": "7ea358a16fbfbf7cde6021d5af087c0647124396831f5397909e6d85c88a4abc",
+      "decoded_bytes": 3404337,
+      "bytes": 236816
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-headroom-8-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-headroom-8-0.json",
+      "sha256": "140bbea5b0b6222eecc8b5ab527d5a2ea9e20859d62e959cb4082b3f26a4bead",
+      "decoded_sha256": "06afb9558197a102388d393470016916328eacc8542f7689855072d6f65cf163",
+      "decoded_bytes": 5286652,
+      "bytes": 640436
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-headroom-8-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-headroom-8-1.json",
+      "sha256": "653891e0563b75bf168e5d05ada0bcdb29bd21c8de67ff36772a5c06645e1dc2",
+      "decoded_sha256": "9622a6d7bd8823607257cf70eae31953663bdb4d6bdc2d0969c71bef4b73ec9a",
+      "decoded_bytes": 4766151,
+      "bytes": 608861
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-headroom-8-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-headroom-8-2.json",
+      "sha256": "1e39aa4465ad32e3bf37e123ce8af916c42339845e186353b677e15105a7b270",
+      "decoded_sha256": "a3911eceb0d341604de2bbc6058919769dc168274c81f4695e650710a540105c",
+      "decoded_bytes": 4864364,
+      "bytes": 617155
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-high-1-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-high-1-0.json",
+      "sha256": "77593be2b9ed9530093d500e077b63b8c3e39be7a7e1411867bb153fee40da99",
+      "decoded_sha256": "516bf044004bb99906485b43e6bbc8f58735bab841e70bf8e0ca469c98baa121",
+      "decoded_bytes": 2409829,
+      "bytes": 182881
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-high-1-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-high-1-1.json",
+      "sha256": "16b301f3380e03eed1fd9855ec4a12e6f361af9a7d9b33ace3180d03741f737d",
+      "decoded_sha256": "3c4b44cc4a2fe7c80932c0a6d35fcca4cbce91a115172f597e1b63e85f5c6cc3",
+      "decoded_bytes": 2120895,
+      "bytes": 167028
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-high-1-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-high-1-2.json",
+      "sha256": "5ff7091c12dc593fb70c5e10b97eb2703181d90e2bc0ed6ad55968bbf5cb068a",
+      "decoded_sha256": "b835a522fac01370691a11a8a8e10ffeea2273c897de88744d1df34e7c8921da",
+      "decoded_bytes": 1972429,
+      "bytes": 159203
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-high-8-0.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-high-8-0.json",
+      "sha256": "ebaafe6119de1c3c163ad6d115a2673559cc2698cb4cb96e8cab090b6c2d4265",
+      "decoded_sha256": "dcf8daafec5decd1a13c11b025072944c28b8785c19bc3d5daef8fb7ca8f4480",
+      "decoded_bytes": 3868271,
+      "bytes": 561160
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-high-8-1.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-high-8-1.json",
+      "sha256": "bbe27da3e94ceea1f0ca38072cbdb7d2ac722db4611d0c24a1882bcaa59c07f7",
+      "decoded_sha256": "3c7116f9ba18ace816a2333054b4c6e10d7220dded0000d587715009e8fec727",
+      "decoded_bytes": 3580783,
+      "bytes": 543063
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-qualification/model-qualification-high-8-2.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-qualification/model-qualification-high-8-2.json",
+      "sha256": "6a71bd86e10661a6ae55d1f2c4e48c0b58046706a3a99457eda4a1bef221ba43",
+      "decoded_sha256": "1b74efeb872547450f87b08e49f5006b8e6275af6ed4f14f1c30386652a051ed",
+      "decoded_bytes": 3430041,
+      "bytes": 535512
+    }
+  ]
+}

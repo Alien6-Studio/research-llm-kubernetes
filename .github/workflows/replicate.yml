@@ -1,0 +1,64 @@
+name: Independent Linux research
+run-name: V2 capacity experiment (${{ inputs.scope }})
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: V2 qualification only, or the complete primary/provider/quota blocks
+        type: choice
+        default: calibrate
+        options: [calibrate, focused]
+permissions:
+  contents: read
+concurrency:
+  group: independent-research-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  measure:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Install the verified official kind binary
+        run: |
+          curl --fail --location --silent --show-error https://github.com/kubernetes-sigs/kind/releases/download/v0.32.0/kind-linux-amd64 -o /tmp/kind
+          printf '%s  %s\n' '50030de23cf40a18505f20426f6a8506bedf13c6e509244bd1fa9463721b0f54' /tmp/kind | sha256sum --check
+          chmod +x /tmp/kind
+          /tmp/kind create cluster --config v2/kind.yaml --kubeconfig .kubeconfig-capacity-v2 --wait 120s
+      - name: Build and deploy the exact study executable
+        run: |
+          docker update --cpus 4 --memory 8g --memory-swap 8g a6-capacity-v2-control-plane
+          docker build -f v2/Dockerfile --build-arg SOURCE_COMMIT="$GITHUB_SHA" -t alien6-capacity:v2 .
+          /tmp/kind load docker-image alien6-capacity:v2 --name a6-capacity-v2
+          python -m v2.run deploy
+      - name: Calibrate before the essential contrasts
+        env:
+          RESEARCH_SCOPE: ${{ inputs.scope }}
+        run: |
+          set -euo pipefail
+          mkdir -p study-logs
+          kubectl --kubeconfig .kubeconfig-capacity-v2 -n a6-capacity-v2 port-forward service/controller 18082:8080 > study-logs/port-forward.txt 2>&1 &
+          FORWARD_PID=$!
+          trap 'kill "$FORWARD_PID" || true' EXIT
+          python -c 'import time,urllib.request; [(time.sleep(.2)) for _ in range(10)]'
+          python -m v2.run block --block calibration-4 --out runs/v2-linux-${{ github.run_id }}/calibration-4
+          if [ "$RESEARCH_SCOPE" = focused ]; then
+            for BLOCK in provider-control primary quota-sensitivity; do
+              python -m v2.run block --block "$BLOCK" --out "runs/v2-linux-${{ github.run_id }}/$BLOCK"
+            done
+          fi
+      - name: Retain every result, including failed qualification
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: v2-linux-research-${{ github.run_id }}
+          path: |
+            runs/v2-linux-*
+            study-logs/
+          if-no-files-found: warn
+          retention-days: 90

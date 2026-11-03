@@ -1,0 +1,14 @@
+{
+  "exported_at_utc": "2026-11-13T09:03:54.409654+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-model-pilot/pilot.json.gz",
+      "source_relative_path": "runs/v2-model-pilot/pilot.json",
+      "sha256": "c4e98524ef597dd6d5aa8197a03cfdf507ae62217cf7ed6a20e7c631331ec7b9",
+      "decoded_sha256": "646f96af7855f48c2962a6ba0b7c24b6608e43a0d4ddab41d2f6a6d8044aabdc",
+      "decoded_bytes": 1118077,
+      "bytes": 12991
+    }
+  ]
+}

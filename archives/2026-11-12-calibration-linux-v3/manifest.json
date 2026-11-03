@@ -1,0 +1,118 @@
+{
+  "exported_at_utc": "2026-11-12T19:55:04.867562+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-1-0.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-180-none-1-0.json",
+      "sha256": "a2a30731f50fb2cea1f9060988245c3a5496be70505e2712f78baf31a8dc7916",
+      "decoded_sha256": "f961b136ecec92c9a389138e3cb3b29fa8c4689c460504578aded97ade379625",
+      "decoded_bytes": 1779302,
+      "bytes": 219261
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-1-1.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-180-none-1-1.json",
+      "sha256": "20c84679e15f04f93dee86ebffed36cd729fdf3e0e89421f4c44be1324943470",
+      "decoded_sha256": "21e86081ddabebcb6ba9760aa3b2c6e9c02ec3c5a60945a7dbfe8c3788fa586d",
+      "decoded_bytes": 1787288,
+      "bytes": 219908
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-1-2.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-180-none-1-2.json",
+      "sha256": "3a505c781192ff6b0281bef2205b0deb9f5a34f43e77911bc615fdd5ebb0913a",
+      "decoded_sha256": "0816b4f97141e4fb4df0610e15e9d18289fc1e631a60791019ad86e86656ba63",
+      "decoded_bytes": 1645692,
+      "bytes": 207381
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-8-0.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-180-none-8-0.json",
+      "sha256": "89c6f81f8ebf210bd80bf56f8847115386704adb0b2e33d51fe3412a834a50c0",
+      "decoded_sha256": "70e0d07bcaf6acaaed69a13a0e605d78d3c479c7ee4df6f06ff2175d269e4e58",
+      "decoded_bytes": 2181226,
+      "bytes": 242476
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-8-1.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-180-none-8-1.json",
+      "sha256": "5a89c3e39455991708ed6148f75cce884c57cccd87d3cf7b22e7fb4f50c17eb8",
+      "decoded_sha256": "1503d33f0cc18a71754b0202ca44a7409b2620e0d9432850bc02041c9307576d",
+      "decoded_bytes": 2103945,
+      "bytes": 240225
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-180-none-8-2.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-180-none-8-2.json",
+      "sha256": "8c9deb73be15de73516a6e1e593bbee7d61982a78b4fe7984a1ccdbec7b216e0",
+      "decoded_sha256": "64a6ab8df7b32f7769d88cca56323aadc424c5ba456444267d1697e461bbfc4b",
+      "decoded_bytes": 2106943,
+      "bytes": 231117
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-1-0.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-360-none-1-0.json",
+      "sha256": "309aa841c08fe095d00bf520d664943c2ed20ea1c26392290ddc087a1f04946d",
+      "decoded_sha256": "619f2170b156250f5dbf27caa0b6e83ceaf3a11c4ea5ad6207624529552b6b42",
+      "decoded_bytes": 3377211,
+      "bytes": 415633
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-1-1.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-360-none-1-1.json",
+      "sha256": "b326c17e123d061dd9dc7716625201ee9863d030d952b9f6cee99c1098b79355",
+      "decoded_sha256": "344c27ca83de1ee0b6fb56931d7fadfe827e0c13bf2c2989938a1ed2b99c2baa",
+      "decoded_bytes": 3336283,
+      "bytes": 416860
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-1-2.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-360-none-1-2.json",
+      "sha256": "611c286d3c45ea6fee39d53ff491e499eb45fa417aa6d3d6dff86d17f2a70834",
+      "decoded_sha256": "608a8e675473f8b35d2e5765a7ea3d9fb077a91944f785d1a6f2dc957fb3bfae",
+      "decoded_bytes": 3248531,
+      "bytes": 410021
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-8-0.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-360-none-8-0.json",
+      "sha256": "68f5769df5e58463014e911d5dd541d2af29f98762a0d97aed5f325ad52b711a",
+      "decoded_sha256": "7e234496a643c55e0d75cd7a805366256164515d48f1c099ce8351052af076da",
+      "decoded_bytes": 3709157,
+      "bytes": 443125
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-8-1.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-360-none-8-1.json",
+      "sha256": "f06e9b612f8d8252a947397c9976f15210ba210e559a078990e024578842d35f",
+      "decoded_sha256": "4eed5625e2a73709080559d10b1ec1f13d2d42d645cfe571a759becd601710e5",
+      "decoded_bytes": 3665149,
+      "bytes": 444740
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/emulator-fastpath-360-none-8-2.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/emulator-fastpath-360-none-8-2.json",
+      "sha256": "132b7c8ab1a17148aa26510979772f269c1aa331086c0cbfe1743a9fe53fdbc4",
+      "decoded_sha256": "a70647658ce649943b5a0ef9c7da8ed43582e16b4277a0b948eb31d2910679c1",
+      "decoded_bytes": 3698784,
+      "bytes": 440347
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/manifest-calibrate.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/manifest-calibrate.json",
+      "sha256": "c7d128c2b2721e93de6a6706e724d5985ee5d453ffb95bb103e56c346d6395af",
+      "decoded_sha256": "b760c52bb2c091e682c98bd6ba58003323f484e7d24af08d4c27cf535dd1c2e8",
+      "decoded_bytes": 2454,
+      "bytes": 1031
+    },
+    {
+      "path": "archives/2026-11-12-calibration-linux-v3/qualification.json.gz",
+      "source_relative_path": "runs/linux-43293297061-calibration/qualification.json",
+      "sha256": "3c8516b88f61c872496e8d94eb7ed996eebb482a1f26d5b66367af423f2a0d4a",
+      "decoded_sha256": "c49b795af815d0d7519147c7876589ea36bb7a306a867d8b08e7da9a9041d8a1",
+      "decoded_bytes": 2352,
+      "bytes": 320
+    }
+  ]
+}

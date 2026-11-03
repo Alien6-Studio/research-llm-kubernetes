@@ -1,0 +1,38 @@
+{
+  "exported_at_utc": "2026-11-13T18:16:52.840202+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-isolated-plain-interruption/driver-error.log.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-interruption/driver-error.log",
+      "sha256": "a6a3fd7e3ed4d175f06b75deeeb8e67a06dfc6e3719f84ac8205af1bdc73f947",
+      "decoded_sha256": "b99e4e64af8c6b7043de26514402730b0bb836c65654eca3fde58d2565471ced",
+      "decoded_bytes": 6767,
+      "bytes": 1048
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-interruption/native-monitor-stop.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-interruption/native-monitor-stop.json",
+      "sha256": "33bd811b32a6da6b4829733ed660f88abf075f45ae1e25203b2d90a673ae3ffa",
+      "decoded_sha256": "67ae966dde3d914d9ca0c96bf8a3c031808b810918c8f3a865a7a8ff39768296",
+      "decoded_bytes": 979750,
+      "bytes": 45371
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-interruption/partial-role-records.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-interruption/partial-role-records.json",
+      "sha256": "6dfa37912aba24195bf2f50b2a9a75ac964c89036915034337b2277d305e8c85",
+      "decoded_sha256": "d9d9781c2fbf1f8c98e214f045ef95530b6daefe937e44ddf51afc990b143235",
+      "decoded_bytes": 12747,
+      "bytes": 4131
+    },
+    {
+      "path": "archives/v2-ollama-isolated-plain-interruption/sleep-events.txt.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-interruption/sleep-events.txt",
+      "sha256": "89d071ea19e42231d7b3105e8bd7552a823768a29b46d0a07ec47794822cec79",
+      "decoded_sha256": "1c1b69b51bde5797ab0b1c49f4b931cdecd261320a6731ef3dbf8aef57917272",
+      "decoded_bytes": 712,
+      "bytes": 294
+    }
+  ]
+}

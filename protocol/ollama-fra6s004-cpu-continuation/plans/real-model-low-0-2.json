@@ -1,0 +1,200 @@
+{
+  "blocks": {
+    "real-model": [
+      {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": true,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "low",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 2,
+        "replicas": 1,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/low-2.json.gz",
+          "sha256": "3feb693b3f9ccb137b0f00935034568465852e15a13499fd8d7c2123d4e83d59"
+        },
+        "trial_id": "real-model-low-0-2",
+        "warmup_seconds": 5
+      }
+    ]
+  },
+  "continuation": {
+    "calibration_archive_sha256": "0de3f7de6a5e5bf32e167de8d8e9c28be27ffa5e1770906da4aeed85f7e0e64f",
+    "calibration_manifest_sha256": "38bfd44604b2ee5485a123cdec80caa6f8ea38296238fe130f784e8f752f94a7",
+    "calibration_pilot_sha256": "1f081e1a6174a7dcdbe479b06f7df4b18661bcd811bb0f8ac876b64a4bf10224",
+    "calibration_source_id": "sha256:c811876fbf14c2af54a18f600044368dd0a92561497e0bbdf8d02c2a6bd86c3b",
+    "campaign_descriptor": {
+      "calibration_archive_sha256": "0de3f7de6a5e5bf32e167de8d8e9c28be27ffa5e1770906da4aeed85f7e0e64f",
+      "calibration_manifest_sha256": "38bfd44604b2ee5485a123cdec80caa6f8ea38296238fe130f784e8f752f94a7",
+      "calibration_pilot_sha256": "1f081e1a6174a7dcdbe479b06f7df4b18661bcd811bb0f8ac876b64a4bf10224",
+      "calibration_source_id": "sha256:c811876fbf14c2af54a18f600044368dd0a92561497e0bbdf8d02c2a6bd86c3b",
+      "client_address": "172.30.64.2",
+      "client_instance": "a6-capacity-v2",
+      "client_root": "/opt/alien6-fra6s004-cpu",
+      "cohort": "ollama-fra6s004-cpu-long-window",
+      "collection_source_id": "sha256:bba1acee1beb772ccb9d45a18bb3e30c88dc5e05f53e7649d918db4d26afdd3f",
+      "cpu_quota_cores": 8,
+      "host_label": "fra6s004",
+      "host_memory_floor_bytes": 17179869184,
+      "inference_address": "172.30.64.3",
+      "inference_instance": "a6-ollama-study",
+      "inference_memory_bytes": 51539607552,
+      "inference_root": "/opt/alien6-research",
+      "inference_url": "http://172.30.64.3:11437",
+      "maximum_duration_seconds": 86400,
+      "maximum_measurement_seconds": 335,
+      "measurement_seconds": 335,
+      "monitor_url": "http://172.30.64.3:11436",
+      "plan_path": "protocol/ollama-fra6s004-cpu-long-window-plan.json",
+      "prefix": "v2-ollama-fra6s004-cpu-long-window",
+      "retained_calibration_archive": "archives/v2-ollama-fra6s004-cpu-confirmation-pilot/pilot.json.gz",
+      "retained_calibration_pilot": "runs/v2-ollama-fra6s004-cpu-confirmation-pilot/pilot.json",
+      "swap_max_bytes": 0,
+      "terminal": false,
+      "trace_directory": "protocol/ollama-fra6s004-cpu-long-window"
+    },
+    "cohort": "ollama-fra6s004-cpu-long-window",
+    "collection_source_id": "sha256:bba1acee1beb772ccb9d45a18bb3e30c88dc5e05f53e7649d918db4d26afdd3f",
+    "emission_lag_p95_limit_seconds": 0.05,
+    "frozen_utc": "2026-11-14T09:11:10.136866+00:00",
+    "git_base": "db31fdad5e022ae165c1661c41632c1c9a761b84",
+    "maximum_measurement_seconds": 335,
+    "measurement_window_rule": "max(20, ceil(ceil(10 / frozen_low_rate) / 5) * 5); complete pinned calibration only, same window in every condition.",
+    "method_sources": [
+      {
+        "bytes": 26821,
+        "path": "infra/run-dell-cpu-campaign.py",
+        "sha256": "da8c75d64e1acbbdceff41e7ab25044ada02f652d7a7d01bb62f35593677856b"
+      },
+      {
+        "bytes": 10624,
+        "path": "scripts/freeze_cpu_campaign.py",
+        "sha256": "ad1abcf16b61e1478fdc9fe9282ab9946a558e01dfcb5de2ab0f4104e71141b5"
+      },
+      {
+        "bytes": 14646,
+        "path": "scripts/observe_study_host.py",
+        "sha256": "aaf3f85a32cafa968d34778b473a97efb74116a9f5ac1f84766f26870da4d278"
+      },
+      {
+        "bytes": 7571,
+        "path": "v2/calibration.py",
+        "sha256": "5afaa2e5978db178bdef776218e68f464c8614f263412850206e9a165de52bae"
+      },
+      {
+        "bytes": 4907,
+        "path": "v2/cpu_campaigns.py",
+        "sha256": "3dd13ea73e4b081d4a869c2bef826d8f143461d2ad1f594f514c7af4ceb98dcf"
+      },
+      {
+        "bytes": 61979,
+        "path": "v2/verify.py",
+        "sha256": "0bdef9bf5c211b093ac30ed47d6714c6a48cb6daa1673c0c41600eca364044bd"
+      }
+    ],
+    "pilot_archive": "archives/v2-ollama-fra6s004-cpu-confirmation-pilot/pilot.json.gz",
+    "qualification_rule": "Three passing transport repetitions, all twelve passing model-path controls and four correct warmup answers before all forty-five real-model trials.",
+    "resource_envelope": {
+      "cpu_quota_cores_upper_bound": 8,
+      "memory_max_bytes_upper_bound": 51539607552,
+      "memory_swap_max_bytes_upper_bound": 0
+    },
+    "resource_scope": "Shared fra6s004 host; separate CPU affinities do not isolate memory bandwidth, caches or other host services.",
+    "source_compatibility": {
+      "calibration_driver_sha256": "8425eb3b399fac23acae08ba14a73a000ce06699f8f61d2444d93ecaa6acd389",
+      "calibration_proxy_sha256": "0cbc5c4b7dd94fad1c8742f97ebc5014d9c2c0917677ba5b20099377494b597a",
+      "calibration_source_id": "sha256:c811876fbf14c2af54a18f600044368dd0a92561497e0bbdf8d02c2a6bd86c3b",
+      "changed_files": [
+        "v2/inference_proxy.py",
+        "v2/model.py"
+      ],
+      "collection_driver_sha256": "fe571215de8b8b8f4e210e878c3d768126e4e5c956d46244e3ce76daaea8e35d",
+      "collection_only_helpers": [
+        "expected_native_calls",
+        "model_request_sha256",
+        "native_completion_certificate",
+        "validate_proxy_state"
+      ],
+      "collection_proxy_sha256": "098e2c7a82e895affdd8673fa3a799c3cbd0929a7fde9a798b9cd16f6f30d14c",
+      "collection_source_id": "sha256:bba1acee1beb772ccb9d45a18bb3e30c88dc5e05f53e7649d918db4d26afdd3f",
+      "native_forward_call_ast_sha256": "79fd709465e6f7dc9d966d0e226fcb53c28e7c488fc26d11f1eda0234e1f6d0e",
+      "preserved_model_nodes": [
+        "InferenceObserver",
+        "NativeObserver",
+        "collection_identity",
+        "configuration",
+        "connection_refused",
+        "cpu_measurement_seconds",
+        "derive_model_plan",
+        "freeze",
+        "hardware",
+        "linux_cgroup_observations",
+        "linux_host_observations",
+        "linux_process_observations",
+        "native_snapshot",
+        "pilot",
+        "pilot_item",
+        "ps_cpu_seconds",
+        "read_deployment_artifact",
+        "read_observation",
+        "validate_pilot",
+        "verify_server",
+        "visible_cgroup_limits",
+        "warmup"
+      ],
+      "scope": "Retained load calibration; collection adds ledger bookkeeping and terminal-completion certification. Instrumentation overhead is not assumed zero.",
+      "unchanged_files": [
+        "v2/Dockerfile",
+        "v2/Model.Dockerfile",
+        "v2/__init__.py",
+        "v2/identity.py",
+        "v2/inference_monitor.py",
+        "v2/model_service.py",
+        "v2/network_policy.py",
+        "v2/network_probe.py",
+        "v2/plan.py",
+        "v2/quota.py",
+        "v2/remote_plan.py",
+        "v2/run.py",
+        "v2/service.py",
+        "v2/transport.py",
+        "v2/tunnel_bridge.py",
+        "v2/workload.py"
+      ]
+    },
+    "source_id": "sha256:bba1acee1beb772ccb9d45a18bb3e30c88dc5e05f53e7649d918db4d26afdd3f",
+    "trace_directory": "protocol/ollama-fra6s004-cpu-long-window",
+    "transport_control": "http://172.30.64.3:11437/transport-control",
+    "transport_latency_p95_limit_seconds": 0.1
+  },
+  "continuation_selection": {
+    "created_utc": "2026-11-14T17:16:36.324677+00:00",
+    "manifest_path": "protocol/ollama-fra6s004-cpu-continuation/manifest.json",
+    "parent_index": 24,
+    "parent_index_base": 0,
+    "parent_plan": {
+      "bytes": 51391,
+      "path": "protocol/ollama-fra6s004-cpu-long-window-plan.json",
+      "sha256": "b1917a52bc70ed7ef83f8d1f071b14de62d9986184f23d4072536dfb7d1117ce"
+    },
+    "scope": "Prospective single-trial selection from the original frozen order; not the original 45-trial plan and not a qualified aggregate.",
+    "trial_id": "real-model-low-0-2"
+  },
+  "native_pilot_capacity": 0.13228910362856067,
+  "pilot_sha256": "1f081e1a6174a7dcdbe479b06f7df4b18661bcd811bb0f8ac876b64a4bf10224",
+  "rates": {
+    "high": 0.2,
+    "low": 0.03,
+    "near": 0.11
+  },
+  "routing_rule": "Record exact serving UIDs. For sparse real load require a subset of the verified ready UID set, not that random low-volume traffic reaches every ready replica."
+}

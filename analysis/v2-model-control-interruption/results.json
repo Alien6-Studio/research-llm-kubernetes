@@ -1,0 +1,12 @@
+{
+  "block": {
+    "complete": false,
+    "qualified": false,
+    "trials": 0,
+    "reason": "Controller connection reset during deployment transition; incomplete attempt retained, no passing subset reused."
+  },
+  "included_for_inference": false,
+  "trials": [],
+  "conditions": [],
+  "rule": "All raw trials remain described; no passing subset from an invalid block is used for causal interpretation."
+}

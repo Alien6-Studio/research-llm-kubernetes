@@ -1,0 +1,281 @@
+{
+  "analysis_utc": "2026-11-12T19:39:14.061036+00:00",
+  "status": "Complete v2 calibration block retained; not qualified for confirmatory capacity claims",
+  "trials": [
+    {
+      "file": "emulator-fastpath-180-none-1-0.json",
+      "workers": 1,
+      "offered_rate": 180,
+      "repetition": 0,
+      "valid": true,
+      "issues": [],
+      "dispatch_lag_p95_seconds": 0.0034470558166503906,
+      "all_responses_http_200_correct": true,
+      "controller_cpu_stat": {
+        "usage_usec": 11213792,
+        "user_usec": 6660178,
+        "system_usec": 4553613,
+        "nice_usec": 0,
+        "nr_periods": 933,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    },
+    {
+      "file": "emulator-fastpath-180-none-1-1.json",
+      "workers": 1,
+      "offered_rate": 180,
+      "repetition": 1,
+      "valid": true,
+      "issues": [],
+      "dispatch_lag_p95_seconds": 0.0035698413848876953,
+      "all_responses_http_200_correct": true,
+      "controller_cpu_stat": {
+        "usage_usec": 9625708,
+        "user_usec": 5784032,
+        "system_usec": 3841676,
+        "nice_usec": 0,
+        "nr_periods": 794,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    },
+    {
+      "file": "emulator-fastpath-180-none-1-2.json",
+      "workers": 1,
+      "offered_rate": 180,
+      "repetition": 2,
+      "valid": true,
+      "issues": [],
+      "dispatch_lag_p95_seconds": 0.00896000862121582,
+      "all_responses_http_200_correct": false,
+      "controller_cpu_stat": {
+        "usage_usec": 2367312,
+        "user_usec": 1526998,
+        "system_usec": 840314,
+        "nice_usec": 0,
+        "nr_periods": 227,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    },
+    {
+      "file": "emulator-fastpath-180-none-8-0.json",
+      "workers": 8,
+      "offered_rate": 180,
+      "repetition": 0,
+      "valid": true,
+      "issues": [],
+      "dispatch_lag_p95_seconds": 0.007853984832763672,
+      "all_responses_http_200_correct": true,
+      "controller_cpu_stat": {
+        "usage_usec": 16827804,
+        "user_usec": 10025393,
+        "system_usec": 6802410,
+        "nice_usec": 0,
+        "nr_periods": 1355,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    },
+    {
+      "file": "emulator-fastpath-180-none-8-1.json",
+      "workers": 8,
+      "offered_rate": 180,
+      "repetition": 1,
+      "valid": true,
+      "issues": [],
+      "dispatch_lag_p95_seconds": 0.0037550926208496094,
+      "all_responses_http_200_correct": true,
+      "controller_cpu_stat": {
+        "usage_usec": 8024057,
+        "user_usec": 4879536,
+        "system_usec": 3144521,
+        "nice_usec": 0,
+        "nr_periods": 645,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    },
+    {
+      "file": "emulator-fastpath-180-none-8-2.json",
+      "workers": 8,
+      "offered_rate": 180,
+      "repetition": 2,
+      "valid": true,
+      "issues": [],
+      "dispatch_lag_p95_seconds": 0.017088890075683594,
+      "all_responses_http_200_correct": true,
+      "controller_cpu_stat": {
+        "usage_usec": 20169809,
+        "user_usec": 12020422,
+        "system_usec": 8149387,
+        "nice_usec": 0,
+        "nr_periods": 1631,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    },
+    {
+      "file": "emulator-fastpath-360-none-1-0.json",
+      "workers": 1,
+      "offered_rate": 360,
+      "repetition": 0,
+      "valid": true,
+      "issues": [],
+      "dispatch_lag_p95_seconds": 0.004925727844238281,
+      "all_responses_http_200_correct": true,
+      "controller_cpu_stat": {
+        "usage_usec": 22338406,
+        "user_usec": 13313614,
+        "system_usec": 9024791,
+        "nice_usec": 0,
+        "nr_periods": 1779,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    },
+    {
+      "file": "emulator-fastpath-360-none-1-1.json",
+      "workers": 1,
+      "offered_rate": 360,
+      "repetition": 1,
+      "valid": false,
+      "issues": [
+        "Generator scheduling-lag p95 exceeds 50ms"
+      ],
+      "dispatch_lag_p95_seconds": 0.14891409873962402,
+      "all_responses_http_200_correct": false,
+      "controller_cpu_stat": {
+        "usage_usec": 13326795,
+        "user_usec": 7940548,
+        "system_usec": 5386246,
+        "nice_usec": 0,
+        "nr_periods": 1074,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    },
+    {
+      "file": "emulator-fastpath-360-none-1-2.json",
+      "workers": 1,
+      "offered_rate": 360,
+      "repetition": 2,
+      "valid": true,
+      "issues": [],
+      "dispatch_lag_p95_seconds": 0.0038192272186279297,
+      "all_responses_http_200_correct": true,
+      "controller_cpu_stat": {
+        "usage_usec": 4477163,
+        "user_usec": 2839248,
+        "system_usec": 1637915,
+        "nice_usec": 0,
+        "nr_periods": 365,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    },
+    {
+      "file": "emulator-fastpath-360-none-8-0.json",
+      "workers": 8,
+      "offered_rate": 360,
+      "repetition": 0,
+      "valid": true,
+      "issues": [],
+      "dispatch_lag_p95_seconds": 0.008649349212646484,
+      "all_responses_http_200_correct": true,
+      "controller_cpu_stat": {
+        "usage_usec": 15313598,
+        "user_usec": 9106616,
+        "system_usec": 6206982,
+        "nice_usec": 0,
+        "nr_periods": 1217,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    },
+    {
+      "file": "emulator-fastpath-360-none-8-1.json",
+      "workers": 8,
+      "offered_rate": 360,
+      "repetition": 1,
+      "valid": false,
+      "issues": [
+        "Generator scheduling-lag p95 exceeds 50ms"
+      ],
+      "dispatch_lag_p95_seconds": 0.06122088432312012,
+      "all_responses_http_200_correct": true,
+      "controller_cpu_stat": {
+        "usage_usec": 6489776,
+        "user_usec": 3999364,
+        "system_usec": 2490411,
+        "nice_usec": 0,
+        "nr_periods": 506,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    },
+    {
+      "file": "emulator-fastpath-360-none-8-2.json",
+      "workers": 8,
+      "offered_rate": 360,
+      "repetition": 2,
+      "valid": true,
+      "issues": [],
+      "dispatch_lag_p95_seconds": 0.004246711730957031,
+      "all_responses_http_200_correct": true,
+      "controller_cpu_stat": {
+        "usage_usec": 18860810,
+        "user_usec": 11227239,
+        "system_usec": 7633571,
+        "nice_usec": 0,
+        "nr_periods": 1494,
+        "nr_throttled": 0,
+        "throttled_usec": 0,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      },
+      "controller_continuous_samples": 0
+    }
+  ],
+  "limitations": [
+    "Two of six higher-rate controls exceed the unchanged 50ms dispatch-lag gate.",
+    "Concurrent frontend and Docker dependency-validation builds occurred on the same host; attribution of delay to the VM or host is unresolved.",
+    "The wall-clock scheduling implementation and missing continuous controller telemetry limit diagnosis. No cause is established by mean CPU usage alone.",
+    "All twelve controls are retained, including passing observations. They are not selected into a capacity result."
+  ],
+  "next_cohort": "Version3 uses monotonic duration/deadline accounting, per-role and host heartbeats, and continuous controller telemetry. A change in qualification would not retrospectively prove the cause of v2 failures."
+}

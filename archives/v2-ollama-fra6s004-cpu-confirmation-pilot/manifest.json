@@ -1,0 +1,14 @@
+{
+  "exported_at_utc": "2026-11-14T08:22:46.731538+00:00",
+  "format": "Lossless gzip copy of the complete native CPU pilot; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-fra6s004-cpu-confirmation-pilot/pilot.json.gz",
+      "source_relative_path": "runs/v2-ollama-fra6s004-cpu-confirmation-pilot/pilot.json",
+      "sha256": "0de3f7de6a5e5bf32e167de8d8e9c28be27ffa5e1770906da4aeed85f7e0e64f",
+      "decoded_sha256": "1f081e1a6174a7dcdbe479b06f7df4b18661bcd811bb0f8ac876b64a4bf10224",
+      "decoded_bytes": 1144848,
+      "bytes": 17722
+    }
+  ]
+}

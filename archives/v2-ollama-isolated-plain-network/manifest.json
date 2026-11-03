@@ -1,0 +1,14 @@
+{
+  "exported_at_utc": "2026-11-13T18:16:50.314273+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-isolated-plain-network/control.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-plain-network/control.json",
+      "sha256": "0547bd98b2ac12e02d92e622283ce450244b44d0ff943f9949738e0c5c3cb605",
+      "decoded_sha256": "6d9d1225588deb91281692e1d7798b973742c391789d2b6b1e091157bac51070",
+      "decoded_bytes": 1451543,
+      "bytes": 130735
+    }
+  ]
+}

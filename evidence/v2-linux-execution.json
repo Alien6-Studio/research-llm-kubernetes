@@ -1,0 +1,19 @@
+{
+  "run_id": 43395996529,
+  "run_url": "https://github.com/Alien6-Studio/research-llm-kubernetes/actions/runs/43395996529",
+  "source_commit": "b6d035ae6b53fdd67de08a4b3e6f1501ccda7016",
+  "conclusion": "success",
+  "runner_image": "ubuntu-24.04",
+  "runner_image_version": "20261101.360.1",
+  "runner_software_inventory": "https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md",
+  "docker_server": {
+    "version": "28.0.4",
+    "evidence": "Inferred from the runner image software inventory; not directly sampled by the V2 initial manifest. The workflow does not upgrade Docker."
+  },
+  "kind": {
+    "version": "0.32.0",
+    "binary_sha256": "50030de23cf40a18505f20426f6a8506bedf13c6e509244bd1fa9463721b0f54",
+    "evidence": "The workflow downloads, verifies and executes this binary instead of the preinstalled kind."
+  },
+  "public_job_log_sha256": "ae5c69b5c6224881bcb20bf3591c66af1d7e6f583e887cd6c3273a63f3e23581"
+}

@@ -1,0 +1,945 @@
+{
+  "collection_inventory": {
+    "path": "archives/v2-ollama-shared-admission/collection-manifest.json",
+    "sha256": "7cef7c4fada2b48fad4e02d0787360bd3939b170d0b1b2437dac4f39dce72c6d"
+  },
+  "compression": "Lossless gzip; zero header mtime; original raw bytes and collection times are unchanged.",
+  "files": [
+    {
+      "bytes": 1766,
+      "decoded_bytes": 15533,
+      "decoded_sha256": "35bcb09c24be3dec6f7dba92fbcdd9ded1ce0261d9fd5681a726b6c97ca03b32",
+      "path": "archives/shared-admission/files/runs/shared-admission/first-arm-replay/results.json.gz",
+      "sha256": "eac538f944550b68b72ddfc144dadaf8bb8f14ea0115739f08b185901b4ec295",
+      "source_relative_path": "runs/shared-admission/first-arm-replay/results.json"
+    },
+    {
+      "bytes": 764,
+      "decoded_bytes": 2952,
+      "decoded_sha256": "c61cb0653dacb249cbeb483a9a648461eebcee0dcb95246da775682b4e6f2aa4",
+      "path": "archives/shared-admission/files/runs/shared-admission/first-arm-replay/trials.csv.gz",
+      "sha256": "9f4488fc8644f19cc773f8f4af10b94c9d11c379ae963321046b38851c2eae9a",
+      "source_relative_path": "runs/shared-admission/first-arm-replay/trials.csv"
+    },
+    {
+      "bytes": 5302,
+      "decoded_bytes": 33235,
+      "decoded_sha256": "e574b3d4f3419c7d546c3d61a17fcd323a22534f7ed9fb36b5ffd708e696479b",
+      "path": "archives/shared-admission/files/runs/shared-admission/initial-recovery.json.gz",
+      "sha256": "2c540cd0bd3fb3b301dd2177f4b89a32f7a8a899859d6a1ab93beade9531d080",
+      "source_relative_path": "runs/shared-admission/initial-recovery.json"
+    },
+    {
+      "bytes": 54317,
+      "decoded_bytes": 572084,
+      "decoded_sha256": "a2a2d094f670b3980bbe17e78ad5a577f8e880aaa679c2ad6455f5cc65242896",
+      "path": "archives/shared-admission/files/runs/shared-admission/network/control.json.gz",
+      "sha256": "a19381116e0fdfb57608352bd1355f33e33741931e2e420d9863b04870f5bd4c",
+      "source_relative_path": "runs/shared-admission/network/control.json"
+    },
+    {
+      "bytes": 77,
+      "decoded_bytes": 77,
+      "decoded_sha256": "e90fe7883307cfc47722a7c78fdbc2066d260a0a8b154c33553b1d23a905a13d",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/block.json.gz",
+      "sha256": "0e7cfcadc9814b5553acace38fb32f7936d22fd91c9605dee1e3a30ce4be2cb6",
+      "source_relative_path": "runs/shared-admission/qualification/block.json"
+    },
+    {
+      "bytes": 5389,
+      "decoded_bytes": 29870,
+      "decoded_sha256": "679c37a1edd3f36d44041a5cdbb7aa55d9de97b15ce07de52eb4af54389bbf69",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/manifest.json.gz",
+      "sha256": "2f804882aabed1b2f00e2c87c902d6350d7ac4f790ebfd7d53faa28910ee084c",
+      "source_relative_path": "runs/shared-admission/qualification/manifest.json"
+    },
+    {
+      "bytes": 1384053,
+      "decoded_bytes": 16868592,
+      "decoded_sha256": "009ce9c5284db7184b7dc7d2307f75dd6e9bd73e6da2c7fcf219d9825f4cc690",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-headroom-1-0.json.gz",
+      "sha256": "a94a7d083127ad8af3d51c934a9f94b1d0f084b8293235e92c0558f4e3412346",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-headroom-1-0.json"
+    },
+    {
+      "bytes": 1358982,
+      "decoded_bytes": 16649889,
+      "decoded_sha256": "a2e9478c156af6db177f597623d7459300d9fa5fe6cf56192619aa5e34042167",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-headroom-1-1.json.gz",
+      "sha256": "3ec93962cf3030e14bd8cf81d3d7495ff41223635a6b237bbc08bb05dd8cfd5a",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-headroom-1-1.json"
+    },
+    {
+      "bytes": 1324449,
+      "decoded_bytes": 16277517,
+      "decoded_sha256": "0bd446dc59c2381b9fa2fc8c9979da390dddc4d508c257d01e7f786e0f476bed",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-headroom-1-2.json.gz",
+      "sha256": "1ecda874ba54011b7d17b754009b1098e5606226b61655ebf97ded34b24951ea",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-headroom-1-2.json"
+    },
+    {
+      "bytes": 6572289,
+      "decoded_bytes": 36456018,
+      "decoded_sha256": "ed6ff17e6863adc4c1655f107c4a58619f201d5c0ad9fb0cf40cb0fb44e82880",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-headroom-8-0.json.gz",
+      "sha256": "94fc3226911120fd7f17a67930495b67c1032110e3a40e2ad9e8709cc9fb9875",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-headroom-8-0.json"
+    },
+    {
+      "bytes": 6567354,
+      "decoded_bytes": 36230123,
+      "decoded_sha256": "e4da46bd8b3e4fea9fe08188d068b4ed40c94f0bad076f8e736d30e0cb8f7819",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-headroom-8-1.json.gz",
+      "sha256": "37f27c295a18ebf5440d2f91b5a9eef5749bc6fa3eb8c4de91836a5e74d5ef08",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-headroom-8-1.json"
+    },
+    {
+      "bytes": 6416067,
+      "decoded_bytes": 35510438,
+      "decoded_sha256": "b20dca6a61c0aa6d2a8fd92b3882c1bb443cb57511680cfb7899036304f0f930",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-headroom-8-2.json.gz",
+      "sha256": "9ae41e632e737d800cf661b67dc1809a7c1ebc3bd09e64a7e5ba8e77ce91e157",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-headroom-8-2.json"
+    },
+    {
+      "bytes": 1331621,
+      "decoded_bytes": 16161837,
+      "decoded_sha256": "e0d91891e1197faabc361fb537d2f85a328a6ec835c98b0651e238843aa22310",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-high-1-0.json.gz",
+      "sha256": "46c9244a809df0f690c2a25c1c2ae16fe62df6286d0c339edca77883af1abe57",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-high-1-0.json"
+    },
+    {
+      "bytes": 1325913,
+      "decoded_bytes": 16150169,
+      "decoded_sha256": "6a808c3dce8bd590969bc4616411b0b37162bbbb3246d9d900106459a5e2e38c",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-high-1-1.json.gz",
+      "sha256": "f661203f49b32e276f2248971ce6e135121fbb30b74f4061d7d02498cb122ca4",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-high-1-1.json"
+    },
+    {
+      "bytes": 1316414,
+      "decoded_bytes": 15947351,
+      "decoded_sha256": "4ed0501c5c98bf1d861e6b4cc6aaeac28fbd4fe4be013d203c0843950e9322c7",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-high-1-2.json.gz",
+      "sha256": "996ab45539a77902f17a196213e1505abb0621be72eaaab31f2d220331a75b81",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-high-1-2.json"
+    },
+    {
+      "bytes": 6503856,
+      "decoded_bytes": 35694568,
+      "decoded_sha256": "e6d3d3859f0c4fb2689d517cc9bb0bcea3cb69b795bab4486cbb438b65009efc",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-high-8-0.json.gz",
+      "sha256": "d2cbead9947a6c5182e6b63af73cdf45cdf9c88e169948c45b3554393383aed9",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-high-8-0.json"
+    },
+    {
+      "bytes": 6511886,
+      "decoded_bytes": 35736445,
+      "decoded_sha256": "7902eb31c448282d28638776851ec5a55181a85ac9199eb52f732b31d89d4eb2",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-high-8-1.json.gz",
+      "sha256": "134233d65438d004e4f6554f79cc6c09bf1ca13bd43765e5ccf47ea81e910a07",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-high-8-1.json"
+    },
+    {
+      "bytes": 6496429,
+      "decoded_bytes": 35487879,
+      "decoded_sha256": "525b9e2d7c3bbdc5ba60e3d979efbfe6eb66fc943c6836ab52aadac223df0679",
+      "path": "archives/shared-admission/files/runs/shared-admission/qualification/model-qualification-high-8-2.json.gz",
+      "sha256": "202d23b96dd824e0e82972c06bdbd7f7d1f4756980a62b0fff5c29cde784a918",
+      "source_relative_path": "runs/shared-admission/qualification/model-qualification-high-8-2.json"
+    },
+    {
+      "bytes": 1692,
+      "decoded_bytes": 5151,
+      "decoded_sha256": "f39eaa2bb94acaafdb9a9dbee70d1a1f03999a13d21da46d6e14fddd089ee67d",
+      "path": "archives/shared-admission/files/runs/shared-admission/study-control-binding.json.gz",
+      "sha256": "6c8002d0fd849f36c3f5ab8d537cbea90ce691e0bf2254509079e9e4d579aa6d",
+      "source_relative_path": "runs/shared-admission/study-control-binding.json"
+    },
+    {
+      "bytes": 7405,
+      "decoded_bytes": 93044,
+      "decoded_sha256": "24de27d46297202ed933671edde59882ee3681acbeee4381ba3ec81685cdb01c",
+      "path": "archives/shared-admission/files/runs/shared-admission/supervisor-final.json.gz",
+      "sha256": "8ec0b71e6526a77626e740d344a4cfec2db37e7f92004abec41de95609138c0d",
+      "source_relative_path": "runs/shared-admission/supervisor-final.json"
+    },
+    {
+      "bytes": 1393491,
+      "decoded_bytes": 19410030,
+      "decoded_sha256": "7be40f3262d4fc02e1fc5471dabaa2ccd8d4627ca2efb5eaa38e2fc1bafa88be",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-0-bypass/real-model/admission-high-1-0-bypass.json.gz",
+      "sha256": "2d0a548e128d3589630bb75f6f1d5666924ac3b8a9211a30bfbdd80dbf7ff270",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-0-bypass/real-model/admission-high-1-0-bypass.json"
+    },
+    {
+      "bytes": 5677,
+      "decoded_bytes": 30811,
+      "decoded_sha256": "424672a40e2121efb4dbff0cb9db98ae22a5e101aa8cbe9c659014154efebd28",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-0-bypass/real-model/manifest.json.gz",
+      "sha256": "8fcf4899ae1deaf084b3e7a8c0c723aeac8bb785eb59afe5064dc82b150ecdf4",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-0-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 41878,
+      "decoded_bytes": 2524091,
+      "decoded_sha256": "e7194225aa6f719e3f5f9bc12ebb31ecf661c331f0b3e0cd9d2dbdde9f5b4a4c",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-0-bypass/recovery.json.gz",
+      "sha256": "88cd89daa9a7058776fc43711beb2152232be18f6469256fe65d7951825c101f",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-0-bypass/recovery.json"
+    },
+    {
+      "bytes": 6535,
+      "decoded_bytes": 101673,
+      "decoded_sha256": "ebc902cd42918688fc6ef3481e7695f633f4b1b3c338f5af7b27163efee30c78",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-0-bypass/warmup.json.gz",
+      "sha256": "3d77f8da649b1243baf4668b1ec63b9e3b4d517b8bb110a951c3ac2e0b5e986c",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-0-bypass/warmup.json"
+    },
+    {
+      "bytes": 1386072,
+      "decoded_bytes": 18506666,
+      "decoded_sha256": "b270a6f2e66ee909e03982e0dd6bed069ac77b23bbaf6a9fc25559e42d999426",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-0-global/real-model/admission-high-1-0-global.json.gz",
+      "sha256": "a0658c6cd50a40f9fbaf8e2e615eab55bdf1940c56155f8d4b45b21f4c7b988a",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-0-global/real-model/admission-high-1-0-global.json"
+    },
+    {
+      "bytes": 5679,
+      "decoded_bytes": 30806,
+      "decoded_sha256": "9e121fa7619a5b173ec64644c9442b5d334cb4ef0952349e78aa119a9a468520",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-0-global/real-model/manifest.json.gz",
+      "sha256": "f95fe8e5ed33e1421f6f93311cf7f0895f28cfe978542337cb342548989dfff6",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-0-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 38509,
+      "decoded_bytes": 2291340,
+      "decoded_sha256": "05eee50c3739baeb01116c33fb1dfe9dd3986e6adf113206c576a774a172486e",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-0-global/recovery.json.gz",
+      "sha256": "fb0ba604162627db67a334eb9f7fa8fcee86998205580e191b8f3e525cf721a3",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-0-global/recovery.json"
+    },
+    {
+      "bytes": 6531,
+      "decoded_bytes": 101676,
+      "decoded_sha256": "79b302fcc2601c5f76a91b8b8d93801f9abb820a98c9797d4a46205663949504",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-0-global/warmup.json.gz",
+      "sha256": "304902bea973ac8621a57b91be7629e3d9435ee463b6dabc7b611fc05aaa3178",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-0-global/warmup.json"
+    },
+    {
+      "bytes": 1402762,
+      "decoded_bytes": 19770714,
+      "decoded_sha256": "c081472bd4f4899f65d66bb003ff5d94f1fb91481d24c3459cc9cb5241030abf",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-1-bypass/real-model/admission-high-1-1-bypass.json.gz",
+      "sha256": "e9ca9f5860fe1121c4736bcc30fb4d4f9b9296a0119570b895dbf0db40508615",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-1-bypass/real-model/admission-high-1-1-bypass.json"
+    },
+    {
+      "bytes": 5674,
+      "decoded_bytes": 30806,
+      "decoded_sha256": "08204891c3619e898e762425f874e5e66399a6e663202ac07ad4685023d7d9b8",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-1-bypass/real-model/manifest.json.gz",
+      "sha256": "44856b6fc8201e58720f6e02f310801850ec93b2023dd0c26602a46abbc14e46",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-1-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 43142,
+      "decoded_bytes": 2626299,
+      "decoded_sha256": "edf82c21094c36cd495b6b96b5c898e4c4991e69dab3e5b5e8055e8689858bc6",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-1-bypass/recovery.json.gz",
+      "sha256": "e113d0265dd275d339809edf317c18ee987e782a544ab056213f99ca9655abc0",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-1-bypass/recovery.json"
+    },
+    {
+      "bytes": 6537,
+      "decoded_bytes": 101674,
+      "decoded_sha256": "3334288852a20162e7539eabc8d8adeedb6f623ebe1cd26cf4c4367b7a1dc3de",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-1-bypass/warmup.json.gz",
+      "sha256": "c2a2923f9f850032b8f1c9e0c79ace46b95539514f5f2e51b828aa2bd761d3d9",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-1-bypass/warmup.json"
+    },
+    {
+      "bytes": 1451440,
+      "decoded_bytes": 18864967,
+      "decoded_sha256": "bd67e6d2d13f43761f3a0f32f8837dd76382596c446d7347ea9e5519c6b7154f",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-1-global/real-model/admission-high-1-1-global.json.gz",
+      "sha256": "2067a7fb9b37e8217496eb598a7ad1779c92077f786ad10ad10eb9c965112345",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-1-global/real-model/admission-high-1-1-global.json"
+    },
+    {
+      "bytes": 5665,
+      "decoded_bytes": 30810,
+      "decoded_sha256": "a8efb8c88b13da1e0a3119ce53b5fc2f39f12fac7b6ffdb33eb3500300950898",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-1-global/real-model/manifest.json.gz",
+      "sha256": "811997e052e9ee14f8e29f7d37637f7d8728aea63217de3744bc9c840d0dc60c",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-1-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 40040,
+      "decoded_bytes": 2413936,
+      "decoded_sha256": "0104b086f3c4582cd07158c9880dbbb8e10e1f3582eb8e412c6541229e6a57e2",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-1-global/recovery.json.gz",
+      "sha256": "0469ade48f8635dd9ad3f433fa73deb1dd4ba5c69bc3e9ebfb02a2c5a9fb996a",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-1-global/recovery.json"
+    },
+    {
+      "bytes": 6521,
+      "decoded_bytes": 101674,
+      "decoded_sha256": "2dfab335025ed280ebfb0971f341a69569e6a2a7ecb27fc0551a20bd827b2bd0",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-1-global/warmup.json.gz",
+      "sha256": "153c6a7b2e97bc1e1f58bb79535500656c563dd1d7940920b9b4ed718ac05a90",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-1-global/warmup.json"
+    },
+    {
+      "bytes": 1372066,
+      "decoded_bytes": 18778580,
+      "decoded_sha256": "8a7b257d03eec00d61b083b969c70bf8536e67b005df8f579c96892df5ad6421",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-2-bypass/real-model/admission-high-1-2-bypass.json.gz",
+      "sha256": "d2a29afbd47fccaf02d87164aacb4d9c479c24c4e1633c2edb1750a1e27bec96",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-2-bypass/real-model/admission-high-1-2-bypass.json"
+    },
+    {
+      "bytes": 5664,
+      "decoded_bytes": 30809,
+      "decoded_sha256": "49c30b1d9291a374c9dd7135f2dc9ad2247a218edc3f33dd7ee9140ce7e2aa2d",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-2-bypass/real-model/manifest.json.gz",
+      "sha256": "64ee64132167e0d984b4841ef6f6950ae13f7801b8adf6ee9fe6b63a1ea99538",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-2-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 21996,
+      "decoded_bytes": 1049447,
+      "decoded_sha256": "79744cab73055e1cb9be7b5115419b5ee0e40f656ebf804d509b2d2ffdbfb3a3",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-2-bypass/recovery.json.gz",
+      "sha256": "7b57508c7a0a81693819bb7427ae3ccd44cd613a6fd7c45a2c8007ceabb7b3af",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-2-bypass/recovery.json"
+    },
+    {
+      "bytes": 6518,
+      "decoded_bytes": 101675,
+      "decoded_sha256": "94426f6485043e8468fa358bb6e8ed9fbc076aef46c7fc64e0eea90b7d9cf45b",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-2-bypass/warmup.json.gz",
+      "sha256": "d4e4f46b3b573a921b6cbc61ff115ed546afb8f8f367f1a65b631414dab12d6c",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-2-bypass/warmup.json"
+    },
+    {
+      "bytes": 1371111,
+      "decoded_bytes": 18081832,
+      "decoded_sha256": "c8443129d96a88ed3dc73cec9e7ef94e08a602ce3c82434d113ae47b4cdd4c8b",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-2-global/real-model/admission-high-1-2-global.json.gz",
+      "sha256": "0628686e72995bdc0a0b24aa5e21338950d5f148cc2785dedfd92fe448be0dae",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-2-global/real-model/admission-high-1-2-global.json"
+    },
+    {
+      "bytes": 5665,
+      "decoded_bytes": 30810,
+      "decoded_sha256": "44148109d58cbb8d81c270f923b775dc13b34b153b9a3964adb0ccce5e91216d",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-2-global/real-model/manifest.json.gz",
+      "sha256": "437fcd25a7d49cc4a616debc99b5146babccce2d76121d336b7ede65f6fab1f9",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-2-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 24724,
+      "decoded_bytes": 1260791,
+      "decoded_sha256": "81a7c863a48f6e0768332154c01dc7c176fb63ecfe69a8dbc0fcaa0d46165143",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-2-global/recovery.json.gz",
+      "sha256": "8f0fcf55c4c6d9b6272ed277deb8b8acf7b776026cd5859c9fd15e28f1a7bad9",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-2-global/recovery.json"
+    },
+    {
+      "bytes": 6527,
+      "decoded_bytes": 101675,
+      "decoded_sha256": "0cfcc3d08f04338d9ca9ede22dc9dbdaa579390bb3bab0fb010266690206ba3a",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-1-2-global/warmup.json.gz",
+      "sha256": "c480fd0b882d36e70594430aa5f8138b8d7da4839e6828c1bb54bdff60ee6d50",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-1-2-global/warmup.json"
+    },
+    {
+      "bytes": 7893110,
+      "decoded_bytes": 46035589,
+      "decoded_sha256": "42d410e95ddd1d3b581a39ee025897b5cfdf8d308903d1e71a3cf666876d99f5",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-0-bypass/real-model/admission-high-8-0-bypass.json.gz",
+      "sha256": "87d7194277538bb42c3faef34fd2b7b79119bf852d4129e524df7f2b33d3cef5",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-0-bypass/real-model/admission-high-8-0-bypass.json"
+    },
+    {
+      "bytes": 5678,
+      "decoded_bytes": 30810,
+      "decoded_sha256": "9baa9d23a61f2e0c11bfaebab63e7fcfac2640fffee05487f87e7585a33a56ce",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-0-bypass/real-model/manifest.json.gz",
+      "sha256": "20a0b9705c7bfb6003b62c3b303042be1f2bc8410936ef24997eaf1044c20b80",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-0-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 26272,
+      "decoded_bytes": 1379226,
+      "decoded_sha256": "5a715dec4b76391aa0bc99cbf32c8bee30d25d84b22eb003f1969c08b0d4c537",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-0-bypass/recovery.json.gz",
+      "sha256": "4658a8baff6f2e600fe4268a4b5ad17350f90eee748f48bba612e9f80a6e8ca7",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-0-bypass/recovery.json"
+    },
+    {
+      "bytes": 6517,
+      "decoded_bytes": 101670,
+      "decoded_sha256": "9acef10264a6aaae6439badf776b3f057d82528e2c9fff44fd6dbcf885c890bf",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-0-bypass/warmup.json.gz",
+      "sha256": "f1077ff1c34ce060064f588c69e343db9f75bc74b99ffdf38bd317acc510e821",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-0-bypass/warmup.json"
+    },
+    {
+      "bytes": 6581424,
+      "decoded_bytes": 37949690,
+      "decoded_sha256": "49bd08a5f49768a671c0a8fe0f4fe5841096fd6606047df9dc3e235e7436356c",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-0-global/real-model/admission-high-8-0-global.json.gz",
+      "sha256": "3571ecb9884a50789f026269ff5fd231aeaa10a5e596f73d9a659ef72fbbcbfc",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-0-global/real-model/admission-high-8-0-global.json"
+    },
+    {
+      "bytes": 5682,
+      "decoded_bytes": 30815,
+      "decoded_sha256": "ef42eded150228f46cd6e20728179498d1ba0a5db70901ba16fb9cc960a8a101",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-0-global/real-model/manifest.json.gz",
+      "sha256": "03f24b537847c3df8cc070300e25338587ad90f823dbadadb418feed16d096e1",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-0-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 6023,
+      "decoded_bytes": 42268,
+      "decoded_sha256": "71de838e77a5f7256b10565ab640471e420161a9e2359bde58ccc449a3f57b2d",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-0-global/recovery.json.gz",
+      "sha256": "c7dd9b652934c33c923a864ac872c6673ecef257e262d91e4d425ab4892ce5cd",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-0-global/recovery.json"
+    },
+    {
+      "bytes": 6529,
+      "decoded_bytes": 101677,
+      "decoded_sha256": "4f781ec927789141e2615f861b7d1715827a3a5b98bdeb3afb4206581e00d898",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-0-global/warmup.json.gz",
+      "sha256": "0f1282ddba44e7719a9c05d926e6b86465f27663294fe7027c2411e5177a3c80",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-0-global/warmup.json"
+    },
+    {
+      "bytes": 6619822,
+      "decoded_bytes": 39561117,
+      "decoded_sha256": "a1af5f357cedbdd4e9206eed9f16e1b6d33df24c0654e918b7336f3b5d604efa",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-1-bypass/real-model/admission-high-8-1-bypass.json.gz",
+      "sha256": "30bbaa2fe67af9956f5f0e7ba8368356237c83ab189feddf281405a35c00112b",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-1-bypass/real-model/admission-high-8-1-bypass.json"
+    },
+    {
+      "bytes": 5681,
+      "decoded_bytes": 30817,
+      "decoded_sha256": "666fdfdcdabdd42f28a901856faf46310316f32af08bcde25b5fa267f7660d2d",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-1-bypass/real-model/manifest.json.gz",
+      "sha256": "2e4abb1a1d33aebef15924d979a9cdbc959a504492c6a2a18a1625d6a44aea7c",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-1-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 25093,
+      "decoded_bytes": 1284755,
+      "decoded_sha256": "e6e1b34e3e21ec471cd18db16107cf79e0cc3858bae8f564a7f44566f74c82cc",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-1-bypass/recovery.json.gz",
+      "sha256": "6761f1ce6b697195b334a831c9cd72cf49695c27d4d89c93b90689a63937342b",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-1-bypass/recovery.json"
+    },
+    {
+      "bytes": 6522,
+      "decoded_bytes": 101675,
+      "decoded_sha256": "fd6dc0bc38630042adcf7097a6bc46a0d44386ee1cb3a049540ec0c6a326c146",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-1-bypass/warmup.json.gz",
+      "sha256": "d389ab5742e61a6ae37eeb1f47500ed0294417f4bf03604bc89f1f304c6b9fdf",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-1-bypass/warmup.json"
+    },
+    {
+      "bytes": 6804825,
+      "decoded_bytes": 39302106,
+      "decoded_sha256": "2f65fa11dfc3b081a637639ac7982619491e522961a7c626f52b4e535f0b1bff",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-1-global/real-model/admission-high-8-1-global.json.gz",
+      "sha256": "69c1caf4ca7c218423feb7f7ddeb15873705243ef98a75abc664690e40acaf1d",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-1-global/real-model/admission-high-8-1-global.json"
+    },
+    {
+      "bytes": 5665,
+      "decoded_bytes": 30810,
+      "decoded_sha256": "2a6e49f61c0847c9109f4f7aa1daf98c4cea2f5e99c0623cda5d3007b11f36b1",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-1-global/real-model/manifest.json.gz",
+      "sha256": "9564352d50c6f588145483feb82654a959595cf8afa3ba5673e1709583c37150",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-1-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 22627,
+      "decoded_bytes": 1042301,
+      "decoded_sha256": "50db46fffcf76bda2ae8e446bd0cf7c6806bcb2e90c97b31d732b8ac342600fc",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-1-global/recovery.json.gz",
+      "sha256": "a2c12d3ea7a5b65021a6aeaf4e16c2547288a04bff0986e922db755db0c8d495",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-1-global/recovery.json"
+    },
+    {
+      "bytes": 6529,
+      "decoded_bytes": 101675,
+      "decoded_sha256": "7085e20983da800bd177c813563d604599cfb614d0057bd7ce233cfe3defeea9",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-1-global/warmup.json.gz",
+      "sha256": "ea5932f3f00fd1385110d2f492c788fe611c5754433f703a19a75c5f034403b8",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-1-global/warmup.json"
+    },
+    {
+      "bytes": 6597816,
+      "decoded_bytes": 38695654,
+      "decoded_sha256": "555fe504a7d816751f3403cd4f6155435b3a8cd343ac4bfd288fd8307e7ef72b",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-2-bypass/real-model/admission-high-8-2-bypass.json.gz",
+      "sha256": "cb5b2bed5d5782806a067aad8645e1b92cbf9b43c00a6007f1ae47a0acdc9f7d",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-2-bypass/real-model/admission-high-8-2-bypass.json"
+    },
+    {
+      "bytes": 5689,
+      "decoded_bytes": 30806,
+      "decoded_sha256": "86305e5b15b7e2370fa1bf179c31836d839ab0c4f8476ebca3b4dcb5c24bb097",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-2-bypass/real-model/manifest.json.gz",
+      "sha256": "1f387f5539efda7d4e1792bcea97975b69868af1d9a9e613608b86203dcdcce2",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-2-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 21602,
+      "decoded_bytes": 1005377,
+      "decoded_sha256": "5e697f4cfbb46e88fd833e86e6cb2f20551e301a5a4a7ddb1f58fda147067208",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-2-bypass/recovery.json.gz",
+      "sha256": "37f91e50572f5a484251adb6dc5f5801f94ca0343265a29fc050bc5fea4a2657",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-2-bypass/recovery.json"
+    },
+    {
+      "bytes": 6532,
+      "decoded_bytes": 101672,
+      "decoded_sha256": "57649a557fa60a9aeddaf481f882dc380e06c52e088e342bcbeac22d046191c1",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-2-bypass/warmup.json.gz",
+      "sha256": "daf155cdfb9343b14c7e734214228c249914115d8271bfc268a442d773d5482c",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-2-bypass/warmup.json"
+    },
+    {
+      "bytes": 6688975,
+      "decoded_bytes": 38007136,
+      "decoded_sha256": "a3de60392bc11d5c67120e77aaa4f2f54a86ce20a839f3a4debf531d48915446",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-2-global/real-model/admission-high-8-2-global.json.gz",
+      "sha256": "7797a651d952704a528a8c5b2942cbc78705fa7236c43cfbf9cbd701e99307ff",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-2-global/real-model/admission-high-8-2-global.json"
+    },
+    {
+      "bytes": 5683,
+      "decoded_bytes": 30810,
+      "decoded_sha256": "5f4ac00077b4892bfd2f3f4d0a7c9acab1788ceeaeea7f572ef178faa8a55867",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-2-global/real-model/manifest.json.gz",
+      "sha256": "a15ebd48d490aaee3e9dbaf59f49c04cc68129e36b4a607776c400b53c8e0579",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-2-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 21622,
+      "decoded_bytes": 1026622,
+      "decoded_sha256": "f8f24c291e6bf423fdbea1fcbaadbdb9a50694bb5e6ec17a7488b68331f66205",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-2-global/recovery.json.gz",
+      "sha256": "7be1a73e13b50701efa88e0c1c5abedb65d59eb2cd1d40f04c37c537833a9e8c",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-2-global/recovery.json"
+    },
+    {
+      "bytes": 6534,
+      "decoded_bytes": 101674,
+      "decoded_sha256": "5d18f8a9b78bd26be6b0e54fb9d42da4bda1cbc31fca9bfd1fcc20a6fc2e14b1",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-high-8-2-global/warmup.json.gz",
+      "sha256": "165d6e59714ec7d14ed47ae76dc59d08180e839eeadb0f619984be4ecb7cd92d",
+      "source_relative_path": "runs/shared-admission/trials/admission-high-8-2-global/warmup.json"
+    },
+    {
+      "bytes": 1426169,
+      "decoded_bytes": 18444193,
+      "decoded_sha256": "2db619f3db53289c3e29a75075d25b532afa9b5ead0662d799ca1003a239b234",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-0-bypass/real-model/admission-near-1-0-bypass.json.gz",
+      "sha256": "b382a92ade7bc46cd6edbdcb0f11464911ac33d30eed2c9283b24ef204ab9e10",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-0-bypass/real-model/admission-near-1-0-bypass.json"
+    },
+    {
+      "bytes": 5679,
+      "decoded_bytes": 30806,
+      "decoded_sha256": "07ae707e32e9e18b5e24e73b38d66502f6a3773ec1df5be0b815e915f6722a7e",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-0-bypass/real-model/manifest.json.gz",
+      "sha256": "0aee05f1d581c2f79db1a2c9f903ae3e657f6c359e604fc7f144b0520b5245dc",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-0-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 18964,
+      "decoded_bytes": 791252,
+      "decoded_sha256": "dfd3c2aa51e3ee9151f2b00218ee06c5eebc67a4addf4ed28ddfc99d326db05e",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-0-bypass/recovery.json.gz",
+      "sha256": "ba1966306b43d7cf1ed8c5a4ae9eabc176a84107297ca81a384d1764b6e7b91c",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-0-bypass/recovery.json"
+    },
+    {
+      "bytes": 6525,
+      "decoded_bytes": 101674,
+      "decoded_sha256": "112fcf5977a46f27ef8c870d6a2cc2d96156403db1dc6043999ca8a0a6fa6920",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-0-bypass/warmup.json.gz",
+      "sha256": "6d98c4eac55afd6ea1c6e618d381e7a2c42c7629498812cd767593a5588e2574",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-0-bypass/warmup.json"
+    },
+    {
+      "bytes": 1355287,
+      "decoded_bytes": 17851526,
+      "decoded_sha256": "61b58e0aa8c1ab2ad7bf987fab158a55fbaa19b2a25b8a17298b56536e583667",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-0-global/real-model/admission-near-1-0-global.json.gz",
+      "sha256": "b2f657ad6ecaf22143ee214ce2163368b42722aca69413c90ba69c6eeaa736ac",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-0-global/real-model/admission-near-1-0-global.json"
+    },
+    {
+      "bytes": 5690,
+      "decoded_bytes": 30810,
+      "decoded_sha256": "182922dd62f4a2832293f556c8f112b4d2cc94808d9d35222e203287468d9182",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-0-global/real-model/manifest.json.gz",
+      "sha256": "198fcfce9392cf99fbf8aa8f12e29b1a06b718ddb0ed020b8c611df496189bd8",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-0-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 28519,
+      "decoded_bytes": 1512920,
+      "decoded_sha256": "b3733bc7e074f3129a6e8f545ff527b4e144254dbfc611eb527c7303fceccbb2",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-0-global/recovery.json.gz",
+      "sha256": "4455e7e65b5381890c172674fe6b72cbec4561d2d37841de8ed906987c03b196",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-0-global/recovery.json"
+    },
+    {
+      "bytes": 6527,
+      "decoded_bytes": 101675,
+      "decoded_sha256": "67c712317487434e71b8572703008274c0d13b17cfd174e49e5e4c90fb017bd4",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-0-global/warmup.json.gz",
+      "sha256": "d3cbd99d5d956831be4507edc8962a14aeb820f3d71b31b29a9fdb1abd83ac52",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-0-global/warmup.json"
+    },
+    {
+      "bytes": 1289314,
+      "decoded_bytes": 17435168,
+      "decoded_sha256": "5622fa952dced861cf0b72e3ff4a779956613c3a39beedfdbd129ed70383786f",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-1-bypass/real-model/admission-near-1-1-bypass.json.gz",
+      "sha256": "674c32f28db8e8cad45152b9a08dd9cc3215d00b4ff2853d7b89d40071e363a7",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-1-bypass/real-model/admission-near-1-1-bypass.json"
+    },
+    {
+      "bytes": 5696,
+      "decoded_bytes": 30810,
+      "decoded_sha256": "b7c136471b767590afb87b9f857470ac266ad68b6bdbdfdd532c38281d267fa6",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-1-bypass/real-model/manifest.json.gz",
+      "sha256": "196cbc06f075ebc63c4865c39c6255facd657a38f55c76ac8be2c5bd1cf15574",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-1-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 20580,
+      "decoded_bytes": 895207,
+      "decoded_sha256": "23bb9e3ab880386f77231d9734c52095c35cbd9d4f8b90111f6af0556da4f27d",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-1-bypass/recovery.json.gz",
+      "sha256": "0746729f46c10ad7e19e3e6a472bf196f33f6834479beac8ad8909ce5c829173",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-1-bypass/recovery.json"
+    },
+    {
+      "bytes": 6550,
+      "decoded_bytes": 101670,
+      "decoded_sha256": "75d52394114e8972d7b070aac1e9941ef90a8e2c3bee9de5d6fcdaf3ddd8f7a7",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-1-bypass/warmup.json.gz",
+      "sha256": "9bd69d461a3313413c813006bd0bc1605ef89c4d1cd1450bb7219e5c926348c1",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-1-bypass/warmup.json"
+    },
+    {
+      "bytes": 1305636,
+      "decoded_bytes": 17115359,
+      "decoded_sha256": "75ff8bc6d262ff4a98a7ea429640bf38c4abb4bb1e8322dec6c1119550d4dd59",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-1-global/real-model/admission-near-1-1-global.json.gz",
+      "sha256": "a63108e96a264b5ed3a4f78b965e7b0d4b2670d1dea00dc6821c8fc8e0c447dc",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-1-global/real-model/admission-near-1-1-global.json"
+    },
+    {
+      "bytes": 5684,
+      "decoded_bytes": 30810,
+      "decoded_sha256": "162ae3296779488f819417db94f5f89f3f4f6b72d1bb8015d55c345c0e1bbc3a",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-1-global/real-model/manifest.json.gz",
+      "sha256": "9e3eef1cae48739c31523d0c5192b675abe6f56e3b489d620a114c012c6386aa",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-1-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 21602,
+      "decoded_bytes": 1026609,
+      "decoded_sha256": "3d71a8cee102171c18760ffce19c1798c3bac5518fd4226d9f904ed6aaa3dcb6",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-1-global/recovery.json.gz",
+      "sha256": "3175e932bc5e3a8f8c384f99bf21f13aa4b86ab13e8fee99809bcb861bc63408",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-1-global/recovery.json"
+    },
+    {
+      "bytes": 6540,
+      "decoded_bytes": 101674,
+      "decoded_sha256": "5a3a1a64d96a3ee1ad42bd2bf7c91d6b9d776c23f72e340a34c07f8c5c033196",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-1-global/warmup.json.gz",
+      "sha256": "852fc227d7ad313ed58db25095e0bdd75568beb124e1458481e33c8d184a0124",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-1-global/warmup.json"
+    },
+    {
+      "bytes": 1325639,
+      "decoded_bytes": 17616579,
+      "decoded_sha256": "d20e0a4662eba36bf24720398bda866e4965ca384e175c5ebe700846fc639256",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-2-bypass/real-model/admission-near-1-2-bypass.json.gz",
+      "sha256": "463a4f4017b46b21e65f688a510087093d8aeeff32069d6605fac2857a38b9c6",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-2-bypass/real-model/admission-near-1-2-bypass.json"
+    },
+    {
+      "bytes": 5688,
+      "decoded_bytes": 30811,
+      "decoded_sha256": "83f418c11754c12b5292989db86b40d67fd723e327047a9bd13f3778386af42b",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-2-bypass/real-model/manifest.json.gz",
+      "sha256": "c6777e68b537c16165b87128583aa1e25aa1362e0108ea3bd43c94a962f01c35",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-2-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 19052,
+      "decoded_bytes": 791328,
+      "decoded_sha256": "de7dc94108641a4c2da677fd38497fbf5df6e7b447c5cd5dfe530b57303a4907",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-2-bypass/recovery.json.gz",
+      "sha256": "5d11939364013dd99d9f4ef60ddb81548cd4f373d1e03dd36e333e14116ec109",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-2-bypass/recovery.json"
+    },
+    {
+      "bytes": 6527,
+      "decoded_bytes": 101670,
+      "decoded_sha256": "e05996b23fa35e63f7e1bde08e34af07ab1e6e0ef95690080ce50a0893052288",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-2-bypass/warmup.json.gz",
+      "sha256": "7f4bec335103cc0540e39973c47f2af192477a2a227f35ec95d60930326ed0c9",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-2-bypass/warmup.json"
+    },
+    {
+      "bytes": 1358880,
+      "decoded_bytes": 17703242,
+      "decoded_sha256": "829dbce8d1bd6cc21a23fc596ad5864a32e382e059d3a7e35cd67dcc1519d571",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-2-global/real-model/admission-near-1-2-global.json.gz",
+      "sha256": "cba09bf9dc8361c62437f04a76d0a3e1e02568b13ad595a7f0f8253a7cb15123",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-2-global/real-model/admission-near-1-2-global.json"
+    },
+    {
+      "bytes": 5684,
+      "decoded_bytes": 30815,
+      "decoded_sha256": "62c3def695c131d5f4686323a0d5291c6f816d382aa3cc99d15690f9086ccb07",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-2-global/real-model/manifest.json.gz",
+      "sha256": "3f89e7a0ed8a402c7db18040fc28c69f5d0326b70fc54736cf8810a198423914",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-2-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 26293,
+      "decoded_bytes": 1379230,
+      "decoded_sha256": "dacc56dcbb10dd2729a1f2c0ab13f795b99ece61bfa469b6f40fa5da88b5cc62",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-2-global/recovery.json.gz",
+      "sha256": "b1a9fdd32508787caa0d5c1230f23b90a0c6d6e817db981fee4b61b7d5df5551",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-2-global/recovery.json"
+    },
+    {
+      "bytes": 6538,
+      "decoded_bytes": 101675,
+      "decoded_sha256": "e28169a24588668dbf632adf5e6e06be1e7953c135ec139e714959aa4692f4f3",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-1-2-global/warmup.json.gz",
+      "sha256": "71e62ec127d3fb030e1ddbfb98b454a8f0ef5cd8602b51afbf03b8df94b7b36d",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-1-2-global/warmup.json"
+    },
+    {
+      "bytes": 6544124,
+      "decoded_bytes": 38183629,
+      "decoded_sha256": "232c6f6e8769fe184ca5ce99b499283b820c3be0afb8cc1bfa325f461d5b76b0",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-0-bypass/real-model/admission-near-8-0-bypass.json.gz",
+      "sha256": "09658ad691ec3f87f5040a5192ea284383f13c63096e5b874abc93945063687f",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-0-bypass/real-model/admission-near-8-0-bypass.json"
+    },
+    {
+      "bytes": 5677,
+      "decoded_bytes": 30810,
+      "decoded_sha256": "af4b45cb4ede92dfc1d343c034ee1f12881bb7d3cdeeedbfa4953038b3030155",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-0-bypass/real-model/manifest.json.gz",
+      "sha256": "8a6d32eb73fd970f2a0bc1aaa4bfe9d44154cf1b422bd05ab530dd16ca92ed71",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-0-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 30556,
+      "decoded_bytes": 1729500,
+      "decoded_sha256": "985cca60abb5d97a4254cfd511002d64771f1fba08c0298af79d73d20d242284",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-0-bypass/recovery.json.gz",
+      "sha256": "049f1c3961af5e226428d0e0f8d554940e6a535f71d1863066944d08a5167a32",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-0-bypass/recovery.json"
+    },
+    {
+      "bytes": 6520,
+      "decoded_bytes": 101674,
+      "decoded_sha256": "f1b013a74a70de62e007ffc6b30be12950e19afb94819fe6a60770e227a01c28",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-0-bypass/warmup.json.gz",
+      "sha256": "d33b3fa86322f3ee637ec0739aee69dcf35146b4ff9010d6aef02a6aae53fbe8",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-0-bypass/warmup.json"
+    },
+    {
+      "bytes": 6625533,
+      "decoded_bytes": 37883844,
+      "decoded_sha256": "917ff9b690827602c25f869f6dd01d0cfbc9e31aeb6788e4a72b0f088fa28115",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-0-global/real-model/admission-near-8-0-global.json.gz",
+      "sha256": "54d4f2d8a9f72116f584f1a696225d704dfbff212857fb9715437f2fe4bceea1",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-0-global/real-model/admission-near-8-0-global.json"
+    },
+    {
+      "bytes": 5676,
+      "decoded_bytes": 30810,
+      "decoded_sha256": "8f8e1849e6a971077e14dc49c934e82bd27c3b2e1bb8334111b63b5ce8a3ec2c",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-0-global/real-model/manifest.json.gz",
+      "sha256": "8f142859e182eadd92504c1f74a4d44a03a3fe72f3553aa266215ab1899c8eba",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-0-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 29906,
+      "decoded_bytes": 1649306,
+      "decoded_sha256": "8759b642ec39328e19c64b58763bde6779ed0af9b2d52f1ecce50c435a1ff11f",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-0-global/recovery.json.gz",
+      "sha256": "72627a5d223a72a8897aa8a80dceb4c6f42b4482bced2c4878a6e2b302ab654a",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-0-global/recovery.json"
+    },
+    {
+      "bytes": 6537,
+      "decoded_bytes": 101671,
+      "decoded_sha256": "3818cae83878515ca105f07d9ce6410b632e269b3549ea822faaf2691a150c49",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-0-global/warmup.json.gz",
+      "sha256": "f0bd6043c85c6c6d2ea0cc7cc4d2cc720ea1f8d0cb2ebee983507cd9a7ad3485",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-0-global/warmup.json"
+    },
+    {
+      "bytes": 6361681,
+      "decoded_bytes": 36753119,
+      "decoded_sha256": "a6b0939b26f867de5e1b74d153074ed197922ddc8e2e30f388a6db5f48f01ab5",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-1-bypass/real-model/admission-near-8-1-bypass.json.gz",
+      "sha256": "19b329b1a446b13ff9f3916c729c4436dc678e23dc82dab9a0fa7605b67bb263",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-1-bypass/real-model/admission-near-8-1-bypass.json"
+    },
+    {
+      "bytes": 5681,
+      "decoded_bytes": 30810,
+      "decoded_sha256": "ac38d3b48c91c51a8c4bae6eaba407a70db2632b936c810e498785cccef9f493",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-1-bypass/real-model/manifest.json.gz",
+      "sha256": "c3fa64b7e93c5123feceadcc32225858407dc687d49d6002e87804021ca6e826",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-1-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 26286,
+      "decoded_bytes": 1323182,
+      "decoded_sha256": "7321c1018a8ea52f6fa5fa2206625ccc5998a1b7ce554291b8ec863286d4a8d4",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-1-bypass/recovery.json.gz",
+      "sha256": "b6ecbfc989b698a4d272703a93340267ec774708a95371644dc46027422bdea5",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-1-bypass/recovery.json"
+    },
+    {
+      "bytes": 6522,
+      "decoded_bytes": 101665,
+      "decoded_sha256": "68ea24f13003a2e2bbbae4115c57d052ce6dbd25e32135de10959d638074e476",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-1-bypass/warmup.json.gz",
+      "sha256": "56d02af70d0121f49878292c08c8811bfae1352986167446b9d6a9f241f78f56",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-1-bypass/warmup.json"
+    },
+    {
+      "bytes": 6332063,
+      "decoded_bytes": 36239859,
+      "decoded_sha256": "5955f1ed4a52c027049c04a47e7126894de3fe0915ab10097bbcf91c13bfc9ab",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-1-global/real-model/admission-near-8-1-global.json.gz",
+      "sha256": "4edd8400c11f25c556dfc8cfd19de5637bde8c04286be24101d5a0324ae0cf54",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-1-global/real-model/admission-near-8-1-global.json"
+    },
+    {
+      "bytes": 5684,
+      "decoded_bytes": 30806,
+      "decoded_sha256": "a0f29c0d6afefd538aa1cfc55f479e7cc42ed03ba791c3039b4f946bec3a1889",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-1-global/real-model/manifest.json.gz",
+      "sha256": "7c66478ec7816ab27c5e5061b942975692783e3cf38f4b2f382bb18f67a5446a",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-1-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 28025,
+      "decoded_bytes": 1438586,
+      "decoded_sha256": "23166ed93004aaefc7322befe4843dca0b50daf92df6bb268930ec8054ee04f6",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-1-global/recovery.json.gz",
+      "sha256": "d7819f3cfb13e636acec8b11ec2674a330a5e36bf8c55430513f631dc495b4c5",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-1-global/recovery.json"
+    },
+    {
+      "bytes": 6529,
+      "decoded_bytes": 101671,
+      "decoded_sha256": "e42ebbebcf97e5969d68d19ac5499d39565db64c174bf5247f605e08fef967f2",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-1-global/warmup.json.gz",
+      "sha256": "524d4995ec724249bb366d1addc565ad8bbac1bfa7a239c2c88e4862a7b0252c",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-1-global/warmup.json"
+    },
+    {
+      "bytes": 6468634,
+      "decoded_bytes": 37186940,
+      "decoded_sha256": "bfe15bbf1ff6a2c862c46e880b89ad966a312fc9f953ce9b688888e419330106",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-2-bypass/real-model/admission-near-8-2-bypass.json.gz",
+      "sha256": "26f8ba291556c6c4e4769ddff1f455f525c4f4caec3e240e738bbda1e715b1d2",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-2-bypass/real-model/admission-near-8-2-bypass.json"
+    },
+    {
+      "bytes": 5672,
+      "decoded_bytes": 30809,
+      "decoded_sha256": "cdc605fde655ad3abdb352d6e21e0d7b5ee352254b99f406bcb32450f774694d",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-2-bypass/real-model/manifest.json.gz",
+      "sha256": "4235efb6759ffcfcd1a75b8f38ff267c921dc946ccce304b60233d262ba96cb6",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-2-bypass/real-model/manifest.json"
+    },
+    {
+      "bytes": 30887,
+      "decoded_bytes": 1773834,
+      "decoded_sha256": "fa45bb3bcbdef953ea11b2e024a74a87840de31620e8edabc1e4d6c9a987c711",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-2-bypass/recovery.json.gz",
+      "sha256": "309a55dbfdec977c536b99fa7b1f0f5ca4ef44e8f4a39b2c0f651aca38471810",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-2-bypass/recovery.json"
+    },
+    {
+      "bytes": 6523,
+      "decoded_bytes": 101673,
+      "decoded_sha256": "2471af5f2a2e1605ae0c15e78ffcf4a29abd307c83a2da2a0262bdaa4d78bdb5",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-2-bypass/warmup.json.gz",
+      "sha256": "9be04f53a8e2e22522df9f60a1956b0eae7059f38f9cd7392fa3a2711133aef3",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-2-bypass/warmup.json"
+    },
+    {
+      "bytes": 6647251,
+      "decoded_bytes": 37828187,
+      "decoded_sha256": "4da63618c59f8f86032925026bbcc37af13bcf01498bd1e13d0589a993ce8d9e",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-2-global/real-model/admission-near-8-2-global.json.gz",
+      "sha256": "83fdda53d984628cc6afb0f8ff13464a04570ecae5485216c253040429f33839",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-2-global/real-model/admission-near-8-2-global.json"
+    },
+    {
+      "bytes": 5686,
+      "decoded_bytes": 30806,
+      "decoded_sha256": "6348e2400ed0048267418ffa8aec36f290df2d9e451e57f728fb09f1e353582a",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-2-global/real-model/manifest.json.gz",
+      "sha256": "3075708e48e905a6f618609e5c768ece852d8b6647dfcf6933f532807781bca6",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-2-global/real-model/manifest.json"
+    },
+    {
+      "bytes": 22642,
+      "decoded_bytes": 1042293,
+      "decoded_sha256": "138078a41003db077acbad1a21703ad90d8d0f33d727784466de77d28ae4b10f",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-2-global/recovery.json.gz",
+      "sha256": "608b9ce718446b475d05fd4bdd8d60757c23db64ebf2bc0ac719dcd89f310683",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-2-global/recovery.json"
+    },
+    {
+      "bytes": 6529,
+      "decoded_bytes": 101675,
+      "decoded_sha256": "75eb65f439d28ddd4edef000a8366804038a9f46c8d158deb48da1cd6cf5397c",
+      "path": "archives/shared-admission/files/runs/shared-admission/trials/admission-near-8-2-global/warmup.json.gz",
+      "sha256": "2530bbb6bcddb86463c5f26f03ef4174ebbeee6ccd42329f5f65a1f0318a985a",
+      "source_relative_path": "runs/shared-admission/trials/admission-near-8-2-global/warmup.json"
+    }
+  ],
+  "git_base": "db31fdad5e022ae165c1661c41632c1c9a761b84",
+  "original_archive_sha256": "fc5f9fb7198d1a6e2d1d23acff4cf62ffd6341ea580507f81d5c95a43392afe0",
+  "protocol": {
+    "path": "protocol/shared-admission/manifest.json",
+    "sha256": "10133709b44e596247bfc11f5e974787a93a3618a3a6b0c06d4fef43c37461de"
+  },
+  "schema": "alien6-shared-admission-evidence-v1",
+  "study_source_id": "sha256:025dad4d2ba37487cc21ab4c90488534b8dafe0a3fc1cb25833f558b7191a1cd"
+}

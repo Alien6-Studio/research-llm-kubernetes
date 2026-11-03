@@ -1,0 +1,118 @@
+{
+  "exported_at_utc": "2026-11-12T19:50:59.461772+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-1-0.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-180-none-1-0.json",
+      "sha256": "1c10e512d910c65fb10f6e0efc8a337288f9c5fc4c349be9ed917d819a791b21",
+      "decoded_sha256": "d8730615f669f4523d6ce78e816312cbe0e8b36976c3211e2f59368999e468dd",
+      "decoded_bytes": 2928771,
+      "bytes": 506024
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-1-1.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-180-none-1-1.json",
+      "sha256": "a7463def5ed6ef16acd8488d3c828b5785f907cf3514675958735c5a9137a551",
+      "decoded_sha256": "66415a0e26d406cdba48cb7842ef3fb0290b68de76c6a273373d161e9f27a74d",
+      "decoded_bytes": 2932816,
+      "bytes": 505362
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-1-2.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-180-none-1-2.json",
+      "sha256": "59bb913f9200a2f97c968e1ca3c5df7ce3781fbbc8dcf2888aaf11a783ef825b",
+      "decoded_sha256": "b452c4f64860cef07bec9d3269f6ce8372a9f5a31a67711e2f68d2ca8ba6db1c",
+      "decoded_bytes": 2792136,
+      "bytes": 478781
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-8-0.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-180-none-8-0.json",
+      "sha256": "53edd360eba05ab52deca5b870243f425776d58caa9c0af4e00e598eb48beb41",
+      "decoded_sha256": "c0d36a75d0715f2ce0fda856b26e486cb657afcf79ef2f8ad7228ed738e03b22",
+      "decoded_bytes": 4162620,
+      "bytes": 762701
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-8-1.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-180-none-8-1.json",
+      "sha256": "bb1a19f28f6a4eae959fe72bcf60cdfc65904484adeb2b104840fb27fa6a4d4d",
+      "decoded_sha256": "eca90bbc7e4488b36715823b771f897c98dc6afb354b123b960526f02d9e50cf",
+      "decoded_bytes": 4054321,
+      "bytes": 739753
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-180-none-8-2.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-180-none-8-2.json",
+      "sha256": "1d876aaef915c6cfe4d274de008285f002035507f5a884a1010b92c286efaa74",
+      "decoded_sha256": "bdd52a70de40b50c813ff351051ba92a50a0400d1978a7df01ae6764a82c6384",
+      "decoded_bytes": 5186733,
+      "bytes": 1013704
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-1-0.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-360-none-1-0.json",
+      "sha256": "406d6d0c344b90a2709b2abc8a0013740e303d3c6f37e74b8be15e23179568d7",
+      "decoded_sha256": "417b4ef7a09adc58e240865264ef6b68e2db395d0535f6c74693ee07176f0289",
+      "decoded_bytes": 4416785,
+      "bytes": 674332
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-1-1.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-360-none-1-1.json",
+      "sha256": "460d30600803aff47b0f6e47449b4a86eda3070365c6f97f7b607a567ef34600",
+      "decoded_sha256": "4d245ccb0f3628797816cac0a0fe9826b8e70a62f6309f6a89e61f8fe391f6e6",
+      "decoded_bytes": 4440629,
+      "bytes": 675844
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-1-2.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-360-none-1-2.json",
+      "sha256": "bd9ac7c3b7aa853a022b1bd98ff947f0463106a38daaf8df798f6f0a75ac74fb",
+      "decoded_sha256": "c6ac9d7a5cffc5ff19fd254eb43a721e6d36027d3b4d7c1e18dbd5aa3ed2ee41",
+      "decoded_bytes": 4394044,
+      "bytes": 670907
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-8-0.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-360-none-8-0.json",
+      "sha256": "7274cfe5a9a31a5c20bdf635b868a672be4688863b3e82fd61bdeaef72d6c9e8",
+      "decoded_sha256": "5a355b0e3165a370b08e11fe0e8c2f064c03826321fd9991d9fd367e343fb7aa",
+      "decoded_bytes": 5112576,
+      "bytes": 813854
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-8-1.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-360-none-8-1.json",
+      "sha256": "b6fc3d50140cddefdb615ed700b4a33050ade60ec950ddb9e80afb64f6ee62a2",
+      "decoded_sha256": "723ce92468d86a4cdc25d112426ce7ad8510d78960e7a41c45ce7ff2dd8c0585",
+      "decoded_bytes": 5221769,
+      "bytes": 834152
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/emulator-fastpath-360-none-8-2.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/emulator-fastpath-360-none-8-2.json",
+      "sha256": "a7b934f0f14997513ca03c25ff9ba42f1ad946f46992f3aacaa356327a0fd50f",
+      "decoded_sha256": "cc908a107e57c4195b1d4eecee2838fba354934ecbddf09f007fae6ffc1fad2d",
+      "decoded_bytes": 6201030,
+      "bytes": 1069639
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/manifest-calibrate.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/manifest-calibrate.json",
+      "sha256": "954b70a4e0ac0d25c0948d22e7e13104738962d33a8d02187a5e106650a0d9a8",
+      "decoded_sha256": "03a5978dc46f079ec51546bbbc4ae8974ae0cc833ceb6debb147a360da7d92ea",
+      "decoded_bytes": 3197,
+      "bytes": 1140
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v3/qualification.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v3/qualification.json",
+      "sha256": "0a33e69da3351d89e357258dd0b89e4cdc311aedd2c7918f36202fdb52240ac7",
+      "decoded_sha256": "a8758403ed825bd49b34a6230e1789f97c0b88b6f52ffc3edfae87602dfe901b",
+      "decoded_bytes": 2473,
+      "bytes": 376
+    }
+  ]
+}

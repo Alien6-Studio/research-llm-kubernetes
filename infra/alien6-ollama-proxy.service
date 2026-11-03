@@ -1,0 +1,30 @@
+[Unit]
+Description=Alien6 private inference and transport-control endpoint
+Requires=nftables.service alien6-ollama.service
+After=network-online.target nftables.service alien6-ollama.service
+ConditionVirtualization=lxc
+ConditionHost=a6-ollama-study
+ConditionPathExists=/etc/alien6-research/ready-to-serve
+ConditionPathExists=/opt/alien6-research/v2/inference_proxy.py
+
+[Service]
+Type=simple
+User=alien6-study
+Group=alien6-study
+WorkingDirectory=/opt/alien6-research
+Environment=HOME=/var/lib/alien6-ollama
+Environment=PYTHONDONTWRITEBYTECODE=1
+EnvironmentFile=/etc/alien6-research/endpoints.env
+ExecStartPre=/usr/bin/curl --fail --silent --show-error --retry 10 --retry-connrefused --retry-delay 1 http://127.0.0.1:11435/api/version
+ExecStart=/usr/bin/python3 -u -m v2.inference_proxy
+Restart=no
+CPUAccounting=yes
+CPUWeight=100
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

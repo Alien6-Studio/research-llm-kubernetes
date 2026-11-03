@@ -1,0 +1,22 @@
+{
+  "exported_at_utc": "2026-11-13T18:16:52.865349+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-isolated-diagnostics/native-fixture.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-diagnostics/native-fixture.json",
+      "sha256": "1685ba7c2c2aba7b6308733891d5367fc5c73ac151924686ce5a6ada982c2463",
+      "decoded_sha256": "94b823e4adb380392414d98b42c1a9e38f5de7826e53585947e8752796598794",
+      "decoded_bytes": 128674,
+      "bytes": 9191
+    },
+    {
+      "path": "archives/v2-ollama-isolated-diagnostics/vm-fixture-plain.json.gz",
+      "source_relative_path": "runs/v2-ollama-isolated-diagnostics/vm-fixture-plain.json",
+      "sha256": "ba75dc7a59dffbe7d12755babaa39f10c49f8c5e9f54677c54462a92290c89e8",
+      "decoded_sha256": "669630d1fe41c576ae5d501097f51d71fea42ee123f1ed9d1c6e490551edf5bb",
+      "decoded_bytes": 128227,
+      "bytes": 9384
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "blocks": {
+    "real-model": [
+      {
+        "block": "real-model",
+        "deadline_seconds": 10,
+        "direct_ollama": false,
+        "fastpath": false,
+        "measurement_seconds": 335,
+        "node_cpus": 4,
+        "policy": "none",
+        "profile": "near",
+        "provider": {
+          "mode": "ollama",
+          "ollama_url": "http://172.30.64.3:11437",
+          "requests_per_second": 1000,
+          "tokens_per_second": 1000000000
+        },
+        "repetition": 0,
+        "replicas": 8,
+        "trace_reference": {
+          "path": "protocol/ollama-fra6s004-cpu-long-window/near-0.json.gz",
+          "sha256": "ea8c9671deb50b0451df924be460ffa5ac3d11590259b45c609602608bb118cc"
+        },
+        "trial_id": "admission-near-8-0-global",
+        "warmup_seconds": 5
+      }
+    ]
+  },
+  "shared_admission": {
+    "base_source_id": "sha256:bba1acee1beb772ccb9d45a18bb3e30c88dc5e05f53e7649d918db4d26afdd3f",
+    "capacity": 1,
+    "case_id": "admission-near-8-0-global",
+    "git_base": "db31fdad5e022ae165c1661c41632c1c9a761b84",
+    "mode": "global",
+    "pair_id": "near-8-0",
+    "parent_trial_id": "real-model-near-8-0",
+    "permit_release": "successful_native_terminal_only",
+    "queue_policy": "reject_immediately",
+    "study_source_id": "sha256:025dad4d2ba37487cc21ab4c90488534b8dafe0a3fc1cb25833f558b7191a1cd"
+  }
+}

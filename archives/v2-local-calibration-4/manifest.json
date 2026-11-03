@@ -1,0 +1,118 @@
+{
+  "exported_at_utc": "2026-11-13T09:53:13.932490+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-local-calibration-4/block.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/block.json",
+      "sha256": "cbfac973791a3c8b5ba7ac208602aa095e9a9044af2fda25cc673c11a24d96d2",
+      "decoded_sha256": "bb2c63e18b8b39a34055ec9780989be2e47baa1a14872bb82c58827e97b01033",
+      "decoded_bytes": 353,
+      "bytes": 223
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-188ec0be222d3284.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-188ec0be222d3284.json",
+      "sha256": "1de359ab00d6fb7a985dace1947a7c35e8af075cb3f787ef1fc1d7dc9adf9081",
+      "decoded_sha256": "cda0a35ce2abf7ba0613771d2d8c3138f93f4517373eddf4392c3c63f3c891bf",
+      "decoded_bytes": 14201853,
+      "bytes": 1459583
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-363b6b01634f7944.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-363b6b01634f7944.json",
+      "sha256": "543ba7259557f95faaa5c75362ee9ec2a3fd44f1810c6d4cf81373e8af71f62c",
+      "decoded_sha256": "ba62f61a0345c885f3e6ea42e58af10b4f7541a381db1f83d9c2f2594eef2373",
+      "decoded_bytes": 7710459,
+      "bytes": 870177
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-41283e3a00becba6.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-41283e3a00becba6.json",
+      "sha256": "9a4f097d90473ebfcc5731bdf4ea613f181a3636081e8bcb00d0be2fdc8de167",
+      "decoded_sha256": "572dcbac0958b02f7249a0a183f5793bae20f5a0d7ddfc1d2f032cf14e05777e",
+      "decoded_bytes": 13539283,
+      "bytes": 1241781
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-53419f6f4297bf41.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-53419f6f4297bf41.json",
+      "sha256": "7091a6271b938473a554971bb21c40f5cfcb99c937d0ef2344f302c936e79197",
+      "decoded_sha256": "6a3af37a41d845769048f7c291abe26a923d6231ac90e851c743def13f529b05",
+      "decoded_bytes": 14392852,
+      "bytes": 1478227
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-729968689ec69c96.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-729968689ec69c96.json",
+      "sha256": "b88aba250b320a8ad68b7a996f6f277d091a0ecbf92b693d732f8cdac520bc60",
+      "decoded_sha256": "98369778c3ca14eae30fdaa636d1003958bcdd3c986b8d57d18e78ee8f8a0ce7",
+      "decoded_bytes": 7367253,
+      "bytes": 839419
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-742839bf3c4faa1e.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-742839bf3c4faa1e.json",
+      "sha256": "962765f6da5e9ad05bf5080c74195268ccf87dcc96d5a170f7e4628d9c95ad05",
+      "decoded_sha256": "8b6ccbc23fddce2dd397bfe6818867b234de2376da8ad50514bf9c91daca2d4a",
+      "decoded_bytes": 6578727,
+      "bytes": 627675
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-750faa583fe2f6e9.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-750faa583fe2f6e9.json",
+      "sha256": "cafd420546e4f429b0e26c4cb0b548fa9adf8c44d90839c81684f6960810a10c",
+      "decoded_sha256": "8ff5921b72bc86ce488b22f1e2508a26365ff8bae3633745a694e06be5703fc2",
+      "decoded_bytes": 13384993,
+      "bytes": 1232125
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-8569a3156962059e.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-8569a3156962059e.json",
+      "sha256": "722e3ba93698e3cfc1845d33040645a435f5b6e0b378106c5efee6d2cd4120df",
+      "decoded_sha256": "b9bbaea1d74faf7b60e084dece8e947bd1d6bd4c3007092fd272b8686b6d998d",
+      "decoded_bytes": 13316082,
+      "bytes": 1225894
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-a9cd2d503e38273d.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-a9cd2d503e38273d.json",
+      "sha256": "01854927fd95289545a460f8d7b523cd4a235743b1c2ba693d826ea3d75821dc",
+      "decoded_sha256": "cbb0bbfc718bf0e72a45229d07d7f336bed100e806ef1569e7c75d1c57557193",
+      "decoded_bytes": 6945557,
+      "bytes": 660484
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-de9d570dfe57b09b.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-de9d570dfe57b09b.json",
+      "sha256": "1727204e16c16ac13bde9a34e03410a644b098e46dca65475c85c59e6c21bb74",
+      "decoded_sha256": "555f715587792e10c027b28b8cd1add5f014a0d390ec44981a05511d1aad619c",
+      "decoded_bytes": 7003856,
+      "bytes": 667777
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-e4ad8b9927b39294.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-e4ad8b9927b39294.json",
+      "sha256": "dec52781008db84bbac3f8466c62049d850bec349b174502397193c5910ecd85",
+      "decoded_sha256": "943f406de0d519ad6840e5b770e6e78ca8e2a15f3f37b91a2fcc752485caee9e",
+      "decoded_bytes": 7697525,
+      "bytes": 860773
+    },
+    {
+      "path": "archives/v2-local-calibration-4/calibration-4-f67910fffa81f27c.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/calibration-4-f67910fffa81f27c.json",
+      "sha256": "0b4b75508db2779872c8a6f505e0006c0abdc67e2d97bf1dba69941a934c2337",
+      "decoded_sha256": "f29de5a4bb96c7d4197f90b732ae9686c364382da0042c79dc747b4eb46ded9c",
+      "decoded_bytes": 14260001,
+      "bytes": 1467468
+    },
+    {
+      "path": "archives/v2-local-calibration-4/manifest.json.gz",
+      "source_relative_path": "runs/v2-local-calibration-4/manifest.json",
+      "sha256": "dbe0e76701d89171a2300214dc4f368f17f15467f175b7293d6d34259c73ba94",
+      "decoded_sha256": "e7fcff6ae145588776fe8b3a30b5b4d855b962ba530e8dfef78509d1d863d6d1",
+      "decoded_bytes": 1517,
+      "bytes": 717
+    }
+  ]
+}

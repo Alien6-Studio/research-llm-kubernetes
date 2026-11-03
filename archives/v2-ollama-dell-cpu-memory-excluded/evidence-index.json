@@ -1,0 +1,174 @@
+{
+  "exported_at_utc": "2026-11-14T06:29:00.216071+00:00",
+  "format": "Lossless gzip copies of every curated preserved file; original observations and method bytes are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/a6-capacity-v2-lxd-configuration.json.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/a6-capacity-v2-lxd-configuration.json",
+      "sha256": "55db0a6fc685a8aa4bade0cd4043fd62b25256bb81a3e5da6dd89e147845f19d",
+      "decoded_sha256": "0a740dd48a8f17a99f7e0ab61188773276ce0a49faf4f411193d42ce8a561230",
+      "decoded_bytes": 386,
+      "bytes": 228
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/a6-ollama-study-lxd-configuration.json.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/a6-ollama-study-lxd-configuration.json",
+      "sha256": "a29b60f8b7bff4022056adbcd4b4b2535bf77f7d81dcfd2d493e0669dc5b597a",
+      "decoded_sha256": "190a206c8571e496c93ed15485a94919a8ff65b2d864957a4a35a3bbb858c74e",
+      "decoded_bytes": 654,
+      "bytes": 316
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/collection-receipt.json.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/collection-receipt.json",
+      "sha256": "dd0dfee5df9c93d88e55288e93f54836c2f6feded890e9cd1999d8dd886c73e5",
+      "decoded_sha256": "04a40fac939e70ec8d28f434a984eeb1e6e8b1e7b2b21027d61ffec6d61ace0a",
+      "decoded_bytes": 6182,
+      "bytes": 1635
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/exclusion.json.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/exclusion.json",
+      "sha256": "d82580a38c5397d474f7dd6dd42b39f57290cd9a77c42226f0f834085be6099d",
+      "decoded_sha256": "a5a7fc540154f9df0570cb6b4b241e1c59b544d8e97cb998b81f914c39cce549",
+      "decoded_bytes": 2373,
+      "bytes": 1163
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/executed-freeze_cpu_campaign.py.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/executed-freeze_cpu_campaign.py",
+      "sha256": "9a551e2fa5905fa7c38502b608805b3b1b1f63689cb7f2d60737b376a87b1d68",
+      "decoded_sha256": "8606961335b009ee7a6de2febf92374badb411e9415d005615372cd29083e819",
+      "decoded_bytes": 8101,
+      "bytes": 2842
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/executed-observe_study_host.py.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/executed-observe_study_host.py",
+      "sha256": "1a96c70dc2430b944b751dacfe81c444d0531fad5e790bc054933f50aa1a75b7",
+      "decoded_sha256": "24f4a03fec7e69a104944f17ade0aa8b2241497a27b41751aff9a1e8b1a59a88",
+      "decoded_bytes": 12829,
+      "bytes": 4099
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/executed-run-dell-cpu-campaign.py.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/executed-run-dell-cpu-campaign.py",
+      "sha256": "14fc31cf826b53a2a84eaca9bb8f9a8098573046488477492c27a730b1474d25",
+      "decoded_sha256": "553c22c16720992d9ff9525e71d51e243436dc4759971a0fbc006d19b30c6378",
+      "decoded_bytes": 18068,
+      "bytes": 5474
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/host-guard-active.json.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/host-guard-active.json",
+      "sha256": "00505f9092fa12318eab3e824ac815ae1852e20837c167d176bba5e97379383a",
+      "decoded_sha256": "e96980145e8d18c9efeb311b45758055288416c409a4c67cae7326247425ed1c",
+      "decoded_bytes": 187707,
+      "bytes": 26782
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/host-guard-preparation.json.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/host-guard-preparation.json",
+      "sha256": "cce8c363e2890cb8451533e0b34efe206ccaea5c6a4cca2f5da742e8ea6290ed",
+      "decoded_sha256": "899dc41b9c1832ba92717826bd18265513a5b3bdc48505774eec102be8fe9bbd",
+      "decoded_bytes": 143324,
+      "bytes": 20881
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/host-supervisor-pilot.log.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/host-supervisor-pilot.log",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decoded_bytes": 0,
+      "bytes": 20
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/host-supervisor-status.json.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/host-supervisor-status.json",
+      "sha256": "03d36262055df14ff6b6b026f2d11bac65750ffd474f393b7740778f75563cc4",
+      "decoded_sha256": "df3b0a6655316e3d2e74ac9f078eff4143d315a05bb036085fc98697754b5dfc",
+      "decoded_bytes": 2550,
+      "bytes": 1081
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/inference-model-staging.json.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/inference-model-staging.json",
+      "sha256": "5ecd5227abc598d4407b145aaa00b0f936e38a6cf98e750186ade17e1144ad87",
+      "decoded_sha256": "dff9111bb9d9c8020a0eeea677245afce39d42d1e88188d2714b06407c9f145f",
+      "decoded_bytes": 1521,
+      "bytes": 533
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/inference-monitor.service.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/inference-monitor.service",
+      "sha256": "c77ac97e1fea999007dea6811f1602cf8767b9897682e06adc03c45ccfe43402",
+      "decoded_sha256": "a9114328552089c306a1661ed4de9c076b3eebae4d1c3af51fd4dfcdcb33e4b8",
+      "decoded_bytes": 960,
+      "bytes": 544
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/inference-nftables.conf.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/inference-nftables.conf",
+      "sha256": "592c7f5b8dcbaf32f30ca0926e546c4bb1fc7d214c8f3b2b2523e2ae6b7ba11c",
+      "decoded_sha256": "16d077960c7d3dd85f6fc463cfacd09916eeb2c52ecff5f4ee1529258a64de22",
+      "decoded_bytes": 961,
+      "bytes": 366
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/inference-ollama-artifact.json.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/inference-ollama-artifact.json",
+      "sha256": "e91b43eacac61eb4bbc5f40564df83674bbab2124daa9f32800d087eff6e880f",
+      "decoded_sha256": "b47b73263229a494a1c134f9b4af870e74681b3c71dfc72ed51a813a287851ba",
+      "decoded_bytes": 212,
+      "bytes": 182
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/inference-ollama.env.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/inference-ollama.env",
+      "sha256": "afc4037ce3516cba57e6f67d707608a42fca1602cef929c98d7b7975d421b26a",
+      "decoded_sha256": "d09aed5a10abee80bb395cf856838848aae875db15a35196543deacf7a83798e",
+      "decoded_bytes": 140,
+      "bytes": 121
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/inference-ollama.service.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/inference-ollama.service",
+      "sha256": "b32aba85aa37030bb4874d7a637c7de2364a60603638888afbae2797681b420d",
+      "decoded_sha256": "471d25bce21eeed52ba0994185027aae43c52222dd34ce3e20363e4efa10dc7b",
+      "decoded_bytes": 877,
+      "bytes": 488
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/inference-proxy.service.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/inference-proxy.service",
+      "sha256": "e9855a7b1c055a3a9f7c0d96ce24b8914f755295e794739e4ebc06ceb8264b08",
+      "decoded_sha256": "fd2ec1b82d3ed1093ceed2f762da410f172881fa5d8d6be7a5c6953157fbf9c9",
+      "decoded_bytes": 952,
+      "bytes": 547
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/vm-pilot.json.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/vm-pilot.json",
+      "sha256": "cf612c525447c878ef277d60d3747f6f6c038b26836adb388fbccd911f56719e",
+      "decoded_sha256": "3d05a855d16a2f0bd17b14fc6c4e2c0e4dfd246d4b6565db0f19c3ae17b62cad",
+      "decoded_bytes": 31187,
+      "bytes": 5145
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/vm-pilot.log.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/vm-pilot.log",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decoded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decoded_bytes": 0,
+      "bytes": 20
+    },
+    {
+      "path": "archives/v2-ollama-dell-cpu-memory-excluded/vm-readiness.json.gz",
+      "source_relative_path": "runs/v2-ollama-dell-cpu-memory-excluded/vm-readiness.json",
+      "sha256": "1014b8d205cbddc7a145cdc90df94e1ad085411b7c6264fc8d36d228592972ae",
+      "decoded_sha256": "4e707c9845cce2d6f1c9edaee34c36fcac3cc56e9bfe258166487c70f288f8dd",
+      "decoded_bytes": 58090,
+      "bytes": 8103
+    }
+  ]
+}

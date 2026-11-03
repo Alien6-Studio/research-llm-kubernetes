@@ -1,0 +1,25 @@
+#!/usr/sbin/nft -f
+# Apply inside the dedicated inference container only; the host rules are untouched.
+flush ruleset
+
+table inet alien6_research {
+    chain input {
+        type filter hook input priority filter; policy drop;
+        iifname "lo" accept
+        ct state invalid drop
+        ct state established,related accept
+        ip saddr 172.30.64.2 tcp dport { 11436, 11437 } accept
+    }
+    chain forward {
+        type filter hook forward priority filter; policy drop;
+    }
+    chain output {
+        type filter hook output priority filter; policy drop;
+        oifname "lo" accept
+        ct state invalid drop
+        ct state established,related accept
+        ip daddr { 10.0.0.3, 8.8.8.8 } udp dport 53 accept
+        ip daddr { 10.0.0.3, 8.8.8.8 } tcp dport 53 accept
+        meta nfproto ipv4 tcp dport 443 accept
+    }
+}
