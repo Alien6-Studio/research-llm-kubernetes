@@ -1,0 +1,3 @@
+# Optional standalone scientific figures; not used by measured HTTP services.
+matplotlib==3.10.7
+numpy==2.5.4

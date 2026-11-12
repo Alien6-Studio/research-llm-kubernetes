@@ -1,7 +1,7 @@
 # Evidence and provenance
 
 This repository distinguishes implemented instrumentation from collected
-measurements. **The first 21 load trials are a retained, excluded pilot; confirmatory results are pending.**
+measurements. **The first 21 load trials are a retained, excluded pilot; the full confirmatory matrix remains pending. The three complete qualification blocks and twelve independently hosted emulator contrasts are now audited below.**
 
 | Evidence | Location |
 | --- | --- |
@@ -21,8 +21,9 @@ Service. Port-forwarding the workers' Service selects one pod and would not
 establish traffic distribution across replicas. Only the load controller is
 forwarded to the local host.
 
-Emulator trials use declared quota units. Ollama trials retain actual model
-input/output token counts. These two campaigns are analysed separately.
+Emulator trials use declared quota units. The planned Ollama phase will retain actual model
+input/output token counts; it has not been collected. Emulator and real-model
+measurements must remain separate.
 
 The [validity protocol](VALIDITY.md) records the VM/host confounds and publication
 gates. The complete pilot block is preserved, including initially passing trials.
@@ -39,3 +40,19 @@ Version3 and its fixed request traces are a prospective diagnostic correction,
 not confirmation of the original capacity claim. The independent Linux workflow
 retains failed qualification and never proceeds to capacity contrasts unless the
 complete calibration block passes the unchanged gates.
+
+
+## Version3 local and independently hosted collections
+
+`archives/2026-11-12-calibration-v3/` and
+`archives/2026-11-12-calibration-linux-v3/` retain both complete twelve-trial
+blocks. `archives/2026-11-12-focused-linux-v3/` retains every Linux essential
+contrast. Each manifest identifies compressed and decoded bytes. The original
+collection manifests preserve source, service, trace, hardware and image identity.
+`evidence/independent-linux-run.json` links the hosted execution and its source SHA.
+
+`analysis/2026-11-12-calibration/` and `analysis/2026-11-12-focused-linux/` contain
+recomputed trial summaries and resource diagnostics. CI audits these calculations
+without rerunning the services. Sampled resources and finite heartbeat retention
+are explicit limits; missing continuous restart counters do not establish absence
+of restarts. No failure is replaced or removed from a denominator.

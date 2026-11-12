@@ -124,3 +124,19 @@ failed individual trial is retried into a passing block. The workflow runs on a
 separate GitHub-hosted Linux VM and retains all outputs even on qualification
 failure. Essential contrasts run only after the **entire** calibration block
 passes. A second VM is not a bare-metal or production-performance validation.
+
+
+## Observed qualification status, 12 November 2026
+
+The complete local v2 and v3 blocks each retain 10 valid and 2 invalid trials.
+The independent Linux v3 block passes 12/12 under byte-identical calibration
+traces. Twelve subsequent Linux essential emulator contrasts pass their recorded
+integrity and dispatch gates. See `CALIBRATION_RESULTS.md` and `FOCUSED_RESULTS.md`.
+
+These are descriptive mechanism observations in the qualified Linux environment.
+They do not complete the registered CPU-envelope, additional quota-level,
+admission-policy, burst, autoscaling or real-model controls. The failed local
+blocks remain excluded from local capacity inference; the Linux observations
+are not a successful cross-host reproduction of a capacity effect. Sampled OOM
+and CPU counters do not replace missing continuous pod-restart records. No
+production sizing, real-LLM throughput or cloud-cost conclusion is established.
