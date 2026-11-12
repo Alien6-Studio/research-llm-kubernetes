@@ -1,0 +1,110 @@
+{
+  "exported_at_utc": "2026-11-12T19:55:05.399795+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-1-0.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-quota-none-1-0.json",
+      "sha256": "9d46893680a4f78cdcda2bc4621334babeab1a3684b73435373489ff645e7bb1",
+      "decoded_sha256": "1d7e8a9f92e9af6d5ace310e3f36b39ea60cedced25f4c2ddae74d0620e3d266",
+      "decoded_bytes": 1835536,
+      "bytes": 230054
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-1-1.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-quota-none-1-1.json",
+      "sha256": "1cca03f7e67eb95749c41f2e8a426fddf66c084119f72acb4942bfb1aa3df863",
+      "decoded_sha256": "8cb060041668e3b7091f0a981f1a8dc8679970c7228f9cc6b9df54f268644479",
+      "decoded_bytes": 1781103,
+      "bytes": 228618
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-1-2.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-quota-none-1-2.json",
+      "sha256": "556301c19c43229f4ec9fe2c911a9540780f67400f5d0ddcd9774ad1fce7affd",
+      "decoded_sha256": "4132680eae2c6129a393e1a916ff919937a90d132b18ee320515e7cfa2e5555a",
+      "decoded_bytes": 1812125,
+      "bytes": 220115
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-8-0.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-quota-none-8-0.json",
+      "sha256": "4cf896ed1c90a7a8132a3bbc31cacc3eff891de0b37a7843984bca51ce657581",
+      "decoded_sha256": "4cf80f2117cef27d812e757ffdc9321ac6563999f21b1eb144b93c038ae6d1c3",
+      "decoded_bytes": 2327641,
+      "bytes": 291700
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-8-1.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-quota-none-8-1.json",
+      "sha256": "9818ef9fdb0e3cb959097a6b19a097e2e30a91750da2e38e6fddea45cf4a61db",
+      "decoded_sha256": "4dfc8f9d0bee163c024abb77200a68dd6eb22150e103bed376c633d7203f4df1",
+      "decoded_bytes": 2198395,
+      "bytes": 287638
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-quota-none-8-2.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-quota-none-8-2.json",
+      "sha256": "990fd11ef8ebd6c21d02be80a90f5f8d99d72f672a981f508e0af5906bc7ae45",
+      "decoded_sha256": "4180b695737ee2abfce7bb829e7a8da4ba3d5c717187b39343e630ef74d13864",
+      "decoded_bytes": 2232485,
+      "bytes": 277271
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-1-0.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-unlimited-none-1-0.json",
+      "sha256": "2dbe54c8c1cf0e9aaf94186d10fdeabe1959ae9cf6f1fc0544f2dca02bab82ae",
+      "decoded_sha256": "2d41014dbeb9a79539d47b31984f0ff555da6083568e54bb3d2d4b8603c7f604",
+      "decoded_bytes": 1799236,
+      "bytes": 227740
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-1-1.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-unlimited-none-1-1.json",
+      "sha256": "76c5bf24186bda6e522e83186f0ea5270f1edb2c0fba2b02fffadaf2009c958a",
+      "decoded_sha256": "4748dc8bbe943c8e7f605615a0f7793e47ad6c920016ae876bd6e4e36d322059",
+      "decoded_bytes": 1787463,
+      "bytes": 227120
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-1-2.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-unlimited-none-1-2.json",
+      "sha256": "ba807600ec994d7a864c8f0d9412ec525e62e256294e36dada0ff6a8de830cac",
+      "decoded_sha256": "a5c86b1ae705fbbf5545a01bcfa437703377181b176bc3042943f346c9ac73b0",
+      "decoded_bytes": 1672898,
+      "bytes": 216326
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-8-0.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-unlimited-none-8-0.json",
+      "sha256": "ee058e8b8be3e38098e2026fdb0069f91939ece2cdcc497c2eefc0606682ec59",
+      "decoded_sha256": "921d10d7865b71d674b42094d8e070d61b1737a81b851a689d9dd8cc56a25664",
+      "decoded_bytes": 2391375,
+      "bytes": 276915
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-8-1.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-unlimited-none-8-1.json",
+      "sha256": "d8ab610d8ab9df265d19869b73f2dea7c7157085c723a1a7d80d5699cd26fc10",
+      "decoded_sha256": "25d31766cc4bcdf637718df2ae482ce307d763a28118edf11bfbabca9de4b8d9",
+      "decoded_bytes": 2332753,
+      "bytes": 275782
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/emulator-unlimited-none-8-2.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/emulator-unlimited-none-8-2.json",
+      "sha256": "ced9e0a39752fa603191f0337a710415d413a6405834d6a753e8a8dd4901a08d",
+      "decoded_sha256": "0356fe8f7e946ba61680538ff27abb3d19eb4e535e8f55ca332d4fc7705075c2",
+      "decoded_bytes": 2130051,
+      "bytes": 261053
+    },
+    {
+      "path": "archives/2026-11-12-focused-linux-v3/manifest-focused.json.gz",
+      "source_relative_path": "runs/linux-43293297061-focused/manifest-focused.json",
+      "sha256": "a1d3a94e5c84ab083bb6c397c826374b20321c83f58133e2135cbdd4be4371d7",
+      "decoded_sha256": "e85017658782cf2eb194ef2ff5c51ecec4d8c21aca058e9b6b0be3c4851fb34e",
+      "decoded_bytes": 2452,
+      "bytes": 1030
+    }
+  ]
+}
