@@ -41,7 +41,7 @@ class QuotaTests(unittest.TestCase):
         thread.start()
         base = f"http://127.0.0.1:{server.server_port}"
         try:
-            with patch.object(service.time, "time", return_value=100.1):
+            with patch.object(service.time, "monotonic", return_value=100.1):
                 payload = {"id": "request", "tokens": 3000, "service_seconds": 0}
                 first, body = service.http(base + "/infer", payload)
                 second, denied = service.http(base + "/infer", payload)
@@ -52,6 +52,20 @@ class QuotaTests(unittest.TestCase):
         finally:
             server.shutdown()
             server.server_close()
+
+
+class ClockTests(unittest.TestCase):
+    def test_wall_clock_jump_does_not_change_latency_or_request_deadline(self):
+        item = {'id': 'jump-control', 'offset': 1, 'tokens': 1000}
+        config = {'deadline_seconds': 2, 'policy': 'none'}
+        with patch.object(service.time, 'monotonic', side_effect=[11.01, 11.02]), \
+             patch.object(service.time, 'time', side_effect=[50000, -50000]), \
+             patch.object(service, 'http', return_value=(200, {'correct': True})) as request:
+            result = service.invoke_one(item, 10, 100, config)
+        self.assertAlmostEqual(result['latency_seconds'], .02)
+        self.assertAlmostEqual(result['scheduling_lag_seconds'], .01)
+        self.assertEqual(request.call_args.args[1]['deadline_monotonic'], 13)
+        self.assertLess(result['ended_at'], result['launched_at'])
 
 
 class TraceTests(unittest.TestCase):

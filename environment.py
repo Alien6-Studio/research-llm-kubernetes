@@ -7,6 +7,8 @@ import subprocess
 import threading
 import time
 
+from service import Heartbeat
+
 NODE = 'a6-research-control-plane'
 
 
@@ -52,6 +54,7 @@ def inventory():
 class EnvironmentRecorder:
     def __init__(self, interval=2):
         self.interval = interval
+        self.heartbeat = Heartbeat()
         self.samples = []
         self.stopped = threading.Event()
         self.thread = threading.Thread(target=self._sample, daemon=True)
@@ -65,10 +68,11 @@ class EnvironmentRecorder:
             self.stopped.wait(max(0, self.interval - sample['sampling_seconds']))
 
     def start(self):
+        self.heartbeat.start()
         self.thread.start()
 
     def stop(self):
         self.stopped.set()
         self.thread.join(timeout=15)
         return {'interval_seconds': self.interval, 'sampler_stopped': not self.thread.is_alive(),
-                'samples': self.samples, 'limits': 'Aggregate host and cgroup observations do not measure all GPU interference or establish a dedicated physical host.'}
+                'samples': self.samples, 'host_heartbeat': self.heartbeat.stop(), 'limits': 'Aggregate host and cgroup observations do not measure all GPU interference or establish a dedicated physical host.'}
