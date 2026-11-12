@@ -70,8 +70,15 @@ def stats():
         with open("/sys/fs/cgroup/cpu.stat") as file:
             values = dict(line.split() for line in file)
         result["container_cpu_seconds"] = int(values["usage_usec"]) / 1_000_000
+        result["cpu_stat"] = {key: int(value) for key, value in values.items()}
     except OSError:
         pass
+    for name in ['cpu.max', 'cpu.pressure', 'memory.max', 'memory.pressure', 'memory.events']:
+        try:
+            with open('/sys/fs/cgroup/' + name) as file:
+                result[name.replace('.', '_')] = file.read().strip()
+        except OSError as error:
+            result[name.replace('.', '_')] = {'unavailable': type(error).__name__}
     return result
 
 

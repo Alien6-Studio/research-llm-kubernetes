@@ -10,6 +10,7 @@ import subprocess
 import time
 
 from service import http
+from environment import EnvironmentRecorder, inventory
 
 ROOT = Path(__file__).resolve().parent
 KUBE = ROOT / ".kubeconfig-a6-research"
@@ -62,15 +63,26 @@ def addresses():
 def scale(replicas):
     kubectl("scale", "deployment/workers", f"--replicas={replicas}")
     kubectl("rollout", "status", "deployment/workers", "--timeout=90s")
-    found = addresses()
-    if len(found) != replicas:
-        raise RuntimeError(f"Expected {replicas} ready workers; found {len(found)}")
-    return found
+    deadline = time.monotonic() + 90
+    while time.monotonic() < deadline:
+        pods = json.loads(kubectl('get', 'pods', '-l', 'role=worker', '-o', 'json'))['items']
+        found = addresses()
+        ready_ips = {url.removeprefix('http://').removesuffix(':8080') for url in found}
+        slices = json.loads(kubectl('get', 'endpointslices', '-l', 'kubernetes.io/service-name=workers', '-o', 'json'))['items']
+        endpoint_ips = {address for item in slices for endpoint in item.get('endpoints', [])
+                        if endpoint.get('conditions', {}).get('ready', False)
+                        and not endpoint.get('conditions', {}).get('terminating', False)
+                        for address in endpoint['addresses']}
+        if len(pods) == replicas and len(found) == replicas and ready_ips == endpoint_ips:
+            time.sleep(2)  # Fixed data-plane settling interval after API convergence.
+            return found
+        time.sleep(.5)
+    raise RuntimeError('Worker pods and ready Service endpoints did not stabilize')
 
 
-def trace(profile, repetition, duration, mode):
+def trace(profile, repetition, duration, mode, offered_rate=None):
     rng = random.Random(SEED + repetition)
-    maximum = 4 if mode == "ollama" else 180
+    maximum = offered_rate if offered_rate is not None else (4 if mode == "ollama" else 180)
     result = []
     offset = 0.0
     while True:
@@ -127,7 +139,7 @@ def check_result(result, config, dynamic=False):
     return issues
 
 
-def run_trial(out, config, auto=None):
+def _run_trial(out, config, auto=None):
     name = f"{config['mode']}-{config['profile']}-{config['policy']}-{config['replicas']}-{config['repetition']}"
     if auto:
         name += "-autoscale-" + auto
@@ -177,14 +189,34 @@ def run_trial(out, config, auto=None):
         raise RuntimeError("Trial integrity failure; raw data preserved")
 
 
+def run_trial(out, config, auto=None):
+    name = f"{config['mode']}-{config['profile']}-{config['policy']}-{config['replicas']}-{config['repetition']}"
+    if auto:
+        name += '-autoscale-' + auto
+    path = out / f'{name}.json'
+    if path.exists():
+        print('Already recorded ' + name, flush=True)
+        return
+    recorder = EnvironmentRecorder(interval=2)
+    recorder.start()
+    try:
+        _run_trial(out, config, auto)
+    finally:
+        observations = recorder.stop()
+        if path.exists():
+            payload = json.loads(path.read_text())
+            payload['host_environment'] = observations
+            path.write_text(json.dumps(payload))
+
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("stage", choices=["deploy", "smoke", "emulator", "retry", "autoscale", "ollama"])
-    parser.add_argument("--image", default="alien6-research-capacity:study-v1")
+    parser.add_argument("stage", choices=["deploy", "smoke", "calibrate", "emulator", "retry", "autoscale", "ollama"])
+    parser.add_argument("--image", default="alien6-research-capacity:study-v2")
     parser.add_argument("--out", type=Path)
     args = parser.parse_args()
     if args.out is None:
-        args.out = ROOT / "runs" / ("2026-11-12-preflight" if args.stage == "smoke" else "2026-11-12-capacity")
+        args.out = ROOT / "runs" / ("2026-11-12-preflight-v2" if args.stage == "smoke" else "2026-11-12-calibration-v2" if args.stage == "calibrate" else "2026-11-12-qualified-v2")
     if args.stage == "deploy":
         deploy(args.image)
         return
@@ -194,6 +226,8 @@ def main():
                 "service_sha256": hashlib.sha256((ROOT / "service.py").read_bytes()).hexdigest(),
                 "kubernetes": json.loads(kubectl("version", "-o", "json")), "image": args.image}
     manifest["stage"] = args.stage
+    manifest["environment"] = inventory()
+    manifest["environment_sampler_sha256"] = hashlib.sha256((ROOT / "environment.py").read_bytes()).hexdigest()
     manifest["driver_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     manifest["image_id"] = subprocess.check_output(["docker", "image", "inspect", args.image, "--format", "{{.Id}}"], text=True).strip()
     if args.stage == "ollama":
@@ -205,7 +239,7 @@ def main():
     manifest_path = args.out / f"manifest-{args.stage}.json"
     if manifest_path.exists():
         previous = json.loads(manifest_path.read_text())
-        for key in ["service_sha256", "driver_sha256", "image_id"]:
+        for key in ["service_sha256", "driver_sha256", "environment_sampler_sha256", "image_id"]:
             if previous[key] != manifest[key]:
                 raise RuntimeError("Executable changed: use a new run directory")
     else:
@@ -216,7 +250,19 @@ def main():
         run_trial(args.out, config)
         return
     jobs = []
-    if args.stage == "emulator":
+    if args.stage == 'calibrate':
+        for replicas in [1, 8]:
+            for rate in [180, 360]:
+                for rep in range(3):
+                    profile = f'fastpath-{rate}'
+                    config = configuration('unlimited', 'none', replicas, rep)
+                    config['profile'] = profile
+                    config['offered_rate'] = rate
+                    config['trace'] = trace(profile, rep, 13, 'emulator', offered_rate=rate)
+                    for request in config['trace']:
+                        request['service_seconds'] = 0
+                    jobs.append(config)
+    elif args.stage == "emulator":
         jobs = [configuration(profile, policy, replicas, rep) for profile in ["unlimited", "quota", "bursty"]
                 for policy in ["none", "global"] for replicas in [1, 2, 4, 8] for rep in range(3)]
     elif args.stage == "retry":

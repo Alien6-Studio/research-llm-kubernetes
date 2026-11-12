@@ -1,0 +1,9 @@
+{
+  "stopped_at_utc": "2026-11-12T18:32:06.919087+00:00",
+  "reason": "Old worker pods were still routed traffic during replica transitions; the first campaign is a pilot and will not support replica-comparison claims.",
+  "completed_trials_preserved": 21,
+  "boundary_trial_files": [
+    "emulator-quota-none-2-2.json"
+  ],
+  "action": "Stop driver after observing a fully written trial; preserve every existing raw file. Restart the complete registered matrix after correcting stabilization, in a new run directory."
+}

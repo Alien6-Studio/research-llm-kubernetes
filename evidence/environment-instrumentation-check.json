@@ -1,0 +1,117 @@
+{
+  "inventory": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "release": "27.0.0",
+    "docker_capacity": {
+      "command": [
+        "docker",
+        "info",
+        "--format",
+        "{\"cpus\":{{.NCPU}},\"memory_bytes\":{{.MemTotal}},\"architecture\":\"{{.Architecture}}\",\"version\":\"{{.ServerVersion}}\"}"
+      ],
+      "returncode": 0,
+      "stdout": "{\"cpus\":16,\"memory_bytes\":50427629568,\"architecture\":\"aarch64\",\"version\":\"29.1.5\"}\n",
+      "stderr": ""
+    },
+    "node_limits": {
+      "command": [
+        "docker",
+        "inspect",
+        "a6-research-control-plane",
+        "--format",
+        "{\"nano_cpus\":{{.HostConfig.NanoCpus}},\"memory_bytes\":{{.HostConfig.Memory}},\"memory_swap_bytes\":{{.HostConfig.MemorySwap}}}"
+      ],
+      "returncode": 0,
+      "stdout": "{\"nano_cpus\":4000000000,\"memory_bytes\":8589934592,\"memory_swap_bytes\":8589934592}\n",
+      "stderr": ""
+    },
+    "hw.model": {
+      "command": [
+        "sysctl",
+        "-n",
+        "hw.model"
+      ],
+      "returncode": 0,
+      "stdout": "Mac16,5\n",
+      "stderr": ""
+    },
+    "machdep.cpu.brand_string": {
+      "command": [
+        "sysctl",
+        "-n",
+        "machdep.cpu.brand_string"
+      ],
+      "returncode": 0,
+      "stdout": "Apple M4 Max\n",
+      "stderr": ""
+    },
+    "hw.logicalcpu": {
+      "command": [
+        "sysctl",
+        "-n",
+        "hw.logicalcpu"
+      ],
+      "returncode": 0,
+      "stdout": "16\n",
+      "stderr": ""
+    },
+    "hw.memsize": {
+      "command": [
+        "sysctl",
+        "-n",
+        "hw.memsize"
+      ],
+      "returncode": 0,
+      "stdout": "137438953472\n",
+      "stderr": ""
+    }
+  },
+  "sample": {
+    "utc": "2026-11-12T18:40:10.071858+00:00",
+    "monotonic": 33244.13015425,
+    "system": "Darwin",
+    "machine": "arm64",
+    "host_load": {
+      "command": [
+        "sysctl",
+        "-n",
+        "vm.loadavg"
+      ],
+      "returncode": 0,
+      "stdout": "{ 21.82 40.11 34.22 }\n",
+      "stderr": ""
+    },
+    "host_memory": {
+      "command": [
+        "vm_stat"
+      ],
+      "returncode": 0,
+      "stdout": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                  2315289.\nPages active:                                2649067.\nPages inactive:                              2629495.\nPages speculative:                             18507.\nPages throttled:                                   0.\nPages wired down:                             427250.\nPages purgeable:                              108987.\n\"Translation faults\":                      345668020.\nPages copy-on-write:                        56271485.\nPages zero filled:                         267408724.\nPages reactivated:                           2395177.\nPages purged:                                1251997.\nFile-backed pages:                           1737001.\nAnonymous pages:                             3560068.\nPages stored in compressor:                   488447.\nPages occupied by compressor:                 290612.\nDecompressions:                               183686.\nCompressions:                                 908026.\nPageins:                                     6155309.\nPageouts:                                         74.\nSwapins:                                           0.\nSwapouts:                                          0.\n",
+      "stderr": ""
+    },
+    "host_thermal": {
+      "command": [
+        "pmset",
+        "-g",
+        "therm"
+      ],
+      "returncode": 0,
+      "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n",
+      "stderr": ""
+    },
+    "node_cgroup": {
+      "command": [
+        "docker",
+        "exec",
+        "a6-research-control-plane",
+        "sh",
+        "-c",
+        "cat /sys/fs/cgroup/cpu.stat /sys/fs/cgroup/memory.current /sys/fs/cgroup/memory.events /sys/fs/cgroup/cpu.pressure /sys/fs/cgroup/memory.pressure"
+      ],
+      "returncode": 0,
+      "stdout": "usage_usec 767968286\nuser_usec 497893057\nsystem_usec 270075228\nnice_usec 0\nnr_periods 40814\nnr_throttled 196\nthrottled_usec 69619741\nnr_bursts 0\nburst_usec 0\n2186207232\nlow 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsome avg10=0.00 avg60=0.00 avg300=0.06 total=24650997\nfull avg10=0.00 avg60=0.00 avg300=0.04 total=23299546\nsome avg10=0.00 avg60=0.00 avg300=0.00 total=39\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=37\n",
+      "stderr": ""
+    }
+  }
+}
