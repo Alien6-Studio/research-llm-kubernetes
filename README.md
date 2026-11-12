@@ -14,8 +14,11 @@ and admission policy affect sustainable useful throughput?
 
 [The protocol](PROTOCOL.md) is registered before measurements. A dedicated local
 kind cluster, `a6-research`, is available with a 4-CPU, 8-GiB node limit.
-The load test system is implemented and its eight tests pass. **The first 21 trials are an excluded pilot; a qualified confirmatory campaign
-has not yet been executed.** [The evidence index](EVIDENCE.md) separates
+The service has ten passing controls. **The first 21 trials remain an excluded pilot.**
+The two complete local calibration blocks each pass 10/12 controls; the independent
+Linux block passes 12/12. Twelve subsequent Linux emulator contrasts are audited
+in [the observed results](FOCUSED_RESULTS.md). The full registered confirmatory
+matrix and real-model phase remain incomplete. [The evidence index](EVIDENCE.md) separates
 implemented instrumentation from measured results.
 
 The project uses its own kubeconfig, excluded from Git. Existing application
@@ -54,8 +57,8 @@ and kubectl are required for the local cluster.
 kind create cluster --config infra/kind.yaml --kubeconfig .kubeconfig-a6-research
 docker update --cpus 4 --memory 8g --memory-swap 8g a6-research-control-plane
 python3 -m unittest discover -p 'test_*.py'
-docker build -t alien6-research-capacity:study-v2 .
-kind load docker-image alien6-research-capacity:study-v2 --name a6-research
+docker build -t alien6-research-capacity:study-v3 .
+kind load docker-image alien6-research-capacity:study-v3 --name a6-research
 python3 run.py deploy
 kubectl --kubeconfig .kubeconfig-a6-research -n a6-research port-forward service/controller 18081:8080
 ```

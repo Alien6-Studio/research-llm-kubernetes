@@ -1,7 +1,7 @@
 # Evidence and provenance
 
 This repository distinguishes implemented instrumentation from collected
-measurements. **The first 21 load trials are a retained, excluded pilot; confirmatory results are pending.**
+measurements. **The first 21 load trials are a retained, excluded pilot; the full confirmatory matrix remains pending. The three complete qualification blocks and twelve independently hosted emulator contrasts are now audited below.**
 
 | Evidence | Location |
 | --- | --- |
@@ -21,8 +21,9 @@ Service. Port-forwarding the workers' Service selects one pod and would not
 establish traffic distribution across replicas. Only the load controller is
 forwarded to the local host.
 
-Emulator trials use declared quota units. Ollama trials retain actual model
-input/output token counts. These two campaigns are analysed separately.
+Emulator trials use declared quota units. The planned Ollama phase will retain actual model
+input/output token counts; it has not been collected. Emulator and real-model
+measurements must remain separate.
 
 The [validity protocol](VALIDITY.md) records the VM/host confounds and publication
 gates. The complete pilot block is preserved, including initially passing trials.
