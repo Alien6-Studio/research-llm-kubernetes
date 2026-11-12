@@ -92,7 +92,7 @@ semantic quality claims require their own evidence.
 
 ## Version3: measurement-clock and generator diagnostics
 
-The complete v2 calibration block is retained in `runs/2026-11-12-calibration-v2`.
+The complete v2 calibration block is retained in the lossless gzip files in `archives/2026-11-12-calibration-v2/`.
 All 12 controls returned successful responses, but two higher-rate controls failed
 the dispatch-lag gate. Concurrent builds and the use of wall-clock scheduling
 prevent identifying a cause. No passing subset establishes generator headroom.
