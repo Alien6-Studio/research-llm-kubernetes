@@ -96,3 +96,12 @@ of warm-up, 20 seconds of measurement and 10-second deadlines. Test 1,2,4,8
 replicas three times. No artificial quota binds this phase. Record actual prompt,
 output and cached token counts where reported. This tests a shared local model
 server, not commercial API quotas or cloud pricing.
+
+## Preflight correction before measurement
+
+The first preflight command did not reach the load controller: `kubectl version`
+returned valid JSON on stdout and a client/server version warning on stderr.
+The driver had combined both streams and failed to parse the manifest. The
+streams are now captured separately. No outcome was collected and no protocol
+parameter changed. The initial `protocol-2026-11-12` tag remains unchanged;
+`protocol-2026-11-12-r2` identifies the corrected executable.

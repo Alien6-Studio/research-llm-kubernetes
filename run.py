@@ -20,7 +20,7 @@ SEED = 20261112
 
 def kubectl(*args, data=None):
     command = ["kubectl", "--kubeconfig", str(KUBE), "-n", NAMESPACE, *args]
-    return subprocess.check_output(command, input=data, text=True, stderr=subprocess.STDOUT)
+    return subprocess.check_output(command, input=data, text=True, stderr=subprocess.PIPE)
 
 
 def deploy(image):
