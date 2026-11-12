@@ -1,0 +1,134 @@
+{
+  "exported_at_utc": "2026-11-12T19:41:19.887229+00:00",
+  "format": "Gzip lossless copies of the complete original local calibration files; decode before JSON parsing. No response was edited.",
+  "files": [
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-1-1.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-360-none-1-1.json",
+      "sha256": "ca16c0f40f0265b55dba2b6498d825e0135fa525f1e369503f2019a0750ed360",
+      "decoded_sha256": "84c8a5262ce3d4d390b4d9ffd8d2280be43d81a47fb53a5a513f75b0c0eb3ca7",
+      "decoded_bytes": 2657272,
+      "bytes": 264544
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-8-2.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-360-none-8-2.json",
+      "sha256": "0108f95203b2b9b4485d4bab89fa408f10081898cb3c18b80bccc2cd96d850b2",
+      "decoded_sha256": "4e98a88e64dbeb92d8cde7ae7f62d08de5dad0736b9ab1505638c26ff6132b7e",
+      "decoded_bytes": 2817278,
+      "bytes": 278406
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-1-2.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-180-none-1-2.json",
+      "sha256": "bdbdb590bc99663c68adab1ab19274bfba37cc14eaed7960a898c2d461248a80",
+      "decoded_sha256": "92e12dc40d7623c6379a4ba7d0f6168550bf08e1128e20c1dd24df4431657a77",
+      "decoded_bytes": 1298901,
+      "bytes": 133904
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-8-1.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-180-none-8-1.json",
+      "sha256": "be70528052f021c48a183527fe990c97a63b7df641761783cc30eebf6afeeb92",
+      "decoded_sha256": "5c202f9bd3335124e050be3406ec039fc4d76e8a5921b8e4bffe96a36082ce36",
+      "decoded_bytes": 1561371,
+      "bytes": 153934
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-8-0.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-180-none-8-0.json",
+      "sha256": "e2558e64415191ee64a7a17587f968d148d83342d7e33eaed2b4e94099dc02a3",
+      "decoded_sha256": "96b18563204acb8c62b83660b317b4eb24856beea45e5d0876df53e3fb92ea90",
+      "decoded_bytes": 1566576,
+      "bytes": 154390
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-1-0.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-360-none-1-0.json",
+      "sha256": "65dca6f6a6f2dd9166e6b5a4a29dfbed49e81abe138192fb09e6e8997e320a89",
+      "decoded_sha256": "76ce81d75dbdd99bfe447fa450804508092410d63cb8e43ad5c9f7b328e5d333",
+      "decoded_bytes": 2646564,
+      "bytes": 263089
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--manifest-calibrate.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/manifest-calibrate.json",
+      "sha256": "b4c8778879ce4d97138a9f9b5756b1a9aa8ca3f99fe528c81effdf2853768e64",
+      "decoded_sha256": "3859b2b9ad7379229ba0f308b74a7fc7be54a6e92f6fb43c3c604be0b0611f05",
+      "decoded_bytes": 3103,
+      "bytes": 1090
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-8-0.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-360-none-8-0.json",
+      "sha256": "a9da3b0491e3ee6366a58fc5bb006c31aec1be8b132dd81ac6bb70d22b703a3e",
+      "decoded_sha256": "958d4dea69a2b307bf10d8caeb604870b2af30045785be807b4c605b4273a4be",
+      "decoded_bytes": 2830918,
+      "bytes": 280059
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-1-0.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-180-none-1-0.json",
+      "sha256": "bcbc3eb4b0330b1121f95e786c02d791e734798ec70cc56a67d1d9e2141503aa",
+      "decoded_sha256": "506f23d3d12acc8df407b04e824696522d2069d868bd75b471c723d5d9169d2d",
+      "decoded_bytes": 1373663,
+      "bytes": 140133
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-8-2.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-180-none-8-2.json",
+      "sha256": "fab7cf781456d10906cd0d741134b541595ca6bea0767b9c86ff93e676677158",
+      "decoded_sha256": "8e3a91a83402fc8f0ffd1d559961085c00fa31c8743d9a544a3a620ba2e1656a",
+      "decoded_bytes": 1495678,
+      "bytes": 146607
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-180-none-1-1.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-180-none-1-1.json",
+      "sha256": "8ac6bf674b07ddb226506270359efa5fe3726afb0127a4948d992b09f60d855c",
+      "decoded_sha256": "066af02f5c283c9bcd3375c4c7bcc96716531a6b19a789c641a36e37702104f6",
+      "decoded_bytes": 1376589,
+      "bytes": 139534
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-8-1.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-360-none-8-1.json",
+      "sha256": "90d2c45ea56e48761c2c90e95589d626a04e825a6fc1d14c14490e999c8ed93a",
+      "decoded_sha256": "f3a02e3925e02087d50b5b85263bb1922053566f892aa99116b2f71247943db7",
+      "decoded_bytes": 2855917,
+      "bytes": 282252
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-v2--emulator-fastpath-360-none-1-2.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-v2/emulator-fastpath-360-none-1-2.json",
+      "sha256": "12cf01b2cfb7f1c7e6db8fd2744ab246d85591e369914bdfa3cd20f809eec093",
+      "decoded_sha256": "0423c569d0da7e4af2848b9b01fa75aa67307036450d33b04ec05a1cb7d38a21",
+      "decoded_bytes": 2622184,
+      "bytes": 260790
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-connection-failure--driver-error.txt.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-connection-failure/driver-error.txt",
+      "sha256": "a143ec4dc348469165706ccbe3e5941ff9be70918685b774238cfe78692c3f9f",
+      "decoded_sha256": "8685b4d4f8e9621a88a4613654162e58b594bdfe74fde21324363e53f65957ed",
+      "decoded_bytes": 3460,
+      "bytes": 756
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-connection-failure--manifest-calibrate.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-connection-failure/manifest-calibrate.json",
+      "sha256": "4953d30c93792572c40de3afeadfeb0f8b1dda5075f03e0d8cf325258ba3bcb8",
+      "decoded_sha256": "234c459c02dc84c67376fa0fa61206e6eb16eda20d6cf1baf2daa34d2d3ae972",
+      "decoded_bytes": 3103,
+      "bytes": 1091
+    },
+    {
+      "path": "archives/2026-11-12-calibration-v2/2026-11-12-calibration-connection-failure--failure.json.gz",
+      "source_relative_path": "runs/2026-11-12-calibration-connection-failure/failure.json",
+      "sha256": "7c3513952212ed0e2708d8d9664cb129a1f090c7a35335368addff42739932e4",
+      "decoded_sha256": "83249765780a14777144d1be6ebb8444bfe65fadd90da4853cf127839e10734b",
+      "decoded_bytes": 299,
+      "bytes": 205
+    }
+  ]
+}
