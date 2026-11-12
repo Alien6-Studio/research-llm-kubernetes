@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security report
+    url: https://github.com/Alien6-Studio/research-llm-kubernetes/security/advisories/new
+    about: Report vulnerabilities privately; exclude active credentials.
+  - name: Research discussion
+    url: https://github.com/Alien6-Studio/research-llm-kubernetes/discussions
+    about: Discuss research questions and possible extensions in English.

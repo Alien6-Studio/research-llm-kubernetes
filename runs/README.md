@@ -1,4 +1,4 @@
-# Mesures expérimentales
+# Experimental runs
 
-Aucun essai de charge collecté à ce stade. Les résultats de l’émulateur et du
-service LLM réel seront conservés et analysés séparément.
+No load trial has been collected yet. Emulator trials, real-model trials, and
+instrumentation smoke tests will remain separately identifiable.

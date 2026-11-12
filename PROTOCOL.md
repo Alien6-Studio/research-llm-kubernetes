@@ -54,3 +54,45 @@ and what remains uncertain. Change a title if the evidence does not support it.
 Code and measured data go through the shared GitHub repository, not a ZIP or a
 public customer-deliverable page. No client data or proprietary implementation
 is used. New evidence changes the article; it does not justify cherry-picking runs.
+
+## Parameters fixed before load collection
+
+The primary emulator matrix has 72 trials: 4 replica counts x 3 load/quota
+profiles x 2 admission policies x 3 repetitions. Each trial has 3 seconds of
+warm-up, 10 seconds of measurement, and bounded request deadlines of 2 seconds.
+The generator offers an open-loop Poisson trace at 180 requests/second; the
+bursty profile alternates 2 seconds at 180/s and 2 seconds at 18/s. All arms
+within a repetition receive the same trace. The seed is 20261112 + repetition.
+
+Each worker has 4 active slots and 32 additional queue places. Requests declare
+1000 or 2200 quota units, with equal probability. Emulator service times are
+0.14 or 0.22 seconds respectively, plus uniform noise of +/-0.02 seconds; 2% of
+requests add 0.6 seconds. The saturating upstream budget is 40000 declared units
+per fixed one-second wall-clock window. The request ceiling is 1000/s. The
+non-saturating condition uses a token ceiling of 1e9 units/s. Primary trials do
+not retry. A separate 2-pod comparison uses 1 or 2 attempts, three repetitions.
+
+Invalidate a trial if generator scheduling-lag p95 exceeds 50ms, request IDs are
+missing, the executable differs, or traffic misses a configured replica. Retain
+invalid raw trials and reasons. Report window completions separately from the
+cohort of measurement arrivals completed before their deadline.
+
+Autoscaling uses an explicit prototype controller in this repository, not HPA
+or KEDA: poll every 2 seconds, double replicas when queue depth exceeds 8, cap at
+8. Compare queue-only scaling with a budget-aware rule that requires observed
+upstream quota utilisation below 95% over the preceding sample interval. Start
+at 1 replica, saturating upstream, global admission, 30-second measurement, three
+repetitions of each policy. Report every decision and the actual replica changes.
+
+The real-model phase uses a dedicated local Ollama 0.40.16 server on loopback
+port 11435, NUM_PARALLEL=4, MAX_QUEUE=256, MAX_LOADED_MODELS=1, CONTEXT_LENGTH=8192.
+It shares installed weights but does not change the existing port11434 service.
+Use qwen3.6:latest with digest
+07d35212591fc27746f0a317c975a6d68754fb38e9053d82e25f06057af28522,
+Q4_K_M, temperature0, seed20261112, thinking disabled, output limit32 tokens.
+The task is a controlled HTTP-status classification with a checkable JSON label;
+it is not a representative business task. Offer 4 requests/second, use 5 seconds
+of warm-up, 20 seconds of measurement and 10-second deadlines. Test 1,2,4,8
+replicas three times. No artificial quota binds this phase. Record actual prompt,
+output and cached token counts where reported. This tests a shared local model
+server, not commercial API quotas or cloud pricing.

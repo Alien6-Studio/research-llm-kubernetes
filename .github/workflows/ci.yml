@@ -1,0 +1,29 @@
+name: Research CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: research-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  checks:
+    name: Research checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Run research controls
+        run: python -m unittest discover -p 'test_*.py' -v
+      - name: Verify published evidence identity
+        run: python scripts/verify_evidence.py
+      - name: Build the pinned service image
+        run: docker build -t research-capacity:ci .

@@ -1,37 +1,83 @@
-# Débit utile des applications Kubernetes appelant un LLM
+# Kubernetes client capacity for LLM applications
 
-Recherche associée à l’article Alien6 conservé à l’URL
-`/fr/research/articles/mise-en-production-ia-kubernetes/`.
+[![Research CI](https://github.com/Alien6-Studio/research-llm-kubernetes/actions/workflows/ci.yml/badge.svg)](https://github.com/Alien6-Studio/research-llm-kubernetes/actions/workflows/ci.yml)
+[![Code license: Apache-2.0](https://img.shields.io/badge/code%20license-Apache--2.0-blue)](LICENSE)
 
-**Question :** comment le nombre de réplicas, le quota partagé du service LLM et
-la régulation des appels influencent-ils le débit réellement soutenable ?
 
-## État du travail
+An empirical study for the existing Alien6 article at
+`/en/research/articles/ai-production-kubernetes/`.
 
-[Le protocole](PROTOCOL.md) est préparé avant les mesures. Un cluster kind local
-dédié `a6-research` est disponible, limité à 4 CPU et 8 Gio pour son nœud. Le banc
-de charge reste à implémenter. **Aucun résultat expérimental n’est annoncé.**
+**Research question:** how do client replicas, a shared inference capacity limit,
+and admission policy affect sustainable useful throughput?
 
-Le projet conserve son propre kubeconfig, exclu de Git. Il ne déploie pas dans
-les clusters applicatifs existants et ne change pas leur contexte courant.
+## Current status
 
-## Campagnes prévues
+[The protocol](PROTOCOL.md) is registered before measurements. A dedicated local
+kind cluster, `a6-research`, is available with a 4-CPU, 8-GiB node limit.
+The load test system is implemented and its eight tests pass. **The measurement
+campaign has not yet been executed.** [The evidence index](EVIDENCE.md) separates
+implemented instrumentation from measured results.
 
-1. API cliente et serveur d’inférence émulé : quotas et temps de réponse maîtrisés,
-   1, 2, 4 et 8 réplicas, charge régulière ou irrégulière, essais répétés.
-2. Service Ollama réel : vérifier quels comportements sont transférables à une
-   génération effective. Les mesures restent distinctes de celles de l’émulateur.
+The project uses its own kubeconfig, excluded from Git. Existing application
+clusters and the user's normal Kubernetes context are outside this study.
 
-Chaque campagne conservera les traces de charge, les résultats bruts, les
-latences complètes, les refus, les files d’attente et les ressources consommées.
-Un coût financier sera identifié comme estimation si seules des hypothèses de
-prix sont disponibles. Les ressources par requête seront mesurées séparément.
+## Planned campaigns
 
-## Organisation
+1. A real Kubernetes client API calling a controlled inference emulator: fixed
+   quotas and service times, 1/2/4/8 replicas, regular and bursty arrivals, repeated
+   trials, and explicit admission policies.
+2. A dedicated local Ollama service: test which observations transfer to actual
+   model generation. Keep emulator and real-model measurements separate.
 
-- `PROTOCOL.md` : hypothèses et contrôles.
-- `infra/` : environnement de mesure reproductible.
-- `runs/` : paramètres et mesures brutes des campagnes.
+Retain arrival traces, raw outcomes, full latency, refusals, queue observations,
+and resource samples. Report financial cost as an estimate when only declared
+unit prices are available. Measured resource use is a separate quantity.
 
-Le dépôt est privé pendant la préparation de la recherche. Aucun livrable client
-ni élément d’infrastructure privée n’y est publié.
+## Repository structure
+
+- `PROTOCOL.md`: hypotheses and controls.
+- `service.py`: provider, worker, and in-cluster load-controller roles.
+- `run.py`: deployment, deterministic traces, and trial orchestration.
+- `test_study.py`: quota accounting, HTTP integration, and trace controls.
+- `infra/`: reproducible cluster configuration.
+- `runs/`: trial parameters and raw measurements.
+
+This public repository contains research code and evidence. It contains no
+customer deliverables or private application infrastructure.
+
+## Run the study
+
+Python 3.12's standard library is sufficient for the load system. Docker, kind,
+and kubectl are required for the local cluster.
+
+```bash
+kind create cluster --config infra/kind.yaml --kubeconfig .kubeconfig-a6-research
+docker update --cpus 4 --memory 8g --memory-swap 8g a6-research-control-plane
+python3 -m unittest discover -p 'test_*.py'
+docker build -t alien6-research-capacity:study-v1 .
+kind load docker-image alien6-research-capacity:study-v1 --name a6-research
+python3 run.py deploy
+kubectl --kubeconfig .kubeconfig-a6-research -n a6-research port-forward service/controller 18081:8080
+```
+
+Keep the port-forward in a separate terminal, then run:
+
+```bash
+python3 run.py smoke
+python3 run.py emulator
+python3 run.py retry
+python3 run.py autoscale
+```
+
+For the real-model phase, start a separate Ollama server on loopback port 11435,
+using the protocol's settings. It shares installed weights while preserving
+the existing service on port 11434.
+
+```bash
+OLLAMA_HOST=127.0.0.1:11435 OLLAMA_NUM_PARALLEL=4 OLLAMA_MAX_QUEUE=256 OLLAMA_MAX_LOADED_MODELS=1 OLLAMA_CONTEXT_LENGTH=8192 ollama serve
+python3 run.py ollama
+```
+
+The smoke test validates the HTTP path and is kept outside the research cohort.
+Invalid trials retain their raw records and reasons. The autoscaler under test
+is the explicit prototype controller in this repository, not HPA or KEDA.

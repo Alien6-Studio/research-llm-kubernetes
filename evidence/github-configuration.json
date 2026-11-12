@@ -1,0 +1,132 @@
+{
+  "verified_at_utc": "2026-11-12T18:20:05.014492+00:00",
+  "repository": "Alien6-Studio/research-llm-kubernetes",
+  "visibility": "public",
+  "default_branch": "main",
+  "settings": {
+    "description": "Empirical study of Kubernetes clients calling LLMs: shared capacity, quotas, admission control, and autoscaling.",
+    "homepage": "https://alien6.com/en/research/",
+    "has_issues": true,
+    "has_wiki": false,
+    "has_projects": true,
+    "has_discussions": true,
+    "allow_squash_merge": true,
+    "allow_merge_commit": false,
+    "allow_rebase_merge": false,
+    "allow_auto_merge": false,
+    "delete_branch_on_merge": true,
+    "allow_update_branch": true,
+    "web_commit_signoff_required": true
+  },
+  "topics": [
+    "alien6-studio",
+    "autoscaling",
+    "benchmark",
+    "kind",
+    "kubernetes",
+    "llm",
+    "load-testing",
+    "ollama",
+    "python",
+    "rate-limiting",
+    "reproducible-research",
+    "research"
+  ],
+  "custom_labels": [
+    {
+      "name": "ci",
+      "color": "0E8A16",
+      "description": "Continuous integration and repository checks"
+    },
+    {
+      "name": "dependencies",
+      "color": "0366d6",
+      "description": "Dependency updates and pinned environments"
+    },
+    {
+      "name": "github_actions",
+      "color": "000000",
+      "description": "GitHub Actions workflow changes"
+    },
+    {
+      "name": "python",
+      "color": "2b67c6",
+      "description": "Python research code and analysis"
+    },
+    {
+      "name": "protocol",
+      "color": "5319E7",
+      "description": "Experimental design, controls, and registered changes"
+    },
+    {
+      "name": "evidence",
+      "color": "1D76DB",
+      "description": "Raw observations, provenance, and integrity"
+    },
+    {
+      "name": "reproducibility",
+      "color": "008672",
+      "description": "Independent reproduction and environment differences"
+    },
+    {
+      "name": "analysis",
+      "color": "8250DF",
+      "description": "Statistics, figures, and interpretation"
+    },
+    {
+      "name": "data-quality",
+      "color": "D93F0B",
+      "description": "Invalid trials, missing records, and measurement quality"
+    },
+    {
+      "name": "security",
+      "color": "B60205",
+      "description": "Security changes; report vulnerabilities privately"
+    },
+    {
+      "name": "kubernetes",
+      "color": "326CE5",
+      "description": "Cluster, workloads, and container configuration"
+    },
+    {
+      "name": "capacity",
+      "color": "0052CC",
+      "description": "Throughput, latency, quotas, and admission control"
+    },
+    {
+      "name": "docker",
+      "color": "21CEFF",
+      "description": "Container image and runtime changes"
+    }
+  ],
+  "security_and_analysis": {
+    "secret_scanning": {
+      "status": "enabled"
+    },
+    "secret_scanning_push_protection": {
+      "status": "enabled"
+    },
+    "dependabot_security_updates": {
+      "status": "enabled"
+    },
+    "secret_scanning_non_provider_patterns": {
+      "status": "disabled"
+    },
+    "secret_scanning_validity_checks": {
+      "status": "disabled"
+    }
+  },
+  "private_vulnerability_reporting": {
+    "enabled": true
+  },
+  "actions_workflow_permissions": {
+    "default_workflow_permissions": "read",
+    "can_approve_pull_request_reviews": false
+  },
+  "reference_repositories": [
+    "Alien6-Studio/keycloak-bounded-delegation",
+    "Alien6-Studio/hankoshell-operator",
+    "Alien6-Studio/continuum-attest"
+  ],
+  "rulesets_status": "Pending activation after the first successful Research checks run."
+}
