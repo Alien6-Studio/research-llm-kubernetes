@@ -26,3 +26,16 @@ input/output token counts. These two campaigns are analysed separately.
 
 The [validity protocol](VALIDITY.md) records the VM/host confounds and publication
 gates. The complete pilot block is preserved, including initially passing trials.
+
+
+The complete v2 calibration block and the failed control-channel attempt are
+preserved as lossless gzip JSON/text copies in
+`archives/2026-11-12-calibration-v2/`. Its manifest identifies both archive and
+decoded SHA-256 values; no response was edited. The report in
+`evidence/calibration-v2-report.json` retains all twelve controls and explains
+why successful HTTP replies alone did not establish generator headroom.
+
+Version3 and its fixed request traces are a prospective diagnostic correction,
+not confirmation of the original capacity claim. The independent Linux workflow
+retains failed qualification and never proceeds to capacity contrasts unless the
+complete calibration block passes the unchanged gates.

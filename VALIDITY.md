@@ -89,3 +89,38 @@ semantic quality claims require their own evidence.
 - [Kubernetes resource management](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/): CPU requests and limits have different roles; throttling is a possible execution constraint.
 - [Docker Desktop VM resources](https://docs.docker.com/desktop/settings-and-maintenance/settings/): VM CPU, memory, and resource-saving behavior are part of the environment.
 - [Ollama FAQ](https://docs.ollama.com/faq): model placement, context, parallelism, and memory are relevant execution settings.
+
+## Version3: measurement-clock and generator diagnostics
+
+The complete v2 calibration block is retained in the lossless gzip files in `archives/2026-11-12-calibration-v2/`.
+All 12 controls returned successful responses, but two higher-rate controls failed
+the dispatch-lag gate. Concurrent builds and the use of wall-clock scheduling
+prevent identifying a cause. No passing subset establishes generator headroom.
+See `evidence/calibration-v2-report.json`.
+
+Version3 uses CLOCK_MONOTONIC for dispatch, deadlines, elapsed time, and emulator
+quota windows. Wall time is retained only for provenance and clock-drift checks.
+This is a **single-node** design: matching time-namespace IDs must be recorded for
+controller, provider, and workers. It does not implement clock synchronization
+between different Kubernetes nodes. The clock change creates a new cohort; it
+is not evidence that clock correction caused any earlier failure.
+
+Every process has an independent 20ms heartbeat. Snapshots retain recent maximum
+lag, wall-versus-monotonic drift, and up to128 events above5ms. The controller is
+now included in every0.5-second resource snapshot. The native-host recorder has
+a separate heartbeat. These signals help distinguish pauses and clock behavior;
+absence of a retained event is not proof of complete host isolation. Overlapping
+heartbeat windows are not independent replications.
+
+`protocol/traces-r3-index.json` and its individually hashed trace files freezes exact request offsets, declared units, service
+times, and IDs before any v3 measurements. Gzip is internal storage for a JSON
+input; all code and evidence are available in this repository. Both systems read
+the same decoded traces rather than regenerate platform-dependent floating-point
+exponential variates. Full source and trace hashes belong in each manifest.
+
+The intended and higher calibration rates, twelve controls,99% useful-response
+requirement,50ms p95 lag limit, routing checks, and exclusions are unchanged. No
+failed individual trial is retried into a passing block. The workflow runs on a
+separate GitHub-hosted Linux VM and retains all outputs even on qualification
+failure. Essential contrasts run only after the **entire** calibration block
+passes. A second VM is not a bare-metal or production-performance validation.

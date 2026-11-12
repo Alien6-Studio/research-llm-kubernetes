@@ -92,3 +92,14 @@ for the distinction between historical publication and newly collected evidence.
 
 [Validity gates](VALIDITY.md) document competing explanations, pilot exclusions,
 and the controls required before attributing a plateau to inference capacity.
+
+
+## Continued qualification
+
+The [validity protocol](VALIDITY.md) and [v2 calibration report](evidence/calibration-v2-report.json)
+show why twelve successful-response controls still do not establish a valid
+capacity comparison. Version3 uses monotonic duration accounting, per-role and
+host heartbeat diagnostics, continuous controller samples, and byte-identical
+frozen traces. The manually dispatched `Independent Linux research` workflow
+qualifies the harness on a separate hosted VM before running essential contrasts.
+All local and independent results must remain separately identified.

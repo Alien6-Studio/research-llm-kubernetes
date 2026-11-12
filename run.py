@@ -3,6 +3,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import argparse
 import hashlib
+import gzip
 import json
 from pathlib import Path
 import random
@@ -104,6 +105,15 @@ def trace(profile, repetition, duration, mode, offered_rate=None):
     return result
 
 
+def fixed_trace(profile, repetition, duration, mode, offered_rate=None):
+    index = json.loads((ROOT / "protocol/traces-r3-index.json").read_text())
+    key = f"{profile}:{repetition}:{duration}:{mode}:{offered_rate}"
+    entry = index[key]
+    content = (ROOT / entry["path"]).read_bytes()
+    assert hashlib.sha256(content).hexdigest() == entry["sha256"]
+    return json.loads(gzip.decompress(content))
+
+
 def configuration(profile, policy, replicas, repetition, mode="emulator", measure=10):
     warmup = 5 if mode == "ollama" else 3
     saturated = profile != "unlimited" and mode == "emulator"
@@ -114,7 +124,7 @@ def configuration(profile, policy, replicas, repetition, mode="emulator", measur
             "provider": {"tokens_per_second": 40000 if saturated else 1_000_000_000,
                          "requests_per_second": 1000, "mode": mode,
                          "ollama_url": "http://host.docker.internal:11435"},
-            "trace": trace(profile, repetition, warmup + measure, mode)}
+            "trace": fixed_trace(profile, repetition, warmup + measure, mode)}
 
 
 def check_result(result, config, dynamic=False):
@@ -125,10 +135,20 @@ def check_result(result, config, dynamic=False):
     observed = {item["id"] for item in result["requests"]}
     if expected != observed:
         issues.append("Request IDs do not match offered trace")
-    codes = {sample["code_sha256"] for snapshot in result["resource_samples"] for sample in snapshot["workers"]}
+    codes = {sample.get("code_sha256") for snapshot in result["resource_samples"]
+             for sample in [snapshot.get("controller", {}), snapshot.get("upstream", {}), *snapshot["workers"]]}
     actual = hashlib.sha256((ROOT / "service.py").read_bytes()).hexdigest()
     if codes != {actual}:
         issues.append("Workers do not run the expected executable")
+    controller = result.get('controller', {})
+    namespaces = {controller.get('time_namespace_inode')}
+    for snapshot in result['resource_samples']:
+        for role in [snapshot.get('controller', {}), snapshot.get('upstream', {}), *snapshot['workers']]:
+            namespaces.add(role.get('time_namespace_inode'))
+    if len(namespaces) != 1 or None in namespaces:
+        issues.append('Single-node monotonic clock namespace is not established')
+    if not all(snapshot.get('controller') for snapshot in result['resource_samples']):
+        issues.append('Missing continuous controller telemetry')
     hit = {r["pod"] for r in result["requests"] if r.get("pod")}
     if not dynamic and len(hit) != config["replicas"]:
         issues.append("Traffic did not reach every configured replica")
@@ -211,12 +231,12 @@ def run_trial(out, config, auto=None):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("stage", choices=["deploy", "smoke", "calibrate", "emulator", "retry", "autoscale", "ollama"])
-    parser.add_argument("--image", default="alien6-research-capacity:study-v2")
+    parser.add_argument("stage", choices=["deploy", "smoke", "calibrate", "emulator", "retry", "autoscale", "ollama", "focused"])
+    parser.add_argument("--image", default="alien6-research-capacity:study-v3")
     parser.add_argument("--out", type=Path)
     args = parser.parse_args()
     if args.out is None:
-        args.out = ROOT / "runs" / ("2026-11-12-preflight-v2" if args.stage == "smoke" else "2026-11-12-calibration-v2" if args.stage == "calibrate" else "2026-11-12-qualified-v2")
+        args.out = ROOT / "runs" / ("2026-11-12-preflight-v3" if args.stage == "smoke" else "2026-11-12-calibration-v3" if args.stage == "calibrate" else "2026-11-12-qualified-v3-" + args.stage)
     if args.stage == "deploy":
         deploy(args.image)
         return
@@ -226,6 +246,7 @@ def main():
                 "service_sha256": hashlib.sha256((ROOT / "service.py").read_bytes()).hexdigest(),
                 "kubernetes": json.loads(kubectl("version", "-o", "json")), "image": args.image}
     manifest["stage"] = args.stage
+    manifest["trace_archive_sha256"] = hashlib.sha256((ROOT / "protocol/traces-r3-index.json").read_bytes()).hexdigest()
     manifest["environment"] = inventory()
     manifest["environment_sampler_sha256"] = hashlib.sha256((ROOT / "environment.py").read_bytes()).hexdigest()
     manifest["driver_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
@@ -258,10 +279,13 @@ def main():
                     config = configuration('unlimited', 'none', replicas, rep)
                     config['profile'] = profile
                     config['offered_rate'] = rate
-                    config['trace'] = trace(profile, rep, 13, 'emulator', offered_rate=rate)
+                    config['trace'] = fixed_trace(profile, rep, 13, 'emulator', offered_rate=rate)
                     for request in config['trace']:
                         request['service_seconds'] = 0
                     jobs.append(config)
+    elif args.stage == "focused":
+        jobs = [configuration(profile, "none", replicas, rep) for profile in ["unlimited", "quota"]
+                for replicas in [1, 8] for rep in range(3)]
     elif args.stage == "emulator":
         jobs = [configuration(profile, policy, replicas, rep) for profile in ["unlimited", "quota", "bursty"]
                 for policy in ["none", "global"] for replicas in [1, 2, 4, 8] for rep in range(3)]
