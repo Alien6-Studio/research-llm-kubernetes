@@ -39,3 +39,19 @@ Version3 and its fixed request traces are a prospective diagnostic correction,
 not confirmation of the original capacity claim. The independent Linux workflow
 retains failed qualification and never proceeds to capacity contrasts unless the
 complete calibration block passes the unchanged gates.
+
+
+## Version3 local and independently hosted collections
+
+`archives/2026-11-12-calibration-v3/` and
+`archives/2026-11-12-calibration-linux-v3/` retain both complete twelve-trial
+blocks. `archives/2026-11-12-focused-linux-v3/` retains every Linux essential
+contrast. Each manifest identifies compressed and decoded bytes. The original
+collection manifests preserve source, service, trace, hardware and image identity.
+`evidence/independent-linux-run.json` links the hosted execution and its source SHA.
+
+`analysis/2026-11-12-calibration/` and `analysis/2026-11-12-focused-linux/` contain
+recomputed trial summaries and resource diagnostics. CI audits these calculations
+without rerunning the services. Sampled resources and finite heartbeat retention
+are explicit limits; missing continuous restart counters do not establish absence
+of restarts. No failure is replaced or removed from a denominator.

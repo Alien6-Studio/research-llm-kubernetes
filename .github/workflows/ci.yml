@@ -23,6 +23,10 @@ jobs:
           python-version: '3.12'
       - name: Run research controls
         run: python -m unittest discover -p 'test_*.py' -v
+      - name: Recompute complete qualification blocks
+        run: python scripts/analyze_calibration.py --check
+      - name: Recompute independently hosted essential contrasts
+        run: python scripts/analyze_focused.py --check
       - name: Verify published evidence identity
         run: python scripts/verify_evidence.py
       - name: Build the pinned service image

@@ -103,3 +103,26 @@ host heartbeat diagnostics, continuous controller samples, and byte-identical
 frozen traces. The manually dispatched `Independent Linux research` workflow
 qualifies the harness on a separate hosted VM before running essential contrasts.
 All local and independent results must remain separately identified.
+
+
+## Independently hosted observations
+
+[The complete calibration analysis](CALIBRATION_RESULTS.md) separates the two
+unqualified local blocks from the qualified Linux block. All request traces in
+the v3 calibration match exactly across hosts. [The twelve Linux emulator
+contrasts](FOCUSED_RESULTS.md) retain every failure and distinguish window
+completions from the arrival cohort completed within its own deadline.
+
+These are descriptive essential contrasts, not completion of the full registered
+CPU-envelope, quota-sensitivity, policy or real-model program. Three seeded
+repetitions remain three experimental units. The public analyses are reproducible
+without a cluster or model server:
+
+```bash
+python scripts/analyze_calibration.py --check
+python scripts/analyze_focused.py --check
+```
+
+All evidence remains in this repository as individually hashed lossless archives.
+The optional `requirements-analysis.txt` environment only renders standalone
+scientific figures; it is not part of the measured HTTP-service image.
