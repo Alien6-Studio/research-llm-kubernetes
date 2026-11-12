@@ -1,7 +1,7 @@
 # Evidence and provenance
 
 This repository distinguishes implemented instrumentation from collected
-measurements. **The load campaign has not yet been executed.**
+measurements. **The first 21 load trials are a retained, excluded pilot; confirmatory results are pending.**
 
 | Evidence | Location |
 | --- | --- |
@@ -23,3 +23,6 @@ forwarded to the local host.
 
 Emulator trials use declared quota units. Ollama trials retain actual model
 input/output token counts. These two campaigns are analysed separately.
+
+The [validity protocol](VALIDITY.md) records the VM/host confounds and publication
+gates. The complete pilot block is preserved, including initially passing trials.

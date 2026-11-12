@@ -1,10 +1,11 @@
 from concurrent.futures import ThreadPoolExecutor
+import json
 import threading
 import unittest
 from unittest.mock import patch
 
 import service
-from run import configuration, trace
+from run import configuration, trace, scale
 
 
 class QuotaTests(unittest.TestCase):
@@ -67,6 +68,20 @@ class TraceTests(unittest.TestCase):
         items = trace("bursty", 0, 5, "emulator")
         self.assertTrue(all(0 < item["offset"] < 5 for item in items))
         self.assertEqual(sorted(item["offset"] for item in items), [item["offset"] for item in items])
+
+
+class StabilizationTests(unittest.TestCase):
+    def test_scale_waits_for_old_pods_and_matching_service_endpoints(self):
+        states = iter([{'items': [{}, {'metadata': {'deletionTimestamp': 'earlier'}}]}, {'items': [{}]}])
+        def kubectl_output(*args, **kwargs):
+            if args[:2] == ('get', 'pods'):
+                return json.dumps(next(states))
+            if args[:2] == ('get', 'endpointslices'):
+                return json.dumps({'items': [{'endpoints': [{'addresses': ['10.0.0.2'], 'conditions': {'ready': True, 'terminating': False}}]}]})
+            return ''
+        with patch('run.kubectl', side_effect=kubectl_output), patch('run.addresses', return_value=['http://10.0.0.2:8080']), patch('run.time.sleep') as sleep:
+            self.assertEqual(scale(1), ['http://10.0.0.2:8080'])
+            self.assertEqual([call.args[0] for call in sleep.call_args_list], [.5, 2])
 
 
 if __name__ == "__main__":

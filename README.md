@@ -14,8 +14,8 @@ and admission policy affect sustainable useful throughput?
 
 [The protocol](PROTOCOL.md) is registered before measurements. A dedicated local
 kind cluster, `a6-research`, is available with a 4-CPU, 8-GiB node limit.
-The load test system is implemented and its eight tests pass. **The measurement
-campaign has not yet been executed.** [The evidence index](EVIDENCE.md) separates
+The load test system is implemented and its eight tests pass. **The first 21 trials are an excluded pilot; a qualified confirmatory campaign
+has not yet been executed.** [The evidence index](EVIDENCE.md) separates
 implemented instrumentation from measured results.
 
 The project uses its own kubeconfig, excluded from Git. Existing application
@@ -54,8 +54,8 @@ and kubectl are required for the local cluster.
 kind create cluster --config infra/kind.yaml --kubeconfig .kubeconfig-a6-research
 docker update --cpus 4 --memory 8g --memory-swap 8g a6-research-control-plane
 python3 -m unittest discover -p 'test_*.py'
-docker build -t alien6-research-capacity:study-v1 .
-kind load docker-image alien6-research-capacity:study-v1 --name a6-research
+docker build -t alien6-research-capacity:study-v2 .
+kind load docker-image alien6-research-capacity:study-v2 --name a6-research
 python3 run.py deploy
 kubectl --kubeconfig .kubeconfig-a6-research -n a6-research port-forward service/controller 18081:8080
 ```
@@ -64,6 +64,8 @@ Keep the port-forward in a separate terminal, then run:
 
 ```bash
 python3 run.py smoke
+python3 run.py calibrate
+# Run confirmatory stages only after the documented validity gates pass:
 python3 run.py emulator
 python3 run.py retry
 python3 run.py autoscale
@@ -81,3 +83,12 @@ python3 run.py ollama
 The smoke test validates the HTTP path and is kept outside the research cohort.
 Invalid trials retain their raw records and reasons. The autoscaler under test
 is the explicit prototype controller in this repository, not HPA or KEDA.
+
+## Article history
+
+Original article publication: **2026-11-03**. Dedicated repository and new
+experimental work: **12 November 2026**. See [the chronology](CHRONOLOGY.md)
+for the distinction between historical publication and newly collected evidence.
+
+[Validity gates](VALIDITY.md) document competing explanations, pilot exclusions,
+and the controls required before attributing a plateau to inference capacity.

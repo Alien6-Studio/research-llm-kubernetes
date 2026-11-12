@@ -105,3 +105,25 @@ The driver had combined both streams and failed to parse the manifest. The
 streams are now captured separately. No outcome was collected and no protocol
 parameter changed. The initial `protocol-2026-11-12` tag remains unchanged;
 `protocol-2026-11-12-r2` identifies the corrected executable.
+
+## Pilot exclusion and strengthened validity gates
+
+The first 21 trials are retained as a pilot and are excluded as a complete block
+from the final replica comparison. Nine failed the initial checks, including
+traffic to old terminating pods and excessive generator lag. Twelve passing
+trials from this block are not selectively reused. See `VALIDITY.md` and the
+retained `pilot-stop.json` for the alternative explanations and required gates.
+
+The corrected driver waits for old pods to terminate and ready EndpointSlices
+to match the configured workers, followed by a fixed 2-second settling interval.
+Per-role cgroup CPU throttling, CPU/memory pressure and OOM counters are recorded.
+An aggregate host and node-cgroup sampler runs every 2 seconds and records its
+own duration and unavailable measurements. It records no process arguments.
+The new executable uses image `alien6-research-capacity:study-v2`.
+
+No new confirmatory campaign may start until fast-path calibration at 180 and
+360 requests/second, three repetitions each, has established generator headroom.
+Fast-path requests use the same HTTP route, no quota, and zero simulated service
+time. Calibration is retained separately. Resource-envelope and independent-host
+controls described in `VALIDITY.md` must be fixed before confirmatory collection.
+The initial historical article date is not a measurement date; see `CHRONOLOGY.md`.
