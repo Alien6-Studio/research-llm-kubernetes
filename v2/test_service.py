@@ -48,7 +48,7 @@ class HTTPTests(unittest.IsolatedAsyncioTestCase):
     async def test_not_emitted_requests_are_not_dropped(self):
         controller = Application('controller', self.provider_url)
         import time
-        row = await controller.invoke({'id': 'late', 'offset': 0}, {'deadline_seconds': .01}, time.monotonic() - 1)
+        row = await controller.invoke({'id': 'late', 'offset': 0}, {'deadline_seconds': .01, 'trial_id': 'late'}, time.monotonic() - 1)
         self.assertIsNone(row['emitted'])
         self.assertEqual(row['reason'], 'generator_not_emitted_deadline')
         self.assertGreater(row['latency_seconds'], 1)
@@ -83,6 +83,16 @@ class HTTPTests(unittest.IsolatedAsyncioTestCase):
         self.assertTrue(result['drained'])
         self.assertEqual(len(result['role_records']['provider']['records']), 8)
         self.assertEqual(len(result['role_records'][self.worker_url]['records']), 8)
+
+    async def test_old_trial_cannot_consume_a_new_trial_budget(self):
+        self.provider.config['trial_id'] = 'new'
+        self.worker.config['trial_id'] = 'new'
+        status, body = await request(self.worker_url + '/work', self.item('stale'))
+        self.assertEqual(status, 409)
+        self.assertEqual(body['reason'], 'stale_trial')
+        status, _ = await request(self.provider_url + '/infer', self.item('stale'))
+        self.assertEqual(status, 409)
+        self.assertFalse(any(event['action'] == 'consumed' for event in self.provider.ledger.events))
 
 
 if __name__ == '__main__':

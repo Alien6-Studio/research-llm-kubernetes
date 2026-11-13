@@ -19,6 +19,7 @@ git clone --branch research/capacity-validation-v2 --single-branch \
 cd /opt/alien6-capacity-v2
 kind create cluster --config v2/kind.yaml --kubeconfig .kubeconfig-capacity-v2 --wait 120s
 docker update --cpus 4 --memory 8g --memory-swap 8g a6-capacity-v2-control-plane
-docker build -f v2/Dockerfile --build-arg SOURCE_COMMIT="$(git rev-parse HEAD)" -t alien6-capacity:v2 .
-kind load docker-image alien6-capacity:v2 --name a6-capacity-v2
-python3 -m v2.run deploy
+IMAGE="alien6-capacity:v2-$(git rev-parse --short=12 HEAD)"
+docker build -f v2/Dockerfile --build-arg SOURCE_COMMIT="$(git rev-parse HEAD)" -t "$IMAGE" .
+kind load docker-image "$IMAGE" --name a6-capacity-v2
+python3 -m v2.run deploy --image "$IMAGE"

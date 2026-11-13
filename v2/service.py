@@ -57,6 +57,7 @@ class Application:
     def stats(self):
         usage = resource.getrusage(resource.RUSAGE_SELF)
         data = {'pod': self.pod, 'uid': self.uid, 'role': self.role, 'clock_domain': self.domain,
+                'trial_id': self.config.get('trial_id'), 'trial_binding': True,
                 'at': time.monotonic(), 'wall_utc_seconds': time.time(),
                 'active': self.active, 'queued': self.queued, 'records': len(self.records),
                 'cpu_seconds': usage.ru_utime + usage.ru_stime,
@@ -72,7 +73,15 @@ class Application:
 
     async def infer(self, item):
         received = time.monotonic()
-        identifier = item.get('reservation') or item['id'] + ':direct'
+        identifier = item.get('reservation') or str(item.get('trial_id')) + ':' + item['id'] + ':direct'
+        stale = self.config.get('trial_id') is not None and item.get('trial_id') != self.config['trial_id']
+        if stale:
+            row = {'id': item['id'], 'trial_id': item.get('trial_id'), 'clock_domain': self.domain,
+                   'provider_received': received, 'provider_finished': time.monotonic(), 'provider_consumed': None,
+                   'reservation': identifier, 'units': item['tokens'], 'allowed': False,
+                   'status': 409, 'reason': 'stale_trial', 'correct': False}
+            self.records.append(row)
+            return 409, {'id': item['id'], 'reason': 'stale_trial', 'correct': False, 'provider_events': row}
         if item.get('reservation'):
             allowed = self.ledger.consume(identifier, item['tokens'])
             reason = 'reservation_unavailable'
@@ -80,6 +89,7 @@ class Application:
             allowed, permission = self.ledger.direct(identifier, item['tokens'])
             reason = 'provider_quota'
         row = {'id': item['id'], 'clock_domain': self.domain, 'provider_received': received,
+               'trial_id': item.get('trial_id'),
                'provider_consumed': time.monotonic() if allowed else None, 'reservation': identifier,
                'units': item['tokens'], 'allowed': allowed}
         status, result = 429, {'reason': reason, 'correct': False}
@@ -107,10 +117,15 @@ class Application:
         received = time.monotonic()
         deadline = received + max(0, item['remaining_budget_seconds'])
         row = {'id': item['id'], 'pod': self.pod, 'uid': self.uid, 'clock_domain': self.domain,
+               'trial_id': item.get('trial_id'),
                'worker_received': received, 'queue_entered': received, 'queue_left': None,
                'admission_started': None, 'admission_finished': None,
                'provider_call_started': None, 'provider_call_finished': None,
                'admission_attempts': [], 'inference_attempts': 0}
+        if self.config.get('trial_id') is not None and item.get('trial_id') != self.config['trial_id']:
+            row.update({'status': 409, 'reason': 'stale_trial', 'correct': False, 'worker_finished': time.monotonic()})
+            self.records.append(row)
+            return 409, row
         if self.active + self.queued >= 36:
             row.update({'status': 429, 'reason': 'worker_queue_full', 'correct': False, 'worker_finished': time.monotonic()})
             self.records.append(row)
@@ -136,9 +151,12 @@ class Application:
                     if item['policy'] == 'global':
                         key = str(uuid.uuid5(uuid.NAMESPACE_URL, item['trial_id'] + item['id'] + str(len(row['admission_attempts']))))
                         code, permission = await request(self.provider + '/reserve', {
-                            'reservation': key, 'tokens': item['tokens'],
+                            'reservation': key, 'tokens': item['tokens'], 'trial_id': item['trial_id'],
                             'ttl': min(.25, max(0, deadline - time.monotonic()))}, timeout=5)
                         row['admission_attempts'].append({'at': time.monotonic(), 'status': code, 'permission': permission})
+                        if code == 409:
+                            status, result = 409, {'reason': 'stale_trial', 'correct': False}
+                            break
                         if not permission.get('allowed'):
                             await asyncio.sleep(min(permission.get('retry_after', .01) + .001, max(0, deadline - time.monotonic())))
                             continue
@@ -156,7 +174,7 @@ class Application:
                     break
                 else:
                     status, result = 504, {'reason': 'admission_deadline', 'correct': False}
-                if row['provider_call_started'] is None:
+                if row['provider_call_started'] is None and status != 409:
                     status, result = 504, {'reason': 'admission_deadline', 'correct': False}
                 elif time.monotonic() > deadline:
                     result = {**result, 'reason': 'worker_response_deadline'}
@@ -181,6 +199,7 @@ class Application:
         deadline = scheduled + config['deadline_seconds']
         launched = time.monotonic()
         row = {'id': item['id'], 'clock_domain': self.domain, 'scheduled': scheduled,
+               'trial_id': config['trial_id'],
                'launched': launched, 'emitted': None, 'status': 0, 'correct': False,
                'scheduling_lag_seconds': max(0, launched - scheduled)}
         if launched >= deadline:
@@ -190,7 +209,7 @@ class Application:
                 row['emitted'] = time.monotonic()
             try:
                 if config.get('direct_provider'):
-                    status, result = await request(self.provider + '/infer', item,
+                    status, result = await request(self.provider + '/infer', {**item, 'trial_id': config['trial_id']},
                                                    timeout=max(.001, deadline - time.monotonic()), sent=emitted)
                 elif config.get('direct_ollama'):
                     status, raw = await request(config['provider']['ollama_url'] + '/api/generate', model_request(item),
@@ -275,6 +294,8 @@ class Application:
             return 200, {'configured': True}
         if self.role == 'provider':
             if path == '/reserve':
+                if self.config.get('trial_id') is not None and payload.get('trial_id') != self.config['trial_id']:
+                    return 409, {'allowed': False, 'reason': 'stale_trial'}
                 permission = self.ledger.reserve(payload['reservation'], payload['tokens'], payload['ttl'])
                 return (200 if permission['allowed'] else 429), permission
             if path == '/release':
@@ -294,10 +315,15 @@ class Application:
         if self.role == 'controller' and path == '/prepare':
             if self.running:
                 return 409, {'reason': 'already_running'}
-            results = await asyncio.gather(*(request(url + '/configure', payload['provider'])
+            states = await asyncio.gather(*(request(url + '/stats') for url in [self.provider, *payload['worker_addresses']]))
+            if any(code != 200 or state.get('active') or state.get('queued') for code, state in states):
+                return 409, {'reason': 'previous_work_not_idle'}
+            role_config = {**payload['provider'], 'trial_id': payload['trial_id']}
+            results = await asyncio.gather(*(request(url + '/configure', role_config)
                          for url in [self.provider, *payload['worker_addresses']]))
             if any(code != 200 for code, _ in results):
                 return 409, {'reason': 'previous_work_not_drained', 'responses': results}
+            self.config['trial_id'] = payload['trial_id']
             self.heartbeat_lags = []
             return 200, {'prepared': True}
         return 404, {'reason': 'unknown_endpoint'}

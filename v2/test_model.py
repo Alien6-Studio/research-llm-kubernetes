@@ -14,7 +14,7 @@ class ModelDeadlineTests(unittest.IsolatedAsyncioTestCase):
             await asyncio.sleep(.06)
             return 200, {'response': '{"label":"ok"}', 'eval_count': 6}
         item = {'id': 'late', 'offset': 0, 'task_status': 200, 'prompt_text': ''}
-        config = {'direct_ollama': True, 'deadline_seconds': .015, 'provider': {'ollama_url': 'http://local'}}
+        config = {'direct_ollama': True, 'deadline_seconds': .015, 'trial_id': 'late', 'provider': {'ollama_url': 'http://local'}}
         with patch('v2.model_service.request', slow):
             row = await ModelApplication('controller').invoke(item, config, time.monotonic())
         self.assertEqual(row['reason'], 'client_deadline')

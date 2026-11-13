@@ -160,6 +160,9 @@ def validate(config, result, routing, observations):
             issues.append('pod_membership_changed_during_trial')
         if any(c['restartCount'] for p in pods for c in p['containers']): issues.append('pod_restart')
     if not result['drained']: issues.append('residual_work_not_drained')
+    role_rows = [row for archive in result['role_records'].values() for row in archive['records']]
+    if any(row.get('trial_id') != config['trial_id'] for row in role_rows):
+        issues.append('out_of_trial_role_record')
     ledger = result['role_records']['provider']['ledger']
     for window in ledger['windows'].values():
         if window['consumed_units'] > ledger['unit_limit'] or window['consumed_requests'] > ledger['request_limit']:
@@ -193,6 +196,8 @@ def execute(config, out):
                 'observations': observer.samples, 'result': result, 'valid': not issues, 'issues': issues}
     path.write_text(json.dumps(document, separators=(',', ':')) + '\n')
     print(json.dumps({'trial': config['trial_id'], 'valid': not issues, 'issues': issues}), flush=True)
+    if not result['drained']:
+        raise RuntimeError('Residual work remains; no subsequent trial may reset this state')
     return document
 
 

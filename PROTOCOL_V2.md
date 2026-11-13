@@ -194,6 +194,11 @@ Continue the registered4/8CPU controls on a new isolated Ubuntu24.04 LXD VM
 with8actual vCPU and16GiB RAM on the user-provided Linux host. Keep the kind node
 at8GiB and vary only its CPU allowance according to the existing frozen plan.
 Both complete4/8CPU qualification blocks must pass before the48 paired trials.
+Before this continuation, strengthen the executable's trial isolation: record
+and enforce trial identities at workers, leases and inference consumption, check
+all roles idle before any reset, and stop after an unsuccessful drain. This is a
+prospective integrity correction, not evidence of contamination in earlier
+blocks. Earlier source checkpoints and observations remain separate and intact.
 Retain VM image fingerprint, kernel/Docker/Kubernetes versions, source/image
 identity and VM CPU/steal/memory observations. This is not a dedicated bare-metal
 host; unrelated hypervisor workloads remain a limit.

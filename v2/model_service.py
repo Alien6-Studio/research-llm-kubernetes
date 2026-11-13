@@ -20,6 +20,7 @@ class ModelApplication(Application):
         deadline = scheduled + config['deadline_seconds']
         launched = time.monotonic()
         row = {'id': item['id'], 'clock_domain': self.domain, 'scheduled': scheduled, 'launched': launched,
+               'trial_id': config['trial_id'],
                'emitted': None, 'status': 0, 'correct': False, 'scheduling_lag_seconds': max(0, launched - scheduled)}
         if launched >= deadline:
             row.update(reason='generator_not_emitted_deadline', finished=time.monotonic())
