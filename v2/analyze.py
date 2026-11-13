@@ -87,7 +87,30 @@ def summarize(document):
             complete_windows.append({'window': number, 'units': used, 'utilization': used / ledger['unit_limit']})
     physical = resources(result['resource_samples'])
     total_useful = sum(useful(r, config) for r in rows)
+    model_rows = []
+    if config.get('direct_ollama'):
+        for row in rows:
+            raw = row.get('response', {}).get('inference') or row.get('late_response', {}).get('inference')
+            if raw: model_rows.append({'id': row['id'], 'raw': raw})
+    elif config['provider']['mode'] == 'ollama':
+        model_rows = [{'id': row['id'], 'raw': row['inference']} for row in consumed if row.get('inference')]
+    measured_model = [row for row in model_rows if row['id'] in ids]
+    model = {'observed_responses': len(measured_model)}
+    for key in ['prompt_eval_count', 'prompt_eval_cached_count', 'eval_count']:
+        known = [r['raw'][key] for r in measured_model if key in r['raw']]
+        model[key] = {'sum_observed': sum(known), 'known_responses': len(known), 'unknown_responses': len(measured_model) - len(known)}
+    for key in ['load_duration', 'prompt_eval_duration', 'eval_duration', 'total_duration']:
+        model[key + '_seconds'] = quantiles(r['raw'][key] / 1e9 for r in measured_model if key in r['raw'])
+    residuals = []
+    for row in measured_model:
+        raw = row['raw']
+        keys = ['total_duration', 'load_duration', 'prompt_eval_duration', 'eval_duration']
+        if all(key in raw for key in keys):
+            residuals.append((raw['total_duration'] - raw['load_duration'] - raw['prompt_eval_duration'] - raw['eval_duration']) / 1e9)
+    model['unattributed_server_residual_seconds'] = quantiles(residuals)
+    model['timing_limit'] = 'API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.'
     return {'trial_id': config['trial_id'], 'block': config['block'], 'replicas': config['replicas'],
+            'path': 'direct-model' if config.get('direct_ollama') else 'direct-provider' if config.get('direct_provider') else 'workers',
             'profile': config['profile'], 'policy': config['policy'], 'repetition': config['repetition'],
             'node_cpus': config['node_cpus'], 'quota': config['provider']['tokens_per_second'],
             'valid': document['valid'], 'issues': document['issues'], 'offered': len(measured), 'emitted': len(emitted),
@@ -112,6 +135,7 @@ def summarize(document):
             'ledger_event_counts': dict(Counter(e['action'] for e in ledger['events'])),
             'provider_http_refusals': sum(r['id'] in ids and r['status'] in [409, 429] for r in provider),
             'resources': physical, 'whole_trace_useful': total_useful,
+            'model': model,
             'observed_role_cpu_seconds_per_whole_trace_useful': sum(r['cpu_seconds'] for r in physical) / total_useful if total_useful else None,
             'resource_accounting_scope': 'Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate.'}
 
@@ -153,11 +177,11 @@ def analyze(source):
     assert len({r['trial_id'] for r in rows}) == len(rows)
     groups = defaultdict(list)
     for row in rows:
-        groups[(row['block'], row['profile'], row['policy'], row['replicas'], row['node_cpus'], row['quota'])].append(row)
+        groups[(row['block'], row['path'], row['profile'], row['policy'], row['replicas'], row['node_cpus'], row['quota'])].append(row)
     summaries = []
     for key, trials in sorted(groups.items()):
         trials.sort(key=lambda r: r['repetition'])
-        summaries.append({'condition': dict(zip(['block', 'profile', 'policy', 'replicas', 'node_cpus', 'quota'], key)),
+        summaries.append({'condition': dict(zip(['block', 'path', 'profile', 'policy', 'replicas', 'node_cpus', 'quota'], key)),
                           'useful_cohort_per_second': interval(r['useful_cohort_per_second'] for r in trials),
                           'useful_fraction': interval(r['useful_fraction'] for r in trials)})
     return {'block': block, 'included_for_inference': block['complete'] and block['qualified'],

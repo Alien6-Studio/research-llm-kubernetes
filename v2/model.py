@@ -100,6 +100,7 @@ async def pilot(output=None):
 
 
 def freeze(pilot_path, destination):
+    destination = destination.resolve()
     data = json.loads(pilot_path.read_text())
     if not data['valid'] or len(data['results']) != 3 or any(not row['correct'] for setting in data['results'] for row in setting['observations']):
         raise RuntimeError('Pilot has a failed task; retain it before planning confirmation')
