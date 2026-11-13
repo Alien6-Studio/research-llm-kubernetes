@@ -1,0 +1,118 @@
+{
+  "exported_at_utc": "2026-11-13T09:53:17.878732+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-local-model-qualification/block.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/block.json",
+      "sha256": "0e7cfcadc9814b5553acace38fb32f7936d22fd91c9605dee1e3a30ce4be2cb6",
+      "decoded_sha256": "e90fe7883307cfc47722a7c78fdbc2066d260a0a8b154c33553b1d23a905a13d",
+      "decoded_bytes": 77,
+      "bytes": 77
+    },
+    {
+      "path": "archives/v2-local-model-qualification/manifest.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/manifest.json",
+      "sha256": "82b1433bcbb1e95b40be599adc1038381d4f71102f5d6f121150d67c24f96231",
+      "decoded_sha256": "96eee7802382fed20deccf1ad0d92567ade34d7482f979a41aa79f9829287225",
+      "decoded_bytes": 1754,
+      "bytes": 889
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-headroom-1-0.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-headroom-1-0.json",
+      "sha256": "62210691297058efe35c5489a5bd2f66ec87845a15f932a0591a7c6f52078c42",
+      "decoded_sha256": "cf796741f353cae4437596a0a488acd96f017c486508f312d88ce4a3b1e1c225",
+      "decoded_bytes": 3269411,
+      "bytes": 198712
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-headroom-1-1.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-headroom-1-1.json",
+      "sha256": "175c83102faa98bad6824c43245f0833349abbd0b22dfc1f9fbc80afc5381cd1",
+      "decoded_sha256": "d82d51fd0caf48b39a0afe86ac503e22c4ace80c7d92b5995af9aa3b11b8cc77",
+      "decoded_bytes": 2836846,
+      "bytes": 179319
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-headroom-1-2.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-headroom-1-2.json",
+      "sha256": "15e406d6673119c710bef490dd2acbb0830d25a75dbfa5948889c482bacdc205",
+      "decoded_sha256": "65c462f18500d34acbf1643dc9cea1de04abd6ce8a132d7db8bee907235eb793",
+      "decoded_bytes": 2920047,
+      "bytes": 183098
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-headroom-8-0.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-headroom-8-0.json",
+      "sha256": "cd37f681d7f19a27048e193c2a6602298b5e62fa1aa5a6f7a2a152f3a353c790",
+      "decoded_sha256": "bc94411b1e943822dc319d58c4be878a77538d9a63156d1f11f84c969a7b0c93",
+      "decoded_bytes": 4683122,
+      "bytes": 568044
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-headroom-8-1.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-headroom-8-1.json",
+      "sha256": "0eab8ff4e8db68039a55ab988f6c04ea3e5e2912fa734c5f9c26e056a552bfb5",
+      "decoded_sha256": "cfc86472090048e0f65075658b821cda3e5032ec575e244f3b17e7073e60dcff",
+      "decoded_bytes": 4235619,
+      "bytes": 547309
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-headroom-8-2.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-headroom-8-2.json",
+      "sha256": "f5e6ee7cf2bf41d5623f52357a18f8cc988e7c172f3a250308be6c74c99c48e9",
+      "decoded_sha256": "3a7bd618036e0c1573e36976d1f2e14be122d6b077c4907c5e172a7cb1b67d3b",
+      "decoded_bytes": 4284496,
+      "bytes": 541467
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-high-1-0.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-high-1-0.json",
+      "sha256": "fd97f7d756751ede5b7d3b48035d7462dc92978a61422b2a00d87865ecb39433",
+      "decoded_sha256": "aa80807dd26b789d2cf7774bd14065fe5fc12be2b206d4c984e572e21ebde819",
+      "decoded_bytes": 2060049,
+      "bytes": 145009
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-high-1-1.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-high-1-1.json",
+      "sha256": "ce3ce9ce033f96896f50adb2fb5c0fb557e8c3d88ee084272981d5fc11296612",
+      "decoded_sha256": "0cf0bface6a3cb74693cd8d3d2d915f52b93d12d42da32805a047a107254d10f",
+      "decoded_bytes": 1809195,
+      "bytes": 132047
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-high-1-2.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-high-1-2.json",
+      "sha256": "f9d36ce01da7013125765760e4023fd9dc3e55fdb1d4859f5a42f77eabbc10da",
+      "decoded_sha256": "3e7e8cbefdeeb8fe66155fc4b71a522f5359428497e51a9a60d78fccfc9e2045",
+      "decoded_bytes": 1690901,
+      "bytes": 127154
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-high-8-0.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-high-8-0.json",
+      "sha256": "aa17368c400e8f9476b876ef0f74fad27d9f694f09b13d12c039e0ff00898122",
+      "decoded_sha256": "a73de71d7107239d75ff9349a48fa4e15b429636281f89f0c9105f2fdf71d5e2",
+      "decoded_bytes": 3433564,
+      "bytes": 502948
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-high-8-1.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-high-8-1.json",
+      "sha256": "a7edbbcbb465f733c54aaac2b830ff13c9c781be5cb835d526d028e0075d786d",
+      "decoded_sha256": "2c4e838554567d74d3b6c986ad208f2d63a53470f27b53bffe3cc141c291f44a",
+      "decoded_bytes": 3186231,
+      "bytes": 492935
+    },
+    {
+      "path": "archives/v2-local-model-qualification/model-qualification-high-8-2.json.gz",
+      "source_relative_path": "runs/v2-model-qualification-settled/model-qualification-high-8-2.json",
+      "sha256": "7604fa602c61d5cf390892e7daa261f6bb44cd7b0d8315c60945a7cc52715606",
+      "decoded_sha256": "227785b1d5c348b6eaf1fc634859af8d25c80df4ce9750c1e6140117b1434548",
+      "decoded_bytes": 3091873,
+      "bytes": 492967
+    }
+  ]
+}

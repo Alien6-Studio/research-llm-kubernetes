@@ -1,0 +1,30 @@
+{
+  "exported_at_utc": "2026-11-13T09:53:17.253333+00:00",
+  "format": "Lossless gzip copies of every file in the cohort directory; raw observations are unchanged.",
+  "files": [
+    {
+      "path": "archives/v2-model-control-interruption/block.json.gz",
+      "source_relative_path": "runs/v2-model-qualification/block.json",
+      "sha256": "d32c66fbb1c6915c9ead06513dfe2f5ce91529d58ebc838fe0dfab9cd3f796a2",
+      "decoded_sha256": "7bb5afd98d24ea4c157f60ea659044d3f5ac4d346121a87fbeb6f0c4e8f58858",
+      "decoded_bytes": 189,
+      "bytes": 149
+    },
+    {
+      "path": "archives/v2-model-control-interruption/control-error.txt.gz",
+      "source_relative_path": "runs/v2-model-qualification/control-error.txt",
+      "sha256": "99dfef412afeee766de8344aa29304b10d175598681ab07361658bcf4cf46165",
+      "decoded_sha256": "e2ae81fe8df79ebce0ef3963f1300315411c876565b055fcd89db744e4413375",
+      "decoded_bytes": 2560,
+      "bytes": 720
+    },
+    {
+      "path": "archives/v2-model-control-interruption/manifest.json.gz",
+      "source_relative_path": "runs/v2-model-qualification/manifest.json",
+      "sha256": "22ec44e9337f447cf41e28399f8307a624d29a8c7555f534bdf1a33d112e1540",
+      "decoded_sha256": "0d4e93e6aa2d2286114b37a56d8134ed85591aee8419b5334c06fedd5d79ae13",
+      "decoded_bytes": 1754,
+      "bytes": 891
+    }
+  ]
+}

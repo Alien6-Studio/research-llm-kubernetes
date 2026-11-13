@@ -43,6 +43,44 @@ def resources(samples):
     return result
 
 
+def host_resources(observations):
+    """Use differences within one host; /proc/stat ticks have no cross-host origin."""
+    rows = [r for r in observations if r.get('host_cpu') and r.get('node_cgroup')]
+    if len(rows) < 2: return {'available': False}
+    first, last = rows[0], rows[-1]
+    def ticks(row): return [int(v) for v in row['host_cpu'].splitlines()[0].split()[1:9]]
+    delta = [b - a for a, b in zip(ticks(first), ticks(last))]
+    total = sum(delta)
+    def counter(row, name):
+        return next((int(line.split()[1]) for line in row['node_cgroup'].splitlines() if line.startswith(name + ' ')), None)
+    usage = [counter(r, 'usage_usec') for r in [first, last]]
+    throttle = [counter(r, 'throttled_usec') for r in [first, last]]
+    return {'available': True, 'observed_seconds': last['at'] - first['at'],
+            'vm_cpu_nonidle_fraction': 1 - (delta[3] + delta[4]) / total if total > 0 else None,
+            'vm_steal_fraction': delta[7] / total if total > 0 else None,
+            'node_cpu_seconds': (usage[1] - usage[0]) / 1e6 if None not in usage else None,
+            'node_throttled_seconds': (throttle[1] - throttle[0]) / 1e6 if None not in throttle else None,
+            'scope': 'VM-wide CPU includes unrelated VM processes; node cgroup includes Kubernetes/control-plane overhead. Steal is reported separately, not diagnosed as its cause.'}
+
+
+def native_resources(samples):
+    """Process observations are approximate CPU/RSS, never GPU energy measurements."""
+    rows = [r for r in samples if 'processes' in r]
+    if len(rows) < 2: return {'available': False}
+    processes = defaultdict(list)
+    for row in rows:
+        for process in row['processes']: processes[process['pid']].append((row['at'], process))
+    cpu = sum(max(0, values[-1][1]['cpu_seconds'] - values[0][1]['cpu_seconds']) for values in processes.values())
+    rss = [(r['at'], sum(p['rss_bytes'] for p in r['processes'])) for r in rows]
+    memory = sum((t1 - t0) * (m1 + m0) / 2 for (t0,m0),(t1,m1) in zip(rss,rss[1:]))
+    return {'available': True, 'samples': len(rows), 'observed_seconds': rows[-1]['at'] - rows[0]['at'],
+            'process_cpu_seconds_observed': cpu, 'process_rss_byte_seconds': memory,
+            'peak_process_rss_sum_bytes': max(m for _,m in rss),
+            'max_sample_gap_seconds': max(b['at'] - a['at'] for a,b in zip(rows,rows[1:])),
+            'other_server_loaded_model_count_max': max((r.get('other_server_model_count', 0) or 0 for r in rows)),
+            'scope': 'Native Ollama listener and descendants, sampled per PID. Short-lived processes can be missed; RSS sums can count shared pages twice. GPU compute/energy unmeasured. Separate architecture from VM CPU.'}
+
+
 def summarize(document):
     config, result = document['configuration'], document['result']
     planned = {r['id']: r for r in config['trace']}
@@ -55,6 +93,7 @@ def summarize(document):
     measured = [r for r in rows if warmup <= planned[r['id']]['offset'] < warmup + duration]
     emitted = [r for r in measured if r['emitted'] is not None]
     completed = [r for r in measured if useful(r, config)]
+    useful_ids = {r['id'] for r in completed}
     ids = {r['id'] for r in measured}
     window = [r for r in rows if warmup <= r['finished'] - result['start'] < warmup + duration]
     provider_archive = result['role_records']['provider']
@@ -109,6 +148,13 @@ def summarize(document):
             residuals.append((raw['total_duration'] - raw['load_duration'] - raw['prompt_eval_duration'] - raw['eval_duration']) / 1e9)
     model['unattributed_server_residual_seconds'] = quantiles(residuals)
     model['timing_limit'] = 'API-reported durations; the residual is not identified as queue waiting. Missing token counts remain unknown.'
+    model['observed_output_tokens_per_arrival_second'] = model['eval_count']['sum_observed'] / duration
+    decode = sum(r['raw'].get('eval_duration', 0) for r in measured_model) / 1e9
+    model['output_tokens_per_summed_reported_decode_second'] = model['eval_count']['sum_observed'] / decode if decode else None
+    native = native_resources(document.get('native_observations', []))
+    if native['available']:
+        native['cpu_seconds_per_whole_trace_useful'] = native['process_cpu_seconds_observed'] / total_useful if total_useful else None
+        native['rss_byte_seconds_per_whole_trace_useful'] = native['process_rss_byte_seconds'] / total_useful if total_useful else None
     return {'trial_id': config['trial_id'], 'block': config['block'], 'replicas': config['replicas'],
             'path': 'direct-model' if config.get('direct_ollama') else 'direct-provider' if config.get('direct_provider') else 'workers',
             'profile': config['profile'], 'policy': config['policy'], 'repetition': config['repetition'],
@@ -116,6 +162,7 @@ def summarize(document):
             'valid': document['valid'], 'issues': document['issues'], 'offered': len(measured), 'emitted': len(emitted),
             'worker_accepted': sum(r.get('reason') != 'worker_queue_full' for r in workers),
             'provider_consumed': sum(r['id'] in ids for r in consumed),
+            'consumed_without_timely_client_outcome': sum(r['id'] in ids and r['id'] not in useful_ids for r in consumed),
             'useful': len(completed), 'useful_fraction': len(completed) / max(1, len(measured)),
             'offered_per_second': len(measured) / duration, 'emitted_per_second': len(emitted) / duration,
             'useful_cohort_per_second': len(completed) / duration,
@@ -136,7 +183,10 @@ def summarize(document):
             'provider_http_refusals': sum(r['id'] in ids and r['status'] in [409, 429] for r in provider),
             'resources': physical, 'whole_trace_useful': total_useful,
             'model': model,
+            'host_resources': host_resources(document.get('observations', [])),
+            'native_resources': native,
             'observed_role_cpu_seconds_per_whole_trace_useful': sum(r['cpu_seconds'] for r in physical) / total_useful if total_useful else None,
+            'observed_role_memory_byte_seconds_per_whole_trace_useful': sum(r['memory_byte_seconds'] for r in physical) / total_useful if total_useful and all(r['memory_byte_seconds'] is not None for r in physical) else None,
             'resource_accounting_scope': 'Observed first-to-last role sample spans, including warmup and bounded drain; shared node overhead is separate.'}
 
 

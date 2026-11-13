@@ -3,129 +3,120 @@
 [![Research CI](https://github.com/Alien6-Studio/research-llm-kubernetes/actions/workflows/ci.yml/badge.svg)](https://github.com/Alien6-Studio/research-llm-kubernetes/actions/workflows/ci.yml)
 [![Code license: Apache-2.0](https://img.shields.io/badge/code%20license-Apache--2.0-blue)](LICENSE)
 
+An empirical study of application replicas, shared inference capacity and
+admission policy. More replicas help when the dependency has headroom. A quota
+changes that relationship, and correct quota accounting alone does not ensure
+that answers reach clients before their deadline.
 
-An empirical study for the existing Alien6 article at
-`/en/research/articles/ai-production-kubernetes/`.
+The complete 72-trial emulator matrix, quota counterfactuals and 48 paired CPU
+controls are collected. The real-model question remains open: the entire local
+45-trial block is excluded and the independent continuation fails its network
+gate. No HPA/KEDA comparison has been measured. These are exploratory finite
+workload observations, not a production capacity guarantee.
 
-**Research question:** how do client replicas, a shared inference capacity limit,
-and admission policy affect sustainable useful throughput?
+## Read the study
 
-## Current status
+| Deliverable | Purpose |
+| --- | --- |
+| [AUDIT.md](AUDIT.md) | Original 12 November methods and evidence, including confirmed measurement gaps |
+| [PROTOCOL_V2.md](PROTOCOL_V2.md) | Hypotheses, frozen matrices, exclusions and prospective continuations |
+| [Benchmark V2](v2/) | Async measurement, atomic leases, Kubernetes orchestration and offline replay |
+| [RESULTS_V2.md](RESULTS_V2.md) | Actual outcomes, uncertainty, negative results, resources and limits |
+| [ARTICLE_EVIDENCE.md](ARTICLE_EVIDENCE.md) | Supported statements and open questions for future writing |
 
-[The protocol](PROTOCOL.md) is registered before measurements. A dedicated local
-kind cluster, `a6-research`, is available with a 4-CPU, 8-GiB node limit.
-The service has ten passing controls. **The first 21 trials remain an excluded pilot.**
-The two complete local calibration blocks each pass 10/12 controls; the independent
-Linux block passes 12/12. Twelve subsequent Linux emulator contrasts are audited
-in [the observed results](FOCUSED_RESULTS.md). The full registered confirmatory
-matrix and real-model phase remain incomplete. [The evidence index](EVIDENCE.md) separates
-implemented instrumentation from measured results.
+![Measured replica and admission outcomes](analysis/v2-study/replicas-and-admission.png)
 
-The project uses its own kubeconfig, excluded from Git. Existing application
-clusters and the user's normal Kubernetes context are outside this study.
+[Evidence index](EVIDENCE.md) · [All condition tables](analysis/v2-study/tables.md) ·
+[Trial CSV](analysis/v2-study/trials.csv) · [Full derived analysis](analysis/v2-study/results.json)
 
-## Planned campaigns
+## Reproduce the calculations without a cluster or model
 
-1. A real Kubernetes client API calling a controlled inference emulator: fixed
-   quotas and service times, 1/2/4/8 replicas, regular and bursty arrivals, repeated
-   trials, and explicit admission policies.
-2. A dedicated local Ollama service: test which observations transfer to actual
-   model generation. Keep emulator and real-model measurements separate.
-
-Retain arrival traces, raw outcomes, full latency, refusals, queue observations,
-and resource samples. Report financial cost as an estimate when only declared
-unit prices are available. Measured resource use is a separate quantity.
-
-## Repository structure
-
-- `PROTOCOL.md`: hypotheses and controls.
-- `service.py`: provider, worker, and in-cluster load-controller roles.
-- `run.py`: deployment, deterministic traces, and trial orchestration.
-- `test_study.py`: quota accounting, HTTP integration, and trace controls.
-- `infra/`: reproducible cluster configuration.
-- `runs/`: trial parameters and raw measurements.
-
-This public repository contains research code and evidence. It contains no
-customer deliverables or private application infrastructure.
-
-## Run the study
-
-Python 3.12's standard library is sufficient for the load system. Docker, kind,
-and kubectl are required for the local cluster.
+Python 3.12's standard library is sufficient for tests and numerical analysis.
+Loopback sockets must be allowed for HTTP integration tests.
 
 ```bash
-kind create cluster --config infra/kind.yaml --kubeconfig .kubeconfig-a6-research
-docker update --cpus 4 --memory 8g --memory-swap 8g a6-research-control-plane
 python3 -m unittest discover -p 'test_*.py'
-docker build -t alien6-research-capacity:study-v3 .
-kind load docker-image alien6-research-capacity:study-v3 --name a6-research
-python3 run.py deploy
-kubectl --kubeconfig .kubeconfig-a6-research -n a6-research port-forward service/controller 18081:8080
+python3 scripts/analyze_calibration.py --check
+python3 scripts/analyze_focused.py --check
+python3 scripts/verify_evidence.py
+python3 -m v2.verify
+python3 -m v2.report
 ```
 
-Keep the port-forward in a separate terminal, then run:
+`v2.verify` checks compressed/decoded archive hashes, byte-identical workloads,
+individual timings, lease conservation, classifications, transport controls and
+committed numerical analyses. CI replays evidence and builds images; it does not
+rerun Kubernetes/model experiments or establish scientific validity.
+
+To regenerate one analysis and the standalone figures:
 
 ```bash
-python3 run.py smoke
-python3 run.py calibrate
-# Run confirmatory stages only after the documented validity gates pass:
-python3 run.py emulator
-python3 run.py retry
-python3 run.py autoscale
+python3 -m v2.analyze archives/v2-linux-primary --out analysis/v2-linux-primary/results.json
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements-analysis.txt
+MPLCONFIGDIR=/tmp/alien6-mpl python3 -m v2.report --figures
 ```
 
-For the real-model phase, start a separate Ollama server on loopback port 11435,
-using the protocol's settings. It shares installed weights while preserving
-the existing service on port 11434.
+Rendering libraries are optional and are not installed in measured service
+images. PNG/SVG figures come from archived request outcomes; they contain no
+invented benchmark points.
+
+## Collect a new campaign
+
+Read the protocol and predeclare new source, trace, image and environment
+identities first. Use a new output directory: never replace an earlier run.
+A complete invalid block remains excluded; do not select its passing trials.
+
+Docker, kind 0.32.0 and kubectl 1.36.1 are needed. The V2 cluster is isolated as
+`a6-capacity-v2`, with its own ignored kubeconfig; do not use an application
+cluster or change the normal Kubernetes context. Example emulator setup:
 
 ```bash
-OLLAMA_HOST=127.0.0.1:11435 OLLAMA_NUM_PARALLEL=4 OLLAMA_MAX_QUEUE=256 OLLAMA_MAX_LOADED_MODELS=1 OLLAMA_CONTEXT_LENGTH=8192 ollama serve
-python3 run.py ollama
+kind create cluster --config v2/kind.yaml --kubeconfig .kubeconfig-capacity-v2
+IMAGE="alien6-capacity:v2-$(git rev-parse --short=12 HEAD)"
+docker update --cpus 4 --memory 8g --memory-swap 8g a6-capacity-v2-control-plane
+docker build -f v2/Dockerfile --build-arg SOURCE_COMMIT="$(git rev-parse HEAD)" -t "$IMAGE" .
+kind load docker-image "$IMAGE" --name a6-capacity-v2
+python3 -m v2.run deploy --image "$IMAGE"
+kubectl --kubeconfig .kubeconfig-capacity-v2 -n a6-capacity-v2 port-forward --address 127.0.0.1 service/controller 18082:8080
 ```
 
-The smoke test validates the HTTP path and is kept outside the research cohort.
-Invalid trials retain their raw records and reasons. The autoscaler under test
-is the explicit prototype controller in this repository, not HPA or KEDA.
-
-## Article history
-
-Original article publication: **2026-11-03**. Dedicated repository and new
-experimental work: **12 November 2026**. See [the chronology](CHRONOLOGY.md)
-for the distinction between historical publication and newly collected evidence.
-
-[Validity gates](VALIDITY.md) document competing explanations, pilot exclusions,
-and the controls required before attributing a plateau to inference capacity.
-
-
-## Continued qualification
-
-The [validity protocol](VALIDITY.md) and [v2 calibration report](evidence/calibration-v2-report.json)
-show why twelve successful-response controls still do not establish a valid
-capacity comparison. Version3 uses monotonic duration accounting, per-role and
-host heartbeat diagnostics, continuous controller samples, and byte-identical
-frozen traces. The manually dispatched `Independent Linux research` workflow
-qualifies the harness on a separate hosted VM before running essential contrasts.
-All local and independent results must remain separately identified.
-
-
-## Independently hosted observations
-
-[The complete calibration analysis](CALIBRATION_RESULTS.md) separates the two
-unqualified local blocks from the qualified Linux block. All request traces in
-the v3 calibration match exactly across hosts. [The twelve Linux emulator
-contrasts](FOCUSED_RESULTS.md) retain every failure and distinguish window
-completions from the arrival cohort completed within its own deadline.
-
-These are descriptive essential contrasts, not completion of the full registered
-CPU-envelope, quota-sensitivity, policy or real-model program. Three seeded
-repetitions remain three experimental units. The public analyses are reproducible
-without a cluster or model server:
+Keep the forward in another terminal. Run the complete qualification before a
+comparison, using fresh output paths and the exact built image:
 
 ```bash
-python scripts/analyze_calibration.py --check
-python scripts/analyze_focused.py --check
+python3 -m v2.run block --block calibration-4 --image "$IMAGE" --out runs/my-calibration-4
+python3 -m v2.run block --block primary --image "$IMAGE" --out runs/my-primary
 ```
 
-All evidence remains in this repository as individually hashed lossless archives.
-The optional `requirements-analysis.txt` environment only renders standalone
-scientific figures; it is not part of the measured HTTP-service image.
+The 8 CPU campaign requires a host that really supplies 8 CPU and both qualifications.
+[VM provisioning](infra/create-research-vm.sh), [bootstrap](infra/bootstrap-research-vm.sh)
+and [CPU orchestration](infra/run-cpu-controls.sh) document the separate VM path.
+They are operational scripts for an explicitly authorized isolated VM, not
+commands to run on a shared hypervisor without checking their scope.
+
+The native model setup, exact digest/options and failed local/remote qualification
+are documented in the protocol and results. Keep installed weights and the
+existing 11434 service separate from the dedicated 11435 study server. The remote
+helpers require an explicitly configured private SSH path, observer and bridge;
+they must never expose a model API publicly or substitute a transport fixture
+for actual generation. Do not launch model comparisons after a failed gate.
+
+[Autoscaling](studies/autoscaling/PROTOCOL.md) is a separate prepared study; its
+metric exporter/controllers are not yet qualified. The historical `run.py`
+autoscaler remains an experimental prototype.
+
+## Retained evidence and scope
+
+`archives/` contains lossless individually hashed observations, including failed
+blocks. `analysis/` contains deterministic derived outcomes. Raw working `runs/`
+are local collection files; V2 publication uses their lossless archives. Earlier
+protocols, sources, pilot exclusions and 12 November analyses remain unchanged.
+See [PROTOCOL.md](PROTOCOL.md), [VALIDITY.md](VALIDITY.md),
+[CALIBRATION_RESULTS.md](CALIBRATION_RESULTS.md), [FOCUSED_RESULTS.md](FOCUSED_RESULTS.md)
+and [CHRONOLOGY.md](CHRONOLOGY.md).
+
+Code, documentation and figures are in English. This public repository contains
+research evidence, no customer deliverables. The Alien 6 site and article are not
+modified by this study.
