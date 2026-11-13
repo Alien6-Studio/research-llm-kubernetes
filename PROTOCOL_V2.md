@@ -170,6 +170,18 @@ If the model, memory, direct path or hardware cannot be qualified, retain the
 precise failed controls and stop that phase. Never substitute emulator outcomes
 for real-model results.
 
+The executable real-model extension records a partial native pilot after each
+completed condition, including failed warmup or task outcomes. It adds12 complete
+model-path generator controls:1/8 workers × highest frozen rate/twice that rate
+×3 repetitions, using the same prompt-sized payloads with zero emulator duration.
+These must qualify before the45 real-model trials (direct plus1/2/4/8 workers,
+three rates, three repetitions). Direct reference calls are allowed to drain
+after the client's deadline while retaining the timeout as the client outcome.
+For sparse real-model traffic, report actual serving UID coverage and require
+all observed UIDs to belong to the verified ready EndpointSlice set. Random
+low-volume traffic need not hit every ready replica; do not equate the ready
+replica count with the number that actually performed inference.
+
 ## Separate autoscaling design and resource accounting
 
 Keep the historical repository controller labelled prototype. Prepare fixed
