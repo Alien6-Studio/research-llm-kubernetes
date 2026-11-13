@@ -110,6 +110,26 @@ async def pilot(output=None):
     return state
 
 
+async def warmup(output):
+    state = {'utc': datetime.now(timezone.utc).isoformat(), 'scope': 'Technical model loading/warmup, outside the comparison cohort',
+             'source_commit': command(['git', 'rev-parse', 'HEAD']).strip(), 'metadata': verify_server(), 'observations': [], 'valid': False}
+    for i in range(4):
+        item = pilot_item(i)
+        began = time.monotonic()
+        try:
+            status, raw = await request(BASE + '/api/generate', model_request(item), timeout=180)
+        except Exception as error:
+            status, raw = 0, {'transport_error': type(error).__name__}
+        state['observations'].append({'item': item, 'status': status, 'raw': raw,
+                                     'elapsed': time.monotonic() - began, 'correct': status == 200 and correct(raw, item)})
+        output.write_text(json.dumps(state, indent=2) + '\n')
+        if not state['observations'][-1]['correct']: return state
+    state['valid'] = True
+    state['loaded_model'] = json_http(BASE + '/api/ps')
+    output.write_text(json.dumps(state, indent=2) + '\n')
+    return state
+
+
 def freeze(pilot_path, destination):
     destination = destination.resolve()
     data = json.loads(pilot_path.read_text())
@@ -179,10 +199,16 @@ def native_snapshot():
             selected = expanded
         result['processes'] = [p for p in processes if p['pid'] in selected]
         result['model'] = json_http(BASE + '/api/ps')
-        result['other_server_model_count'] = len(json_http('http://127.0.0.1:11434/api/ps').get('models', []))
+        try:
+            result['other_server_model_count'] = len(json_http('http://127.0.0.1:11434/api/ps').get('models', []))
+        except Exception as error:
+            result['other_server_model_count'] = None
+            result['other_server_observation_error'] = type(error).__name__
         if platform.system() == 'Darwin':
             try: result['thermal'] = command(['pmset', '-g', 'therm'])
             except Exception as error: result['thermal'] = {'unavailable': type(error).__name__}
+            try: result['host_memory'] = command(['vm_stat'])
+            except Exception as error: result['host_memory'] = {'unavailable': type(error).__name__}
     except Exception as error:
         result['unavailable'] = type(error).__name__
     return result
@@ -224,8 +250,12 @@ class InferenceObserver:
 
     def __exit__(self, *_):
         if INFERENCE_MONITOR:
-            result = json_http(INFERENCE_MONITOR + '/stop', {'trial_id': self.trial})
-            self.samples, self.metadata = result['samples'], result['metadata']
+            try:
+                result = json_http(INFERENCE_MONITOR + '/stop', {'trial_id': self.trial})
+                self.samples, self.metadata = result['samples'], result['metadata']
+            except Exception as error:
+                self.metadata['stop_error'] = type(error).__name__
+                self.samples = []
         else:
             self.local.__exit__()
             self.samples = self.local.samples
@@ -269,15 +299,24 @@ def run_block(plan_path, block, out, image):
             issues.append('model_controller_hash_mismatch')
         if not native.samples or any('unavailable' in row for row in native.samples):
             issues.append('inference_process_observations_missing')
+        after_model = json_http(BASE + '/api/ps')
+        if block == 'real-model':
+            loaded = [m for m in after_model.get('models', []) if m.get('name') == MODEL]
+            if len(loaded) != 1 or loaded[0].get('digest') != DIGEST or loaded[0].get('context_length') != 8192:
+                issues.append('loaded_model_identity_or_context_changed')
         document = {'configuration': config, 'routing': routing, 'observed_serving_uids': sorted(hit),
                     'observations': observer.samples, 'result': result, 'issues': issues, 'valid': not issues,
                     'native_observations': native.samples,
                     'inference_observer_metadata': native.metadata,
-                    'model_after_trial': json_http(BASE + '/api/ps'),
+                    'model_after_trial': after_model,
                     'other_server_loaded_model_count': native.samples[-1].get('other_server_model_count') if native.samples else None}
         (out / (config['trial_id'] + '.json')).write_text(json.dumps(document, separators=(',', ':')) + '\n')
         recorded.append(document)
         print(json.dumps({'trial': config['trial_id'], 'valid': not issues, 'issues': issues}), flush=True)
+        if native.metadata.get('stop_error'):
+            (out / 'block.json').write_text(json.dumps({'complete': False, 'qualified': False,
+                'trials': len(recorded), 'reason': 'native_monitor_stop_failed'}, indent=2) + '\n')
+            raise RuntimeError('Native monitor could not be drained; partial block retained')
     complete = {'complete': True, 'qualified': all(r['valid'] for r in recorded), 'trials': len(recorded),
                 'invalid': [r['configuration']['trial_id'] for r in recorded if not r['valid']]}
     (out / 'block.json').write_text(json.dumps(complete, indent=2) + '\n')
@@ -287,17 +326,18 @@ def run_block(plan_path, block, out, image):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('stage', choices=['pilot', 'freeze', 'block'])
+    parser.add_argument('stage', choices=['pilot', 'warmup', 'freeze', 'block'])
     parser.add_argument('--out', type=Path, required=True)
     parser.add_argument('--pilot', type=Path)
     parser.add_argument('--plan', type=Path)
     parser.add_argument('--block')
     parser.add_argument('--image', default='alien6-capacity:model-v2')
     args = parser.parse_args()
-    if args.stage == 'pilot':
+    if args.stage in ['pilot', 'warmup']:
         if args.out.exists(): raise RuntimeError('Refusing to replace pilot results')
         args.out.parent.mkdir(parents=True, exist_ok=True)
-        asyncio.run(pilot(args.out))
+        result = asyncio.run(pilot(args.out) if args.stage == 'pilot' else warmup(args.out))
+        if not result['valid']: raise SystemExit(1)
     elif args.stage == 'freeze':
         print(json.dumps(freeze(args.pilot, args.out)['rates']))
     else:

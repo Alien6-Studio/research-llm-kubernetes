@@ -9,7 +9,7 @@ import time
 
 async def main(bind, port):
     address = ipaddress.ip_address(bind)
-    if not address.is_private or address.is_unspecified or address.is_loopback:
+    if address.version != 4 or not address.is_private or address.is_unspecified or address.is_loopback:
         raise ValueError('Select the actual private Docker bridge address, never a public/wildcard address')
     counters = {'connections': 0, 'active': 0, 'bytes_to_inference': 0, 'bytes_from_inference': 0}
     async def connection(reader, writer):

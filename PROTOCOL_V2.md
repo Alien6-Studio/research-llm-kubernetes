@@ -224,6 +224,10 @@ on the Mac, bracketed by explicit per-trial start/stop RPCs through a second
 loopback SSH tunnel. VM observations remain distinct. No Mac and VM monotonic
 origins are subtracted. Moving environments tests a different source of
 interference; it cannot alone diagnose the earlier local failure's cause.
+For subsequent real-model confirmation planning, use an illustrative throughput
+effect of20% of the frozen native-pilot capacity (0.9378873 requests/s), alongside
+the5-percentage-point useful-fraction effect. The3-repetition model blocks remain
+exploratory rate-frozen comparisons, not powered confirmatory tests.
 
 ## Separate autoscaling design and resource accounting
 
