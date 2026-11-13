@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 import hashlib
 import json
 import os
+import platform
 from pathlib import Path
 import subprocess
 import threading
@@ -214,7 +215,7 @@ def main():
         return
     plan = json.loads(args.plan.read_text())
     configs = plan['blocks'][args.block]
-    available = json.loads(command(['docker', 'info', '--format', '{"cpus":{{.NCPU}},"memory":{{.MemTotal}}}']))
+    available = json.loads(command(['docker', 'info', '--format', '{"cpus":{{.NCPU}},"memory":{{.MemTotal}},"architecture":"{{.Architecture}}","server_version":"{{.ServerVersion}}","cgroup_version":"{{.CgroupVersion}}"}']))
     if max(c['node_cpus'] for c in configs) > available['cpus']:
         raise RuntimeError('Host cannot supply the registered CPU envelope')
     args.out.mkdir(parents=True, exist_ok=False)
@@ -222,6 +223,12 @@ def main():
                 'code_sha256': code_hash(), 'driver_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                 'plan_sha256': hashlib.sha256(args.plan.read_bytes()).hexdigest(), 'block': args.block,
                 'docker': available, 'kubernetes': json.loads(kubectl('version', '-o', 'json')),
+                'kind_version': command(['kind', 'version']).strip(),
+                'host': {'system': platform.system(), 'kernel': platform.release(), 'machine': platform.machine(),
+                         'python': platform.python_version()},
+                'node_software': [{k: node['status']['nodeInfo'].get(k) for k in
+                    ['kernelVersion', 'osImage', 'containerRuntimeVersion', 'kubeletVersion', 'architecture']}
+                    for node in json.loads(kubectl('get', 'nodes', '-o', 'json'))['items']],
                 'node': json.loads(command(['docker', 'inspect', CLUSTER + '-control-plane', '--format',
                     '{"image":"{{.Image}}","memory":{{.HostConfig.Memory}}}'])),
                 'image_id': command(['docker', 'image', 'inspect', args.image, '--format', '{{.Id}}']).strip()}

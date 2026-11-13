@@ -14,7 +14,7 @@ import threading
 import time
 
 from v2.plan import ROOT, canonical
-from v2.run import CONTROL, Observer, command, json_http, scale, validate
+from v2.run import CONTROL, Observer, command, json_http, scale, validate, kubectl
 from v2.service import code_hash
 from v2.transport import request
 from v2.workload import DIGEST, MODEL, OPTIONS, correct, model_request
@@ -240,6 +240,9 @@ def run_block(plan_path, block, out, image):
         'source_commit': command(['git', 'rev-parse', 'HEAD']).strip(), 'code_sha256': code_hash(),
         'model_controller_sha256': hashlib.sha256((ROOT / 'v2/model_service.py').read_bytes()).hexdigest(),
         'driver_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(), 'metadata': metadata,
+        'kubernetes': json.loads(kubectl('version', '-o', 'json')),
+        'kind_version': command(['kind', 'version']).strip(),
+        'docker_version': command(['docker', 'version', '--format', '{{.Server.Version}}']).strip(),
         'node_limits': json.loads(command(['docker', 'inspect', 'a6-capacity-v2-control-plane', '--format',
                '{"nano_cpus":{{.HostConfig.NanoCpus}},"memory_bytes":{{.HostConfig.Memory}}}'])),
         'plan_sha256': hashlib.sha256(plan_path.read_bytes()).hexdigest(),
