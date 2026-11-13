@@ -231,6 +231,27 @@ exploratory rate-frozen comparisons, not powered confirmatory tests.
 
 ## Separate autoscaling design and resource accounting
 
+### Transport continuation after the first remote control
+
+The complete uncompressed SSH control failed the unchanged100ms latency gate
+in all three repetitions (p95:434,619,1061ms), despite timely emission and no HTTP
+failures. Its26,490-byte metadata responses are larger than classification
+responses. Ten sequential diagnostic requests to the same remote server gave
+roughly21ms median for `/api/version` and `/api/ps`; ten local `/api/show` calls
+gave roughly1ms median. These diagnostics do not isolate a single network cause.
+No model comparison followed that failed gate.
+
+Register a separate `v2-remote-compressed` continuation using SSH's `-C` transport
+compression, with the same endpoints, payloads, traces, thresholds and ordering.
+Retain the entire failed control. Require all three metadata headroom controls,
+the complete12-trial qualification and every actual trial's emission/drain gates.
+Compression adds CPU work and this path is a distinct experimental environment;
+its results will not be pooled with the earlier local model block. A passing
+metadata control is necessary here, not proof that transport never limits actual
+inference. Do not weaken a threshold to obtain a qualified model block.
+
+## Separate autoscaling design and resource accounting
+
 Keep the historical repository controller labelled prototype. Prepare fixed
 pods, CPU HPA, an external-metric HPA/KEDA and a provider-capacity-aware policy
 as a separate study. Use15-minute traces with low3minutes, high5minutes and
