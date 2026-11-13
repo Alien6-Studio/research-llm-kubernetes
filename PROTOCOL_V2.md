@@ -229,8 +229,6 @@ effect of20% of the frozen native-pilot capacity (0.9378873 requests/s), alongsi
 the5-percentage-point useful-fraction effect. The3-repetition model blocks remain
 exploratory rate-frozen comparisons, not powered confirmatory tests.
 
-## Separate autoscaling design and resource accounting
-
 ### Transport continuation after the first remote control
 
 The complete uncompressed SSH control failed the unchanged100ms latency gate
@@ -249,6 +247,28 @@ Compression adds CPU work and this path is a distinct experimental environment;
 its results will not be pooled with the earlier local model block. A passing
 metadata control is necessary here, not proof that transport never limits actual
 inference. Do not weaken a threshold to obtain a qualified model block.
+
+### Response-size-matched transport fixture
+
+The compressed metadata control also failed as a whole (one of three passed).
+All failures remain archived. Its responses are26,490bytes; the maximum compact
+JSON response among5,570 retained worker-path real generations is5,590bytes.
+This motivates a separate transport fixture before any further generation:
+forward both the direct reference and Kubernetes paths through one loopback
+native proxy. Its `/api/*` paths forward unchanged requests to the dedicated
+Ollama server; `/transport-control` returns no inference and8,192bytes of fixed
+high-entropy base64 padding plus a marker. This exceeds the observed response
+size and avoids unrealistically compressible zero padding. Send the exact frozen
+generation request bodies and keep the same three headroom traces and100/50ms
+gates. The8KiB fixture is a distinct size-conditioned network control, not a
+retroactive pass for `/api/show`, and not a model result.
+
+Register the cohort `v2-remote-fixture` with SSH compression and the added native
+proxy on loopback11437 (reverse forwarding still terminates at VM11435). All
+actual generation also crosses that proxy; raw Ollama responses remain intact.
+The original rates, traces, model and other validity gates remain in force.
+A response larger than the fixture in new actual trials must be flagged as
+outside this transport qualification's size envelope.
 
 ## Separate autoscaling design and resource accounting
 

@@ -28,7 +28,7 @@ for attempt in range(60):
         if attempt == 59: raise
         time.sleep(.5)
 PY
-python3 -m v2.network_probe --url http://172.18.0.1:11435/api/show \
+python3 -m v2.network_probe --url "${STUDY_TRANSPORT_CONTROL_URL:-http://172.18.0.1:11435/api/show}" \
   --out "runs/$PREFIX-network/control.json" >"study-logs/$PREFIX-network.txt" 2>&1
 python3 -m v2.model block --plan "$PLAN" --block model-qualification --image "$IMAGE" \
   --out "runs/$PREFIX-model-qualification" >"study-logs/$PREFIX-model-qualification.txt" 2>&1

@@ -12,14 +12,15 @@ from urllib.parse import urlsplit
 
 from v2.plan import ROOT
 from v2.run import command, percentile
-from v2.workload import MODEL
+from v2.workload import MODEL, model_request
 
 
 async def observe(url, item, start):
     scheduled = start + item['offset']
     row = {'id': item['id'], 'scheduled': scheduled, 'launched': time.monotonic(), 'emitted': None, 'status': 0}
     target = urlsplit(url)
-    body = json.dumps({'model': MODEL, 'benchmark_padding': item['prompt_text']}, separators=(',', ':')).encode()
+    fixture = target.path == '/transport-control'
+    body = json.dumps(model_request(item) if fixture else {'model': MODEL, 'benchmark_padding': item['prompt_text']}, separators=(',', ':')).encode()
     writer = None
     try:
         async with asyncio.timeout(10):
@@ -49,6 +50,7 @@ async def observe(url, item, start):
             row['response_body_sha256'] = hashlib.sha256(raw).hexdigest()
             parsed = json.loads(raw)
             row['model_metadata_returned'] = 'model_info' in parsed
+            row['transport_fixture_returned'] = parsed.get('transport_control') is True and len(parsed.get('padding', '')) == 8192
     except Exception as error:
         row['error'] = type(error).__name__
     finally:
@@ -63,7 +65,7 @@ async def observe(url, item, start):
 
 async def collect(url, out):
     state = {'source_commit': command(['git', 'rev-parse', 'HEAD']).strip(),
-             'utc': datetime.now(timezone.utc).isoformat(), 'scope': 'Metadata-only SSH/API transport, no model generation',
+             'utc': datetime.now(timezone.utc).isoformat(), 'scope': 'No-inference transport fixture' if url.endswith('/transport-control') else 'Metadata-only SSH/API transport, no model generation',
              'endpoint': url, 'trials': [], 'qualified': False}
     for rep in range(3):
         trace_path = ROOT / f'protocol/v2-model/headroom-{rep}.json.gz'
@@ -76,7 +78,7 @@ async def collect(url, out):
         rows = await asyncio.gather(*pending)
         lag = percentile([r['emitted'] - r['scheduled'] for r in rows if r['emitted'] is not None], .95)
         latency = percentile([r['latency_seconds'] for r in rows], .95)
-        passed = bool(rows) and all(r['status'] == 200 and r.get('model_metadata_returned') and r['emitted'] is not None and 'error' not in r for r in rows) and lag is not None and lag <= .05 and latency is not None and latency <= .1
+        passed = bool(rows) and all(r['status'] == 200 and (r.get('transport_fixture_returned') if url.endswith('/transport-control') else r.get('model_metadata_returned')) and r['emitted'] is not None and 'error' not in r for r in rows) and lag is not None and lag <= .05 and latency is not None and latency <= .1
         state['trials'].append({'repetition': rep, 'trace_sha256': hashlib.sha256(trace_path.read_bytes()).hexdigest(),
                                 'emission_lag_p95_seconds': lag, 'latency_p95_seconds': latency, 'passed': passed, 'requests': rows})
         out.write_text(json.dumps(state, indent=2) + '\n')
