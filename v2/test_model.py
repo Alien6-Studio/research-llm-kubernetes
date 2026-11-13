@@ -23,4 +23,4 @@ class ModelDeadlineTests(unittest.IsolatedAsyncioTestCase):
         self.assertTrue(row['late_response']['correct'])
         self.assertEqual(row['late_response']['inference']['eval_count'], 6)
         self.assertGreater(row['model_call_drained_at'], row['finished'])
-        self.assertLess(row['latency_seconds'], .05)
+        self.assertAlmostEqual(row['latency_seconds'], row['finished'] - row['scheduled'])

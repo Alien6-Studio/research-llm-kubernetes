@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 import gzip
 import hashlib
 import json
+import os
 from pathlib import Path
 import platform
 import random
@@ -18,12 +19,17 @@ from v2.service import code_hash
 from v2.transport import request
 from v2.workload import DIGEST, MODEL, OPTIONS, correct, model_request
 
-BASE = 'http://127.0.0.1:11435'
-BRIDGE = 'http://host.docker.internal:11435'
+BASE = os.environ.get('STUDY_OLLAMA_URL', 'http://127.0.0.1:11435')
+BRIDGE = os.environ.get('STUDY_OLLAMA_BRIDGE_URL', 'http://host.docker.internal:11435')
+INFERENCE_MONITOR = os.environ.get('STUDY_INFERENCE_MONITOR')
 
 
 def hardware():
     result = {'system': platform.system(), 'release': platform.release(), 'machine': platform.machine()}
+    result['logical_cpus'] = os.cpu_count()
+    if Path('/proc/meminfo').exists():
+        result['memory'] = Path('/proc/meminfo').read_text()
+        result['cpu_models'] = sorted(set(line.split(':', 1)[1].strip() for line in Path('/proc/cpuinfo').read_text().splitlines() if line.startswith('model name')))
     if platform.system() == 'Darwin':
         for field in ['hw.model', 'hw.memsize', 'hw.logicalcpu', 'machdep.cpu.brand_string']:
             try: result[field] = command(['sysctl', '-n', field]).strip()
@@ -40,8 +46,13 @@ def verify_server():
     model = next(m for m in json_http(BASE + '/api/tags')['models'] if m['name'] == MODEL)
     if version['version'] != '0.40.16' or model['digest'] != DIGEST:
         raise RuntimeError('Model or native server version differs from registration')
-    return {'version': version, 'model': {k: model[k] for k in ['name', 'digest', 'size', 'details']},
-            'options': OPTIONS, 'hardware': hardware()}
+    data = {'version': version, 'model': {k: model[k] for k in ['name', 'digest', 'size', 'details']},
+            'options': OPTIONS, 'client_hardware': hardware()}
+    if INFERENCE_MONITOR:
+        data['inference_environment'] = json_http(INFERENCE_MONITOR + '/metadata')
+    else:
+        data['inference_environment'] = {'hardware': data['client_hardware'], 'placement': 'same physical host; Docker VM clients and native inference'}
+    return data
 
 
 def pilot_item(index):
@@ -168,7 +179,10 @@ def native_snapshot():
             selected = expanded
         result['processes'] = [p for p in processes if p['pid'] in selected]
         result['model'] = json_http(BASE + '/api/ps')
-        result['other_server_models'] = json_http('http://127.0.0.1:11434/api/ps')
+        result['other_server_model_count'] = len(json_http('http://127.0.0.1:11434/api/ps').get('models', []))
+        if platform.system() == 'Darwin':
+            try: result['thermal'] = command(['pmset', '-g', 'therm'])
+            except Exception as error: result['thermal'] = {'unavailable': type(error).__name__}
     except Exception as error:
         result['unavailable'] = type(error).__name__
     return result
@@ -191,6 +205,30 @@ class NativeObserver:
     def __enter__(self): self.thread.start(); return self
 
     def __exit__(self, *_): self.stopped.set(); self.thread.join(timeout=15)
+
+
+class InferenceObserver:
+    def __init__(self, trial):
+        self.trial = trial
+        self.samples = []
+        self.metadata = {}
+        self.local = None
+
+    def __enter__(self):
+        if INFERENCE_MONITOR:
+            self.metadata = json_http(INFERENCE_MONITOR + '/start', {'trial_id': self.trial})
+        else:
+            self.local = NativeObserver()
+            self.local.__enter__()
+        return self
+
+    def __exit__(self, *_):
+        if INFERENCE_MONITOR:
+            result = json_http(INFERENCE_MONITOR + '/stop', {'trial_id': self.trial})
+            self.samples, self.metadata = result['samples'], result['metadata']
+        else:
+            self.local.__exit__()
+            self.samples = self.local.samples
 
 
 def run_block(plan_path, block, out, image):
@@ -216,20 +254,24 @@ def run_block(plan_path, block, out, image):
         config['trace'] = json.loads(gzip.decompress(encoded))
         config['trace_decoded_sha256'] = hashlib.sha256(canonical(config['trace'])).hexdigest()
         json_http(CONTROL + '/prepare', config)
-        with Observer() as observer, NativeObserver() as native:
+        with Observer() as observer, InferenceObserver(out.name + ':' + config['trial_id']) as native:
             result = json_http(CONTROL + '/run', config, timeout=360)
         issues = validate(config, result, routing, observer.samples)
         expected = {p['uid'] for p in routing['pods']}
-        hit = {r.get('response', {}).get('uid') for r in result['requests']} - {None}
+        hit = {r['uid'] for key, archive in result['role_records'].items() if key != 'provider' for r in archive['records']}
         if block == 'real-model' and hit <= expected:
             issues = [x for x in issues if x != 'observed_worker_uid_set_differs']
         expected_hash = hashlib.sha256((ROOT / 'v2/model_service.py').read_bytes()).hexdigest()
         if any(s['controller'].get('model_controller_sha256') != expected_hash for s in result['resource_samples']):
             issues.append('model_controller_hash_mismatch')
+        if not native.samples or any('unavailable' in row for row in native.samples):
+            issues.append('inference_process_observations_missing')
         document = {'configuration': config, 'routing': routing, 'observed_serving_uids': sorted(hit),
                     'observations': observer.samples, 'result': result, 'issues': issues, 'valid': not issues,
                     'native_observations': native.samples,
-                    'model_after_trial': json_http(BASE + '/api/ps'), 'other_server_loaded_models': json_http('http://127.0.0.1:11434/api/ps')}
+                    'inference_observer_metadata': native.metadata,
+                    'model_after_trial': json_http(BASE + '/api/ps'),
+                    'other_server_loaded_model_count': native.samples[-1].get('other_server_model_count') if native.samples else None}
         (out / (config['trial_id'] + '.json')).write_text(json.dumps(document, separators=(',', ':')) + '\n')
         recorded.append(document)
         print(json.dumps({'trial': config['trial_id'], 'valid': not issues, 'issues': issues}), flush=True)

@@ -29,5 +29,11 @@ jobs:
         run: python scripts/analyze_focused.py --check
       - name: Verify published evidence identity
         run: python scripts/verify_evidence.py
+      - name: Replay V2 workloads and measured records
+        run: python -m v2.verify
       - name: Build the pinned service image
         run: docker build -t research-capacity:ci .
+      - name: Build the V2 service and model measurement images
+        run: |
+          docker build -f v2/Dockerfile --build-arg SOURCE_COMMIT="$GITHUB_SHA" -t research-capacity:v2-ci .
+          docker build -f v2/Model.Dockerfile --build-arg SOURCE_COMMIT="$GITHUB_SHA" -t research-capacity:model-ci .

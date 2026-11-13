@@ -182,12 +182,50 @@ all observed UIDs to belong to the verified ready EndpointSlice set. Random
 low-volume traffic need not hit every ready replica; do not equate the ready
 replica count with the number that actually performed inference.
 
+## Independently hosted CPU and real-model continuation
+
+Both complete local emulator qualifications fail, and real-model client dispatch
+failures are already observed after a passing low-rate idle-emulator qualification.
+The local real-model block will still finish and be excluded in full. These
+observations do not identify a GPU, VM timer, scheduler, network or generator
+concurrency cause. A passing subset will not replace the excluded block.
+
+Continue the registered4/8CPU controls on a new isolated Ubuntu24.04 LXD VM
+with8actual vCPU and16GiB RAM on the user-provided Linux host. Keep the kind node
+at8GiB and vary only its CPU allowance according to the existing frozen plan.
+Both complete4/8CPU qualification blocks must pass before the48 paired trials.
+Retain VM image fingerprint, kernel/Docker/Kubernetes versions, source/image
+identity and VM CPU/steal/memory observations. This is not a dedicated bare-metal
+host; unrelated hypervisor workloads remain a limit.
+
+The real-model continuation places clients and Kubernetes on that VM while the
+same dedicated native Mac Ollama server performs inference. A private SSH reverse
+tunnel terminates on VM loopback; a relay binds only the VM's own Docker bridge,
+not a public interface. Direct reference and worker paths use the same relay.
+Freeze the bridge endpoint in a separate derived plan before collection, keeping
+the original rates, byte-identical traces, task, generation parameters and45
+conditions. Repeat the entire12-trial qualification and45-trial model block.
+
+Before model confirmation, also qualify the SSH/API transport with three open-loop
+headroom traces against `/api/show`: local model metadata, no generation, with
+prompt-sized padding. Record planned/emitted/terminal times, exact byte counts,
+response hashes/statuses and all failures; require every response successful,
+every request emitted, p95 emission lag≤50ms and p95 latency≤100ms. This is a
+transport control and must never be reported as inference throughput. It does
+not remove the need for per-trial emission checks during actual inference.
+
+Native inference CPU/RSS, thermal indications and loaded-model state are sampled
+on the Mac, bracketed by explicit per-trial start/stop RPCs through a second
+loopback SSH tunnel. VM observations remain distinct. No Mac and VM monotonic
+origins are subtracted. Moving environments tests a different source of
+interference; it cannot alone diagnose the earlier local failure's cause.
+
 ## Separate autoscaling design and resource accounting
 
 Keep the historical repository controller labelled prototype. Prepare fixed
 pods, CPU HPA, an external-metric HPA/KEDA and a provider-capacity-aware policy
-as a separate study. Use10-minute traces with low2minutes, high4minutes and
-recovery4minutes;3 randomized paired repetitions, explicit controller versions,
+as a separate study. Use15-minute traces with low3minutes, high5minutes and
+recovery7minutes;3 randomized paired repetitions, explicit controller versions,
 polling periods, readiness and downscale stabilization. Record decisions,
 actual-ready replicas and transition/oscillation/throughput trajectories. Only
 run policies whose metrics are verified to be available. Missing controllers or
