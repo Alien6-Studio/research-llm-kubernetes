@@ -229,7 +229,7 @@ def build():
     results=results.replace('12 zero-service model-path controls passed',f"{sum(row['valid'] for row in qualification)} zero-service model-path controls passed")
     results=results.replace('4.689/s',f'{pilot_rate:.3f}/s')
     ledger=['# Article evidence ledger', '',
-    'Source material for later writing; no article is written here. The scientific question is when scaling clients yields timely useful tasks, and whether shared capacity accounting is enough to deliver them. The architectural boundary is between the client deadline, worker queue and provider-owned ledger.', '',
+    'Evidence for the [published French article](https://beta.alien6.com/fr/research/articles/mise-en-production-ia-kubernetes/), which examines when scaling clients yields timely useful tasks and why correct shared-capacity accounting is not sufficient. The architectural boundary is between the client deadline, worker queue and provider-owned ledger. The [article data snapshot](https://github.com/Alien6-Studio/research-llm-kubernetes/tree/data-2026-11-15-article) preserves the evidence used for publication; this ledger also retains controls and historical observations beyond the article.', '',
     '## Apparatus and hypotheses', '',
     'Read [PROTOCOL.md](PROTOCOL.md) for H1 replicas/headroom, H2 quota counterfactuals, H3 admission, H4 real-model transfer. The collected primary emulator matrix has 72 trials; quota 12, provider-only 12, CPU 48 are separate controls, with their complete qualification blocks. Three trace repetitions are the experimental units. Emulator workload: 180/s regular Poisson or alternating 180/18/s bursts, 3 s warmup, 10 s cohort, 2 s deadline, 4 active slots +32 queue places/worker. The actual-model baseline has its own 335-second arrival cohorts, ten-second deadline, actual generation records and separate lifecycle regimes.', '',
     '## Citable numerical findings', '',
@@ -264,10 +264,10 @@ def build():
     '| `cpu-counterfactual` | paired CPU sensitivity contrasts, df 2 intervals; no equivalence claim |',
     '| `deadline-and-quota-consumption` | primary quota/8 none/global; provider_consumed,useful,late consumption plus rule-selected illustration |', '',
     '```sh', 'python scripts/check_cpu_continuation.py --restore-only', 'python -m unittest discover -p "test_*.py"', 'python scripts/verify_evidence.py', 'python -m v2.verify', 'python scripts/check_cpu_continuation.py', 'python -m v2.report --check', 'python -m v2.publication --check', 'python -m pip install -r requirements-analysis.txt', 'python -m v2.report --figures --output /tmp/study-figures', '```', '',
-    'No Kubernetes or model server is needed for these calculations. Collection commands and environment gates are in `README.md` / `PROTOCOL.md`; new collection must use a fresh directory and complete qualification.', '',
-    '## Editorial permissions and engineering hypothesis', '',
+    'No Kubernetes or model server is needed for these calculations. The [reproduction guide](docs/REPRODUCING.md) includes the complete native-admission replay, optional figure rendering and separate collection instructions. New collection must use a fresh directory and complete qualification; captured protocols remain unchanged.', '',
+    '## Interpretation boundary and untested work', '',
     '**Established within this emulator apparatus:** headroom permits useful replica scaling; changing a shared quota moves the limitation; an atomic provider ledger alone does not guarantee useful scheduling. **Observed in the native baseline:** 45 retained client cohorts, 44 complete native certificates and one preserved uncertain observation; the 28 reset-epoch observations are individually certified. **Exploratory:** numerical effect sizes and 3-repetition intervals in the qualified emulator apparatus; CPU sensitivity and finite resource-integral comparisons. **Not demonstrated:** transfer of quota/admission effects to real LLM inference; pooled replica effects across lifecycle regimes; steady-state production sizing; HPA/KEDA benefit; ROI, energy saving or HA.', '',
-    'The observations motivate a deadline-aware admission boundary that coordinates provider budget, queue capacity and client deadlines. A reusable Alien6 component is a future engineering hypothesis. The current negative policy comparison does not demonstrate that an unimplemented library improves outcomes. A subsequent comparison would need identical traces/quotas/deadlines, complete qualification, useful-arrival outcomes and wasted-work accounting; no such new campaign is required to finish this publication.', '',
+    'Deadline-aware admission that coordinates provider budget, queue capacity and client deadlines remains untested. The current negative policy comparison does not demonstrate a benefit from an unimplemented component. A subsequent comparison would need identical traces, quotas and deadlines, complete qualification, useful-arrival outcomes and wasted-work accounting. It is separate from the published article.', '',
     '**Disallowed formulations:** extra pods never help; global admission always improves reliability; CPU/network can never limit; emulator quota units equal actual model tokens; eventual HTTP200 equals a useful client result; three trial repetitions prove a universal law; prepared HPA/KEDA manifests are measured results.', '',
     '## Primary method references and licensing', '',
     '- Kubernetes resource management: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/ — resource requests/limits and CPU throttling.',
@@ -279,9 +279,6 @@ def build():
     ledger_text='\n'.join(ledger)+'\n'
     ledger_text=ledger_text.replace('## Historical excluded actual-model instruments',
         '\n'.join(native_baseline_lines() + native_admission_lines())+'\n## Historical excluded actual-model instruments')
-    ledger_text=ledger_text.replace(
-        'A subsequent comparison would need identical traces/quotas/deadlines, complete qualification, useful-arrival outcomes and wasted-work accounting; no such new campaign is required to finish this publication.',
-        'The separate native comparison retains identical traces, deadlines and resources, full-arrival outcomes and native-completion accounting. Its negative shared-cap results do not validate an untested alternative scheduling policy.')
     ledger_text=ledger_text.replace('30/45 trials',f'{passing_count}/{real_count} trials').replace('whole 45 excluded',f'whole {real_count} excluded')
     ledger_text=ledger_text.replace('4.689/s',f'{pilot_rate:.3f}/s').replace('4 warmup +48 measured',f"{len(pilot['warmup'])} warmup +{len(pilot_observations)} measured")
     if real_blocks:
@@ -294,9 +291,6 @@ def build():
             '**Not demonstrated:** transfer to real LLM capacity;',
             '**Qualified actual-model evidence:** exploratory, descriptive direct-model versus application-worker outcomes for the listed fixed-task blocks (n=3); only the observed local curves. '
             '**Not demonstrated:** transfer of quota/admission effects to real LLM inference;')
-        ledger_text=ledger_text.replace(
-            'no such new campaign is required to finish this publication.',
-            'the qualified actual-model comparison uses policy=none; quota/admission intervention effects require a separate registered comparison.')
     if excluded_lines:
         ledger_text=ledger_text.replace('## Code actually used',
             '\n'.join(excluded_lines)+'\n## Code actually used')
